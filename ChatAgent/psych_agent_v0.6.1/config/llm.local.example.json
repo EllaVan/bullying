@@ -1,0 +1,9 @@
+{
+  "endpoint": "https://api.example.com/v1/chat/completions",
+  "model": "your-model-name",
+  "api_key_env": "PSYCH_AGENT_API_KEY",
+  "timeout_seconds": 45,
+  "json_object_mode": true,
+  "note": "复制为 config/llm.local.json 后填写。优先读 api_key_env 指向的环境变量；也可直接填 api_key（勿提交真实密钥）。",
+  "api_key": ""
+}

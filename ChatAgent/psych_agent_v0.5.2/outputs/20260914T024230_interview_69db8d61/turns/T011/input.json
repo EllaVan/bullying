@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_011",
+  "turn_id": "T011",
+  "question_id": "Q011",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+  "answer": "可能会有更大的矛盾，我不会采取行动",
+  "target_unit_id": "U_G01_FORCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

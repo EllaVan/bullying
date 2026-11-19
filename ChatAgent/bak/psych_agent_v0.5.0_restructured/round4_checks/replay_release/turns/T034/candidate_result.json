@@ -1,0 +1,34 @@
+{
+  "turn_id": "T034",
+  "observations": [
+    {
+      "unit_id": "U_E04_DEESCALATION",
+      "status": "covered",
+      "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+          "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+          "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+          "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+        },
+        {
+          "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+          "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+          "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

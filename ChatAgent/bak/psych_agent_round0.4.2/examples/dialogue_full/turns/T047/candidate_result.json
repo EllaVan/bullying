@@ -1,0 +1,29 @@
+{
+  "turn_id": "T047",
+  "observations": [
+    {
+      "unit_id": "U_G03_GROUP",
+      "status": "covered",
+      "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "group_influence",
+          "value": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+          "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G03_GROUP_PV07_LOWER",
+          "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+          "rationale": "合成开发示例：明确在朋友站队时仍保留自己的判断。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

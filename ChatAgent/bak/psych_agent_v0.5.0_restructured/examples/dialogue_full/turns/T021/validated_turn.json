@@ -1,0 +1,130 @@
+{
+  "task_id": "TASK_DEMO_FULL_021",
+  "turn_id": "T021",
+  "question_id": "Q021",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+  "answer": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+  "target_unit_id": "U_C04_DISSENT",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T021",
+    "observations": [
+      {
+        "unit_id": "U_C04_DISSENT",
+        "status": "covered",
+        "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "dissent",
+            "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+            "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+            "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+            "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T021",
+      "question_id": "Q021",
+      "unit_id": "U_C04_DISSENT",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_c2417d50a5e7410ac9ae",
+      "status": "covered",
+      "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+      "source_span": {
+        "start": 0,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "dissent",
+          "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+          "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": [
+        "DEV_8cc8f56903d68fce4368"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T021",
+      "question_id": "Q021",
+      "unit_id": "U_C04_DISSENT",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+      "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+      "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。",
+      "evidence_id": "DEV_8cc8f56903d68fce4368",
+      "observation_id": "OB_c2417d50a5e7410ac9ae",
+      "source_item_ids": [
+        "C04"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 26,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_052",
+  "turn_id": "T052",
+  "question_id": "Q052",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+  "answer": "平时我有一位可以放心说心事的同学。",
+  "target_unit_id": "U_D03_PEER_SUPPORT",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report",
+  "candidate_result": {
+    "turn_id": "T052",
+    "observations": [
+      {
+        "unit_id": "U_D03_PEER_SUPPORT",
+        "status": "covered",
+        "quote": "平时我有一位可以放心说心事的同学。",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "peer_resource",
+            "value": "平时我有一位可以放心说心事的同学。",
+            "quote": "平时我有一位可以放心说心事的同学。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+            "quote": "平时我有一位可以放心说心事的同学。",
+            "rationale": "合成开发示例：明确自述有可以放心交流的同伴。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "HABIT_89c59935c3247e04",
+      "turn_id": "T052",
+      "question_id": "Q052",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_b6cba67a2afa5eb33756",
+      "status": "covered",
+      "quote": "平时我有一位可以放心说心事的同学。",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "peer_resource",
+          "value": "平时我有一位可以放心说心事的同学。",
+          "quote": "平时我有一位可以放心说心事的同学。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "evidence_ids": [
+        "DEV_da8faec73055a8fc4102"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "HABIT_89c59935c3247e04",
+      "turn_id": "T052",
+      "question_id": "Q052",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+      "quote": "平时我有一位可以放心说心事的同学。",
+      "rationale": "合成开发示例：明确自述有可以放心交流的同伴。",
+      "evidence_id": "DEV_da8faec73055a8fc4102",
+      "observation_id": "OB_b6cba67a2afa5eb33756",
+      "source_item_ids": [
+        "D03"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 17,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

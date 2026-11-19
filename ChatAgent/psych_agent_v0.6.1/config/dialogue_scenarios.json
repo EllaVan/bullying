@@ -1,0 +1,154 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "scenarios": [
+    {
+      "scenario_id": "S01",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "physical",
+            "perspective": "involved",
+            "relationship": "classmate",
+            "intent_clarity": "ambiguous",
+            "group_pressure": "absent",
+            "conflict_stage": "escalating",
+            "affinity": "close",
+            "joking": "absent",
+            "no_response": "absent"
+          },
+          "text": "课间走廊里，一位同学从你身边经过时碰到了你，你手里的本子掉在地上。你还不知道对方是不是故意的。你请对方注意，两个人说话的声音越来越大，旁边有同学在看。"
+        },
+        {
+          "condition_id": "friend_conflict",
+          "parent_condition_id": "base",
+          "facts": {
+            "form": "physical",
+            "perspective": "involved",
+            "relationship": "friend",
+            "intent_clarity": "ambiguous",
+            "group_pressure": "absent",
+            "conflict_stage": "escalating",
+            "affinity": "close",
+            "joking": "absent",
+            "no_response": "absent"
+          },
+          "text": "课间走廊里，一位朋友从你身边经过时碰到了你，你手里的本子掉在地上。你还不知道对方是不是故意的。你请对方注意，两个人说话的声音越来越大，旁边有同学在看。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    },
+    {
+      "scenario_id": "S02",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "physical",
+            "perspective": "observer",
+            "relationship": "classmate",
+            "intent_clarity": "explicit",
+            "group_pressure": "present",
+            "conflict_stage": "escalating",
+            "affinity": "not_close",
+            "joking": "absent",
+            "no_response": "absent"
+          },
+          "text": "课间，你看到几位同学围着另一位同学推搡，说话声越来越大。被围住的是一位你平时不太合得来的同学。你在旁边，还没有加入他们的行动。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    },
+    {
+      "scenario_id": "S03",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "verbal",
+            "perspective": "group",
+            "relationship": "friend",
+            "intent_clarity": "explicit",
+            "group_pressure": "present",
+            "conflict_stage": "stable",
+            "affinity": "not_close",
+            "joking": "present",
+            "no_response": "absent"
+          },
+          "text": "几位朋友在聊天时，反复用一个同学不喜欢的外号取笑他。那位同学已经说了不喜欢，但大家还在笑，也有人看着你，等你接话。整个过程没有身体接触。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    },
+    {
+      "scenario_id": "S04",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "verbal",
+            "perspective": "target",
+            "relationship": "classmate",
+            "intent_clarity": "ambiguous",
+            "group_pressure": "present",
+            "conflict_stage": "escalating",
+            "affinity": "close",
+            "joking": "absent",
+            "no_response": "absent"
+          },
+          "text": "你在班里发言后，有几位同学模仿你刚才说话的声音。你还不清楚他们是随口模仿还是有意让你难堪。你请他们停下来，双方说话声越来越大。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    },
+    {
+      "scenario_id": "S05",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "relational",
+            "perspective": "group",
+            "relationship": "friend",
+            "intent_clarity": "explicit",
+            "group_pressure": "present",
+            "conflict_stage": "stable",
+            "affinity": "close",
+            "joking": "present",
+            "no_response": "absent"
+          },
+          "text": "几位朋友商量周末的小组活动，有人提议不要邀请其中一位同学，还把排除他的事当玩笑讲。那位同学想一起参加。朋友们正在等你说自己的想法。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    },
+    {
+      "scenario_id": "S06",
+      "conditions": [
+        {
+          "condition_id": "base",
+          "parent_condition_id": null,
+          "facts": {
+            "form": "relational",
+            "perspective": "target",
+            "relationship": "friend",
+            "intent_clarity": "ambiguous",
+            "group_pressure": "present",
+            "conflict_stage": "stable",
+            "affinity": "close",
+            "joking": "absent",
+            "no_response": "present"
+          },
+          "text": "你和几位朋友最近在一次活动安排上有过分歧。后来他们又在商量活动，你暂时没收到邀请。你发消息询问，一时还没有人回复，你还不清楚原因。"
+        }
+      ],
+      "opening_question": "遇到这种情况，你会有什么想法，接下来会怎么做？"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_006",
+  "turn_id": "T006",
+  "question_id": "Q006",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+  "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+  "target_unit_id": "U_E02_EXPRESSION",
+  "mode": "probe",
+  "question_reference_frame": "task_performance",
+  "candidate_result": {
+    "turn_id": "T006",
+    "observations": [
+      {
+        "unit_id": "U_E02_EXPRESSION",
+        "status": "covered",
+        "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "explanation",
+            "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_cf18cf6cb8acafcc",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_E02_EXPRESSION",
+      "reference_frame": "task_performance",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_b7ace3eb148c2dc682da",
+      "status": "covered",
+      "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "source_span": {
+        "start": 0,
+        "end": 37,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "explanation",
+          "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+          "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_dc1d4b00c3d9114e4912"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_cf18cf6cb8acafcc",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_E02_EXPRESSION",
+      "reference_frame": "task_performance",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+      "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。",
+      "evidence_id": "DEV_dc1d4b00c3d9114e4912",
+      "observation_id": "OB_b7ace3eb148c2dc682da",
+      "source_item_ids": [
+        "E02"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 37,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 37,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

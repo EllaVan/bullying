@@ -1,0 +1,29 @@
+{
+  "turn_id": "T004",
+  "observations": [
+    {
+      "unit_id": "U_A02_RUMINATION",
+      "status": "covered",
+      "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "thinking",
+          "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+          "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+          "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+          "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

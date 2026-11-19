@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_044",
+  "turn_id": "T044",
+  "question_id": "Q044",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+  "answer": "希望大家能听取我的意见，不能的话也没什么",
+  "target_unit_id": "U_C01_VOICE",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T044",
+    "observations": [],
+    "background": []
+  },
+  "validated_observations": [],
+  "validated_evidence": [],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 20,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": true
+  }
+}

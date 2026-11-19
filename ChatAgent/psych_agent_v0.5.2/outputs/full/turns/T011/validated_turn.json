@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_011",
+  "turn_id": "T011",
+  "question_id": "Q011",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+  "answer": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+  "target_unit_id": "U_B02_CONCERN",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T011",
+    "observations": [
+      {
+        "unit_id": "U_B02_CONCERN",
+        "status": "covered",
+        "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "concern",
+            "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+            "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+            "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+            "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T011",
+      "question_id": "Q011",
+      "unit_id": "U_B02_CONCERN",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_2e1e44f18c525670844b",
+      "status": "covered",
+      "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+      "source_span": {
+        "start": 0,
+        "end": 30,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "concern",
+          "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+          "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B02"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "evidence_ids": [
+        "DEV_0f644610350a12db9bef"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T011",
+      "question_id": "Q011",
+      "unit_id": "U_B02_CONCERN",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+      "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+      "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。",
+      "evidence_id": "DEV_0f644610350a12db9bef",
+      "observation_id": "OB_2e1e44f18c525670844b",
+      "source_item_ids": [
+        "B02"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 30,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 30,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

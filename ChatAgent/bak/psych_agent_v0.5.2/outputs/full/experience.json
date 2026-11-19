@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.5.2",
+  "session_id": "DEMO_FULL",
+  "config_set_id": "CFG_007",
+  "synthetic": true,
+  "source": "validated_observations",
+  "events": [],
+  "third_party_events": [],
+  "status": "no_validated_self_event",
+  "note": "没有经历记录不等于没有经历；不把假设或旁观叙述当作已实施/已受害事实。"
+}

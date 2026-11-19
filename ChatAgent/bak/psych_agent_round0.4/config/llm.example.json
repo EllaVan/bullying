@@ -1,0 +1,9 @@
+{
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+  "model": "GLM-4.7-Flash",
+  "api_key_env": "PSYCH_LLM_API_KEY",
+  "timeout_seconds": 45,
+  "json_object_mode": false,
+  "note": "填写账号实际可用的model；api_key可填写本地密钥，也可设置api_key_env指定的环境变量。环境变量非空时优先。不把密钥当作api_key_env的值。",
+  "api_key": ""
+}

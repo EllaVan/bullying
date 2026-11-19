@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_019",
+  "turn_id": "T019",
+  "question_id": "Q019",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "answer": "太过分的时候就应该停止",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

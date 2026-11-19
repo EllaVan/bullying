@@ -1,0 +1,420 @@
+{
+  "schema_version": "0.5.0",
+  "risk_result_id": "RISK_DEMO_FULL",
+  "profile_id": "PROFILE_DEMO_FULL",
+  "model_input_id": "MODEL_INPUT_DEMO_FULL",
+  "source_profile_file": "profile.json",
+  "source_model_input_file": "risk_model_input.json",
+  "config_set_id": "CFG_004",
+  "session_id": "DEMO_FULL",
+  "synthetic": true,
+  "agent_id": "A4",
+  "status": "test_probability_only",
+  "assessment_target": {
+    "kind": "scenario_response_risk_profile",
+    "time_window": "本次情景访谈",
+    "calibration_status": "not_calibrated"
+  },
+  "role_semantics": "marginal_with_joint",
+  "model_id": "RISK_TEST_EQUAL_WEIGHT_001",
+  "roles": [
+    {
+      "role": "bully",
+      "status": "test_probability_human_review_required",
+      "probability": 0.0787,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 6,
+      "configured_feature_count": 6,
+      "factor_ids": [
+        "RF_bully_PV02",
+        "RF_bully_PV04",
+        "RF_bully_PV05",
+        "RF_bully_PV06",
+        "RF_bully_PV07",
+        "RF_bully_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.0555,
+        "verbal": 0.05,
+        "relational": 0.1
+      }
+    },
+    {
+      "role": "victim",
+      "status": "test_probability_human_review_required",
+      "probability": 0.3241,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 3,
+      "configured_feature_count": 3,
+      "factor_ids": [
+        "RF_victim_PV08",
+        "RF_victim_PV09",
+        "RF_victim_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.2222,
+        "verbal": 0.6,
+        "relational": 0.3056
+      }
+    },
+    {
+      "role": "bully_victim",
+      "status": "test_probability_human_review_required",
+      "probability": 0.0787,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 4,
+      "configured_feature_count": 4,
+      "factor_ids": [
+        "RF_bully_victim_PV01",
+        "RF_bully_victim_PV03",
+        "RF_bully_victim_PV09",
+        "RF_bully_victim_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.0555,
+        "verbal": 0.05,
+        "relational": 0.1
+      }
+    }
+  ],
+  "factors": [
+    {
+      "factor_id": "RF_bully_PV02",
+      "role": "bully",
+      "variable_id": "PV02",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_8c2f2d122e141e984dac",
+        "DEV_9a067600ad508951aee9",
+        "DEV_b2397d8c72f724f6e1f5"
+      ],
+      "source_item_ids": [
+        "A03",
+        "G01",
+        "G02"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV04",
+      "role": "bully",
+      "variable_id": "PV04",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_0b6bfc85fb801d1663a8",
+        "DEV_0f3c80f1a2615716ce0a",
+        "DEV_0f644610350a12db9bef",
+        "DEV_db95265223fa140add4b",
+        "DEV_ee7d21a90ab1d819a243"
+      ],
+      "source_item_ids": [
+        "B01",
+        "B02",
+        "B03",
+        "E05"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV05",
+      "role": "bully",
+      "variable_id": "PV05",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_17aca43676459a663524",
+        "DEV_6e9dd5cde6fa3004016e",
+        "DEV_7ae60f6ba50891321a3c",
+        "DEV_87c7b429d006d95e2af5",
+        "DEV_b96b6905620db16cc511",
+        "DEV_f59b7f32c8fc87c367d0",
+        "DEV_f6220fb4566dc245f913"
+      ],
+      "source_item_ids": [
+        "B03",
+        "B04",
+        "B05"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV06",
+      "role": "bully",
+      "variable_id": "PV06",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.25,
+      "risk_support": 0.25,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_22d2ca0b01caa79adb0e",
+        "DEV_397067c84b7f57b0db56",
+        "DEV_88c529e92205ba2ba390",
+        "DEV_e1ef27bf8650851ae8a9"
+      ],
+      "source_item_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "G03"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV07",
+      "role": "bully",
+      "variable_id": "PV07",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_65224ac2cdc6e8a96592",
+        "DEV_8cc8f56903d68fce4368",
+        "DEV_a3ca4ba2573cb1b1b00b",
+        "DEV_aa83eca8c8b0d77e042b",
+        "DEV_da8102c48d3f91a2da50",
+        "DEV_e91b6bc0c11b88def4b4"
+      ],
+      "source_item_ids": [
+        "C04",
+        "C05",
+        "G03"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV10",
+      "role": "bully",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 0.7778,
+      "risk_support": 0.2222,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_252767a3dc9ca709a8bd",
+        "DEV_25f5dcc868b6b4b3c873",
+        "DEV_26b4c81693123de9eaec",
+        "DEV_29efce58e338bcb106e9",
+        "DEV_2e0523f9eb42c9f3ca15",
+        "DEV_38f124f9f616aaede39e",
+        "DEV_67572479b87a96eafa86",
+        "DEV_7241a82287d991e469e2",
+        "DEV_8db9d954d53ab0cc34fc",
+        "DEV_b246f1d1eefbc9c6ddf1",
+        "DEV_c784a1169d914f9fc88d",
+        "DEV_c7be1bbdb334ab11141b",
+        "DEV_db2cfa5752931c39633e",
+        "DEV_dc1d4b00c3d9114e4912",
+        "DEV_e26c946dce509c9208da",
+        "DEV_e3e45b5512bd9f463365",
+        "DEV_edc4ac89f71e43ca0236",
+        "DEV_fe5b40513d8d46ecf227"
+      ],
+      "source_item_ids": [
+        "A04",
+        "D04",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ]
+    },
+    {
+      "factor_id": "RF_victim_PV08",
+      "role": "victim",
+      "variable_id": "PV08",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_82cfc439237bf39cc629",
+        "DEV_da8faec73055a8fc4102"
+      ],
+      "source_item_ids": [
+        "D03",
+        "D04"
+      ]
+    },
+    {
+      "factor_id": "RF_victim_PV09",
+      "role": "victim",
+      "variable_id": "PV09",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.75,
+      "risk_support": 0.75,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_0b2aea5a34ab583740d8",
+        "DEV_2b7f014a0922c9d68895",
+        "DEV_8ae768b188a7ac13219c",
+        "DEV_d086beebc104df1eecd4"
+      ],
+      "source_item_ids": [
+        "C05",
+        "D01",
+        "D02"
+      ]
+    },
+    {
+      "factor_id": "RF_victim_PV10",
+      "role": "victim",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 0.7778,
+      "risk_support": 0.2222,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_252767a3dc9ca709a8bd",
+        "DEV_25f5dcc868b6b4b3c873",
+        "DEV_26b4c81693123de9eaec",
+        "DEV_29efce58e338bcb106e9",
+        "DEV_2e0523f9eb42c9f3ca15",
+        "DEV_38f124f9f616aaede39e",
+        "DEV_67572479b87a96eafa86",
+        "DEV_7241a82287d991e469e2",
+        "DEV_8db9d954d53ab0cc34fc",
+        "DEV_b246f1d1eefbc9c6ddf1",
+        "DEV_c784a1169d914f9fc88d",
+        "DEV_c7be1bbdb334ab11141b",
+        "DEV_db2cfa5752931c39633e",
+        "DEV_dc1d4b00c3d9114e4912",
+        "DEV_e26c946dce509c9208da",
+        "DEV_e3e45b5512bd9f463365",
+        "DEV_edc4ac89f71e43ca0236",
+        "DEV_fe5b40513d8d46ecf227"
+      ],
+      "source_item_ids": [
+        "A04",
+        "D04",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV01",
+      "role": "bully_victim",
+      "variable_id": "PV01",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_0045946c291a841ce3e1",
+        "DEV_0e761c24cb8b1f5e048e",
+        "DEV_121eaed348bc92ddab82",
+        "DEV_484ac357373bb5953833",
+        "DEV_a27cb5a820f9359f376e",
+        "DEV_d36cc8354729803af52e"
+      ],
+      "source_item_ids": [
+        "A01",
+        "A04",
+        "E04"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV03",
+      "role": "bully_victim",
+      "variable_id": "PV03",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.5,
+      "risk_support": 0.5,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_007cfec6068583e922f4",
+        "DEV_078b91dd80c3ad82f784",
+        "DEV_8c409906f78e17c330a7",
+        "DEV_c8feca2ec194fad959d7"
+      ],
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV09",
+      "role": "bully_victim",
+      "variable_id": "PV09",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.75,
+      "risk_support": 0.75,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_0b2aea5a34ab583740d8",
+        "DEV_2b7f014a0922c9d68895",
+        "DEV_8ae768b188a7ac13219c",
+        "DEV_d086beebc104df1eecd4"
+      ],
+      "source_item_ids": [
+        "C05",
+        "D01",
+        "D02"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV10",
+      "role": "bully_victim",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 0.7778,
+      "risk_support": 0.2222,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_252767a3dc9ca709a8bd",
+        "DEV_25f5dcc868b6b4b3c873",
+        "DEV_26b4c81693123de9eaec",
+        "DEV_29efce58e338bcb106e9",
+        "DEV_2e0523f9eb42c9f3ca15",
+        "DEV_38f124f9f616aaede39e",
+        "DEV_67572479b87a96eafa86",
+        "DEV_7241a82287d991e469e2",
+        "DEV_8db9d954d53ab0cc34fc",
+        "DEV_b246f1d1eefbc9c6ddf1",
+        "DEV_c784a1169d914f9fc88d",
+        "DEV_c7be1bbdb334ab11141b",
+        "DEV_db2cfa5752931c39633e",
+        "DEV_dc1d4b00c3d9114e4912",
+        "DEV_e26c946dce509c9208da",
+        "DEV_e3e45b5512bd9f463365",
+        "DEV_edc4ac89f71e43ca0236",
+        "DEV_fe5b40513d8d46ecf227"
+      ],
+      "source_item_ids": [
+        "A04",
+        "D04",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05"
+      ]
+    }
+  ],
+  "human_review_required": true,
+  "validation_status": "uncalibrated_flow_test",
+  "note": "A4输出的probability是未校准的流程测试值，不可作为正式校园霸凌概率或自动决策依据。 当前变量与角色置信度固定为1.0，仅用于验证完整流程，尚未经人工及心理测量校验。"
+}

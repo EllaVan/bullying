@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "scale_id": "BULLY_PSYCHOLOGY_V1",
+  "items": [
+    {
+      "item_id": "A01",
+      "question": "当别人当众让我难堪时，我通常需要一段时间才能平静下来",
+      "dimension": "emotion"
+    },
+    {
+      "item_id": "A03",
+      "question": "受到不公平待遇后，我有时会想让对方也感受一下同样的滋味",
+      "dimension": "aggression"
+    },
+    {
+      "item_id": "B01",
+      "question": "我通常能注意到同学什么时候表面没事，其实心里很难受",
+      "dimension": "empathy"
+    },
+    {
+      "item_id": "C04",
+      "question": "几个朋友意见一样时，我很难提出不同意见",
+      "dimension": "conformity"
+    },
+    {
+      "item_id": "D01",
+      "question": "担心自己被朋友排除活动之外",
+      "dimension": "rejection_sensitivity"
+    },
+    {
+      "item_id": "E01",
+      "question": "遇到同伴矛盾知道找谁商量",
+      "dimension": "help_seeking"
+    }
+  ]
+}

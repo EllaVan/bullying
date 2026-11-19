@@ -1,0 +1,29 @@
+{
+  "turn_id": "T046",
+  "observations": [
+    {
+      "unit_id": "U_G03_ALLIANCE",
+      "status": "covered",
+      "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "alliance",
+          "value": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+          "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G03_ALLIANCE_PV06_LOWER",
+          "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+          "rationale": "合成开发示例：明确允许朋友有不同意见，不强迫朋友站队。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

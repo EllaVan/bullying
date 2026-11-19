@@ -1,0 +1,29 @@
+{
+  "turn_id": "T011",
+  "observations": [
+    {
+      "unit_id": "U_B02_CONCERN",
+      "status": "covered",
+      "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "concern",
+          "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+          "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+          "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+          "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

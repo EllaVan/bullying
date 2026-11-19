@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_053",
+  "turn_id": "T053",
+  "question_id": "Q053",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+  "answer": "我觉得我们的关系可能不会像以前那样好了",
+  "target_unit_id": "U_C05_REJECTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

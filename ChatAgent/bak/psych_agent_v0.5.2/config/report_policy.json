@@ -1,0 +1,21 @@
+{
+  "version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "agent_id": "A5",
+  "sections": [
+    "test_disclaimer",
+    "role_scores",
+    "form_scores",
+    "variable_profile",
+    "response_quality",
+    "coverage_gaps",
+    "evidence_ledger",
+    "background_context"
+  ],
+  "require_evidence_references": true,
+  "show_variable_confidence": true,
+  "show_scoring_status": true,
+  "allow_diagnosis": false,
+  "allow_automatic_intervention": false,
+  "note": "A5只解释A4与画像结果，不重新计算或修改分数。"
+}

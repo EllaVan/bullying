@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_019",
+  "turn_id": "T019",
+  "question_id": "Q019",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

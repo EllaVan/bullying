@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_006",
+  "turn_id": "T006",
+  "question_id": "Q006",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "这是小事，不用和人商量",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

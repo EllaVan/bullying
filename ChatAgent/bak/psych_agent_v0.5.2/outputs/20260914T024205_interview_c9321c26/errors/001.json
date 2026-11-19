@@ -1,0 +1,6 @@
+{
+  "stage": "a2_question",
+  "message": "LLM请求失败：连接被拒绝；底层异常=ConnectionRefusedError；阶段=建立连接或等待响应头；耗时=0.06秒；套接字超时设置=45秒；代理模式=system；errno=111；详情=[Errno 111] Connection refused；没有自动重复请求",
+  "state_file": "/media/sda/wf/Bullying/ChatAgent/psych_agent_v0.5.2/outputs/20260914T024205_interview_c9321c26/dialogue_state.json",
+  "note": "网络失败不自动重试；A3结构问题会先规范化上下文并最多修复一次，仍失败则安全提交空观察。其他错误保留当前问题和回答，可显式续跑。"
+}

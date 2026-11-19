@@ -1,0 +1,29 @@
+{
+  "turn_id": "T049",
+  "observations": [
+    {
+      "unit_id": "U_C05_REJECTION",
+      "status": "covered",
+      "quote": "我会担心朋友因为这件事疏远我。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "rejection_worry",
+          "value": "我会担心朋友因为这件事疏远我。",
+          "quote": "我会担心朋友因为这件事疏远我。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+          "quote": "我会担心朋友因为这件事疏远我。",
+          "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_024",
+  "turn_id": "T024",
+  "question_id": "Q024",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+  "answer": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+  "target_unit_id": "U_G03_GROUP",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

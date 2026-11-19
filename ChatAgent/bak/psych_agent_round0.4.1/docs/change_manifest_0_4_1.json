@@ -1,0 +1,21 @@
+{
+  "version": "0.4.1",
+  "baseline": "0.4.0",
+  "config_set_id": "CFG_004",
+  "date": "2026-09-12",
+  "reason": "修复真实GLM联机A3返回缺少evidence/reason且批量误标not_applicable的问题",
+  "modified_paths": [
+    "psych_agent/turn_extractor.py",
+    "psych_agent/dialogue_contracts.py",
+    "psych_agent/dialogue_runner.py",
+    "prompts/turn_extractor.md",
+    "prompts/turn_repair.md",
+    "tests/test_dialogue.py",
+    "README.md",
+    "docs/multiturn_usage.md",
+    "docs/feature_status.json"
+  ],
+  "configuration_changed": false,
+  "schema_changed": false,
+  "note": "本补丁不改变CFG_004的量表、变量、计分或风险规则，只改进A3联机输出的提示、校验和一次修复流程。"
+}

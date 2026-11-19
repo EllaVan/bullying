@@ -1,0 +1,29 @@
+{
+  "turn_id": "T018",
+  "observations": [
+    {
+      "unit_id": "U_B03_JUSTIFICATION",
+      "status": "partial",
+      "quote": "我觉得不太舒服，但是我可能不敢说什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "boundary",
+          "value": "不确定是否可以停止玩笑",
+          "quote": "我觉得不太舒服，但是我可能不敢说什么"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+          "quote": "我觉得不太舒服，但是我可能不敢说什么",
+          "rationale": "回答中表达了不适感，但暗示了因害怕而不敢表达反对意见，部分符合规则DR_B03_JUSTIFICATION_PV05_LOWER的要求。"
+        }
+      ],
+      "reason": "回答中部分表达了不适感，但未明确给出停止玩笑的界线及理由，因此状态为partial。"
+    }
+  ],
+  "background": []
+}

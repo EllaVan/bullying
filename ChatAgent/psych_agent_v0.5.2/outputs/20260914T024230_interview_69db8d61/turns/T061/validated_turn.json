@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_061",
+  "turn_id": "T061",
+  "question_id": "Q061",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+  "answer": "可能不会和老师或者家长说",
+  "target_unit_id": "U_E03_BARRIER",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T061",
+    "observations": [
+      {
+        "unit_id": "U_E03_BARRIER",
+        "status": "covered",
+        "quote": "可能不会和老师或者家长说",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "barrier",
+            "value": "担心告诉老师家长使事情更麻烦",
+            "quote": "可能不会和老师或者家长说"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+            "quote": "可能不会和老师或者家长说",
+            "rationale": "学生明确表示不会告诉老师或家长，可能是因为担心这会使事情更麻烦。"
+          }
+        ],
+        "reason": "学生明确表示不会告诉老师或家长，可能是因为担心这会使事情更麻烦。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S06",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_aa90c9e8b542d112",
+      "turn_id": "T061",
+      "question_id": "Q061",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_2a01a3f4ade5f89bd3b6",
+      "status": "covered",
+      "quote": "可能不会和老师或者家长说",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "担心告诉老师家长使事情更麻烦",
+          "quote": "可能不会和老师或者家长说"
+        }
+      ],
+      "reason": "学生明确表示不会告诉老师或家长，可能是因为担心这会使事情更麻烦。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_ba181816d1a7287049ca"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S06",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_aa90c9e8b542d112",
+      "turn_id": "T061",
+      "question_id": "Q061",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+      "quote": "可能不会和老师或者家长说",
+      "rationale": "学生明确表示不会告诉老师或家长，可能是因为担心这会使事情更麻烦。",
+      "evidence_id": "DEV_ba181816d1a7287049ca",
+      "observation_id": "OB_2a01a3f4ade5f89bd3b6",
+      "source_item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 12,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

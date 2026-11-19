@@ -1,0 +1,29 @@
+{
+  "turn_id": "T014",
+  "observations": [
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "covered",
+      "quote": "没有伤害我，不和人商量",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确没有渠道",
+          "quote": "没有伤害我，不和人商量"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+          "quote": "没有伤害我，不和人商量",
+          "rationale": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+        }
+      ],
+      "reason": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+    }
+  ],
+  "background": []
+}

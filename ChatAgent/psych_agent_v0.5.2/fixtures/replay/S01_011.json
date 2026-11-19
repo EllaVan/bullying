@@ -1,0 +1,27 @@
+{
+  "case_id": "S01_011",
+  "evidence": [
+    {
+      "rule_id": "R_G01_FORCE",
+      "turn_id": "T1",
+      "quote": "我朋友说他会推人一把",
+      "source_kind": "third_party_report",
+      "subject": "other",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV10",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

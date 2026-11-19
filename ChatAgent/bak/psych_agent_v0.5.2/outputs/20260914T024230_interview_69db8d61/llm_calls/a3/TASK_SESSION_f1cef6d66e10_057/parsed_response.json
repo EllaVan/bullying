@@ -1,0 +1,23 @@
+{
+  "turn_id": "T057",
+  "observations": [
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "not_applicable",
+      "quote": "可能不会和谁说",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确表示不会找任何人商量",
+          "quote": "可能不会和谁说"
+        }
+      ],
+      "evidence": [],
+      "reason": "学生明确表示不会找任何人商量，因此不适用U_E01_CHANNEL单元。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_059",
+  "turn_id": "T059",
+  "question_id": "Q059",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "本轮问题",
+  "answer": "无",
+  "target_unit_id": "U_E02_EXPRESSION",
+  "mode": "probe",
+  "question_reference_frame": "task_performance"
+}

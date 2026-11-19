@@ -1,0 +1,7 @@
+{
+  "status": "safe_empty_fallback",
+  "first_validation_error": "quote必须在本轮学生回答中唯一、逐字出现；重复子串请扩大引用范围",
+  "repair_validation_error": "quote必须在本轮学生回答中唯一、逐字出现；重复子串请扩大引用范围",
+  "removed_context_references": [],
+  "fallback_used": true
+}

@@ -1,0 +1,395 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_018",
+    "turn_id": "T018",
+    "question_id": "Q018",
+    "scenario_id": "S03",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_722aa97f731a94da",
+    "entry_index": 2,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得不太舒服，但是我可能不敢说什么",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T018",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "partial",
+          "quote": "我觉得不太舒服，但是我可能不敢说什么",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "不确定是否可以停止玩笑",
+              "quote": "我觉得不太舒服，但是我可能不敢说什么"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+              "quote": "我觉得不太舒服，但是我可能不敢说什么",
+              "rationale": "回答中表达了不适感，但暗示了因害怕而不敢表达反对意见，部分符合规则DR_B03_JUSTIFICATION_PV05_LOWER的要求。"
+            }
+          ],
+          "reason": "回答中部分表达了不适感，但未明确给出停止玩笑的界线及理由，因此状态为partial。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_cf514360c291da5bdbe7",
+        "status": "partial",
+        "quote": "我觉得不太舒服，但是我可能不敢说什么",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "不确定是否可以停止玩笑",
+            "quote": "我觉得不太舒服，但是我可能不敢说什么"
+          }
+        ],
+        "reason": "回答中部分表达了不适感，但未明确给出停止玩笑的界线及理由，因此状态为partial。",
+        "coverage_eligible": false,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_f52c647989e26c14f991"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+        "quote": "我觉得不太舒服，但是我可能不敢说什么",
+        "rationale": "回答中表达了不适感，但暗示了因害怕而不敢表达反对意见，部分符合规则DR_B03_JUSTIFICATION_PV05_LOWER的要求。",
+        "evidence_id": "DEV_f52c647989e26c14f991",
+        "observation_id": "OB_cf514360c291da5bdbe7",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 18,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_019",
+    "turn_id": "T019",
+    "question_id": "Q019",
+    "scenario_id": "S03",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_722aa97f731a94da",
+    "entry_index": 2,
+    "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+    "answer": "太过分的时候就应该停止",
+    "target_unit_id": "U_B03_JUSTIFICATION",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T019",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "covered",
+          "quote": "太过分的时候就应该停止",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "太过分的时候",
+              "quote": "太过分的时候就应该停止"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+              "quote": "太过分的时候就应该停止",
+              "rationale": "回答明确提出了停止玩笑的界线，即‘太过分的时候’，符合U_B03_JUSTIFICATION的要求。"
+            }
+          ],
+          "reason": "回答中明确提出了停止玩笑的界线，符合U_B03_JUSTIFICATION的槽位要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T019",
+        "question_id": "Q019",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_88d03ff3dc7b6126d8d2",
+        "status": "covered",
+        "quote": "太过分的时候就应该停止",
+        "source_span": {
+          "start": 0,
+          "end": 11,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "太过分的时候",
+            "quote": "太过分的时候就应该停止"
+          }
+        ],
+        "reason": "回答中明确提出了停止玩笑的界线，符合U_B03_JUSTIFICATION的槽位要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_831e499c13b8155bd5c3"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T019",
+        "question_id": "Q019",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+        "quote": "太过分的时候就应该停止",
+        "rationale": "回答明确提出了停止玩笑的界线，即‘太过分的时候’，符合U_B03_JUSTIFICATION的要求。",
+        "evidence_id": "DEV_831e499c13b8155bd5c3",
+        "observation_id": "OB_88d03ff3dc7b6126d8d2",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 11,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 11,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_020",
+    "turn_id": "T020",
+    "question_id": "Q020",
+    "scenario_id": "S03",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_722aa97f731a94da",
+    "entry_index": 2,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "最开始反复说的那个人肯定是有责任的",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T020",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "最开始反复说的那个人肯定是有责任的",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "最开始反复说的那个人肯定是有责任的",
+              "quote": "最开始反复说的那个人肯定是有责任的"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+              "quote": "最开始反复说的那个人肯定是有责任的",
+              "rationale": "回答明确指出最开始的人有责任，表明对群体责任判断的明确认知"
+            }
+          ],
+          "reason": "回答直接针对问题中提到的群体责任判断，明确指出了最先开始的人的责任，符合covered状态的要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T020",
+        "question_id": "Q020",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_b0b022c539357ae49c6b",
+        "status": "covered",
+        "quote": "最开始反复说的那个人肯定是有责任的",
+        "source_span": {
+          "start": 0,
+          "end": 17,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "最开始反复说的那个人肯定是有责任的",
+            "quote": "最开始反复说的那个人肯定是有责任的"
+          }
+        ],
+        "reason": "回答直接针对问题中提到的群体责任判断，明确指出了最先开始的人的责任，符合covered状态的要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_c62b3a704dc9c0b22fae"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T020",
+        "question_id": "Q020",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "quote": "最开始反复说的那个人肯定是有责任的",
+        "rationale": "回答明确指出最开始的人有责任，表明对群体责任判断的明确认知",
+        "evidence_id": "DEV_c62b3a704dc9c0b22fae",
+        "observation_id": "OB_b0b022c539357ae49c6b",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 17,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 17,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

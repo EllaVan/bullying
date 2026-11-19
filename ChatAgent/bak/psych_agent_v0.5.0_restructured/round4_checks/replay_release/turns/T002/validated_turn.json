@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_FULL_002",
+  "turn_id": "T002",
+  "question_id": "Q002",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+  "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+  "target_unit_id": "U_A01_RECOVERY",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report",
+  "candidate_result": {
+    "turn_id": "T002",
+    "observations": [
+      {
+        "unit_id": "U_A01_RECOVERY",
+        "status": "covered",
+        "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "recovery",
+            "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_520cd0a75c270962",
+      "turn_id": "T002",
+      "question_id": "Q002",
+      "unit_id": "U_A01_RECOVERY",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_9a238e8e8ffa7f1f0a8a",
+      "status": "covered",
+      "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "recovery",
+          "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+          "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "evidence_ids": [
+        "DEV_a27cb5a820f9359f376e"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_520cd0a75c270962",
+      "turn_id": "T002",
+      "question_id": "Q002",
+      "unit_id": "U_A01_RECOVERY",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+      "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。",
+      "evidence_id": "DEV_a27cb5a820f9359f376e",
+      "observation_id": "OB_9a238e8e8ffa7f1f0a8a",
+      "source_item_ids": [
+        "A01"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_FULL_022",
+  "turn_id": "T022",
+  "question_id": "Q022",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+  "answer": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+  "target_unit_id": "U_C05_CONFORMITY",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T022",
+    "observations": [
+      {
+        "unit_id": "U_C05_CONFORMITY",
+        "status": "covered",
+        "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "choice",
+            "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+            "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+            "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+            "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T022",
+      "question_id": "Q022",
+      "unit_id": "U_C05_CONFORMITY",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_21522f5b3c4817db4272",
+      "status": "covered",
+      "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+          "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": [
+        "DEV_da8102c48d3f91a2da50"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T022",
+      "question_id": "Q022",
+      "unit_id": "U_C05_CONFORMITY",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+      "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+      "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。",
+      "evidence_id": "DEV_da8102c48d3f91a2da50",
+      "observation_id": "OB_21522f5b3c4817db4272",
+      "source_item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

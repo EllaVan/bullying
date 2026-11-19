@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_022",
+  "turn_id": "T022",
+  "question_id": "Q022",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+  "answer": "我可能不太敢说",
+  "target_unit_id": "U_C04_DISSENT",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T022",
+    "observations": [
+      {
+        "unit_id": "U_C04_DISSENT",
+        "status": "partial",
+        "quote": "我可能不太敢说",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "dissent",
+            "value": "不太敢说",
+            "quote": "我可能不太敢说"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C04_DISSENT_PV07_HIGHER",
+            "quote": "我可能不太敢说",
+            "rationale": "回答表明学生在群体压力下表达不同意见存在困难，符合规则DR_C04_DISSENT_PV07_HIGHER的criterion。"
+          }
+        ],
+        "reason": "学生回答'我可能不太敢说'，表明在群体压力下表达不同意见存在困难。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T022",
+      "question_id": "Q022",
+      "unit_id": "U_C04_DISSENT",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_08302ffdc4ef0c29adc0",
+      "status": "partial",
+      "quote": "我可能不太敢说",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "dissent",
+          "value": "不太敢说",
+          "quote": "我可能不太敢说"
+        }
+      ],
+      "reason": "学生回答'我可能不太敢说'，表明在群体压力下表达不同意见存在困难。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": [
+        "DEV_fb48ad4ce917ffc1d707"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T022",
+      "question_id": "Q022",
+      "unit_id": "U_C04_DISSENT",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C04_DISSENT_PV07_HIGHER",
+      "quote": "我可能不太敢说",
+      "rationale": "回答表明学生在群体压力下表达不同意见存在困难，符合规则DR_C04_DISSENT_PV07_HIGHER的criterion。",
+      "evidence_id": "DEV_fb48ad4ce917ffc1d707",
+      "observation_id": "OB_08302ffdc4ef0c29adc0",
+      "source_item_ids": [
+        "C04"
+      ],
+      "variable_id": "PV07",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 7,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

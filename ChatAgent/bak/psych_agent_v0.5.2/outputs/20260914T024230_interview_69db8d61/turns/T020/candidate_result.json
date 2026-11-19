@@ -1,0 +1,29 @@
+{
+  "turn_id": "T020",
+  "observations": [
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "status": "covered",
+      "quote": "最开始反复说的那个人肯定是有责任的",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "最开始反复说的那个人肯定是有责任的",
+          "quote": "最开始反复说的那个人肯定是有责任的"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+          "quote": "最开始反复说的那个人肯定是有责任的",
+          "rationale": "回答明确指出最开始的人有责任，表明对群体责任判断的明确认知"
+        }
+      ],
+      "reason": "回答直接针对问题中提到的群体责任判断，明确指出了最先开始的人的责任，符合covered状态的要求。"
+    }
+  ],
+  "background": []
+}

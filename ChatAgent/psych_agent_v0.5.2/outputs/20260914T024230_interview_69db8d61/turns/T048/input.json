@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_048",
+  "turn_id": "T048",
+  "question_id": "Q048",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+  "answer": "那可能就不太会说了",
+  "target_unit_id": "U_C05_CONFORMITY",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

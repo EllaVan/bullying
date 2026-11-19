@@ -1,0 +1,29 @@
+{
+  "turn_id": "T023",
+  "observations": [
+    {
+      "unit_id": "U_C05_CONFORMITY",
+      "status": "covered",
+      "quote": "那我可能就不说了",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "不表达不同意见",
+          "quote": "那我可能就不说了"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C05_CONFORMITY_PV07_HIGHER",
+          "quote": "那我可能就不说了",
+          "rationale": "回答明确表明因担心被疏远而不表达不同意见，符合C05单元的定义和规则DR_C05_CONFORMITY_PV07_HIGHER"
+        }
+      ],
+      "reason": "学生明确表示在担心被朋友疏远的情况下，选择不表达不同意见，符合U_C05_CONFORMITY单元的要求，且回答覆盖了required_slots"
+    }
+  ],
+  "background": []
+}

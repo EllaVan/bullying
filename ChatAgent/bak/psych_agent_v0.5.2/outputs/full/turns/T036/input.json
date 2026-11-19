@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_036",
+  "turn_id": "T036",
+  "question_id": "Q036",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "你会怎样了解那位同学此刻的感受？",
+  "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+  "target_unit_id": "U_B01_EMOTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

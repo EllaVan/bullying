@@ -1,0 +1,23 @@
+{
+  "turn_id": "T028",
+  "observations": [
+    {
+      "unit_id": "U_A01_RECOVERY",
+      "status": "covered",
+      "quote": "可能时间久了就不想了，但是想起来还是会不舒服",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "recovery",
+          "value": "可能时间久了就不想了，但是想起来还是会不舒服",
+          "quote": "可能时间久了就不想了，但是想起来还是会不舒服"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中明确描述了情绪恢复的过程，符合U_A01_RECOVERY的槽位要求。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_022",
+  "turn_id": "T022",
+  "question_id": "Q022",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+  "answer": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+  "target_unit_id": "U_C05_CONFORMITY",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

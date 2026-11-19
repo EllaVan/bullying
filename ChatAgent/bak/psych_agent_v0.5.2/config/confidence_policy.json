@@ -1,0 +1,10 @@
+{
+  "version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "mode": "engineering_coverage_quality",
+  "validation_status": "engineering_only",
+  "display_warning": "分数是未校准工程指数；confidence是信息覆盖及质量指标，不代表测量信度、抽取准确率或统计置信概率。",
+  "note": "固定值不表示完全确定，也不表示量表信度、抽取准确率或模型校准质量。",
+  "low_information_penalty": 0.5,
+  "fallback_penalty": 0.5
+}

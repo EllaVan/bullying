@@ -1,0 +1,179 @@
+{
+  "task_id": "TASK_DEMO_FULL_016",
+  "turn_id": "T016",
+  "question_id": "Q016",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+  "answer": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+  "target_unit_id": "U_E05_PROTECTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T016",
+    "observations": [
+      {
+        "unit_id": "U_E05_PROTECTION",
+        "status": "covered",
+        "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "help_action",
+            "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+            "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+          },
+          {
+            "slot_id": "self_protection",
+            "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+            "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E05_PROTECTION_PV04_HIGHER",
+            "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+            "rationale": "合成开发示例：明确关注受影响同学并提出帮助意向。"
+          },
+          {
+            "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+            "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+            "rationale": "合成开发示例：明确说明帮助同学同时保护自己的办法。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T016",
+      "question_id": "Q016",
+      "unit_id": "U_E05_PROTECTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_66cfd5c295edab53d0af",
+      "status": "covered",
+      "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "help_action",
+          "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+        },
+        {
+          "slot_id": "self_protection",
+          "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_0b6bfc85fb801d1663a8",
+        "DEV_edc4ac89f71e43ca0236"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T016",
+      "question_id": "Q016",
+      "unit_id": "U_E05_PROTECTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E05_PROTECTION_PV04_HIGHER",
+      "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+      "rationale": "合成开发示例：明确关注受影响同学并提出帮助意向。",
+      "evidence_id": "DEV_0b6bfc85fb801d1663a8",
+      "observation_id": "OB_66cfd5c295edab53d0af",
+      "source_item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T016",
+      "question_id": "Q016",
+      "unit_id": "U_E05_PROTECTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+      "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+      "rationale": "合成开发示例：明确说明帮助同学同时保护自己的办法。",
+      "evidence_id": "DEV_edc4ac89f71e43ca0236",
+      "observation_id": "OB_66cfd5c295edab53d0af",
+      "source_item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 31,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

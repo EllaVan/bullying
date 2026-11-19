@@ -1,0 +1,29 @@
+{
+  "turn_id": "T042",
+  "observations": [
+    {
+      "unit_id": "U_C02_REFUSAL",
+      "status": "covered",
+      "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "refusal",
+          "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+          "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+          "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+          "rationale": "合成开发示例：明确允许别人不采纳自己的意见。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

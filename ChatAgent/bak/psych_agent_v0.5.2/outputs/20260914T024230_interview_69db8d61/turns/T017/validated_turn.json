@@ -1,0 +1,142 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_017",
+  "turn_id": "T017",
+  "question_id": "Q017",
+  "scenario_id": "S02",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_a4e881ebdb1f68da",
+  "entry_index": 1,
+  "question": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+  "answer": "告诉老师就可以",
+  "target_unit_id": "U_E05_PROTECTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T017",
+    "observations": [
+      {
+        "unit_id": "U_E05_PROTECTION",
+        "status": "covered",
+        "quote": "告诉老师就可以",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "help_action",
+            "value": "告诉老师",
+            "quote": "告诉老师就可以"
+          },
+          {
+            "slot_id": "self_protection",
+            "value": "不清楚",
+            "quote": "告诉老师就可以"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+            "quote": "告诉老师就可以",
+            "rationale": "回答中明确提出了帮助行动，符合帮助他人方面的要求。"
+          }
+        ],
+        "reason": "回答中明确提出了帮助行动，符合帮助他人方面的要求。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S02",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_a4e881ebdb1f68da",
+      "turn_id": "T017",
+      "question_id": "Q017",
+      "unit_id": "U_E05_PROTECTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_21b6fcca585b1d68bb59",
+      "status": "covered",
+      "quote": "告诉老师就可以",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "help_action",
+          "value": "告诉老师",
+          "quote": "告诉老师就可以"
+        },
+        {
+          "slot_id": "self_protection",
+          "value": "不清楚",
+          "quote": "告诉老师就可以"
+        }
+      ],
+      "reason": "回答中明确提出了帮助行动，符合帮助他人方面的要求。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_3f9585a58145c5c4fdd8"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S02",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_a4e881ebdb1f68da",
+      "turn_id": "T017",
+      "question_id": "Q017",
+      "unit_id": "U_E05_PROTECTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+      "quote": "告诉老师就可以",
+      "rationale": "回答中明确提出了帮助行动，符合帮助他人方面的要求。",
+      "evidence_id": "DEV_3f9585a58145c5c4fdd8",
+      "observation_id": "OB_21b6fcca585b1d68bb59",
+      "source_item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 7,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "task_id": "TASK_DEMO_FULL_012",
+  "plan_id": "full",
+  "config_set_id": "CFG_004",
+  "config_manifest_path": "config/config_manifest.json",
+  "session_id": "DEMO_FULL",
+  "entry_index": 1,
+  "turn_id": "T012",
+  "question_id": "Q012",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "scenario_text": "课间，你看到几位同学围着另一位同学推搡，说话声越来越大。被围住的是一位你平时不太合得来的同学。你在旁边，还没有加入他们的行动。",
+  "facts": {
+    "form": "physical",
+    "perspective": "observer",
+    "relationship": "classmate",
+    "intent_clarity": "explicit",
+    "group_pressure": "present",
+    "conflict_stage": "escalating",
+    "affinity": "not_close",
+    "joking": "absent",
+    "no_response": "absent"
+  },
+  "mode": "probe",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "reference_frame": "general_belief",
+  "question_template": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "missing_slots": [
+    {
+      "slot_id": "responsibility",
+      "description": "个人责任是否因参与者多而减少"
+    }
+  ],
+  "allowed_units": [
+    {
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "facet": "识别他人情绪",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "你会怎样了解那位同学此刻的感受？",
+      "required_slots": [
+        {
+          "slot_id": "emotion_clues",
+          "description": "注意到的情绪线索或确认感受的方法"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_B01_EMOTION_PV04_HIGHER",
+        "DR_B01_EMOTION_PV04_LOWER"
+      ],
+      "interpretation_boundary": "没有提及感受不等于缺乏共情；判断正确与否需任务依据。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B02_CONCERN",
+      "source_item_ids": [
+        "B02"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "facet": "对不亲近同学的痛苦关注",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+      "required_slots": [
+        {
+          "slot_id": "concern",
+          "description": "对他人受针对的感受"
+        }
+      ],
+      "applicability": {
+        "affinity": [
+          "not_close"
+        ]
+      },
+      "rule_ids": [
+        "DR_B02_CONCERN_PV04_HIGHER",
+        "DR_B02_CONCERN_PV04_LOWER"
+      ],
+      "interpretation_boundary": "必须有不亲近或不合得来这一前提；不能由沉默推断。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "群体责任判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "required_slots": [
+        {
+          "slot_id": "responsibility",
+          "description": "个人责任是否因参与者多而减少"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "DR_B04_RESPONSIBILITY_PV05_LOWER"
+      ],
+      "interpretation_boundary": "班级规范与个人的责任判断分开。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "求助渠道认知",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "required_slots": [
+        {
+          "slot_id": "channel",
+          "description": "具体求助对象、对象类别或明确没有渠道"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E01_CHANNEL_PV10_HIGHER",
+        "DR_E01_CHANNEL_PV10_LOWER"
+      ],
+      "interpretation_boundary": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向成年人说明情况",
+      "reference_frame": "task_performance",
+      "reference_period": "unspecified",
+      "question_template": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "required_slots": [
+        {
+          "slot_id": "explanation",
+          "description": "模拟说明人物、发生的事或希望获得的帮助"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E02_EXPRESSION_PV10_HIGHER",
+        "DR_E02_EXPRESSION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向老师家长求助的顾虑",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "required_slots": [
+        {
+          "slot_id": "barrier",
+          "description": "求助顾虑、阻碍，或明确没有这类顾虑"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E03_BARRIER_PV10_LOWER",
+        "DR_E03_BARRIER_PV10_HIGHER"
+      ],
+      "interpretation_boundary": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E05_PROTECTION",
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "facet": "帮助他人与自我保护",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+      "required_slots": [
+        {
+          "slot_id": "help_action",
+          "description": "帮助他人的行动或明确无法提供帮助"
+        },
+        {
+          "slot_id": "self_protection",
+          "description": "同时保护自己的办法或困难"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E05_PROTECTION_PV04_HIGHER",
+        "DR_E05_PROTECTION_PV10_HIGHER",
+        "DR_E05_PROTECTION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    }
+  ],
+  "already_covered": [
+    "U_B01_EMOTION",
+    "U_B02_CONCERN"
+  ]
+}

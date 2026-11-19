@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_046",
+  "turn_id": "T046",
+  "question_id": "Q046",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "这时你希望朋友怎样支持你？如果朋友有不同看法，你会怎么办？",
+  "answer": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+  "target_unit_id": "U_G03_ALLIANCE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T046",
+    "observations": [
+      {
+        "unit_id": "U_G03_ALLIANCE",
+        "status": "covered",
+        "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "alliance",
+            "value": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+            "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G03_ALLIANCE_PV06_LOWER",
+            "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+            "rationale": "合成开发示例：明确允许朋友有不同意见，不强迫朋友站队。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T046",
+      "question_id": "Q046",
+      "unit_id": "U_G03_ALLIANCE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_dc3fabcb2c60c24429fc",
+      "status": "covered",
+      "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "alliance",
+          "value": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+          "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_e1ef27bf8650851ae8a9"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T046",
+      "question_id": "Q046",
+      "unit_id": "U_G03_ALLIANCE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G03_ALLIANCE_PV06_LOWER",
+      "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+      "rationale": "合成开发示例：明确允许朋友有不同意见，不强迫朋友站队。",
+      "evidence_id": "DEV_e1ef27bf8650851ae8a9",
+      "observation_id": "OB_dc3fabcb2c60c24429fc",
+      "source_item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 31,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "0.3.0",
+  "agents": {
+    "a1": {
+      "backend": "template",
+      "llm_config": null
+    },
+    "a2": {
+      "backend": "llm",
+      "llm_config": "config/llm.local.json"
+    },
+    "a3": {
+      "backend": "llm",
+      "llm_config": "config/llm.local.json"
+    },
+    "a4": {
+      "backend": "template",
+      "llm_config": null
+    }
+  },
+  "note": "路径相对项目根目录；每个Agent可指向不同LLM配置。此文件不存密钥。"
+}

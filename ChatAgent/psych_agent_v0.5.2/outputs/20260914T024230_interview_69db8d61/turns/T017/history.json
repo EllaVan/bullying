@@ -1,0 +1,753 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_012",
+    "turn_id": "T012",
+    "question_id": "Q012",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T012",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "partial",
+          "quote": "我觉得他有点惨",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "观察到被推搡的同学可能感到不幸",
+              "quote": "我觉得他有点惨"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+              "quote": "我觉得他有点惨",
+              "rationale": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索"
+            }
+          ],
+          "reason": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索，但未明确说明如何确认感受或提供帮助"
+        },
+        {
+          "unit_id": "U_B02_CONCERN",
+          "status": "partial",
+          "quote": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "concern",
+              "value": "不喜欢对方，因此对其痛苦漠不关心",
+              "quote": "但是我不喜欢他，所以什么也不做"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+              "quote": "但是我不喜欢他，所以什么也不做",
+              "rationale": "学生明确表示由于不喜欢对方，对其痛苦漠不关心"
+            }
+          ],
+          "reason": "学生明确表示由于不喜欢对方，对其痛苦漠不关心，但未提供其他关于关注他人痛苦的信息"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_410c760c989fa533952a",
+        "status": "partial",
+        "quote": "我觉得他有点惨",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "观察到被推搡的同学可能感到不幸",
+            "quote": "我觉得他有点惨"
+          }
+        ],
+        "reason": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索，但未明确说明如何确认感受或提供帮助",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_fb37f35325ce645e734e"
+        ]
+      },
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_36af5bfdc4d3f8e84c26",
+        "status": "partial",
+        "quote": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+        "source_span": {
+          "start": 0,
+          "end": 23,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "concern",
+            "value": "不喜欢对方，因此对其痛苦漠不关心",
+            "quote": "但是我不喜欢他，所以什么也不做"
+          }
+        ],
+        "reason": "学生明确表示由于不喜欢对方，对其痛苦漠不关心，但未提供其他关于关注他人痛苦的信息",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B02"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_37b93c5b5db868ef8baf"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+        "quote": "我觉得他有点惨",
+        "rationale": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索",
+        "evidence_id": "DEV_fb37f35325ce645e734e",
+        "observation_id": "OB_410c760c989fa533952a",
+        "source_item_ids": [
+          "B01"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+        "quote": "但是我不喜欢他，所以什么也不做",
+        "rationale": "学生明确表示由于不喜欢对方，对其痛苦漠不关心",
+        "evidence_id": "DEV_37b93c5b5db868ef8baf",
+        "observation_id": "OB_36af5bfdc4d3f8e84c26",
+        "source_item_ids": [
+          "B02"
+        ],
+        "variable_id": "PV04",
+        "direction": "lower",
+        "source_span": {
+          "start": 8,
+          "end": 23,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 23,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_013",
+    "turn_id": "T013",
+    "question_id": "Q013",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "带头的人有责任吧",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T013",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "带头的人有责任吧",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "认为带头的人有责任",
+              "quote": "带头的人有责任吧"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+              "quote": "带头的人有责任吧",
+              "rationale": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。"
+            }
+          ],
+          "reason": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T013",
+        "question_id": "Q013",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_4096688f442f590240c8",
+        "status": "covered",
+        "quote": "带头的人有责任吧",
+        "source_span": {
+          "start": 0,
+          "end": 8,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "认为带头的人有责任",
+            "quote": "带头的人有责任吧"
+          }
+        ],
+        "reason": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_7e5f8e93d8ca178365e6"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T013",
+        "question_id": "Q013",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "quote": "带头的人有责任吧",
+        "rationale": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。",
+        "evidence_id": "DEV_7e5f8e93d8ca178365e6",
+        "observation_id": "OB_4096688f442f590240c8",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 8,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 8,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_014",
+    "turn_id": "T014",
+    "question_id": "Q014",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+    "answer": "没有伤害我，不和人商量",
+    "target_unit_id": "U_E01_CHANNEL",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T014",
+      "observations": [
+        {
+          "unit_id": "U_E01_CHANNEL",
+          "status": "covered",
+          "quote": "没有伤害我，不和人商量",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "channel",
+              "value": "明确没有渠道",
+              "quote": "没有伤害我，不和人商量"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+              "quote": "没有伤害我，不和人商量",
+              "rationale": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+            }
+          ],
+          "reason": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T014",
+        "question_id": "Q014",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_3a48f15ee3099583c301",
+        "status": "covered",
+        "quote": "没有伤害我，不和人商量",
+        "source_span": {
+          "start": 0,
+          "end": 11,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "明确没有渠道",
+            "quote": "没有伤害我，不和人商量"
+          }
+        ],
+        "reason": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E01"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_8a66fc16127c14e1d22f"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T014",
+        "question_id": "Q014",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+        "quote": "没有伤害我，不和人商量",
+        "rationale": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER",
+        "evidence_id": "DEV_8a66fc16127c14e1d22f",
+        "observation_id": "OB_3a48f15ee3099583c301",
+        "source_item_ids": [
+          "E01"
+        ],
+        "variable_id": "PV10",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 11,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 11,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_015",
+    "turn_id": "T015",
+    "question_id": "Q015",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+    "answer": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+    "target_unit_id": "U_E02_EXPRESSION",
+    "mode": "probe",
+    "question_reference_frame": "task_performance",
+    "candidate_result": {
+      "turn_id": "T015",
+      "observations": [
+        {
+          "unit_id": "U_E02_EXPRESSION",
+          "status": "covered",
+          "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+          "reference_frame": "task_performance",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "explanation",
+              "value": "说明了有同学和其他同学有矛盾",
+              "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+              "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+              "rationale": "回答中明确说明了发生的事情，符合向信任成年人说明情况的模拟表达要求。"
+            }
+          ],
+          "reason": "回答中明确说明了有同学和其他同学有矛盾，符合向信任成年人说明情况的模拟表达要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T015",
+        "question_id": "Q015",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_a63825ab795382c7940b",
+        "status": "covered",
+        "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+        "source_span": {
+          "start": 0,
+          "end": 21,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "explanation",
+            "value": "说明了有同学和其他同学有矛盾",
+            "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了"
+          }
+        ],
+        "reason": "回答中明确说明了有同学和其他同学有矛盾，符合向信任成年人说明情况的模拟表达要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E02"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_0fe7210fae4053e397f1"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T015",
+        "question_id": "Q015",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+        "quote": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+        "rationale": "回答中明确说明了发生的事情，符合向信任成年人说明情况的模拟表达要求。",
+        "evidence_id": "DEV_0fe7210fae4053e397f1",
+        "observation_id": "OB_a63825ab795382c7940b",
+        "source_item_ids": [
+          "E02"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 21,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 21,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_016",
+    "turn_id": "T016",
+    "question_id": "Q016",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+    "answer": "有没有更大的矛盾",
+    "target_unit_id": "U_E03_BARRIER",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T016",
+      "observations": [
+        {
+          "unit_id": "U_E03_BARRIER",
+          "status": "covered",
+          "quote": "有没有更大的矛盾",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "barrier",
+              "value": "担心告诉老师家长使事情更麻烦",
+              "quote": "有没有更大的矛盾"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+              "quote": "有没有更大的矛盾",
+              "rationale": "学生直接提到担心告诉老师或家长会使事情更麻烦，表明存在求助顾虑。"
+            }
+          ],
+          "reason": "学生回答中明确提到担心告诉老师或家长会使事情更麻烦，符合U_E03_BARRIER的barrier槽位要求，状态为covered。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T016",
+        "question_id": "Q016",
+        "unit_id": "U_E03_BARRIER",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_b90cad588c33441e6494",
+        "status": "covered",
+        "quote": "有没有更大的矛盾",
+        "source_span": {
+          "start": 0,
+          "end": 8,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "barrier",
+            "value": "担心告诉老师家长使事情更麻烦",
+            "quote": "有没有更大的矛盾"
+          }
+        ],
+        "reason": "学生回答中明确提到担心告诉老师或家长会使事情更麻烦，符合U_E03_BARRIER的barrier槽位要求，状态为covered。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E03"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_71c8658c0c936a3471ec"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T016",
+        "question_id": "Q016",
+        "unit_id": "U_E03_BARRIER",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+        "quote": "有没有更大的矛盾",
+        "rationale": "学生直接提到担心告诉老师或家长会使事情更麻烦，表明存在求助顾虑。",
+        "evidence_id": "DEV_71c8658c0c936a3471ec",
+        "observation_id": "OB_b90cad588c33441e6494",
+        "source_item_ids": [
+          "E03"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 8,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 8,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

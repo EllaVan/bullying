@@ -1,0 +1,24 @@
+{
+  "turn_id": "T035",
+  "observations": [
+    {
+      "unit_id": "U_E03_BARRIER",
+      "status": "covered",
+      "quote": "我认为这件事情给我带来的伤害",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "对伤害的担忧",
+          "quote": "我认为这件事情给我带来的伤害"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中明确表达了对方行为带来的伤害，符合U_E03_BARRIER的barrier槽位要求，因此状态为covered。"
+    }
+  ],
+  "background": [],
+  "experiences": []
+}

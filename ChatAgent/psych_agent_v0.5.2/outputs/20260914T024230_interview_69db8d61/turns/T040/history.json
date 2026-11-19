@@ -1,0 +1,256 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_037",
+    "turn_id": "T037",
+    "question_id": "Q037",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得那位同学有点惨，但是我也不敢说什么",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T037",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "partial",
+          "quote": "我觉得那位同学有点惨，但是我也不敢说什么",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "注意到同学可能隐藏的不适",
+              "quote": "我觉得那位同学有点惨"
+            }
+          ],
+          "evidence": [],
+          "reason": "回答中提到注意到同学可能隐藏的不适，但未说明具体观察或确认感受的方法，部分覆盖U_B01_EMOTION单元的槽位要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_37a60261547671b38f9f",
+        "status": "partial",
+        "quote": "我觉得那位同学有点惨，但是我也不敢说什么",
+        "source_span": {
+          "start": 0,
+          "end": 20,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "注意到同学可能隐藏的不适",
+            "quote": "我觉得那位同学有点惨"
+          }
+        ],
+        "reason": "回答中提到注意到同学可能隐藏的不适，但未说明具体观察或确认感受的方法，部分覆盖U_B01_EMOTION单元的槽位要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_038",
+    "turn_id": "T038",
+    "question_id": "Q038",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我觉得这件事情不好笑，可能会告诉他",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T038",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 17,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": true
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_039",
+    "turn_id": "T039",
+    "question_id": "Q039",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我觉得这件事情不好笑",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "clarify",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T039",
+      "observations": [
+        {
+          "unit_id": "U_B03_HARM",
+          "status": "covered",
+          "quote": "我觉得这件事情不好笑",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "perspective",
+              "value": "考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+              "quote": "我觉得这件事情不好笑"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_HARM_PV04_HIGHER",
+              "quote": "我觉得这件事情不好笑",
+              "rationale": "明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认"
+            }
+          ],
+          "reason": "回答直接表达了对于玩笑是否好笑的判断，符合U_B03_HARM单元的要求，且quote直接来自学生回答。"
+        }
+      ],
+      "background": [],
+      "experiences": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_e0aae2a0370e4ada470a",
+        "status": "covered",
+        "quote": "我觉得这件事情不好笑",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "perspective",
+            "value": "考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+            "quote": "我觉得这件事情不好笑"
+          }
+        ],
+        "reason": "回答直接表达了对于玩笑是否好笑的判断，符合U_B03_HARM单元的要求，且quote直接来自学生回答。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_ea18b456b8991256562f"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_HARM_PV04_HIGHER",
+        "quote": "我觉得这件事情不好笑",
+        "rationale": "明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+        "evidence_id": "DEV_ea18b456b8991256562f",
+        "observation_id": "OB_e0aae2a0370e4ada470a",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 10,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

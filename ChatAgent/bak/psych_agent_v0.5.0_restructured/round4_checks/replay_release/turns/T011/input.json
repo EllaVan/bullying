@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_011",
+  "turn_id": "T011",
+  "question_id": "Q011",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+  "answer": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+  "target_unit_id": "U_B02_CONCERN",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

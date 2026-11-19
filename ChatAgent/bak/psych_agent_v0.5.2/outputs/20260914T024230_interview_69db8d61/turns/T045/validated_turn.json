@@ -1,0 +1,132 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_045",
+  "turn_id": "T045",
+  "question_id": "Q045",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+  "answer": "可能也没有什么可能有更好的安排",
+  "target_unit_id": "U_C02_REFUSAL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T045",
+    "observations": [
+      {
+        "unit_id": "U_C02_REFUSAL",
+        "status": "covered",
+        "quote": "可能也没有什么可能有更好的安排",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "refusal",
+            "value": "接受不被采纳的意见",
+            "quote": "可能也没有什么可能有更好的安排"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C02_REFUSAL_PV06_HIGHER",
+            "quote": "可能也没有什么可能有更好的安排",
+            "rationale": "回答表明学生能够接受不被采纳的意见，符合U_C02_REFUSAL单元的covered状态要求"
+          }
+        ],
+        "reason": "回答明确表达了即使意见未被采纳也能接受的情况，符合U_C02_REFUSAL单元的判断标准"
+      }
+    ],
+    "background": [],
+    "experiences": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T045",
+      "question_id": "Q045",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_0658163a7332065e8a4b",
+      "status": "covered",
+      "quote": "可能也没有什么可能有更好的安排",
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "refusal",
+          "value": "接受不被采纳的意见",
+          "quote": "可能也没有什么可能有更好的安排"
+        }
+      ],
+      "reason": "回答明确表达了即使意见未被采纳也能接受的情况，符合U_C02_REFUSAL单元的判断标准",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_9653ec943d2fcaedc2fd"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T045",
+      "question_id": "Q045",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C02_REFUSAL_PV06_HIGHER",
+      "quote": "可能也没有什么可能有更好的安排",
+      "rationale": "回答表明学生能够接受不被采纳的意见，符合U_C02_REFUSAL单元的covered状态要求",
+      "evidence_id": "DEV_9653ec943d2fcaedc2fd",
+      "observation_id": "OB_0658163a7332065e8a4b",
+      "source_item_ids": [
+        "C02"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 15,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

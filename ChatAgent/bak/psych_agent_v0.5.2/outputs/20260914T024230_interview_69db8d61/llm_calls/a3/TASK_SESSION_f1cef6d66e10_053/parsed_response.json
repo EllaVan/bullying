@@ -1,0 +1,29 @@
+{
+  "turn_id": "T053",
+  "observations": [
+    {
+      "unit_id": "U_C05_REJECTION",
+      "status": "covered",
+      "quote": "我觉得我们的关系可能不会像以前那样好了",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "rejection_worry",
+          "value": "担心关系变差",
+          "quote": "我觉得我们的关系可能不会像以前那样好了"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+          "quote": "我觉得我们的关系可能不会像以前那样好了",
+          "rationale": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。"
+        }
+      ],
+      "reason": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。"
+    }
+  ],
+  "background": []
+}

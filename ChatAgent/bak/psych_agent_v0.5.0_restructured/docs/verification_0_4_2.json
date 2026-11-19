@@ -1,0 +1,25 @@
+{
+  "version": "0.5.0",
+  "config_set_id": "CFG_006",
+  "date": "2026-09-12",
+  "test_command": "python -m unittest discover -s tests",
+  "tests_run": 121,
+  "tests_passed": 121,
+  "result": "OK",
+  "new_regression_tests": [
+    "A3误将当前轮次写入context_turn_ids时确定性清理且保留有效观察",
+    "A3一次修复后仍不合法时返回空观察并写入诊断而不中断会话",
+    "低信息目标回答换角度追问一次后推进下一单元",
+    "s01全部回答低信息时仍遍历全部八个适用测量单元并正常完成",
+    "回答简略度严格超过50%才触发报告提示",
+    "提示不把回答简略解释为被试动机或态度"
+  ],
+  "other_checks": [
+    "python run.py dialogue-validate",
+    "JSON文件解析检查",
+    "配置清单文件存在性与CFG_006一致性检查",
+    "完整full离线回放及报告生成"
+  ],
+  "external_provider_called": false,
+  "validation_scope": "结构容错、状态推进、预算、回答质量统计及报告展示；不代表LLM语义准确率、量表信效度或风险概率校准"
+}

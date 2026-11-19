@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_033",
+  "turn_id": "T033",
+  "question_id": "Q033",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+  "answer": "我可能就不会参加了",
+  "target_unit_id": "U_D01_EXCLUSION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T033",
+    "observations": [
+      {
+        "unit_id": "U_D01_EXCLUSION",
+        "status": "covered",
+        "quote": "我可能就不会参加了",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "exclusion",
+            "value": "是",
+            "quote": "我可能就不会参加了"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+            "quote": "我可能就不会参加了",
+            "rationale": "回答明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的槽位要求"
+          }
+        ],
+        "reason": "回答中明确提到担心参加同学们的活动，符合U_D01_EXCLUSION单元的要求，槽位exclusion被覆盖。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T033",
+      "question_id": "Q033",
+      "unit_id": "U_D01_EXCLUSION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_746e73faf9aa5290cab4",
+      "status": "covered",
+      "quote": "我可能就不会参加了",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "exclusion",
+          "value": "是",
+          "quote": "我可能就不会参加了"
+        }
+      ],
+      "reason": "回答中明确提到担心参加同学们的活动，符合U_D01_EXCLUSION单元的要求，槽位exclusion被覆盖。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "evidence_ids": [
+        "DEV_538b37b7a9098ed53c37"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T033",
+      "question_id": "Q033",
+      "unit_id": "U_D01_EXCLUSION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+      "quote": "我可能就不会参加了",
+      "rationale": "回答明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的槽位要求",
+      "evidence_id": "DEV_538b37b7a9098ed53c37",
+      "observation_id": "OB_746e73faf9aa5290cab4",
+      "source_item_ids": [
+        "D01"
+      ],
+      "variable_id": "PV09",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 9,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

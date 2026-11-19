@@ -1,0 +1,27 @@
+{
+  "version": "0.4.0",
+  "config_set_id": "CFG_004",
+  "agents": {
+    "a1": {
+      "backend": "template",
+      "llm_config": null
+    },
+    "a2": {
+      "backend": "llm",
+      "llm_config": "config/llm.local.json"
+    },
+    "a3": {
+      "backend": "llm",
+      "llm_config": "config/llm.local.json"
+    },
+    "a4": {
+      "backend": "test_equal_weight",
+      "config": "config/risk_scoring.json"
+    },
+    "a5": {
+      "backend": "template",
+      "llm_config": null
+    }
+  },
+  "note": "A1/A2/A3/A5可分别配置LLM；A4使用独立风险计算配置，不允许LLM直接猜测概率。此文件不存密钥。"
+}

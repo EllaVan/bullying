@@ -1,0 +1,29 @@
+{
+  "turn_id": "T052",
+  "observations": [
+    {
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "status": "covered",
+      "quote": "平时我有一位可以放心说心事的同学。",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "peer_resource",
+          "value": "平时我有一位可以放心说心事的同学。",
+          "quote": "平时我有一位可以放心说心事的同学。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+          "quote": "平时我有一位可以放心说心事的同学。",
+          "rationale": "合成开发示例：明确自述有可以放心交流的同伴。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

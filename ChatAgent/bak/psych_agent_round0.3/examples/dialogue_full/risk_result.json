@@ -1,0 +1,1209 @@
+{
+  "schema_version": "0.3.0",
+  "session_id": "DEMO_FULL",
+  "synthetic": true,
+  "input_hash": "1ea7a5463652a829b76834f6ab8a431b36ab85c770987d4c1459f21583396452",
+  "status": "evidence_profile_only",
+  "assessment_target": {
+    "kind": "scenario_associated_profile",
+    "time_window": null
+  },
+  "role_semantics": "marginal_with_joint",
+  "model_id": null,
+  "roles": [
+    {
+      "role": "bully",
+      "status": "not_estimated",
+      "probability": null,
+      "confidence": null,
+      "factor_ids": [
+        "RF_8bd4b913270d2d85fe0f",
+        "RF_589f96ee83f2ffc175a6",
+        "RF_9948780f761d1f324727",
+        "RF_ab5a00ff58056cf49da4",
+        "RF_a4f4ad2a8c90ca682423",
+        "RF_e4a2e0405dd5b5d4e438",
+        "RF_6f03d0b06ae47dee5fce",
+        "RF_cdc20dafcb3a5b52b781",
+        "RF_d56c4d10e5a2de0b64d2",
+        "RF_04b3a3893efad1aa94dd",
+        "RF_748a7eead3d40818f391",
+        "RF_270b77df2c521608a6d5",
+        "RF_70f6c72294a11e525ae2",
+        "RF_35656fdee540142e468c",
+        "RF_18581832a0a82912f9ed",
+        "RF_632c3181299e3ae27954",
+        "RF_8959140306e7f181a7d9",
+        "RF_7cb5bb997834eaf00314",
+        "RF_e75c0053baad881c3fa0",
+        "RF_cf3fac8a10908534828f",
+        "RF_24bc67595e5257b2c218",
+        "RF_aae2d5ff14b848eb87f6",
+        "RF_1fb9d2420396342a3d06",
+        "RF_aa804ec3c28a8f947e99",
+        "RF_2e5cb1749c9d7faf9f8a"
+      ],
+      "shared_factor_ids": [
+        "RF_dee90c5f5a9142e19d2c",
+        "RF_2e462883281fc7d00278",
+        "RF_09c1feeed000981126c8",
+        "RF_081c5c1f9bc7a59b01ba",
+        "RF_588681ecc9691ea23157",
+        "RF_687eacf9949f62a44a3d",
+        "RF_75607494795e00403948",
+        "RF_540e3656271baf344922",
+        "RF_431a20dca9ef7f805a35",
+        "RF_931bd13bb121740d3e72",
+        "RF_bef093821aa452cbbefa",
+        "RF_a9163506be85c31ac8cf",
+        "RF_962bf38d282a1c9133e6",
+        "RF_b313feb7a4ee27751ec7",
+        "RF_367c3244507ec5a4509d",
+        "RF_4cfe6729f45f8dcc0243",
+        "RF_72bdcded60951e5895e2",
+        "RF_2035ec4cbc96c2fa7d2e"
+      ]
+    },
+    {
+      "role": "victim",
+      "status": "not_estimated",
+      "probability": null,
+      "confidence": null,
+      "factor_ids": [
+        "RF_933df40d05d9e03f2b24",
+        "RF_26d7990ee27c5a3d5836",
+        "RF_0358494c501318a3a5b1",
+        "RF_102ccdde7a270e1098e0",
+        "RF_20ecbc74e12821f636de",
+        "RF_09bb1a143a7a49d81b94"
+      ],
+      "shared_factor_ids": [
+        "RF_dee90c5f5a9142e19d2c",
+        "RF_2e462883281fc7d00278",
+        "RF_09c1feeed000981126c8",
+        "RF_081c5c1f9bc7a59b01ba",
+        "RF_588681ecc9691ea23157",
+        "RF_687eacf9949f62a44a3d",
+        "RF_75607494795e00403948",
+        "RF_540e3656271baf344922",
+        "RF_431a20dca9ef7f805a35",
+        "RF_931bd13bb121740d3e72",
+        "RF_bef093821aa452cbbefa",
+        "RF_a9163506be85c31ac8cf",
+        "RF_962bf38d282a1c9133e6",
+        "RF_b313feb7a4ee27751ec7",
+        "RF_367c3244507ec5a4509d",
+        "RF_4cfe6729f45f8dcc0243",
+        "RF_72bdcded60951e5895e2",
+        "RF_2035ec4cbc96c2fa7d2e"
+      ]
+    },
+    {
+      "role": "bully_victim",
+      "status": "not_estimated",
+      "probability": null,
+      "confidence": null,
+      "factor_ids": [
+        "RF_d49f36ee14413d0931cc",
+        "RF_2e48851599ba4d0e793a",
+        "RF_1f26ec752f676d12f241",
+        "RF_42011d615d7cc3f4354b",
+        "RF_edd9abb0fd7647a22b30",
+        "RF_d741364e5274aad5223e",
+        "RF_669ea978fbeb8e82b61c",
+        "RF_1d371509b1e789903425",
+        "RF_4bc5ecbe64fc675da33f",
+        "RF_f9d4a191968f7dab2466",
+        "RF_0358494c501318a3a5b1",
+        "RF_102ccdde7a270e1098e0",
+        "RF_20ecbc74e12821f636de",
+        "RF_09bb1a143a7a49d81b94"
+      ],
+      "shared_factor_ids": [
+        "RF_dee90c5f5a9142e19d2c",
+        "RF_2e462883281fc7d00278",
+        "RF_09c1feeed000981126c8",
+        "RF_081c5c1f9bc7a59b01ba",
+        "RF_588681ecc9691ea23157",
+        "RF_687eacf9949f62a44a3d",
+        "RF_75607494795e00403948",
+        "RF_540e3656271baf344922",
+        "RF_431a20dca9ef7f805a35",
+        "RF_931bd13bb121740d3e72",
+        "RF_bef093821aa452cbbefa",
+        "RF_a9163506be85c31ac8cf",
+        "RF_962bf38d282a1c9133e6",
+        "RF_b313feb7a4ee27751ec7",
+        "RF_367c3244507ec5a4509d",
+        "RF_4cfe6729f45f8dcc0243",
+        "RF_72bdcded60951e5895e2",
+        "RF_2035ec4cbc96c2fa7d2e"
+      ]
+    }
+  ],
+  "factors": [
+    {
+      "factor_id": "RF_d49f36ee14413d0931cc",
+      "variable_id": "PV01",
+      "group_id": "GR_af788725436bde957ce8",
+      "facet": "暂停后再决策",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_d36cc8354729803af52e"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_2e48851599ba4d0e793a",
+      "variable_id": "PV01",
+      "group_id": "GR_ede7b54a4608fa5a9e70",
+      "facet": "避免争执升级",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_121eaed348bc92ddab82"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_1f26ec752f676d12f241",
+      "variable_id": "PV01",
+      "group_id": "GR_3b3c3507b09a9ce58ff0",
+      "facet": "情绪恢复过程",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "habitual_self_report",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_a27cb5a820f9359f376e"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_42011d615d7cc3f4354b",
+      "variable_id": "PV01",
+      "group_id": "GR_78ece927679420d158b4",
+      "facet": "情绪恢复过程",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "habitual_self_report",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_484ac357373bb5953833"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_edd9abb0fd7647a22b30",
+      "variable_id": "PV01",
+      "group_id": "GR_405064aaf61bc43d3359",
+      "facet": "暂停后再决策",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0045946c291a841ce3e1"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_d741364e5274aad5223e",
+      "variable_id": "PV01",
+      "group_id": "GR_299ef8458ea141db658d",
+      "facet": "避免争执升级",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0e761c24cb8b1f5e048e"
+      ],
+      "source_association": "影响冲突升级、施暴-受害转换"
+    },
+    {
+      "factor_id": "RF_8bd4b913270d2d85fe0f",
+      "variable_id": "PV02",
+      "group_id": "GR_81f3a62711758ad5733d",
+      "facet": "报复意向",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_8c2f2d122e141e984dac"
+      ],
+      "source_association": "预测施暴风险"
+    },
+    {
+      "factor_id": "RF_589f96ee83f2ffc175a6",
+      "variable_id": "PV02",
+      "group_id": "GR_af2eca31c2b64403d601",
+      "facet": "强制或身体伤害的解决倾向",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_b2397d8c72f724f6e1f5"
+      ],
+      "source_association": "预测施暴风险"
+    },
+    {
+      "factor_id": "RF_9948780f761d1f324727",
+      "variable_id": "PV02",
+      "group_id": "GR_0f358d4c5038a35d1bea",
+      "facet": "尖锐语言回击的效用判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_9a067600ad508951aee9"
+      ],
+      "source_association": "预测施暴风险"
+    },
+    {
+      "factor_id": "RF_669ea978fbeb8e82b61c",
+      "variable_id": "PV03",
+      "group_id": "GR_d47d33e326c4992a0271",
+      "facet": "对他人意图的解释",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_8c409906f78e17c330a7"
+      ],
+      "source_association": "预测施暴-受害循环"
+    },
+    {
+      "factor_id": "RF_1d371509b1e789903425",
+      "variable_id": "PV03",
+      "group_id": "GR_cffce8584f81d3391f7c",
+      "facet": "认为被针对后的反复思考",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "habitual_self_report",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_078b91dd80c3ad82f784"
+      ],
+      "source_association": "预测施暴-受害循环"
+    },
+    {
+      "factor_id": "RF_4bc5ecbe64fc675da33f",
+      "variable_id": "PV03",
+      "group_id": "GR_29d7ba1822ef4876b2d3",
+      "facet": "对他人意图的解释",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_007cfec6068583e922f4"
+      ],
+      "source_association": "预测施暴-受害循环"
+    },
+    {
+      "factor_id": "RF_f9d4a191968f7dab2466",
+      "variable_id": "PV03",
+      "group_id": "GR_ef9fb35f4b40319697b7",
+      "facet": "认为被针对后的反复思考",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "habitual_self_report",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_c8feca2ec194fad959d7"
+      ],
+      "source_association": "预测施暴-受害循环"
+    },
+    {
+      "factor_id": "RF_ab5a00ff58056cf49da4",
+      "variable_id": "PV04",
+      "group_id": "GR_d519cf660199b49b11a1",
+      "facet": "识别他人情绪",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_ee7d21a90ab1d819a243"
+      ],
+      "source_association": "降低施暴风险，提高保护行为"
+    },
+    {
+      "factor_id": "RF_a4f4ad2a8c90ca682423",
+      "variable_id": "PV04",
+      "group_id": "GR_7314d99bd6450e5e1e1b",
+      "facet": "对不亲近同学的痛苦关注",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0f644610350a12db9bef"
+      ],
+      "source_association": "降低施暴风险，提高保护行为"
+    },
+    {
+      "factor_id": "RF_e4a2e0405dd5b5d4e438",
+      "variable_id": "PV04",
+      "group_id": "GR_3329e009b7e7a427d302",
+      "facet": "帮助他人与自我保护",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0b6bfc85fb801d1663a8"
+      ],
+      "source_association": "降低施暴风险，提高保护行为"
+    },
+    {
+      "factor_id": "RF_6f03d0b06ae47dee5fce",
+      "variable_id": "PV04",
+      "group_id": "GR_99cb058f04670435d6de",
+      "facet": "识别他人情绪",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0f3c80f1a2615716ce0a"
+      ],
+      "source_association": "降低施暴风险，提高保护行为"
+    },
+    {
+      "factor_id": "RF_cdc20dafcb3a5b52b781",
+      "variable_id": "PV04",
+      "group_id": "GR_3788f31ead1fae384350",
+      "facet": "玩笑中的感受与伤害",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_db95265223fa140add4b"
+      ],
+      "source_association": "降低施暴风险，提高保护行为"
+    },
+    {
+      "factor_id": "RF_d56c4d10e5a2de0b64d2",
+      "variable_id": "PV05",
+      "group_id": "GR_c7aee5ff6fc51325f3ea",
+      "facet": "群体责任判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_f6220fb4566dc245f913"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_04b3a3893efad1aa94dd",
+      "variable_id": "PV05",
+      "group_id": "GR_fa46362a48280c7a670e",
+      "facet": "玩笑是否可以继续的判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_b96b6905620db16cc511"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_748a7eead3d40818f391",
+      "variable_id": "PV05",
+      "group_id": "GR_f4546454ad6b0e42a31d",
+      "facet": "群体责任判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_87c7b429d006d95e2af5"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_270b77df2c521608a6d5",
+      "variable_id": "PV05",
+      "group_id": "GR_0e23925b85dc1d981548",
+      "facet": "无身体伤害时的后果判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_f59b7f32c8fc87c367d0"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_70f6c72294a11e525ae2",
+      "variable_id": "PV05",
+      "group_id": "GR_eb49da6d91b82964fd29",
+      "facet": "玩笑是否可以继续的判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_6e9dd5cde6fa3004016e"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_35656fdee540142e468c",
+      "variable_id": "PV05",
+      "group_id": "GR_c45c435193e8e9560981",
+      "facet": "群体责任判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_17aca43676459a663524"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_18581832a0a82912f9ed",
+      "variable_id": "PV05",
+      "group_id": "GR_cf676feb767e916e7daa",
+      "facet": "无身体伤害时的后果判断",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_7ae60f6ba50891321a3c"
+      ],
+      "source_association": "降低行为约束，支持霸凌合理化"
+    },
+    {
+      "factor_id": "RF_632c3181299e3ae27954",
+      "variable_id": "PV06",
+      "group_id": "GR_8399c5800d69b701e456",
+      "facet": "对意见分量的重视",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_397067c84b7f57b0db56"
+      ],
+      "source_association": "预测关系/行为型施暴"
+    },
+    {
+      "factor_id": "RF_8959140306e7f181a7d9",
+      "variable_id": "PV06",
+      "group_id": "GR_a56f0e9e010bd4b36480",
+      "facet": "面对意见被拒绝",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_22d2ca0b01caa79adb0e"
+      ],
+      "source_association": "预测关系/行为型施暴"
+    },
+    {
+      "factor_id": "RF_7cb5bb997834eaf00314",
+      "variable_id": "PV06",
+      "group_id": "GR_e733333821d853c98202",
+      "facet": "威慑认知",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "general_belief",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_88c529e92205ba2ba390"
+      ],
+      "source_association": "预测关系/行为型施暴"
+    },
+    {
+      "factor_id": "RF_e75c0053baad881c3fa0",
+      "variable_id": "PV06",
+      "group_id": "GR_5c7cecd6c9d9803a7988",
+      "facet": "朋友支持与关系控制",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_e1ef27bf8650851ae8a9"
+      ],
+      "source_association": "预测关系/行为型施暴"
+    },
+    {
+      "factor_id": "RF_cf3fac8a10908534828f",
+      "variable_id": "PV07",
+      "group_id": "GR_788dc2ffa753d077bda5",
+      "facet": "群体中表达不同意见",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_8cc8f56903d68fce4368"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_24bc67595e5257b2c218",
+      "variable_id": "PV07",
+      "group_id": "GR_82f585f38a0158885bce",
+      "facet": "因关系压力而顺从",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_da8102c48d3f91a2da50"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_aae2d5ff14b848eb87f6",
+      "variable_id": "PV07",
+      "group_id": "GR_d07c2f7eb0f12ac546a9",
+      "facet": "朋友站队时的群体影响",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S03"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_a3ca4ba2573cb1b1b00b"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_1fb9d2420396342a3d06",
+      "variable_id": "PV07",
+      "group_id": "GR_7bfc93cc08133ae25953",
+      "facet": "群体中表达不同意见",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_65224ac2cdc6e8a96592"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_aa804ec3c28a8f947e99",
+      "variable_id": "PV07",
+      "group_id": "GR_e3dcd52caf295d472566",
+      "facet": "因关系压力而顺从",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_e91b6bc0c11b88def4b4"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_2e5cb1749c9d7faf9f8a",
+      "variable_id": "PV07",
+      "group_id": "GR_deac65ee67afc5c410fc",
+      "facet": "朋友站队时的群体影响",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S05"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_aa83eca8c8b0d77e042b"
+      ],
+      "source_association": "预测关系霸凌、助推行为"
+    },
+    {
+      "factor_id": "RF_933df40d05d9e03f2b24",
+      "variable_id": "PV08",
+      "group_id": "GR_384f4548250493a1f7a7",
+      "facet": "同伴交流资源",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "habitual_self_report",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_da8faec73055a8fc4102"
+      ],
+      "source_association": "降低受害风险"
+    },
+    {
+      "factor_id": "RF_26d7990ee27c5a3d5836",
+      "variable_id": "PV08",
+      "group_id": "GR_58352e5bc5bc7126b656",
+      "facet": "朋友关系修复预期",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_82cfc439237bf39cc629"
+      ],
+      "source_association": "降低受害风险"
+    },
+    {
+      "factor_id": "RF_0358494c501318a3a5b1",
+      "variable_id": "PV09",
+      "group_id": "GR_626c042884acd0db2bea",
+      "facet": "被排除在活动外的担忧",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_2b7f014a0922c9d68895"
+      ],
+      "source_association": "预测受害、双重风险"
+    },
+    {
+      "factor_id": "RF_102ccdde7a270e1098e0",
+      "variable_id": "PV09",
+      "group_id": "GR_a325096cc6496dff960a",
+      "facet": "对关系疏远的担忧",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_d086beebc104df1eecd4"
+      ],
+      "source_association": "预测受害、双重风险"
+    },
+    {
+      "factor_id": "RF_20ecbc74e12821f636de",
+      "variable_id": "PV09",
+      "group_id": "GR_dc2e92b72b5c409a6f80",
+      "facet": "被排除在活动外的担忧",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_0b2aea5a34ab583740d8"
+      ],
+      "source_association": "预测受害、双重风险"
+    },
+    {
+      "factor_id": "RF_09bb1a143a7a49d81b94",
+      "variable_id": "PV09",
+      "group_id": "GR_1e21dc99d136fedf5e44",
+      "facet": "对未获回应的解释",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_8ae768b188a7ac13219c"
+      ],
+      "source_association": "预测受害、双重风险"
+    },
+    {
+      "factor_id": "RF_dee90c5f5a9142e19d2c",
+      "variable_id": "PV10",
+      "group_id": "GR_73b54aa4640fe61123c3",
+      "facet": "暂停后再决策",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_c7be1bbdb334ab11141b"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_2e462883281fc7d00278",
+      "variable_id": "PV10",
+      "group_id": "GR_25a52ec22b25d2693e42",
+      "facet": "求助渠道认知",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_db2cfa5752931c39633e"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_09c1feeed000981126c8",
+      "variable_id": "PV10",
+      "group_id": "GR_9f434e44a7e5a07acf52",
+      "facet": "避免争执升级",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_2e0523f9eb42c9f3ca15"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_081c5c1f9bc7a59b01ba",
+      "variable_id": "PV10",
+      "group_id": "GR_237d6aa7d708971d1ef6",
+      "facet": "向成年人说明情况",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "task_performance",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_dc1d4b00c3d9114e4912"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_588681ecc9691ea23157",
+      "variable_id": "PV10",
+      "group_id": "GR_5f50356d6e3b4d5f40f1",
+      "facet": "向老师家长求助的顾虑",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S01"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_fe5b40513d8d46ecf227"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_687eacf9949f62a44a3d",
+      "variable_id": "PV10",
+      "group_id": "GR_ea274edb7ea19a4fa275",
+      "facet": "求助渠道认知",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_c784a1169d914f9fc88d"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_75607494795e00403948",
+      "variable_id": "PV10",
+      "group_id": "GR_6833cecd23cb42614cb1",
+      "facet": "向成年人说明情况",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "task_performance",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_67572479b87a96eafa86"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_540e3656271baf344922",
+      "variable_id": "PV10",
+      "group_id": "GR_ec217be28c00c02ada54",
+      "facet": "向老师家长求助的顾虑",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_25f5dcc868b6b4b3c873"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_431a20dca9ef7f805a35",
+      "variable_id": "PV10",
+      "group_id": "GR_d362ba06c9d8a8635ec7",
+      "facet": "帮助他人与自我保护",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S02"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_edc4ac89f71e43ca0236"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_931bd13bb121740d3e72",
+      "variable_id": "PV10",
+      "group_id": "GR_8f223d1c1472cfc06699",
+      "facet": "暂停后再决策",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_26b4c81693123de9eaec"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_bef093821aa452cbbefa",
+      "variable_id": "PV10",
+      "group_id": "GR_7085c7f12c990be3bdc7",
+      "facet": "求助渠道认知",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_e3e45b5512bd9f463365"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_a9163506be85c31ac8cf",
+      "variable_id": "PV10",
+      "group_id": "GR_eaf6107f319ccf22723e",
+      "facet": "向成年人说明情况",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "task_performance",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_8db9d954d53ab0cc34fc"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_962bf38d282a1c9133e6",
+      "variable_id": "PV10",
+      "group_id": "GR_c9355a942620643c97a1",
+      "facet": "向老师家长求助的顾虑",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_38f124f9f616aaede39e"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_b313feb7a4ee27751ec7",
+      "variable_id": "PV10",
+      "group_id": "GR_6154f1630473c6ae59f2",
+      "facet": "避免争执升级",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S04"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_b246f1d1eefbc9c6ddf1"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_367c3244507ec5a4509d",
+      "variable_id": "PV10",
+      "group_id": "GR_fb809f0e7b78f83c3331",
+      "facet": "朋友关系修复预期",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_252767a3dc9ca709a8bd"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_4cfe6729f45f8dcc0243",
+      "variable_id": "PV10",
+      "group_id": "GR_cd49808366787649f649",
+      "facet": "求助渠道认知",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_29efce58e338bcb106e9"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_72bdcded60951e5895e2",
+      "variable_id": "PV10",
+      "group_id": "GR_d85d03b54e1114928b01",
+      "facet": "向成年人说明情况",
+      "directions": [
+        "higher"
+      ],
+      "reference_frame": "task_performance",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_e26c946dce509c9208da"
+      ],
+      "source_association": "降低风险持续和升级"
+    },
+    {
+      "factor_id": "RF_2035ec4cbc96c2fa7d2e",
+      "variable_id": "PV10",
+      "group_id": "GR_492abea37822af2d8a01",
+      "facet": "向老师家长求助的顾虑",
+      "directions": [
+        "lower"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "scenario_ids": [
+        "S06"
+      ],
+      "condition_id": "base",
+      "evidence_ids": [
+        "DEV_7241a82287d991e469e2"
+      ],
+      "source_association": "降低风险持续和升级"
+    }
+  ],
+  "note": "原量表相关因素按角色整理；没有配置风险模型，不输出虚构概率或高/中/低等级。"
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_011",
+  "turn_id": "T011",
+  "question_id": "Q011",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+  "answer": "可能会有更大的矛盾，我不会采取行动",
+  "target_unit_id": "U_G01_FORCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T011",
+    "observations": [
+      {
+        "unit_id": "U_G01_FORCE",
+        "status": "covered",
+        "quote": "可能会有更大的矛盾，我不会采取行动",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "action",
+            "value": "不会采取行动",
+            "quote": "我不会采取行动"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G01_FORCE_PV02_LOWER",
+            "quote": "我不会采取行动",
+            "rationale": "回答明确表示拒绝使用更强硬的行动解决冲突，符合拒绝用身体伤害解决冲突的标准。"
+          }
+        ],
+        "reason": "回答明确表示拒绝使用更强硬的行动解决冲突。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T011",
+      "question_id": "Q011",
+      "unit_id": "U_G01_FORCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_96d653c8d400b8b94786",
+      "status": "covered",
+      "quote": "可能会有更大的矛盾，我不会采取行动",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "action",
+          "value": "不会采取行动",
+          "quote": "我不会采取行动"
+        }
+      ],
+      "reason": "回答明确表示拒绝使用更强硬的行动解决冲突。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "evidence_ids": [
+        "DEV_6a51c8ae0103a09fb3de"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T011",
+      "question_id": "Q011",
+      "unit_id": "U_G01_FORCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G01_FORCE_PV02_LOWER",
+      "quote": "我不会采取行动",
+      "rationale": "回答明确表示拒绝使用更强硬的行动解决冲突，符合拒绝用身体伤害解决冲突的标准。",
+      "evidence_id": "DEV_6a51c8ae0103a09fb3de",
+      "observation_id": "OB_96d653c8d400b8b94786",
+      "source_item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 10,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 17,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

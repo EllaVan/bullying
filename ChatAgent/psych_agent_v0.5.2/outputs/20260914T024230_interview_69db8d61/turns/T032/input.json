@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_032",
+  "turn_id": "T032",
+  "question_id": "Q032",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "如果这时你很生气，在决定下一步之前，你会怎么做？",
+  "answer": "我会仔细考虑后果",
+  "target_unit_id": "U_A04_PAUSE",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent"
+}

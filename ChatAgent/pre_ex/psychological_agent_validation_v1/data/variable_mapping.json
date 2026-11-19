@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "evidence_mappings": [
+    {
+      "evidence_category": "emotion_loss_control",
+      "variables": [
+        {
+          "id": "PV01",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "evidence_category": "revenge_thought",
+      "variables": [
+        {
+          "id": "PV02",
+          "weight": 1.0
+        },
+        {
+          "id": "PV03",
+          "weight": 0.5
+        }
+      ]
+    },
+    {
+      "evidence_category": "empathy_response",
+      "variables": [
+        {
+          "id": "PV04",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "evidence_category": "group_pressure",
+      "variables": [
+        {
+          "id": "PV07",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "evidence_category": "harm_justification",
+      "variables": [
+        {
+          "id": "PV05",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "evidence_category": "help_seeking",
+      "variables": [
+        {
+          "id": "PV10",
+          "weight": 1.0
+        }
+      ]
+    }
+  ]
+}

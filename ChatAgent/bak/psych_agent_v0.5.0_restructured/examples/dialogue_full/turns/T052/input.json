@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_052",
+  "turn_id": "T052",
+  "question_id": "Q052",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+  "answer": "平时我有一位可以放心说心事的同学。",
+  "target_unit_id": "U_D03_PEER_SUPPORT",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report"
+}

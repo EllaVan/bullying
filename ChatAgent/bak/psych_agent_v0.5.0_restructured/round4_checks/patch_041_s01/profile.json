@@ -1,0 +1,1338 @@
+{
+  "schema_version": "0.5.0",
+  "profile_id": "PROFILE_DEMO_S01",
+  "purpose": "scenario_dialogue_psychological_profile",
+  "config_set_id": "CFG_004",
+  "config_manifest_path": "config/config_manifest.json",
+  "source_state_file": "dialogue_state.json",
+  "session_id": "DEMO_S01",
+  "plan_id": "s01",
+  "synthetic": true,
+  "session_status": "completed",
+  "stop_reason": "plan_finished",
+  "coverage": {
+    "schema_version": "0.5.0",
+    "config_set_id": "CFG_004",
+    "session_id": "DEMO_S01",
+    "plan_id": "s01",
+    "status": "completed",
+    "stop_reason": "plan_finished",
+    "answered_turns": 6,
+    "planned_unit_instances": 8,
+    "counts": {
+      "not_asked": 0,
+      "partial": 0,
+      "covered": 8,
+      "ambiguous": 0,
+      "declined": 0,
+      "not_applicable": 0
+    },
+    "coverage_fraction": 1.0,
+    "forms": {
+      "physical": {
+        "visited": true,
+        "answered_turns": 6,
+        "covered_units": 8
+      },
+      "verbal": {
+        "visited": false,
+        "answered_turns": 0,
+        "covered_units": 0
+      },
+      "relational": {
+        "visited": false,
+        "answered_turns": 0,
+        "covered_units": 0
+      }
+    },
+    "units": [
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_A01_RECOVERY",
+        "source_item_ids": [
+          "A01"
+        ],
+        "target_variable_ids": [
+          "PV01"
+        ],
+        "reference_frame": "habitual_self_report",
+        "status": "covered",
+        "attempts": 1,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_2e18199a75e9e3766bd4"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_A02_ATTRIBUTION",
+        "source_item_ids": [
+          "A02",
+          "A03"
+        ],
+        "target_variable_ids": [
+          "PV03"
+        ],
+        "reference_frame": "hypothetical_intent",
+        "status": "covered",
+        "attempts": 1,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_30b4089fa2c62fd0b30b"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_A02_RUMINATION",
+        "source_item_ids": [
+          "A02"
+        ],
+        "target_variable_ids": [
+          "PV03"
+        ],
+        "reference_frame": "habitual_self_report",
+        "status": "covered",
+        "attempts": 1,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_400ce039313742014bbb"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_A03_REVENGE",
+        "source_item_ids": [
+          "A03"
+        ],
+        "target_variable_ids": [
+          "PV02"
+        ],
+        "reference_frame": "hypothetical_intent",
+        "status": "covered",
+        "attempts": 1,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_86f7aff4243729e5b8ef"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_A04_PAUSE",
+        "source_item_ids": [
+          "A04"
+        ],
+        "target_variable_ids": [
+          "PV01",
+          "PV10"
+        ],
+        "reference_frame": "hypothetical_intent",
+        "status": "covered",
+        "attempts": 0,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_cd9d8088d09fa408a82d"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_E01_CHANNEL",
+        "source_item_ids": [
+          "E01"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "reference_frame": "hypothetical_intent",
+        "status": "covered",
+        "attempts": 0,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_6df077da057c26dc4bd5"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_E04_DEESCALATION",
+        "source_item_ids": [
+          "E04"
+        ],
+        "target_variable_ids": [
+          "PV01",
+          "PV10"
+        ],
+        "reference_frame": "hypothetical_intent",
+        "status": "covered",
+        "attempts": 0,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_099ec899cc4ec43f7e4a"
+        ]
+      },
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "scenario_instance_id": "DEMO_S01_01_S01_base",
+        "unit_id": "U_G01_FORCE",
+        "source_item_ids": [
+          "G01"
+        ],
+        "target_variable_ids": [
+          "PV02"
+        ],
+        "reference_frame": "general_belief",
+        "status": "covered",
+        "attempts": 1,
+        "missing_slots": [],
+        "completion_reason": "required_information_obtained",
+        "unfinished_reason": null,
+        "observation_ids": [
+          "OB_5d051bebd99c828c98ba"
+        ]
+      }
+    ],
+    "note": "覆盖率仅表示本计划信息槽位完成情况，不是心理信度、风险概率或原量表完成率。"
+  },
+  "variables": [
+    {
+      "variable_id": "PV01",
+      "name": "情绪调节能力 Emotion Regulation",
+      "status": "directional_observations",
+      "value": 1.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "影响冲突升级、施暴-受害转换",
+      "interpretation_boundary": "先忍住不等于已经平静；愤怒本身不证明调节能力差。",
+      "groups": [
+        {
+          "group_id": "GR_842033c10d8a40c55d84",
+          "variable_id": "PV01",
+          "unit_id": "U_A04_PAUSE",
+          "facet": "暂停后再决策",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A04"
+          ],
+          "observation_ids": [
+            "OB_cd9d8088d09fa408a82d"
+          ],
+          "evidence_ids": [
+            "DEV_dac35ee35acc70247d68"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T001",
+              "slot_id": "pause",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "test_value": 1.0
+        },
+        {
+          "group_id": "GR_13d82498e3565eaf91f6",
+          "variable_id": "PV01",
+          "unit_id": "U_E04_DEESCALATION",
+          "facet": "避免争执升级",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "E04"
+          ],
+          "observation_ids": [
+            "OB_099ec899cc4ec43f7e4a"
+          ],
+          "evidence_ids": [
+            "DEV_efa05509e3c580e8d089"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T001",
+              "slot_id": "deescalation",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "test_value": 1.0
+        },
+        {
+          "group_id": "GR_f4599856dd9201237a22",
+          "variable_id": "PV01",
+          "unit_id": "U_A01_RECOVERY",
+          "facet": "情绪恢复过程",
+          "event_id": "HABIT_9058b55331e28d58",
+          "condition_id": "base",
+          "reference_frame": "habitual_self_report",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A01"
+          ],
+          "observation_ids": [
+            "OB_2e18199a75e9e3766bd4"
+          ],
+          "evidence_ids": [
+            "DEV_91e22210e226dd5f9fff"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T002",
+              "slot_id": "recovery",
+              "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+              "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+            }
+          ],
+          "test_value": 1.0
+        }
+      ],
+      "coverage_units": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A01_RECOVERY",
+          "source_item_ids": [
+            "A01"
+          ],
+          "target_variable_ids": [
+            "PV01"
+          ],
+          "reference_frame": "habitual_self_report",
+          "status": "covered",
+          "attempts": 1,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_2e18199a75e9e3766bd4"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A04_PAUSE",
+          "source_item_ids": [
+            "A04"
+          ],
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 0,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_cd9d8088d09fa408a82d"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_E04_DEESCALATION",
+          "source_item_ids": [
+            "E04"
+          ],
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 0,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_099ec899cc4ec43f7e4a"
+          ]
+        }
+      ]
+    },
+    {
+      "variable_id": "PV02",
+      "name": "攻击倾向 Aggression",
+      "status": "directional_observations",
+      "value": 0.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "预测施暴风险",
+      "interpretation_boundary": "强硬、愤怒、求支持不自动等于攻击；意向与已实施行为分开。",
+      "groups": [
+        {
+          "group_id": "GR_be0af350a95756f577e9",
+          "variable_id": "PV02",
+          "unit_id": "U_A03_REVENGE",
+          "facet": "报复意向",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A03"
+          ],
+          "observation_ids": [
+            "OB_86f7aff4243729e5b8ef"
+          ],
+          "evidence_ids": [
+            "DEV_ccbd0f3b7a78b7ab8d53"
+          ],
+          "directions": [
+            "lower"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T005",
+              "slot_id": "desired_outcome",
+              "value": "我不希望他也受到伤害，我不打算报复他。",
+              "quote": "我不希望他也受到伤害，我不打算报复他。"
+            }
+          ],
+          "test_value": 0.0
+        },
+        {
+          "group_id": "GR_904e0cbd735c33edaa88",
+          "variable_id": "PV02",
+          "unit_id": "U_G01_FORCE",
+          "facet": "强制或身体伤害的解决倾向",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "general_belief",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "G01"
+          ],
+          "observation_ids": [
+            "OB_5d051bebd99c828c98ba"
+          ],
+          "evidence_ids": [
+            "DEV_91d43ee2afb7fc85dc49"
+          ],
+          "directions": [
+            "lower"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T006",
+              "slot_id": "action",
+              "value": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+              "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。"
+            }
+          ],
+          "test_value": 0.0
+        }
+      ],
+      "coverage_units": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A03_REVENGE",
+          "source_item_ids": [
+            "A03"
+          ],
+          "target_variable_ids": [
+            "PV02"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 1,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_86f7aff4243729e5b8ef"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_G01_FORCE",
+          "source_item_ids": [
+            "G01"
+          ],
+          "target_variable_ids": [
+            "PV02"
+          ],
+          "reference_frame": "general_belief",
+          "status": "covered",
+          "attempts": 1,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_5d051bebd99c828c98ba"
+          ]
+        }
+      ]
+    },
+    {
+      "variable_id": "PV03",
+      "name": "敌意归因 Hostile Attribution",
+      "status": "multiple_directions_by_facet_or_context",
+      "value": 0.5,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "预测施暴-受害循环",
+      "interpretation_boundary": "面对明确伤害时识别恶意不等于偏差；条件句中的假设恶意不当作事实。",
+      "groups": [
+        {
+          "group_id": "GR_70d217b9e4afbab08e07",
+          "variable_id": "PV03",
+          "unit_id": "U_A02_ATTRIBUTION",
+          "facet": "对他人意图的解释",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A02",
+            "A03"
+          ],
+          "observation_ids": [
+            "OB_30b4089fa2c62fd0b30b"
+          ],
+          "evidence_ids": [
+            "DEV_6ce82124e703f54466bf"
+          ],
+          "directions": [
+            "lower"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T003",
+              "slot_id": "interpretation",
+              "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+              "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+            }
+          ],
+          "test_value": 0.0
+        },
+        {
+          "group_id": "GR_514890a75f373e580f60",
+          "variable_id": "PV03",
+          "unit_id": "U_A02_RUMINATION",
+          "facet": "认为被针对后的反复思考",
+          "event_id": "HABIT_9058b55331e28d58",
+          "condition_id": "base",
+          "reference_frame": "habitual_self_report",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A02"
+          ],
+          "observation_ids": [
+            "OB_400ce039313742014bbb"
+          ],
+          "evidence_ids": [
+            "DEV_d49521a05d6fe93ba3ac"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T004",
+              "slot_id": "thinking",
+              "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+              "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+            }
+          ],
+          "test_value": 1.0
+        }
+      ],
+      "coverage_units": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A02_ATTRIBUTION",
+          "source_item_ids": [
+            "A02",
+            "A03"
+          ],
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 1,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_30b4089fa2c62fd0b30b"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A02_RUMINATION",
+          "source_item_ids": [
+            "A02"
+          ],
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "reference_frame": "habitual_self_report",
+          "status": "covered",
+          "attempts": 1,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_400ce039313742014bbb"
+          ]
+        }
+      ]
+    },
+    {
+      "variable_id": "PV04",
+      "name": "共情能力 Empathy",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "降低施暴风险，提高保护行为",
+      "interpretation_boundary": "没有提到他人感受不等于缺乏共情。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV05",
+      "name": "道德脱离 Moral Disengagement",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "降低行为约束，支持霸凌合理化",
+      "interpretation_boundary": "班级规范不等于个人道德脱离；伤害判断与道德脱离不能机械互为反分。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV06",
+      "name": "支配倾向 Dominance",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "预测关系/行为型施暴",
+      "interpretation_boundary": "重视自己意见或正常领导行为不直接等于强制控制。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV07",
+      "name": "群体敏感 Conformity",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "预测关系霸凌、助推行为",
+      "interpretation_boundary": "跟随群体要结合行为内容；不把一般合群当作风险。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV08",
+      "name": "关系支持 Peer Support",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "降低受害风险",
+      "interpretation_boundary": "原表另含家庭/教师/学校支持；保留为背景，不直接扩展同伴支持得分。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV09",
+      "name": "排斥敏感 Rejection Sensitivity",
+      "status": "not_observed",
+      "value": null,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "预测受害、双重风险",
+      "interpretation_boundary": "对实际排斥的合理担忧不能自动认定为稳定敏感特质。",
+      "groups": [],
+      "coverage_units": []
+    },
+    {
+      "variable_id": "PV10",
+      "name": "求助与冲突解决 Help Seeking & Coping",
+      "status": "directional_observations",
+      "value": 1.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "feature_weight": 1.0,
+      "scoring_status": "uncalibrated_flow_test",
+      "human_review_required": true,
+      "source_risk_role": "降低风险持续和升级",
+      "interpretation_boundary": "求助意愿、渠道认知、实际求助、求助效果分别记录；缺少渠道不归责学生。",
+      "groups": [
+        {
+          "group_id": "GR_d704718881276582bd61",
+          "variable_id": "PV10",
+          "unit_id": "U_A04_PAUSE",
+          "facet": "暂停后再决策",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "A04"
+          ],
+          "observation_ids": [
+            "OB_cd9d8088d09fa408a82d"
+          ],
+          "evidence_ids": [
+            "DEV_880e180124b78ef48850"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T001",
+              "slot_id": "pause",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "test_value": 1.0
+        },
+        {
+          "group_id": "GR_15abf3dd60838157645d",
+          "variable_id": "PV10",
+          "unit_id": "U_E01_CHANNEL",
+          "facet": "求助渠道认知",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "E01"
+          ],
+          "observation_ids": [
+            "OB_6df077da057c26dc4bd5"
+          ],
+          "evidence_ids": [
+            "DEV_54ca30ee5aaa5cf62598"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T001",
+              "slot_id": "channel",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "test_value": 1.0
+        },
+        {
+          "group_id": "GR_441936dd25087d97adad",
+          "variable_id": "PV10",
+          "unit_id": "U_E04_DEESCALATION",
+          "facet": "避免争执升级",
+          "event_id": "SCENE_2e97ce9e2d00ce73",
+          "condition_id": "base",
+          "reference_frame": "hypothetical_intent",
+          "reference_period": "unspecified",
+          "scenario_ids": [
+            "S01"
+          ],
+          "scenario_instance_ids": [
+            "DEMO_S01_01_S01_base"
+          ],
+          "source_item_ids": [
+            "E04"
+          ],
+          "observation_ids": [
+            "OB_099ec899cc4ec43f7e4a"
+          ],
+          "evidence_ids": [
+            "DEV_ef788bbb92824444b1f4"
+          ],
+          "directions": [
+            "higher"
+          ],
+          "slot_observations": [
+            {
+              "turn_id": "T001",
+              "slot_id": "deescalation",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "test_value": 1.0
+        }
+      ],
+      "coverage_units": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_A04_PAUSE",
+          "source_item_ids": [
+            "A04"
+          ],
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 0,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_cd9d8088d09fa408a82d"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_E01_CHANNEL",
+          "source_item_ids": [
+            "E01"
+          ],
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 0,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_6df077da057c26dc4bd5"
+          ]
+        },
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "scenario_instance_id": "DEMO_S01_01_S01_base",
+          "unit_id": "U_E04_DEESCALATION",
+          "source_item_ids": [
+            "E04"
+          ],
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "reference_frame": "hypothetical_intent",
+          "status": "covered",
+          "attempts": 0,
+          "missing_slots": [],
+          "completion_reason": "required_information_obtained",
+          "unfinished_reason": null,
+          "observation_ids": [
+            "OB_099ec899cc4ec43f7e4a"
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence_ledger": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "unit_id": "U_A04_PAUSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "rationale": "合成开发示例：明确先暂停或平静，再决定行动。",
+      "evidence_id": "DEV_dac35ee35acc70247d68",
+      "observation_id": "OB_cd9d8088d09fa408a82d",
+      "source_item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "unit_id": "U_A04_PAUSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。",
+      "evidence_id": "DEV_880e180124b78ef48850",
+      "observation_id": "OB_cd9d8088d09fa408a82d",
+      "source_item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。",
+      "evidence_id": "DEV_54ca30ee5aaa5cf62598",
+      "observation_id": "OB_6df077da057c26dc4bd5",
+      "source_item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "rationale": "合成开发示例：明确通过离开或暂停让自己平静。",
+      "evidence_id": "DEV_efa05509e3c580e8d089",
+      "observation_id": "OB_099ec899cc4ec43f7e4a",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。",
+      "evidence_id": "DEV_ef788bbb92824444b1f4",
+      "observation_id": "OB_099ec899cc4ec43f7e4a",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_9058b55331e28d58",
+      "turn_id": "T002",
+      "question_id": "Q002",
+      "unit_id": "U_A01_RECOVERY",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+      "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。",
+      "evidence_id": "DEV_91e22210e226dd5f9fff",
+      "observation_id": "OB_2e18199a75e9e3766bd4",
+      "source_item_ids": [
+        "A01"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+      "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。",
+      "evidence_id": "DEV_6ce82124e703f54466bf",
+      "observation_id": "OB_30b4089fa2c62fd0b30b",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "variable_id": "PV03",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_9058b55331e28d58",
+      "turn_id": "T004",
+      "question_id": "Q004",
+      "unit_id": "U_A02_RUMINATION",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+      "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。",
+      "evidence_id": "DEV_d49521a05d6fe93ba3ac",
+      "observation_id": "OB_400ce039313742014bbb",
+      "source_item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 32,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T005",
+      "question_id": "Q005",
+      "unit_id": "U_A03_REVENGE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+      "quote": "我不希望他也受到伤害，我不打算报复他。",
+      "rationale": "合成开发示例：明确拒绝报复或不希望对方受到伤害。",
+      "evidence_id": "DEV_ccbd0f3b7a78b7ab8d53",
+      "observation_id": "OB_86f7aff4243729e5b8ef",
+      "source_item_ids": [
+        "A03"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_G01_FORCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G01_FORCE_PV02_LOWER",
+      "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+      "rationale": "合成开发示例：明确拒绝用身体伤害解决冲突。",
+      "evidence_id": "DEV_91d43ee2afb7fc85dc49",
+      "observation_id": "OB_5d051bebd99c828c98ba",
+      "source_item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 22,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "excluded_evidence": [],
+  "context": [
+    {
+      "item_id": "F01",
+      "quote": "家里也有人愿意听我说学校的事。",
+      "description": "合成样例中的家庭倾听背景。",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_id": "CTX_7832df2b52a93aee095b",
+      "turn_id": "T001",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "source_span": {
+        "start": 29,
+        "end": 44,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": true,
+      "included_in_core_or_risk": false
+    }
+  ],
+  "scenario_instances": [
+    {
+      "config_set_id": "CFG_004",
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "parent_condition_id": null,
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "facts": {
+        "form": "physical",
+        "perspective": "involved",
+        "relationship": "classmate",
+        "intent_clarity": "ambiguous",
+        "group_pressure": "absent",
+        "conflict_stage": "escalating",
+        "affinity": "close",
+        "joking": "absent",
+        "no_response": "absent"
+      },
+      "text": "课间走廊里，一位同学从你身边经过时碰到了你，你手里的本子掉在地上。你还不知道对方是不是故意的。你请对方注意，两个人说话的声音越来越大，旁边有同学在看。"
+    }
+  ],
+  "test_scoring_notice": "当前变量与角色置信度固定为1.0，仅用于验证完整流程，尚未经人工及心理测量校验。",
+  "note": "按内容、情境及来源描述本次表达。value和confidence仅用于0.4完整流程测试；同一事件的重复表述不提高权重。"
+}

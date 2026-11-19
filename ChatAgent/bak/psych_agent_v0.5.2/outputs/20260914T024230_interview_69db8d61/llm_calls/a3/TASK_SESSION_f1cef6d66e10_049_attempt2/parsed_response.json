@@ -1,0 +1,29 @@
+{
+  "turn_id": "T049",
+  "observations": [
+    {
+      "unit_id": "U_G03_ALLIANCE",
+      "status": "covered",
+      "quote": "希望朋友能够赞同我，但是如果他有不同看法可能没什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "alliance",
+          "value": "希望朋友支持自己，不强迫朋友站队",
+          "quote": "希望朋友能够赞同我，但是如果他有不同看法可能没什么"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G03_ALLIANCE_PV06_UNCLEAR",
+          "quote": "希望朋友能够赞同我，但是如果他有不同看法可能没什么",
+          "rationale": "回答中明确表达了希望朋友支持自己的意愿，但没有提到强迫朋友站队，符合DR_G03_ALLIANCE_PV06_UNCLEAR规则。"
+        }
+      ],
+      "reason": "回答中明确表达了希望朋友支持自己，但没有提到强迫朋友站队，符合DR_G03_ALLIANCE_PV06_UNCLEAR规则。"
+    }
+  ],
+  "background": []
+}

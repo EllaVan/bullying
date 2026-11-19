@@ -1,0 +1,52 @@
+{
+  "turn_id": "T050",
+  "observations": [
+    {
+      "unit_id": "U_C01_VOICE",
+      "status": "covered",
+      "quote": "希望朋友能够赞同我",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "voice",
+          "value": "希望自己的意见被赞同",
+          "quote": "希望朋友能够赞同我"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+          "quote": "希望朋友能够赞同我",
+          "rationale": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。"
+        }
+      ],
+      "reason": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。"
+    },
+    {
+      "unit_id": "U_C02_REFUSAL",
+      "status": "covered",
+      "quote": "但是如果他有不同看法可能也没什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "refusal",
+          "value": "对意见不被采纳的态度较为宽容",
+          "quote": "但是如果他有不同看法可能也没什么"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+          "quote": "但是如果他有不同看法可能也没什么",
+          "rationale": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。"
+        }
+      ],
+      "reason": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。"
+    }
+  ],
+  "background": []
+}

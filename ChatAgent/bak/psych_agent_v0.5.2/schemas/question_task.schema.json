@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "config_set_id": {
+      "type": "string"
+    },
+    "config_manifest_path": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "entry_index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "turn_id": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "scenario_id": {
+      "type": "string"
+    },
+    "scenario_instance_id": {
+      "type": "string"
+    },
+    "condition_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "scenario_text": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "mode": {
+      "enum": [
+        "opening",
+        "probe",
+        "clarify"
+      ]
+    },
+    "target_unit_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reference_frame": {
+      "type": "string"
+    },
+    "question_template": {
+      "type": "string"
+    },
+    "missing_slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slot_id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slot_id",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "allowed_units": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "already_covered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "task_id",
+    "plan_id",
+    "config_set_id",
+    "config_manifest_path",
+    "session_id",
+    "entry_index",
+    "turn_id",
+    "question_id",
+    "scenario_id",
+    "scenario_instance_id",
+    "condition_id",
+    "event_id",
+    "scenario_text",
+    "facts",
+    "mode",
+    "target_unit_id",
+    "reference_frame",
+    "question_template",
+    "missing_slots",
+    "allowed_units",
+    "already_covered"
+  ],
+  "additionalProperties": false,
+  "description": "allowed_units必须与指定plan/entry的当前配置投影完全一致，由运行时再次验证。"
+}

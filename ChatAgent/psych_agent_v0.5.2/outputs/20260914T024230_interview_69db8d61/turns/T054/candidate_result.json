@@ -1,0 +1,29 @@
+{
+  "turn_id": "T054",
+  "observations": [
+    {
+      "unit_id": "U_D02_NO_RESPONSE",
+      "status": "covered",
+      "quote": "可能一时在忙，如果一直没有回应，我可能就不会再去了",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "可能一时在忙，如果一直没有回应，我可能就不会再去了",
+          "quote": "可能一时在忙，如果一直没有回应，我可能就不会再去了"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_D02_NO_RESPONSE_PV09_HIGHER",
+          "quote": "可能一时在忙，如果一直没有回应，我可能就不会再去了",
+          "rationale": "回答中明确表达了对未获回应的担忧，符合规则DR_D02_NO_RESPONSE_PV09_HIGHER"
+        }
+      ],
+      "reason": "回答中明确表达了对未获回应的担忧，符合U_D02_NO_RESPONSE的规则要求"
+    }
+  ],
+  "background": []
+}

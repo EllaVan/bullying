@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.5.0"
+    },
+    "config_set_id": {
+      "type": "string"
+    },
+    "config_manifest_path": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "object"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "running",
+        "paused",
+        "stopped",
+        "completed"
+      ]
+    },
+    "stop_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "entry": {
+            "type": "object"
+          },
+          "instance": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "opened": {
+            "type": "boolean"
+          },
+          "turn_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "stop_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "units": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "enum": [
+                    "not_asked",
+                    "partial",
+                    "covered",
+                    "ambiguous",
+                    "declined",
+                    "not_applicable"
+                  ]
+                },
+                "attempts": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "slots": {
+                  "type": "object"
+                },
+                "observation_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "evidence_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "completion_reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "status",
+                "attempts",
+                "slots",
+                "observation_ids",
+                "evidence_ids",
+                "completion_reason"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "entry",
+          "instance",
+          "opened",
+          "turn_count",
+          "stop_reason",
+          "units"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "pending": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "task": {
+              "type": "object",
+              "properties": {
+                "task_id": {
+                  "type": "string"
+                },
+                "plan_id": {
+                  "type": "string"
+                },
+                "config_set_id": {
+                  "type": "string"
+                },
+                "config_manifest_path": {
+                  "type": "string"
+                },
+                "session_id": {
+                  "type": "string"
+                },
+                "entry_index": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "turn_id": {
+                  "type": "string"
+                },
+                "question_id": {
+                  "type": "string"
+                },
+                "scenario_id": {
+                  "type": "string"
+                },
+                "scenario_instance_id": {
+                  "type": "string"
+                },
+                "condition_id": {
+                  "type": "string"
+                },
+                "event_id": {
+                  "type": "string"
+                },
+                "scenario_text": {
+                  "type": "string"
+                },
+                "facts": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                },
+                "mode": {
+                  "enum": [
+                    "opening",
+                    "probe",
+                    "clarify"
+                  ]
+                },
+                "target_unit_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "reference_frame": {
+                  "type": "string"
+                },
+                "question_template": {
+                  "type": "string"
+                },
+                "missing_slots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "slot_id": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "slot_id",
+                      "description"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "allowed_units": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                },
+                "already_covered": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "task_id",
+                "plan_id",
+                "config_set_id",
+                "config_manifest_path",
+                "session_id",
+                "entry_index",
+                "turn_id",
+                "question_id",
+                "scenario_id",
+                "scenario_instance_id",
+                "condition_id",
+                "event_id",
+                "scenario_text",
+                "facts",
+                "mode",
+                "target_unit_id",
+                "reference_frame",
+                "question_template",
+                "missing_slots",
+                "allowed_units",
+                "already_covered"
+              ],
+              "additionalProperties": false
+            },
+            "question": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "answer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "task",
+            "question",
+            "answer"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "config_set_id",
+    "config_manifest_path",
+    "session_id",
+    "plan_id",
+    "plan",
+    "synthetic",
+    "status",
+    "stop_reason",
+    "entries",
+    "turns",
+    "pending"
+  ],
+  "additionalProperties": false,
+  "description": "快照恢复时逐轮重算并核对原题映射、原话、证据和覆盖状态，不能仅依赖此结构schema。"
+}

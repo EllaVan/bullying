@@ -1,0 +1,49 @@
+{
+  "version": "0.3.0",
+  "date": "2026-09-09",
+  "platform": "Linux",
+  "python": "3.12.14",
+  "test_command": "python -m unittest discover -s tests",
+  "tests_run": 110,
+  "tests_passed": 110,
+  "result": "OK",
+  "legacy_tests": 69,
+  "new_tests": 41,
+  "localhost_http_all_four_agents": true,
+  "external_llm_provider_called": false,
+  "windows_tested": false,
+  "configuration_validation": "passed",
+  "synthetic_replays": {
+    "s01": 6,
+    "s01_extended": 8,
+    "s01_friend": 9,
+    "balanced": 28,
+    "full": 56
+  },
+  "full_example": {
+    "state_status": "completed",
+    "answered_turns": 56,
+    "planned_unit_instances": 55,
+    "coverage_counts": {
+      "not_asked": 0,
+      "partial": 0,
+      "covered": 53,
+      "ambiguous": 0,
+      "declined": 0,
+      "not_applicable": 2
+    },
+    "profile_hash": "cc259e28c1855bceef793b746ab68f0be3a65e5a677a82f1228cff3f34366a30",
+    "independent_recompute_identical": true,
+    "rendered_report_identical": true
+  },
+  "synthetic_prediction_cli": "passed",
+  "preserved_source_hashes": {
+    "config/psychological_variable.json": "0943580afe42fd0934d6ac8cff98908bbc8464c42be929f1a3400055100c6cfa",
+    "config/questionnaire_mapping.json": "6ff776d13dc13c66bf4c1261c80580e8e6ea66f4214ce492d96d28bf218874d6",
+    "config/round1.json": "352e0c1d8dc41e50f55f4f9452fd942d41f88e210c4ef711e75b2a7ca3f83ce5",
+    "config/aggregation_rules.json": "fb2511c68015c3f266050266e854f1f9be692ba48ce0e83bea57bc99c870c95d",
+    "config/evidence_rubric.json": "383388e3740af25333c22c2df0a89eceb3f99d019553f81e290e72bd458eb281",
+    "source/心理Agent+量表与心理变量.md": "62ced9b326e45e329639359188fd5b6c50cc1c6e8d1daf08c99702266c1ab795"
+  },
+  "validation_scope": "工程行为、接口、来源和边界；不等于真实LLM准确率或模型心理测量有效性"
+}

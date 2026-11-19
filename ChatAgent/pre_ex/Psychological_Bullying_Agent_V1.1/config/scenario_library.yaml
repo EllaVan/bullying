@@ -1,0 +1,43 @@
+
+S01:
+ name: 身体冲突卷入
+ variables:
+  - PV01
+  - PV02
+  - PV03
+  - PV10
+
+S02:
+ name: 身体冲突旁观
+ variables:
+  - PV04
+  - PV05
+  - PV10
+
+S03:
+ name: 言语攻击群体
+ variables:
+  - PV02
+  - PV05
+  - PV07
+
+S04:
+ name: 言语受害体验
+ variables:
+  - PV01
+  - PV03
+  - PV09
+
+S05:
+ name: 关系排斥群体
+ variables:
+  - PV04
+  - PV06
+  - PV07
+
+S06:
+ name: 关系受害体验
+ variables:
+  - PV08
+  - PV09
+  - PV10

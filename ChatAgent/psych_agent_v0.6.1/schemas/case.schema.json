@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "turns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "turn_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "answer": {
+            "type": "string"
+          },
+          "response_context": {
+            "type": "string",
+            "minLength": 1,
+            "enum": [
+              "hypothetical",
+              "real_event",
+              "mixed",
+              "general_opinion"
+            ]
+          }
+        },
+        "required": [
+          "turn_id",
+          "question_id",
+          "event_id",
+          "question",
+          "answer",
+          "response_context"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "case_id",
+    "scenario_id",
+    "scenario_text",
+    "turns"
+  ],
+  "additionalProperties": false
+}

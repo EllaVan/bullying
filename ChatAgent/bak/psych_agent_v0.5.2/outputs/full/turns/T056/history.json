@@ -1,0 +1,990 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_048",
+    "turn_id": "T048",
+    "question_id": "Q048",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T048",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_049",
+    "turn_id": "T049",
+    "question_id": "Q049",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+    "answer": "我会担心朋友因为这件事疏远我。",
+    "target_unit_id": "U_C05_REJECTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T049",
+      "observations": [
+        {
+          "unit_id": "U_C05_REJECTION",
+          "status": "covered",
+          "quote": "我会担心朋友因为这件事疏远我。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "rejection_worry",
+              "value": "我会担心朋友因为这件事疏远我。",
+              "quote": "我会担心朋友因为这件事疏远我。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+              "quote": "我会担心朋友因为这件事疏远我。",
+              "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T049",
+        "question_id": "Q049",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_9acd3b70601b2cf98c6c",
+        "status": "covered",
+        "quote": "我会担心朋友因为这件事疏远我。",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "rejection_worry",
+            "value": "我会担心朋友因为这件事疏远我。",
+            "quote": "我会担心朋友因为这件事疏远我。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C05"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_d086beebc104df1eecd4"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T049",
+        "question_id": "Q049",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+        "quote": "我会担心朋友因为这件事疏远我。",
+        "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。",
+        "evidence_id": "DEV_d086beebc104df1eecd4",
+        "observation_id": "OB_9acd3b70601b2cf98c6c",
+        "source_item_ids": [
+          "C05"
+        ],
+        "variable_id": "PV09",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 15,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_050",
+    "turn_id": "T050",
+    "question_id": "Q050",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+    "answer": "我会担心下一次活动不再邀请我。",
+    "target_unit_id": "U_D01_EXCLUSION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T050",
+      "observations": [
+        {
+          "unit_id": "U_D01_EXCLUSION",
+          "status": "covered",
+          "quote": "我会担心下一次活动不再邀请我。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "exclusion",
+              "value": "我会担心下一次活动不再邀请我。",
+              "quote": "我会担心下一次活动不再邀请我。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+              "quote": "我会担心下一次活动不再邀请我。",
+              "rationale": "合成开发示例：明确担心自己被朋友排除在活动之外。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T050",
+        "question_id": "Q050",
+        "unit_id": "U_D01_EXCLUSION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_84d30a5717176d851d2e",
+        "status": "covered",
+        "quote": "我会担心下一次活动不再邀请我。",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "exclusion",
+            "value": "我会担心下一次活动不再邀请我。",
+            "quote": "我会担心下一次活动不再邀请我。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "D01"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_0b2aea5a34ab583740d8"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T050",
+        "question_id": "Q050",
+        "unit_id": "U_D01_EXCLUSION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+        "quote": "我会担心下一次活动不再邀请我。",
+        "rationale": "合成开发示例：明确担心自己被朋友排除在活动之外。",
+        "evidence_id": "DEV_0b2aea5a34ab583740d8",
+        "observation_id": "OB_84d30a5717176d851d2e",
+        "source_item_ids": [
+          "D01"
+        ],
+        "variable_id": "PV09",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 15,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_051",
+    "turn_id": "T051",
+    "question_id": "Q051",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "朋友暂时没有回应时，你会怎样理解？",
+    "answer": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+    "target_unit_id": "U_D02_NO_RESPONSE",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T051",
+      "observations": [
+        {
+          "unit_id": "U_D02_NO_RESPONSE",
+          "status": "covered",
+          "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "interpretation",
+              "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+              "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+              "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+              "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T051",
+        "question_id": "Q051",
+        "unit_id": "U_D02_NO_RESPONSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_0a92767ec8c7210af2b8",
+        "status": "covered",
+        "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+        "source_span": {
+          "start": 0,
+          "end": 24,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+            "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "D02"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_8ae768b188a7ac13219c"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T051",
+        "question_id": "Q051",
+        "unit_id": "U_D02_NO_RESPONSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+        "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+        "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。",
+        "evidence_id": "DEV_8ae768b188a7ac13219c",
+        "observation_id": "OB_0a92767ec8c7210af2b8",
+        "source_item_ids": [
+          "D02"
+        ],
+        "variable_id": "PV09",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 24,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 24,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_052",
+    "turn_id": "T052",
+    "question_id": "Q052",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+    "answer": "平时我有一位可以放心说心事的同学。",
+    "target_unit_id": "U_D03_PEER_SUPPORT",
+    "mode": "probe",
+    "question_reference_frame": "habitual_self_report",
+    "candidate_result": {
+      "turn_id": "T052",
+      "observations": [
+        {
+          "unit_id": "U_D03_PEER_SUPPORT",
+          "status": "covered",
+          "quote": "平时我有一位可以放心说心事的同学。",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "peer_resource",
+              "value": "平时我有一位可以放心说心事的同学。",
+              "quote": "平时我有一位可以放心说心事的同学。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+              "quote": "平时我有一位可以放心说心事的同学。",
+              "rationale": "合成开发示例：明确自述有可以放心交流的同伴。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "HABIT_89c59935c3247e04",
+        "turn_id": "T052",
+        "question_id": "Q052",
+        "unit_id": "U_D03_PEER_SUPPORT",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_b6cba67a2afa5eb33756",
+        "status": "covered",
+        "quote": "平时我有一位可以放心说心事的同学。",
+        "source_span": {
+          "start": 0,
+          "end": 17,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "peer_resource",
+            "value": "平时我有一位可以放心说心事的同学。",
+            "quote": "平时我有一位可以放心说心事的同学。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "D03"
+        ],
+        "target_variable_ids": [
+          "PV08"
+        ],
+        "evidence_ids": [
+          "DEV_da8faec73055a8fc4102"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "HABIT_89c59935c3247e04",
+        "turn_id": "T052",
+        "question_id": "Q052",
+        "unit_id": "U_D03_PEER_SUPPORT",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+        "quote": "平时我有一位可以放心说心事的同学。",
+        "rationale": "合成开发示例：明确自述有可以放心交流的同伴。",
+        "evidence_id": "DEV_da8faec73055a8fc4102",
+        "observation_id": "OB_b6cba67a2afa5eb33756",
+        "source_item_ids": [
+          "D03"
+        ],
+        "variable_id": "PV08",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 17,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 17,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_053",
+    "turn_id": "T053",
+    "question_id": "Q053",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+    "answer": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+    "target_unit_id": "U_D04_REPAIR",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T053",
+      "observations": [
+        {
+          "unit_id": "U_D04_REPAIR",
+          "status": "covered",
+          "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "repair_expectation",
+              "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+              "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+              "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+              "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。"
+            },
+            {
+              "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+              "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+              "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T053",
+        "question_id": "Q053",
+        "unit_id": "U_D04_REPAIR",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_8b0eb906153fd47028d8",
+        "status": "covered",
+        "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "repair_expectation",
+            "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+            "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "D04"
+        ],
+        "target_variable_ids": [
+          "PV08",
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_82cfc439237bf39cc629",
+          "DEV_252767a3dc9ca709a8bd"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T053",
+        "question_id": "Q053",
+        "unit_id": "U_D04_REPAIR",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+        "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+        "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。",
+        "evidence_id": "DEV_82cfc439237bf39cc629",
+        "observation_id": "OB_8b0eb906153fd47028d8",
+        "source_item_ids": [
+          "D04"
+        ],
+        "variable_id": "PV08",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T053",
+        "question_id": "Q053",
+        "unit_id": "U_D04_REPAIR",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+        "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+        "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。",
+        "evidence_id": "DEV_252767a3dc9ca709a8bd",
+        "observation_id": "OB_8b0eb906153fd47028d8",
+        "source_item_ids": [
+          "D04"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 28,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_054",
+    "turn_id": "T054",
+    "question_id": "Q054",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+    "answer": "我可以找信任的老师商量。",
+    "target_unit_id": "U_E01_CHANNEL",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T054",
+      "observations": [
+        {
+          "unit_id": "U_E01_CHANNEL",
+          "status": "covered",
+          "quote": "我可以找信任的老师商量。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "channel",
+              "value": "我可以找信任的老师商量。",
+              "quote": "我可以找信任的老师商量。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+              "quote": "我可以找信任的老师商量。",
+              "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T054",
+        "question_id": "Q054",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_d2cb5af57c635852ea6d",
+        "status": "covered",
+        "quote": "我可以找信任的老师商量。",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "我可以找信任的老师商量。",
+            "quote": "我可以找信任的老师商量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E01"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_29efce58e338bcb106e9"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T054",
+        "question_id": "Q054",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+        "quote": "我可以找信任的老师商量。",
+        "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。",
+        "evidence_id": "DEV_29efce58e338bcb106e9",
+        "observation_id": "OB_d2cb5af57c635852ea6d",
+        "source_item_ids": [
+          "E01"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 12,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_055",
+    "turn_id": "T055",
+    "question_id": "Q055",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+    "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+    "target_unit_id": "U_E02_EXPRESSION",
+    "mode": "probe",
+    "question_reference_frame": "task_performance",
+    "candidate_result": {
+      "turn_id": "T055",
+      "observations": [
+        {
+          "unit_id": "U_E02_EXPRESSION",
+          "status": "covered",
+          "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+          "reference_frame": "task_performance",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "explanation",
+              "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+              "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+              "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+              "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T055",
+        "question_id": "Q055",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_cdea298260a4b894b2ab",
+        "status": "covered",
+        "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+        "source_span": {
+          "start": 0,
+          "end": 37,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "explanation",
+            "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E02"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_e26c946dce509c9208da"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T055",
+        "question_id": "Q055",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+        "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+        "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。",
+        "evidence_id": "DEV_e26c946dce509c9208da",
+        "observation_id": "OB_cdea298260a4b894b2ab",
+        "source_item_ids": [
+          "E02"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 37,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 37,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

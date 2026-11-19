@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_048",
+  "turn_id": "T048",
+  "question_id": "Q048",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+  "answer": "那可能就不太会说了",
+  "target_unit_id": "U_C05_CONFORMITY",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T048",
+    "observations": [
+      {
+        "unit_id": "U_C05_CONFORMITY",
+        "status": "covered",
+        "quote": "那可能就不太会说了",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "choice",
+            "value": "因害怕被疏远而选择不表达不同意见",
+            "quote": "那可能就不太会说了"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C05_CONFORMITY_PV07_HIGHER",
+            "quote": "那可能就不太会说了",
+            "rationale": "回答明确表达了因担心被疏远而选择不表达不同意见，符合U_C05_CONFORMITY的criterion。"
+          }
+        ],
+        "reason": "回答中明确表达了因害怕被疏远而选择不表达不同意见，符合U_C05_CONFORMITY的criterion。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T048",
+      "question_id": "Q048",
+      "unit_id": "U_C05_CONFORMITY",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_1effda8f49d06e790d17",
+      "status": "covered",
+      "quote": "那可能就不太会说了",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "因害怕被疏远而选择不表达不同意见",
+          "quote": "那可能就不太会说了"
+        }
+      ],
+      "reason": "回答中明确表达了因害怕被疏远而选择不表达不同意见，符合U_C05_CONFORMITY的criterion。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": [
+        "DEV_8145ef3816905390f549"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T048",
+      "question_id": "Q048",
+      "unit_id": "U_C05_CONFORMITY",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C05_CONFORMITY_PV07_HIGHER",
+      "quote": "那可能就不太会说了",
+      "rationale": "回答明确表达了因担心被疏远而选择不表达不同意见，符合U_C05_CONFORMITY的criterion。",
+      "evidence_id": "DEV_8145ef3816905390f549",
+      "observation_id": "OB_1effda8f49d06e790d17",
+      "source_item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV07",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 9,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "version": "0.3.0",
+  "baseline": "0.2.2",
+  "date": "2026-09-09",
+  "goal": "依据原量表与心理变量，通过本地情景多轮对话生成校园霸凌风险证据画像",
+  "completed": [
+    {
+      "id": "measurement_config",
+      "description": "10变量、30原题、26核心题派生30单元、6情境、69多轮规则、5计划"
+    },
+    {
+      "id": "a1",
+      "description": "情境模板/LLM生成、事实冻结、独立scenario命令"
+    },
+    {
+      "id": "a2",
+      "description": "模板/LLM提问、缺失信息追问、独立ask命令"
+    },
+    {
+      "id": "a3",
+      "description": "LLM抽取、独立observe、逐字引用与范围校验"
+    },
+    {
+      "id": "measurement_controller",
+      "description": "开放回答、单元补全、拒答、不适用、预算和停止"
+    },
+    {
+      "id": "profile",
+      "description": "按原题、变量、事件、条件和参照方式组织画像，F类独立"
+    },
+    {
+      "id": "risk_evidence",
+      "description": "三角色线索与共享PV10；未配置模型时概率/置信度为空"
+    },
+    {
+      "id": "external_risk_contract",
+      "description": "外部模型输入及结果接口；会话、指纹、概率一致性校验"
+    },
+    {
+      "id": "a4",
+      "description": "模板/LLM解释，引用校验、独立report命令"
+    },
+    {
+      "id": "recovery",
+      "description": "不可变连续编号快照、显式恢复、失败保存、无自动请求重试"
+    },
+    {
+      "id": "legacy_compatibility",
+      "description": "原单案例CLI及69项旧测试保留"
+    },
+    {
+      "id": "reports",
+      "description": "运行说明、接口说明、逐文件变更和每轮报告模板"
+    }
+  ],
+  "pending": [
+    {
+      "id": "live_user_api",
+      "requires": "使用用户实际模型账号运行访谈；适配器已实现"
+    },
+    {
+      "id": "trained_risk_model",
+      "requires": "风险模型、特征适配、目标与时间范围、概率和置信度标定"
+    },
+    {
+      "id": "risk_levels",
+      "requires": "有依据的等级阈值及适用范围"
+    },
+    {
+      "id": "psychometric_scoring",
+      "requires": "明确计分或潜变量模型及检验方案"
+    },
+    {
+      "id": "structured_real_event_branch",
+      "requires": "现实经历的重复性、力量差异和时间等结构化分支"
+    },
+    {
+      "id": "adaptive_condition_branches",
+      "requires": "正式条件分支策略；当前已有显式条件计划"
+    },
+    {
+      "id": "multimodal_longitudinal",
+      "requires": "多模态适配与跨访谈时间关联"
+    },
+    {
+      "id": "effectiveness_evaluation",
+      "requires": "独立数据与量表/抽取效果评估，非本轮功能前置条件"
+    }
+  ],
+  "out_of_scope": [
+    "系统后端",
+    "数据库",
+    "账号体系",
+    "线上部署",
+    "干预推荐"
+  ],
+  "tests": {
+    "total": 110,
+    "legacy": 69,
+    "new": 41,
+    "external_provider_called": false,
+    "localhost_http_tested": true
+  },
+  "limitations": [
+    "默认输出为风险相关证据画像，非经标定风险概率",
+    "合成回放不代表LLM语义准确率",
+    "未在Windows实机测试"
+  ]
+}

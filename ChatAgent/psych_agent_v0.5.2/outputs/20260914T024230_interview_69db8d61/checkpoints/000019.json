@@ -1,0 +1,1423 @@
+{
+  "schema_version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "config_manifest_path": "config/config_manifest.json",
+  "session_id": "SESSION_f1cef6d66e10",
+  "plan_id": "full",
+  "plan": {
+    "plan_id": "full",
+    "description": "六情境完整功能实验；预算允许每个测量单元换角度追问一次，不作为推荐施测时长。",
+    "entries": [
+      {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "active_item_ids": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "E01",
+          "E02",
+          "E03",
+          "E04",
+          "D04",
+          "G01"
+        ],
+        "unit_ids": [
+          "U_A01_RECOVERY",
+          "U_A02_ATTRIBUTION",
+          "U_A02_RUMINATION",
+          "U_A03_REVENGE",
+          "U_A04_PAUSE",
+          "U_D04_REPAIR",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E04_DEESCALATION",
+          "U_G01_FORCE"
+        ],
+        "max_turns": 23
+      },
+      {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B01",
+          "B02",
+          "B04",
+          "E01",
+          "E02",
+          "E03",
+          "E05"
+        ],
+        "unit_ids": [
+          "U_B01_EMOTION",
+          "U_B02_CONCERN",
+          "U_B04_RESPONSIBILITY",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E05_PROTECTION"
+        ],
+        "max_turns": 15
+      },
+      {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B03",
+          "B04",
+          "B05",
+          "C04",
+          "C05",
+          "G02",
+          "G03"
+        ],
+        "unit_ids": [
+          "U_B03_JUSTIFICATION",
+          "U_B04_RESPONSIBILITY",
+          "U_B05_CONSEQUENCES",
+          "U_C04_DISSENT",
+          "U_C05_CONFORMITY",
+          "U_G02_VERBAL",
+          "U_G03_GROUP"
+        ],
+        "max_turns": 15
+      },
+      {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "active_item_ids": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "C05",
+          "D01",
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "unit_ids": [
+          "U_A01_RECOVERY",
+          "U_A02_ATTRIBUTION",
+          "U_A02_RUMINATION",
+          "U_A04_PAUSE",
+          "U_C05_REJECTION",
+          "U_D01_EXCLUSION",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E04_DEESCALATION"
+        ],
+        "max_turns": 21
+      },
+      {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "G03"
+        ],
+        "unit_ids": [
+          "U_B01_EMOTION",
+          "U_B03_HARM",
+          "U_B03_JUSTIFICATION",
+          "U_B04_RESPONSIBILITY",
+          "U_B05_CONSEQUENCES",
+          "U_C01_VOICE",
+          "U_C02_REFUSAL",
+          "U_C03_DETERRENCE",
+          "U_C04_DISSENT",
+          "U_C05_CONFORMITY",
+          "U_G03_ALLIANCE",
+          "U_G03_GROUP"
+        ],
+        "max_turns": 25
+      },
+      {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "active_item_ids": [
+          "C05",
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "unit_ids": [
+          "U_C05_REJECTION",
+          "U_D01_EXCLUSION",
+          "U_D02_NO_RESPONSE",
+          "U_D03_PEER_SUPPORT",
+          "U_D04_REPAIR",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER"
+        ],
+        "max_turns": 17
+      }
+    ],
+    "max_total_turns": 116
+  },
+  "synthetic": false,
+  "status": "running",
+  "stop_reason": null,
+  "entries": [
+    {
+      "entry": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "active_item_ids": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "E01",
+          "E02",
+          "E03",
+          "E04",
+          "D04",
+          "G01"
+        ],
+        "unit_ids": [
+          "U_A01_RECOVERY",
+          "U_A02_ATTRIBUTION",
+          "U_A02_RUMINATION",
+          "U_A03_REVENGE",
+          "U_A04_PAUSE",
+          "U_D04_REPAIR",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E04_DEESCALATION",
+          "U_G01_FORCE"
+        ],
+        "max_turns": 23
+      },
+      "instance": {
+        "config_set_id": "CFG_007",
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "parent_condition_id": null,
+        "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+        "event_id": "SCENE_acc2acf81f4d925c",
+        "facts": {
+          "form": "physical",
+          "perspective": "involved",
+          "relationship": "classmate",
+          "intent_clarity": "ambiguous",
+          "group_pressure": "absent",
+          "conflict_stage": "escalating",
+          "affinity": "close",
+          "joking": "absent",
+          "no_response": "absent"
+        },
+        "text": "课间走廊里，一位同学从你身边经过时碰到了你，你手里的本子掉在地上。你还不知道对方是不是故意的。你请对方注意，两个人说话的声音越来越大，旁边有同学在看。"
+      },
+      "opened": true,
+      "turn_count": 4,
+      "stop_reason": null,
+      "units": {
+        "U_A01_RECOVERY": {
+          "status": "covered",
+          "attempts": 1,
+          "slots": {
+            "recovery": {
+              "slot_id": "recovery",
+              "value": "自己慢慢平静下来",
+              "quote": "就自己慢慢平静下来了",
+              "observation_id": "OB_bfcd47a9103bb038d768"
+            }
+          },
+          "observation_ids": [
+            "OB_bfcd47a9103bb038d768"
+          ],
+          "evidence_ids": [
+            "DEV_192ee114b7db7917178c"
+          ],
+          "completion_reason": "required_information_obtained"
+        },
+        "U_A02_ATTRIBUTION": {
+          "status": "covered",
+          "attempts": 1,
+          "slots": {
+            "interpretation": {
+              "slot_id": "interpretation",
+              "value": "可能是不小心的，但仍生气",
+              "quote": "他可能是不小心的，但是我仍然很生气",
+              "observation_id": "OB_bde88241f8077daf43e0"
+            }
+          },
+          "observation_ids": [
+            "OB_bde88241f8077daf43e0"
+          ],
+          "evidence_ids": [
+            "DEV_ba8764f6b5ed75b23ae4"
+          ],
+          "completion_reason": "required_information_obtained"
+        },
+        "U_A02_RUMINATION": {
+          "status": "covered",
+          "attempts": 1,
+          "slots": {
+            "thinking": {
+              "slot_id": "thinking",
+              "value": "总会回想起来这件事",
+              "quote": "总会回想起来这件事",
+              "observation_id": "OB_aabe0eb3d0681c309dbf"
+            }
+          },
+          "observation_ids": [
+            "OB_aabe0eb3d0681c309dbf"
+          ],
+          "evidence_ids": [
+            "DEV_a9fac628e65d53b39a02"
+          ],
+          "completion_reason": "required_information_obtained"
+        },
+        "U_A03_REVENGE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_A04_PAUSE": {
+          "status": "covered",
+          "attempts": 0,
+          "slots": {
+            "pause": {
+              "slot_id": "pause",
+              "value": "可能会先走开",
+              "quote": "我有点生气，但是可能会先走开",
+              "observation_id": "OB_93fea115530802ecde96"
+            }
+          },
+          "observation_ids": [
+            "OB_93fea115530802ecde96"
+          ],
+          "evidence_ids": [
+            "DEV_7ed678cbcb2f97986090"
+          ],
+          "completion_reason": "required_information_obtained"
+        },
+        "U_D04_REPAIR": {
+          "status": "not_applicable",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": "scenario_condition_not_met"
+        },
+        "U_E01_CHANNEL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E02_EXPRESSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E03_BARRIER": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E04_DEESCALATION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_G01_FORCE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    },
+    {
+      "entry": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B01",
+          "B02",
+          "B04",
+          "E01",
+          "E02",
+          "E03",
+          "E05"
+        ],
+        "unit_ids": [
+          "U_B01_EMOTION",
+          "U_B02_CONCERN",
+          "U_B04_RESPONSIBILITY",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E05_PROTECTION"
+        ],
+        "max_turns": 15
+      },
+      "instance": null,
+      "opened": false,
+      "turn_count": 0,
+      "stop_reason": null,
+      "units": {
+        "U_B01_EMOTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B02_CONCERN": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B04_RESPONSIBILITY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E01_CHANNEL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E02_EXPRESSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E03_BARRIER": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E05_PROTECTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    },
+    {
+      "entry": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B03",
+          "B04",
+          "B05",
+          "C04",
+          "C05",
+          "G02",
+          "G03"
+        ],
+        "unit_ids": [
+          "U_B03_JUSTIFICATION",
+          "U_B04_RESPONSIBILITY",
+          "U_B05_CONSEQUENCES",
+          "U_C04_DISSENT",
+          "U_C05_CONFORMITY",
+          "U_G02_VERBAL",
+          "U_G03_GROUP"
+        ],
+        "max_turns": 15
+      },
+      "instance": null,
+      "opened": false,
+      "turn_count": 0,
+      "stop_reason": null,
+      "units": {
+        "U_B03_JUSTIFICATION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B04_RESPONSIBILITY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B05_CONSEQUENCES": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C04_DISSENT": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C05_CONFORMITY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_G02_VERBAL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_G03_GROUP": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    },
+    {
+      "entry": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "active_item_ids": [
+          "A01",
+          "A02",
+          "A03",
+          "A04",
+          "C05",
+          "D01",
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "unit_ids": [
+          "U_A01_RECOVERY",
+          "U_A02_ATTRIBUTION",
+          "U_A02_RUMINATION",
+          "U_A04_PAUSE",
+          "U_C05_REJECTION",
+          "U_D01_EXCLUSION",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER",
+          "U_E04_DEESCALATION"
+        ],
+        "max_turns": 21
+      },
+      "instance": null,
+      "opened": false,
+      "turn_count": 0,
+      "stop_reason": null,
+      "units": {
+        "U_A01_RECOVERY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_A02_ATTRIBUTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_A02_RUMINATION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_A04_PAUSE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C05_REJECTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_D01_EXCLUSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E01_CHANNEL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E02_EXPRESSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E03_BARRIER": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E04_DEESCALATION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    },
+    {
+      "entry": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "active_item_ids": [
+          "B01",
+          "B03",
+          "B04",
+          "B05",
+          "C01",
+          "C02",
+          "C03",
+          "C04",
+          "C05",
+          "G03"
+        ],
+        "unit_ids": [
+          "U_B01_EMOTION",
+          "U_B03_HARM",
+          "U_B03_JUSTIFICATION",
+          "U_B04_RESPONSIBILITY",
+          "U_B05_CONSEQUENCES",
+          "U_C01_VOICE",
+          "U_C02_REFUSAL",
+          "U_C03_DETERRENCE",
+          "U_C04_DISSENT",
+          "U_C05_CONFORMITY",
+          "U_G03_ALLIANCE",
+          "U_G03_GROUP"
+        ],
+        "max_turns": 25
+      },
+      "instance": null,
+      "opened": false,
+      "turn_count": 0,
+      "stop_reason": null,
+      "units": {
+        "U_B01_EMOTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B03_HARM": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B03_JUSTIFICATION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B04_RESPONSIBILITY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_B05_CONSEQUENCES": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C01_VOICE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C02_REFUSAL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C03_DETERRENCE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C04_DISSENT": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_C05_CONFORMITY": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_G03_ALLIANCE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_G03_GROUP": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    },
+    {
+      "entry": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "active_item_ids": [
+          "C05",
+          "D01",
+          "D02",
+          "D03",
+          "D04",
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "unit_ids": [
+          "U_C05_REJECTION",
+          "U_D01_EXCLUSION",
+          "U_D02_NO_RESPONSE",
+          "U_D03_PEER_SUPPORT",
+          "U_D04_REPAIR",
+          "U_E01_CHANNEL",
+          "U_E02_EXPRESSION",
+          "U_E03_BARRIER"
+        ],
+        "max_turns": 17
+      },
+      "instance": null,
+      "opened": false,
+      "turn_count": 0,
+      "stop_reason": null,
+      "units": {
+        "U_C05_REJECTION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_D01_EXCLUSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_D02_NO_RESPONSE": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_D03_PEER_SUPPORT": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_D04_REPAIR": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E01_CHANNEL": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E02_EXPRESSION": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        },
+        "U_E03_BARRIER": {
+          "status": "not_asked",
+          "attempts": 0,
+          "slots": {},
+          "observation_ids": [],
+          "evidence_ids": [],
+          "completion_reason": null
+        }
+      }
+    }
+  ],
+  "turns": [
+    {
+      "task_id": "TASK_SESSION_f1cef6d66e10_001",
+      "turn_id": "T001",
+      "question_id": "Q001",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "entry_index": 0,
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我有点生气，但是可能会先走开",
+      "target_unit_id": null,
+      "mode": "opening",
+      "question_reference_frame": "hypothetical_intent",
+      "candidate_result": {
+        "turn_id": "T001",
+        "observations": [
+          {
+            "unit_id": "U_A04_PAUSE",
+            "status": "covered",
+            "quote": "我有点生气，但是可能会先走开",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "pause",
+                "value": "可能会先走开",
+                "quote": "我有点生气，但是可能会先走开"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+                "quote": "我有点生气，但是可能会先走开",
+                "rationale": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+              }
+            ],
+            "reason": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+          }
+        ],
+        "background": [],
+        "experiences": []
+      },
+      "validated_observations": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "SCENE_acc2acf81f4d925c",
+          "turn_id": "T001",
+          "question_id": "Q001",
+          "unit_id": "U_A04_PAUSE",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "observation_id": "OB_93fea115530802ecde96",
+          "status": "covered",
+          "quote": "我有点生气，但是可能会先走开",
+          "source_span": {
+            "start": 0,
+            "end": 14,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "slots": [
+            {
+              "slot_id": "pause",
+              "value": "可能会先走开",
+              "quote": "我有点生气，但是可能会先走开"
+            }
+          ],
+          "reason": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义",
+          "coverage_eligible": true,
+          "source_item_ids": [
+            "A04"
+          ],
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "evidence_ids": [
+            "DEV_7ed678cbcb2f97986090"
+          ]
+        }
+      ],
+      "validated_evidence": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "SCENE_acc2acf81f4d925c",
+          "turn_id": "T001",
+          "question_id": "Q001",
+          "unit_id": "U_A04_PAUSE",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+          "quote": "我有点生气，但是可能会先走开",
+          "rationale": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义",
+          "evidence_id": "DEV_7ed678cbcb2f97986090",
+          "observation_id": "OB_93fea115530802ecde96",
+          "source_item_ids": [
+            "A04"
+          ],
+          "variable_id": "PV01",
+          "direction": "higher",
+          "source_span": {
+            "start": 0,
+            "end": 14,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "context_only": false,
+          "validation_level": "structure_source_scope_only"
+        }
+      ],
+      "background": [],
+      "validated_experiences": [],
+      "response_quality": {
+        "response_eligible": true,
+        "answer_characters": 14,
+        "brief_response": false,
+        "low_information": false,
+        "alternate_probe_scheduled": false,
+        "a3_fallback_used": false
+      }
+    },
+    {
+      "task_id": "TASK_SESSION_f1cef6d66e10_002",
+      "turn_id": "T002",
+      "question_id": "Q002",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "entry_index": 0,
+      "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+      "answer": "就自己慢慢平静下来了",
+      "target_unit_id": "U_A01_RECOVERY",
+      "mode": "probe",
+      "question_reference_frame": "habitual_self_report",
+      "candidate_result": {
+        "turn_id": "T002",
+        "observations": [
+          {
+            "unit_id": "U_A01_RECOVERY",
+            "status": "covered",
+            "quote": "就自己慢慢平静下来了",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "recovery",
+                "value": "自己慢慢平静下来",
+                "quote": "就自己慢慢平静下来了"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+                "quote": "就自己慢慢平静下来了",
+                "rationale": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。"
+              }
+            ],
+            "reason": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。"
+          }
+        ],
+        "background": []
+      },
+      "validated_observations": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "HABIT_4959892612f397a4",
+          "turn_id": "T002",
+          "question_id": "Q002",
+          "unit_id": "U_A01_RECOVERY",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "observation_id": "OB_bfcd47a9103bb038d768",
+          "status": "covered",
+          "quote": "就自己慢慢平静下来了",
+          "source_span": {
+            "start": 0,
+            "end": 10,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "slots": [
+            {
+              "slot_id": "recovery",
+              "value": "自己慢慢平静下来",
+              "quote": "就自己慢慢平静下来了"
+            }
+          ],
+          "reason": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。",
+          "coverage_eligible": true,
+          "source_item_ids": [
+            "A01"
+          ],
+          "target_variable_ids": [
+            "PV01"
+          ],
+          "evidence_ids": [
+            "DEV_192ee114b7db7917178c"
+          ]
+        }
+      ],
+      "validated_evidence": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "HABIT_4959892612f397a4",
+          "turn_id": "T002",
+          "question_id": "Q002",
+          "unit_id": "U_A01_RECOVERY",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+          "quote": "就自己慢慢平静下来了",
+          "rationale": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。",
+          "evidence_id": "DEV_192ee114b7db7917178c",
+          "observation_id": "OB_bfcd47a9103bb038d768",
+          "source_item_ids": [
+            "A01"
+          ],
+          "variable_id": "PV01",
+          "direction": "higher",
+          "source_span": {
+            "start": 0,
+            "end": 10,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "context_only": false,
+          "validation_level": "structure_source_scope_only"
+        }
+      ],
+      "background": [],
+      "validated_experiences": [],
+      "response_quality": {
+        "response_eligible": true,
+        "answer_characters": 10,
+        "brief_response": false,
+        "low_information": false,
+        "alternate_probe_scheduled": false,
+        "a3_fallback_used": false
+      }
+    },
+    {
+      "task_id": "TASK_SESSION_f1cef6d66e10_003",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "entry_index": 0,
+      "question": "你会怎样理解对方刚才的举动？",
+      "answer": "他可能是不小心的，但是我仍然很生气",
+      "target_unit_id": "U_A02_ATTRIBUTION",
+      "mode": "probe",
+      "question_reference_frame": "hypothetical_intent",
+      "candidate_result": {
+        "turn_id": "T003",
+        "observations": [
+          {
+            "unit_id": "U_A02_ATTRIBUTION",
+            "status": "covered",
+            "quote": "他可能是不小心的，但是我仍然很生气",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "interpretation",
+                "value": "可能是不小心的，但仍生气",
+                "quote": "他可能是不小心的，但是我仍然很生气"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_ATTRIBUTION_PV03_HIGHER",
+                "quote": "他可能是不小心的，但是我仍然很生气",
+                "rationale": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。"
+              }
+            ],
+            "reason": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。"
+          }
+        ],
+        "background": []
+      },
+      "validated_observations": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "SCENE_acc2acf81f4d925c",
+          "turn_id": "T003",
+          "question_id": "Q003",
+          "unit_id": "U_A02_ATTRIBUTION",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "observation_id": "OB_bde88241f8077daf43e0",
+          "status": "covered",
+          "quote": "他可能是不小心的，但是我仍然很生气",
+          "source_span": {
+            "start": 0,
+            "end": 17,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "slots": [
+            {
+              "slot_id": "interpretation",
+              "value": "可能是不小心的，但仍生气",
+              "quote": "他可能是不小心的，但是我仍然很生气"
+            }
+          ],
+          "reason": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。",
+          "coverage_eligible": true,
+          "source_item_ids": [
+            "A02",
+            "A03"
+          ],
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "evidence_ids": [
+            "DEV_ba8764f6b5ed75b23ae4"
+          ]
+        }
+      ],
+      "validated_evidence": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "SCENE_acc2acf81f4d925c",
+          "turn_id": "T003",
+          "question_id": "Q003",
+          "unit_id": "U_A02_ATTRIBUTION",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "rule_id": "DR_A02_ATTRIBUTION_PV03_HIGHER",
+          "quote": "他可能是不小心的，但是我仍然很生气",
+          "rationale": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。",
+          "evidence_id": "DEV_ba8764f6b5ed75b23ae4",
+          "observation_id": "OB_bde88241f8077daf43e0",
+          "source_item_ids": [
+            "A02",
+            "A03"
+          ],
+          "variable_id": "PV03",
+          "direction": "higher",
+          "source_span": {
+            "start": 0,
+            "end": 17,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "context_only": false,
+          "validation_level": "structure_source_scope_only"
+        }
+      ],
+      "background": [],
+      "validated_experiences": [],
+      "response_quality": {
+        "response_eligible": true,
+        "answer_characters": 17,
+        "brief_response": false,
+        "low_information": false,
+        "alternate_probe_scheduled": false,
+        "a3_fallback_used": false
+      }
+    },
+    {
+      "task_id": "TASK_SESSION_f1cef6d66e10_004",
+      "turn_id": "T004",
+      "question_id": "Q004",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "entry_index": 0,
+      "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+      "answer": "总会回想起来这件事",
+      "target_unit_id": "U_A02_RUMINATION",
+      "mode": "probe",
+      "question_reference_frame": "habitual_self_report",
+      "candidate_result": {
+        "turn_id": "T004",
+        "observations": [
+          {
+            "unit_id": "U_A02_RUMINATION",
+            "status": "covered",
+            "quote": "总会回想起来这件事",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "thinking",
+                "value": "总会回想起来这件事",
+                "quote": "总会回想起来这件事"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+                "quote": "总会回想起来这件事",
+                "rationale": "回答明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。"
+              }
+            ],
+            "reason": "回答中明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。"
+          }
+        ],
+        "background": []
+      },
+      "validated_observations": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "HABIT_4959892612f397a4",
+          "turn_id": "T004",
+          "question_id": "Q004",
+          "unit_id": "U_A02_RUMINATION",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "observation_id": "OB_aabe0eb3d0681c309dbf",
+          "status": "covered",
+          "quote": "总会回想起来这件事",
+          "source_span": {
+            "start": 0,
+            "end": 9,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "slots": [
+            {
+              "slot_id": "thinking",
+              "value": "总会回想起来这件事",
+              "quote": "总会回想起来这件事"
+            }
+          ],
+          "reason": "回答中明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。",
+          "coverage_eligible": true,
+          "source_item_ids": [
+            "A02"
+          ],
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "evidence_ids": [
+            "DEV_a9fac628e65d53b39a02"
+          ]
+        }
+      ],
+      "validated_evidence": [
+        {
+          "session_id": "SESSION_f1cef6d66e10",
+          "scenario_id": "S01",
+          "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+          "condition_id": "base",
+          "event_id": "HABIT_4959892612f397a4",
+          "turn_id": "T004",
+          "question_id": "Q004",
+          "unit_id": "U_A02_RUMINATION",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "reference_period": "unspecified",
+          "context_turn_ids": [],
+          "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+          "quote": "总会回想起来这件事",
+          "rationale": "回答明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。",
+          "evidence_id": "DEV_a9fac628e65d53b39a02",
+          "observation_id": "OB_aabe0eb3d0681c309dbf",
+          "source_item_ids": [
+            "A02"
+          ],
+          "variable_id": "PV03",
+          "direction": "higher",
+          "source_span": {
+            "start": 0,
+            "end": 9,
+            "unit": "unicode_codepoint",
+            "end_exclusive": true
+          },
+          "context_only": false,
+          "validation_level": "structure_source_scope_only"
+        }
+      ],
+      "background": [],
+      "validated_experiences": [],
+      "response_quality": {
+        "response_eligible": true,
+        "answer_characters": 9,
+        "brief_response": false,
+        "low_information": false,
+        "alternate_probe_scheduled": false,
+        "a3_fallback_used": false
+      }
+    }
+  ],
+  "pending": null
+}

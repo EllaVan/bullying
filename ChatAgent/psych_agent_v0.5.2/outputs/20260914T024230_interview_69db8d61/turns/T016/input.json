@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_016",
+  "turn_id": "T016",
+  "question_id": "Q016",
+  "scenario_id": "S02",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_a4e881ebdb1f68da",
+  "entry_index": 1,
+  "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+  "answer": "有没有更大的矛盾",
+  "target_unit_id": "U_E03_BARRIER",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

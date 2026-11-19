@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_056",
+  "turn_id": "T056",
+  "question_id": "Q056",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+  "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+  "target_unit_id": "U_E03_BARRIER",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

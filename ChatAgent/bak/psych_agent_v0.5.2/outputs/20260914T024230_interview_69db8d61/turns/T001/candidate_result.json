@@ -1,0 +1,30 @@
+{
+  "turn_id": "T001",
+  "observations": [
+    {
+      "unit_id": "U_A04_PAUSE",
+      "status": "covered",
+      "quote": "我有点生气，但是可能会先走开",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "pause",
+          "value": "可能会先走开",
+          "quote": "我有点生气，但是可能会先走开"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+          "quote": "我有点生气，但是可能会先走开",
+          "rationale": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+        }
+      ],
+      "reason": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+    }
+  ],
+  "background": [],
+  "experiences": []
+}

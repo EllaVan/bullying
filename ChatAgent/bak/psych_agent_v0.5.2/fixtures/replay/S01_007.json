@@ -1,0 +1,27 @@
+{
+  "case_id": "S01_007",
+  "evidence": [
+    {
+      "rule_id": "R_G01_REJECT",
+      "turn_id": "T1",
+      "quote": "我不会动手伤害他",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV10",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

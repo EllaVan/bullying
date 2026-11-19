@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_046",
+  "turn_id": "T046",
+  "question_id": "Q046",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+  "answer": "可能不会有人来找我的麻烦",
+  "target_unit_id": "U_C03_DETERRENCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

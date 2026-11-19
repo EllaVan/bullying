@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_050",
+  "turn_id": "T050",
+  "question_id": "Q050",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "这时你希望朋友怎样支持你？如果朋友有不同看法，你会怎么办？",
+  "answer": "希望朋友能够赞同我，但是如果他有不同看法可能也没什么",
+  "target_unit_id": "U_G03_ALLIANCE",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent"
+}

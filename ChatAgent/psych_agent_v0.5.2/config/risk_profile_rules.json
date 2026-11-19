@@ -1,0 +1,31 @@
+{
+  "version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "mode": "source_association_with_test_scoring",
+  "role_variables": {
+    "bully": [
+      "PV02",
+      "PV03",
+      "PV05",
+      "PV06",
+      "PV07",
+      "PV01"
+    ],
+    "victim": [
+      "PV09",
+      "PV08",
+      "PV10",
+      "PV01",
+      "PV04"
+    ],
+    "bully_victim": [
+      "PV03",
+      "PV02",
+      "PV09",
+      "PV01",
+      "PV10"
+    ]
+  },
+  "shared_variables": [],
+  "note": "依据变量原表组织角色相关线索；具体测试方向和等权规则见config/risk_scoring.json。F类不参与。"
+}

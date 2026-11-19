@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_021",
+  "turn_id": "T021",
+  "question_id": "Q021",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+  "answer": "但是那位同学已经不舒服了，所以还是不太好",
+  "target_unit_id": "U_B05_CONSEQUENCES",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T021",
+    "observations": [
+      {
+        "unit_id": "U_B05_CONSEQUENCES",
+        "status": "covered",
+        "quote": "但是那位同学已经不舒服了，所以还是不太好",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "consequence",
+            "value": "那位同学已经不舒服了，所以还是不太好",
+            "quote": "但是那位同学已经不舒服了，所以还是不太好"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+            "quote": "但是那位同学已经不舒服了，所以还是不太好",
+            "rationale": "回答明确指出了没有身体伤害的情况下，玩笑仍然可能造成心理上的不适，符合对非身体后果的评价要求。"
+          }
+        ],
+        "reason": "回答明确表达了对玩笑造成心理影响的负面评价，符合U_B05_CONSEQUENCES单元的要求。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T021",
+      "question_id": "Q021",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_7fac9b65abf9516d5ee5",
+      "status": "covered",
+      "quote": "但是那位同学已经不舒服了，所以还是不太好",
+      "source_span": {
+        "start": 0,
+        "end": 20,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "consequence",
+          "value": "那位同学已经不舒服了，所以还是不太好",
+          "quote": "但是那位同学已经不舒服了，所以还是不太好"
+        }
+      ],
+      "reason": "回答明确表达了对玩笑造成心理影响的负面评价，符合U_B05_CONSEQUENCES单元的要求。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_07d7e2a72406f26d02ea"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T021",
+      "question_id": "Q021",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+      "quote": "但是那位同学已经不舒服了，所以还是不太好",
+      "rationale": "回答明确指出了没有身体伤害的情况下，玩笑仍然可能造成心理上的不适，符合对非身体后果的评价要求。",
+      "evidence_id": "DEV_07d7e2a72406f26d02ea",
+      "observation_id": "OB_7fac9b65abf9516d5ee5",
+      "source_item_ids": [
+        "B05"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 20,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 20,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "turn_id": "T002",
+  "observations": [
+    {
+      "unit_id": "U_A01_RECOVERY",
+      "status": "covered",
+      "quote": "就自己慢慢平静下来了",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "recovery",
+          "value": "自己慢慢平静下来",
+          "quote": "就自己慢慢平静下来了"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+          "quote": "就自己慢慢平静下来了",
+          "rationale": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。"
+        }
+      ],
+      "reason": "回答明确描述了通常能逐渐恢复平静的过程，符合U_A01_RECOVERY单元的槽位要求。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,1333 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_035",
+    "turn_id": "T035",
+    "question_id": "Q035",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T035",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_036",
+    "turn_id": "T036",
+    "question_id": "Q036",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你会怎样了解那位同学此刻的感受？",
+    "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+    "target_unit_id": "U_B01_EMOTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T036",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "covered",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T036",
+        "question_id": "Q036",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_92c294f484ebb4639e7d",
+        "status": "covered",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_0f3c80f1a2615716ce0a"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T036",
+        "question_id": "Q036",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。",
+        "evidence_id": "DEV_0f3c80f1a2615716ce0a",
+        "observation_id": "OB_92c294f484ebb4639e7d",
+        "source_item_ids": [
+          "B01"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 34,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_037",
+    "turn_id": "T037",
+    "question_id": "Q037",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T037",
+      "observations": [
+        {
+          "unit_id": "U_B03_HARM",
+          "status": "covered",
+          "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "perspective",
+              "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+              "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_HARM_PV04_HIGHER",
+              "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+              "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_a99682fb8508ab90c1b5",
+        "status": "covered",
+        "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "perspective",
+            "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+            "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_db95265223fa140add4b"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_HARM_PV04_HIGHER",
+        "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+        "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。",
+        "evidence_id": "DEV_db95265223fa140add4b",
+        "observation_id": "OB_a99682fb8508ab90c1b5",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 27,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_038",
+    "turn_id": "T038",
+    "question_id": "Q038",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+    "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+    "target_unit_id": "U_B03_JUSTIFICATION",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T038",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "covered",
+          "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+              "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+              "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+              "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T038",
+        "question_id": "Q038",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_7e7d12c2f97b48704b9f",
+        "status": "covered",
+        "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_6e9dd5cde6fa3004016e"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T038",
+        "question_id": "Q038",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+        "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+        "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。",
+        "evidence_id": "DEV_6e9dd5cde6fa3004016e",
+        "observation_id": "OB_7e7d12c2f97b48704b9f",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 34,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_039",
+    "turn_id": "T039",
+    "question_id": "Q039",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T039",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_0c8f003acaa0ba0a507d",
+        "status": "covered",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_17aca43676459a663524"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。",
+        "evidence_id": "DEV_17aca43676459a663524",
+        "observation_id": "OB_0c8f003acaa0ba0a507d",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 29,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_040",
+    "turn_id": "T040",
+    "question_id": "Q040",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+    "answer": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+    "target_unit_id": "U_B05_CONSEQUENCES",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T040",
+      "observations": [
+        {
+          "unit_id": "U_B05_CONSEQUENCES",
+          "status": "covered",
+          "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "consequence",
+              "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+              "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+              "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+              "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T040",
+        "question_id": "Q040",
+        "unit_id": "U_B05_CONSEQUENCES",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_7ebd6cfb81951dbcc136",
+        "status": "covered",
+        "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+        "source_span": {
+          "start": 0,
+          "end": 31,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "consequence",
+            "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+            "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B05"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_7ae60f6ba50891321a3c"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T040",
+        "question_id": "Q040",
+        "unit_id": "U_B05_CONSEQUENCES",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+        "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+        "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。",
+        "evidence_id": "DEV_7ae60f6ba50891321a3c",
+        "observation_id": "OB_7ebd6cfb81951dbcc136",
+        "source_item_ids": [
+          "B05"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 31,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 31,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_041",
+    "turn_id": "T041",
+    "question_id": "Q041",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+    "answer": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+    "target_unit_id": "U_C01_VOICE",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T041",
+      "observations": [
+        {
+          "unit_id": "U_C01_VOICE",
+          "status": "covered",
+          "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "voice",
+              "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+              "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+              "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+              "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T041",
+        "question_id": "Q041",
+        "unit_id": "U_C01_VOICE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_f06a46f6dc81c7f8f417",
+        "status": "covered",
+        "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "voice",
+            "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+            "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C01"
+        ],
+        "target_variable_ids": [
+          "PV06"
+        ],
+        "evidence_ids": [
+          "DEV_397067c84b7f57b0db56"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T041",
+        "question_id": "Q041",
+        "unit_id": "U_C01_VOICE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+        "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+        "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。",
+        "evidence_id": "DEV_397067c84b7f57b0db56",
+        "observation_id": "OB_f06a46f6dc81c7f8f417",
+        "source_item_ids": [
+          "C01"
+        ],
+        "variable_id": "PV06",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 29,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_042",
+    "turn_id": "T042",
+    "question_id": "Q042",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+    "answer": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+    "target_unit_id": "U_C02_REFUSAL",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T042",
+      "observations": [
+        {
+          "unit_id": "U_C02_REFUSAL",
+          "status": "covered",
+          "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "refusal",
+              "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+              "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+              "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+              "rationale": "合成开发示例：明确允许别人不采纳自己的意见。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T042",
+        "question_id": "Q042",
+        "unit_id": "U_C02_REFUSAL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_cacdfaf1bff62b8fd3ba",
+        "status": "covered",
+        "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "refusal",
+            "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+            "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C02"
+        ],
+        "target_variable_ids": [
+          "PV06"
+        ],
+        "evidence_ids": [
+          "DEV_22d2ca0b01caa79adb0e"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T042",
+        "question_id": "Q042",
+        "unit_id": "U_C02_REFUSAL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+        "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+        "rationale": "合成开发示例：明确允许别人不采纳自己的意见。",
+        "evidence_id": "DEV_22d2ca0b01caa79adb0e",
+        "observation_id": "OB_cacdfaf1bff62b8fd3ba",
+        "source_item_ids": [
+          "C02"
+        ],
+        "variable_id": "PV06",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 27,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_043",
+    "turn_id": "T043",
+    "question_id": "Q043",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+    "answer": "我不认可通过让别人害怕我来维持关系。",
+    "target_unit_id": "U_C03_DETERRENCE",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T043",
+      "observations": [
+        {
+          "unit_id": "U_C03_DETERRENCE",
+          "status": "covered",
+          "quote": "我不认可通过让别人害怕我来维持关系。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "deterrence",
+              "value": "我不认可通过让别人害怕我来维持关系。",
+              "quote": "我不认可通过让别人害怕我来维持关系。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+              "quote": "我不认可通过让别人害怕我来维持关系。",
+              "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T043",
+        "question_id": "Q043",
+        "unit_id": "U_C03_DETERRENCE",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_fd194570c6b218a22d29",
+        "status": "covered",
+        "quote": "我不认可通过让别人害怕我来维持关系。",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "deterrence",
+            "value": "我不认可通过让别人害怕我来维持关系。",
+            "quote": "我不认可通过让别人害怕我来维持关系。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C03"
+        ],
+        "target_variable_ids": [
+          "PV06"
+        ],
+        "evidence_ids": [
+          "DEV_88c529e92205ba2ba390"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T043",
+        "question_id": "Q043",
+        "unit_id": "U_C03_DETERRENCE",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+        "quote": "我不认可通过让别人害怕我来维持关系。",
+        "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。",
+        "evidence_id": "DEV_88c529e92205ba2ba390",
+        "observation_id": "OB_fd194570c6b218a22d29",
+        "source_item_ids": [
+          "C03"
+        ],
+        "variable_id": "PV06",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 18,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_044",
+    "turn_id": "T044",
+    "question_id": "Q044",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+    "answer": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+    "target_unit_id": "U_C04_DISSENT",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T044",
+      "observations": [
+        {
+          "unit_id": "U_C04_DISSENT",
+          "status": "covered",
+          "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "dissent",
+              "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+              "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+              "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+              "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T044",
+        "question_id": "Q044",
+        "unit_id": "U_C04_DISSENT",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_3decc8add55f9f3de8e6",
+        "status": "covered",
+        "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+        "source_span": {
+          "start": 0,
+          "end": 26,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "dissent",
+            "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+            "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C04"
+        ],
+        "target_variable_ids": [
+          "PV07"
+        ],
+        "evidence_ids": [
+          "DEV_65224ac2cdc6e8a96592"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T044",
+        "question_id": "Q044",
+        "unit_id": "U_C04_DISSENT",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+        "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+        "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。",
+        "evidence_id": "DEV_65224ac2cdc6e8a96592",
+        "observation_id": "OB_3decc8add55f9f3de8e6",
+        "source_item_ids": [
+          "C04"
+        ],
+        "variable_id": "PV07",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 26,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 26,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_045",
+    "turn_id": "T045",
+    "question_id": "Q045",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+    "answer": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+    "target_unit_id": "U_C05_CONFORMITY",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T045",
+      "observations": [
+        {
+          "unit_id": "U_C05_CONFORMITY",
+          "status": "covered",
+          "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "choice",
+              "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+              "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+              "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+              "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T045",
+        "question_id": "Q045",
+        "unit_id": "U_C05_CONFORMITY",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_f935177a953218a22b90",
+        "status": "covered",
+        "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "choice",
+            "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+            "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C05"
+        ],
+        "target_variable_ids": [
+          "PV07"
+        ],
+        "evidence_ids": [
+          "DEV_e91b6bc0c11b88def4b4"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T045",
+        "question_id": "Q045",
+        "unit_id": "U_C05_CONFORMITY",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+        "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+        "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。",
+        "evidence_id": "DEV_e91b6bc0c11b88def4b4",
+        "observation_id": "OB_f935177a953218a22b90",
+        "source_item_ids": [
+          "C05"
+        ],
+        "variable_id": "PV07",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 29,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_006",
+  "turn_id": "T006",
+  "question_id": "Q006",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "这是小事，不用和人商量",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T006",
+    "observations": [
+      {
+        "unit_id": "U_E01_CHANNEL",
+        "status": "covered",
+        "quote": "这是小事，不用和人商量",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "明确不找人商量",
+            "quote": "这是小事，不用和人商量"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+            "quote": "这是小事，不用和人商量",
+            "rationale": "明确表示不找人商量，符合渠道认知单元的lower规则"
+          }
+        ],
+        "reason": "回答中明确表达了不找人商量，符合U_E01_CHANNEL的lower规则"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_04301c5a9ba1f3a56acc",
+      "status": "covered",
+      "quote": "这是小事，不用和人商量",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确不找人商量",
+          "quote": "这是小事，不用和人商量"
+        }
+      ],
+      "reason": "回答中明确表达了不找人商量，符合U_E01_CHANNEL的lower规则",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_35c754c6c9430a9f66f1"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+      "quote": "这是小事，不用和人商量",
+      "rationale": "明确表示不找人商量，符合渠道认知单元的lower规则",
+      "evidence_id": "DEV_35c754c6c9430a9f66f1",
+      "observation_id": "OB_04301c5a9ba1f3a56acc",
+      "source_item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 11,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

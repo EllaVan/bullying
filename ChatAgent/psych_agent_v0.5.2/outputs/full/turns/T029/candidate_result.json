@@ -1,0 +1,34 @@
+{
+  "turn_id": "T029",
+  "observations": [
+    {
+      "unit_id": "U_A04_PAUSE",
+      "status": "covered",
+      "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "pause",
+          "value": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+          "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+          "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+          "rationale": "合成开发示例：明确先暂停或平静，再决定行动。"
+        },
+        {
+          "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+          "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+          "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

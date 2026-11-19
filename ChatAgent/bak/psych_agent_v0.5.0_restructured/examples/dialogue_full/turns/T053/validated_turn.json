@@ -1,0 +1,169 @@
+{
+  "task_id": "TASK_DEMO_FULL_053",
+  "turn_id": "T053",
+  "question_id": "Q053",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+  "answer": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+  "target_unit_id": "U_D04_REPAIR",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T053",
+    "observations": [
+      {
+        "unit_id": "U_D04_REPAIR",
+        "status": "covered",
+        "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "repair_expectation",
+            "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+            "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+            "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+            "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。"
+          },
+          {
+            "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+            "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+            "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_b95c18222b31e28d",
+      "turn_id": "T053",
+      "question_id": "Q053",
+      "unit_id": "U_D04_REPAIR",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_8b0eb906153fd47028d8",
+      "status": "covered",
+      "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "repair_expectation",
+          "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+          "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_82cfc439237bf39cc629",
+        "DEV_252767a3dc9ca709a8bd"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_b95c18222b31e28d",
+      "turn_id": "T053",
+      "question_id": "Q053",
+      "unit_id": "U_D04_REPAIR",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+      "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+      "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。",
+      "evidence_id": "DEV_82cfc439237bf39cc629",
+      "observation_id": "OB_8b0eb906153fd47028d8",
+      "source_item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_b95c18222b31e28d",
+      "turn_id": "T053",
+      "question_id": "Q053",
+      "unit_id": "U_D04_REPAIR",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+      "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+      "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。",
+      "evidence_id": "DEV_252767a3dc9ca709a8bd",
+      "observation_id": "OB_8b0eb906153fd47028d8",
+      "source_item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 28,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

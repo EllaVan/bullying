@@ -1,0 +1,156 @@
+{
+  "variable_notes": [
+    {
+      "variable_id": "PV01",
+      "text": "本次记录了暂停后再决策、避免争执升级、情绪恢复过程。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_0045946c291a841ce3e1",
+        "DEV_0e761c24cb8b1f5e048e",
+        "DEV_121eaed348bc92ddab82",
+        "DEV_484ac357373bb5953833",
+        "DEV_a27cb5a820f9359f376e",
+        "DEV_d36cc8354729803af52e"
+      ]
+    },
+    {
+      "variable_id": "PV02",
+      "text": "本次记录了报复意向、强制或身体伤害的解决倾向、尖锐语言回击的效用判断。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_8c2f2d122e141e984dac",
+        "DEV_9a067600ad508951aee9",
+        "DEV_b2397d8c72f724f6e1f5"
+      ]
+    },
+    {
+      "variable_id": "PV03",
+      "text": "本次记录了对他人意图的解释、认为被针对后的反复思考。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_007cfec6068583e922f4",
+        "DEV_078b91dd80c3ad82f784",
+        "DEV_8c409906f78e17c330a7",
+        "DEV_c8feca2ec194fad959d7"
+      ]
+    },
+    {
+      "variable_id": "PV04",
+      "text": "本次记录了识别他人情绪、对不亲近同学的痛苦关注、帮助他人与自我保护、玩笑中的感受与伤害。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_0b6bfc85fb801d1663a8",
+        "DEV_0f3c80f1a2615716ce0a",
+        "DEV_0f644610350a12db9bef",
+        "DEV_db95265223fa140add4b",
+        "DEV_ee7d21a90ab1d819a243"
+      ]
+    },
+    {
+      "variable_id": "PV05",
+      "text": "本次记录了群体责任判断、玩笑是否可以继续的判断、无身体伤害时的后果判断。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_17aca43676459a663524",
+        "DEV_6e9dd5cde6fa3004016e",
+        "DEV_7ae60f6ba50891321a3c",
+        "DEV_87c7b429d006d95e2af5",
+        "DEV_b96b6905620db16cc511",
+        "DEV_f59b7f32c8fc87c367d0",
+        "DEV_f6220fb4566dc245f913"
+      ]
+    },
+    {
+      "variable_id": "PV06",
+      "text": "本次记录了对意见分量的重视、面对意见被拒绝、威慑认知、朋友支持与关系控制。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_22d2ca0b01caa79adb0e",
+        "DEV_397067c84b7f57b0db56",
+        "DEV_88c529e92205ba2ba390",
+        "DEV_e1ef27bf8650851ae8a9"
+      ]
+    },
+    {
+      "variable_id": "PV07",
+      "text": "本次记录了群体中表达不同意见、因关系压力而顺从、朋友站队时的群体影响。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_65224ac2cdc6e8a96592",
+        "DEV_8cc8f56903d68fce4368",
+        "DEV_a3ca4ba2573cb1b1b00b",
+        "DEV_aa83eca8c8b0d77e042b",
+        "DEV_da8102c48d3f91a2da50",
+        "DEV_e91b6bc0c11b88def4b4"
+      ]
+    },
+    {
+      "variable_id": "PV08",
+      "text": "本次记录了同伴交流资源、朋友关系修复预期。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_82cfc439237bf39cc629",
+        "DEV_da8faec73055a8fc4102"
+      ]
+    },
+    {
+      "variable_id": "PV09",
+      "text": "本次记录了被排除在活动外的担忧、对关系疏远的担忧、对未获回应的解释。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_0b2aea5a34ab583740d8",
+        "DEV_2b7f014a0922c9d68895",
+        "DEV_8ae768b188a7ac13219c",
+        "DEV_d086beebc104df1eecd4"
+      ]
+    },
+    {
+      "variable_id": "PV10",
+      "text": "本次记录了暂停后再决策、求助渠道认知、避免争执升级、向成年人说明情况、向老师家长求助的顾虑、帮助他人与自我保护、朋友关系修复预期。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_252767a3dc9ca709a8bd",
+        "DEV_25f5dcc868b6b4b3c873",
+        "DEV_26b4c81693123de9eaec",
+        "DEV_29efce58e338bcb106e9",
+        "DEV_2e0523f9eb42c9f3ca15",
+        "DEV_38f124f9f616aaede39e",
+        "DEV_67572479b87a96eafa86",
+        "DEV_7241a82287d991e469e2",
+        "DEV_8db9d954d53ab0cc34fc",
+        "DEV_b246f1d1eefbc9c6ddf1",
+        "DEV_c784a1169d914f9fc88d",
+        "DEV_c7be1bbdb334ab11141b",
+        "DEV_db2cfa5752931c39633e",
+        "DEV_dc1d4b00c3d9114e4912",
+        "DEV_e26c946dce509c9208da",
+        "DEV_e3e45b5512bd9f463365",
+        "DEV_edc4ac89f71e43ca0236",
+        "DEV_fe5b40513d8d46ecf227"
+      ]
+    }
+  ],
+  "role_notes": [
+    {
+      "role": "bully",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_bully_PV02",
+        "RF_bully_PV04",
+        "RF_bully_PV05",
+        "RF_bully_PV06",
+        "RF_bully_PV07",
+        "RF_bully_PV10"
+      ]
+    },
+    {
+      "role": "victim",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_victim_PV08",
+        "RF_victim_PV09",
+        "RF_victim_PV10"
+      ]
+    },
+    {
+      "role": "bully_victim",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_bully_victim_PV01",
+        "RF_bully_victim_PV03",
+        "RF_bully_victim_PV09",
+        "RF_bully_victim_PV10"
+      ]
+    }
+  ]
+}

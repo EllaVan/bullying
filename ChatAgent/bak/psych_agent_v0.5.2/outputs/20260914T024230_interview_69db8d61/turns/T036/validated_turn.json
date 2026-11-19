@@ -1,0 +1,170 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_036",
+  "turn_id": "T036",
+  "question_id": "Q036",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "争执已经越来越激烈时，你接下来会怎么做？",
+  "answer": "我会结束争吵，因为我害怕有更严重的后果",
+  "target_unit_id": "U_E04_DEESCALATION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T036",
+    "observations": [
+      {
+        "unit_id": "U_E04_DEESCALATION",
+        "status": "covered",
+        "quote": "我会结束争吵，因为我害怕有更严重的后果",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "deescalation",
+            "value": "离开或暂停",
+            "quote": "我会结束争吵，因为我害怕有更严重的后果"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+            "quote": "我会结束争吵，因为我害怕有更严重的后果",
+            "rationale": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。"
+          },
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+            "quote": "我会结束争吵，因为我害怕有更严重的后果",
+            "rationale": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。"
+          }
+        ],
+        "reason": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T036",
+      "question_id": "Q036",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_acb78690cc9e7f4b369b",
+      "status": "covered",
+      "quote": "我会结束争吵，因为我害怕有更严重的后果",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "离开或暂停",
+          "quote": "我会结束争吵，因为我害怕有更严重的后果"
+        }
+      ],
+      "reason": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_7d25155e23ac31cc020e",
+        "DEV_b44fb79817f80f9f0cc4"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T036",
+      "question_id": "Q036",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+      "quote": "我会结束争吵，因为我害怕有更严重的后果",
+      "rationale": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。",
+      "evidence_id": "DEV_7d25155e23ac31cc020e",
+      "observation_id": "OB_acb78690cc9e7f4b369b",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T036",
+      "question_id": "Q036",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+      "quote": "我会结束争吵，因为我害怕有更严重的后果",
+      "rationale": "回答中明确提到通过结束争吵来避免更严重的后果，符合deescalation的定义。",
+      "evidence_id": "DEV_b44fb79817f80f9f0cc4",
+      "observation_id": "OB_acb78690cc9e7f4b369b",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 19,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

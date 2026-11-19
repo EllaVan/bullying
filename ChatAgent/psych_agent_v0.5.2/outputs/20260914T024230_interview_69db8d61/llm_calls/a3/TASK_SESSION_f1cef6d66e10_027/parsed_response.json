@@ -1,0 +1,159 @@
+{
+  "turn_id": "T027",
+  "observations": [
+    {
+      "unit_id": "U_A01_RECOVERY",
+      "status": "ambiguous",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "recovery",
+          "value": "不确定是否能够逐渐恢复平静",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中表达了不高兴的情绪，但没有明确说明恢复过程或困难，因此状态为ambiguous。"
+    },
+    {
+      "unit_id": "U_A02_ATTRIBUTION",
+      "status": "ambiguous",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "不确定对方意图，需要进一步了解情况",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中表达了不高兴的情绪，但没有明确说明对对方意图的解释，因此状态为ambiguous。"
+    },
+    {
+      "unit_id": "U_A02_RUMINATION",
+      "status": "ambiguous",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "thinking",
+          "value": "不确定是否会持续思考此事",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中表达了不高兴的情绪，但没有明确说明是否会对此事持续思考，因此状态为ambiguous。"
+    },
+    {
+      "unit_id": "U_A04_PAUSE",
+      "status": "partial",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "pause",
+          "value": "可能会先问清楚情况再决定下一步",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中表达了可能会先问清楚情况再决定下一步，但未明确说明是否会暂停或平静下来，因此状态为partial。"
+    },
+    {
+      "unit_id": "U_D01_EXCLUSION",
+      "status": "not_applicable",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "exclusion",
+          "value": "没有明确表达担心被排除在活动之外",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中没有明确表达担心被排除在活动之外，因此状态为not_applicable。"
+    },
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "not_applicable",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "没有明确说明会找谁商量",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中没有明确说明会找谁商量，因此状态为not_applicable。"
+    },
+    {
+      "unit_id": "U_E02_EXPRESSION",
+      "status": "not_applicable",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "explanation",
+          "value": "没有明确说明会向成年人说明情况",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中没有明确说明会向成年人说明情况，因此状态为not_applicable。"
+    },
+    {
+      "unit_id": "U_E03_BARRIER",
+      "status": "not_applicable",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "没有明确表达担心告诉老师或家长使事情更麻烦",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中没有明确表达担心告诉老师或家长使事情更麻烦，因此状态为not_applicable。"
+    },
+    {
+      "unit_id": "U_E04_DEESCALATION",
+      "status": "not_applicable",
+      "quote": "我不太高兴，可能会问他们在做什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "没有明确说明会离开或暂停避免争执升级",
+          "quote": "我不太高兴，可能会问他们在做什么"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中没有明确说明会离开或暂停避免争执升级，因此状态为not_applicable。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_046",
+  "turn_id": "T046",
+  "question_id": "Q046",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+  "answer": "可能不会有人来找我的麻烦",
+  "target_unit_id": "U_C03_DETERRENCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T046",
+    "observations": [
+      {
+        "unit_id": "U_C03_DETERRENCE",
+        "status": "covered",
+        "quote": "可能不会有人来找我的麻烦",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "deterrence",
+            "value": "认可用威慑减少麻烦",
+            "quote": "可能不会有人来找我的麻烦"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+            "quote": "可能不会有人来找我的麻烦",
+            "rationale": "回答明确表示通过让他人畏惧自己来减少麻烦"
+          }
+        ],
+        "reason": "回答直接涉及威慑认知，明确表示认可通过让他人畏惧自己来减少麻烦"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T046",
+      "question_id": "Q046",
+      "unit_id": "U_C03_DETERRENCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_feb5c58445508fbf2b9f",
+      "status": "covered",
+      "quote": "可能不会有人来找我的麻烦",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "deterrence",
+          "value": "认可用威慑减少麻烦",
+          "quote": "可能不会有人来找我的麻烦"
+        }
+      ],
+      "reason": "回答直接涉及威慑认知，明确表示认可通过让他人畏惧自己来减少麻烦",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_b818d04b98086cf2ddf9"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T046",
+      "question_id": "Q046",
+      "unit_id": "U_C03_DETERRENCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+      "quote": "可能不会有人来找我的麻烦",
+      "rationale": "回答明确表示通过让他人畏惧自己来减少麻烦",
+      "evidence_id": "DEV_b818d04b98086cf2ddf9",
+      "observation_id": "OB_feb5c58445508fbf2b9f",
+      "source_item_ids": [
+        "C03"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 12,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

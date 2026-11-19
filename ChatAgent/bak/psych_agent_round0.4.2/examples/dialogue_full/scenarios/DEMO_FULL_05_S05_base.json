@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_005",
+  "scenario_id": "S05",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "facts": {
+    "form": "relational",
+    "perspective": "group",
+    "relationship": "friend",
+    "intent_clarity": "explicit",
+    "group_pressure": "present",
+    "conflict_stage": "stable",
+    "affinity": "close",
+    "joking": "present",
+    "no_response": "absent"
+  },
+  "text": "几位朋友商量周末的小组活动，有人提议不要邀请其中一位同学，还把排除他的事当玩笑讲。那位同学想一起参加。朋友们正在等你说自己的想法。"
+}

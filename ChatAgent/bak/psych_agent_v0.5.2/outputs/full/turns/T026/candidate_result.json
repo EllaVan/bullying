@@ -1,0 +1,29 @@
+{
+  "turn_id": "T026",
+  "observations": [
+    {
+      "unit_id": "U_A01_RECOVERY",
+      "status": "covered",
+      "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "recovery",
+          "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+          "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+          "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+          "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

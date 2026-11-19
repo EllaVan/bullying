@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "config_set_id": "CFG_006",
+  "content_version": "0.5.0",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_flow_test_human_review_required",
+  "files": [
+    {"config_id": "CFG_VARIABLES", "path": "config/psychological_variable.json", "required": true},
+    {"config_id": "CFG_ITEMS", "path": "config/questionnaire_mapping.json", "required": true},
+    {"config_id": "CFG_SCENARIO_BLUEPRINT", "path": "config/scenario_blueprint.json", "required": true},
+    {"config_id": "CFG_UNITS", "path": "config/measurement_units.json", "required": true},
+    {"config_id": "CFG_DIALOGUE_RULES", "path": "config/dialogue_rubric.json", "required": true},
+    {"config_id": "CFG_SCENARIOS", "path": "config/dialogue_scenarios.json", "required": true},
+    {"config_id": "CFG_INTERVIEW_POLICY", "path": "config/interview_policy.json", "required": true},
+    {"config_id": "CFG_EVIDENCE_QUALITY", "path": "config/evidence_quality.json", "required": true},
+    {"config_id": "CFG_VARIABLE_SCORING", "path": "config/variable_scoring.json", "required": true},
+    {"config_id": "CFG_RISK_ASSOCIATION", "path": "config/risk_profile_rules.json", "required": true},
+    {"config_id": "CFG_RISK_SCORING", "path": "config/risk_scoring.json", "required": true},
+    {"config_id": "CFG_CONFIDENCE", "path": "config/confidence_policy.json", "required": true},
+    {"config_id": "CFG_REPORT", "path": "config/report_policy.json", "required": true}
+  ],
+  "note": "配置集合通过编号和相对路径引用，不在业务配置中保存哈希。修改任一受管配置时必须创建新的config_set_id。"
+}

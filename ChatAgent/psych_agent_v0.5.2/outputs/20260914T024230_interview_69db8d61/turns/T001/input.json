@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_001",
+  "turn_id": "T001",
+  "question_id": "Q001",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+  "answer": "我有点生气，但是可能会先走开",
+  "target_unit_id": null,
+  "mode": "opening",
+  "question_reference_frame": "hypothetical_intent"
+}

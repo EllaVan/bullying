@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_021",
+  "turn_id": "T021",
+  "question_id": "Q021",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+  "answer": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+  "target_unit_id": "U_C04_DISSENT",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

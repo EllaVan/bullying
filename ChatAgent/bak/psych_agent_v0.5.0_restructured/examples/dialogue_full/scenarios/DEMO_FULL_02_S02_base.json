@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_006",
+  "scenario_id": "S02",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "facts": {
+    "form": "physical",
+    "perspective": "observer",
+    "relationship": "classmate",
+    "intent_clarity": "explicit",
+    "group_pressure": "present",
+    "conflict_stage": "escalating",
+    "affinity": "not_close",
+    "joking": "absent",
+    "no_response": "absent"
+  },
+  "text": "课间，你看到几位同学围着另一位同学推搡，说话声越来越大。被围住的是一位你平时不太合得来的同学。你在旁边，还没有加入他们的行动。"
+}

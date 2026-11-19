@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_054",
+  "turn_id": "T054",
+  "question_id": "Q054",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "朋友暂时没有回应时，你会怎样理解？",
+  "answer": "可能一时在忙，如果一直没有回应，我可能就不会再去了",
+  "target_unit_id": "U_D02_NO_RESPONSE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

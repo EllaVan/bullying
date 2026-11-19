@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_017",
+  "turn_id": "T017",
+  "question_id": "Q017",
+  "scenario_id": "S02",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_a4e881ebdb1f68da",
+  "entry_index": 1,
+  "question": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+  "answer": "告诉老师就可以",
+  "target_unit_id": "U_E05_PROTECTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

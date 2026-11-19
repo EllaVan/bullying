@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_037",
+  "turn_id": "T037",
+  "question_id": "Q037",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+  "answer": "我觉得那位同学有点惨，但是我也不敢说什么",
+  "target_unit_id": null,
+  "mode": "opening",
+  "question_reference_frame": "hypothetical_intent"
+}

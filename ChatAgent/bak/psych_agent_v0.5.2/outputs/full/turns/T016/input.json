@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_016",
+  "turn_id": "T016",
+  "question_id": "Q016",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+  "answer": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+  "target_unit_id": "U_E05_PROTECTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

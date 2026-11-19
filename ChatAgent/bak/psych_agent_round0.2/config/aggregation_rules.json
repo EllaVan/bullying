@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_draft_not_validated",
+  "mode": "evidence_description_only",
+  "numeric_scores_enabled": false,
+  "deduplicate_key": [
+    "event_id",
+    "variable_id",
+    "source_kind"
+  ],
+  "missing_status": "insufficient_evidence",
+  "context_policy": "separate_only",
+  "third_party_policy": "separate_only",
+  "contradiction_policy": "retain_both_describe_as_mixed",
+  "note": "数量只描述本次采集，不是信度、置信度或独立心理测量次数。"
+}

@@ -1,0 +1,264 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_052",
+    "turn_id": "T052",
+    "question_id": "Q052",
+    "scenario_id": "S06",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_aa90c9e8b542d112",
+    "entry_index": 5,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得不太高兴，我可能就不会去这个活动了",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T052",
+      "observations": [
+        {
+          "unit_id": "U_D01_EXCLUSION",
+          "status": "covered",
+          "quote": "我觉得不太高兴，我可能就不会去这个活动了",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "exclusion",
+              "value": "担心被排除在活动之外",
+              "quote": "我觉得不太高兴，我可能就不会去这个活动了"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+              "quote": "我觉得不太高兴，我可能就不会去这个活动了",
+              "rationale": "回答中明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的规则标准。"
+            }
+          ],
+          "reason": "回答中明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的规则标准。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S06",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_aa90c9e8b542d112",
+        "turn_id": "T052",
+        "question_id": "Q052",
+        "unit_id": "U_D01_EXCLUSION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_ea5b469aefb2116a3a86",
+        "status": "covered",
+        "quote": "我觉得不太高兴，我可能就不会去这个活动了",
+        "source_span": {
+          "start": 0,
+          "end": 20,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "exclusion",
+            "value": "担心被排除在活动之外",
+            "quote": "我觉得不太高兴，我可能就不会去这个活动了"
+          }
+        ],
+        "reason": "回答中明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的规则标准。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "D01"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_b6463bcb4eddc24724e8"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S06",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_aa90c9e8b542d112",
+        "turn_id": "T052",
+        "question_id": "Q052",
+        "unit_id": "U_D01_EXCLUSION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+        "quote": "我觉得不太高兴，我可能就不会去这个活动了",
+        "rationale": "回答中明确表达了担心被排除在活动之外的担忧，符合U_D01_EXCLUSION的规则标准。",
+        "evidence_id": "DEV_b6463bcb4eddc24724e8",
+        "observation_id": "OB_ea5b469aefb2116a3a86",
+        "source_item_ids": [
+          "D01"
+        ],
+        "variable_id": "PV09",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 20,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_053",
+    "turn_id": "T053",
+    "question_id": "Q053",
+    "scenario_id": "S06",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_aa90c9e8b542d112",
+    "entry_index": 5,
+    "question": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+    "answer": "我觉得我们的关系可能不会像以前那样好了",
+    "target_unit_id": "U_C05_REJECTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T053",
+      "observations": [
+        {
+          "unit_id": "U_C05_REJECTION",
+          "status": "covered",
+          "quote": "我觉得我们的关系可能不会像以前那样好了",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "rejection_worry",
+              "value": "担心关系变差",
+              "quote": "我觉得我们的关系可能不会像以前那样好了"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+              "quote": "我觉得我们的关系可能不会像以前那样好了",
+              "rationale": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。"
+            }
+          ],
+          "reason": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S06",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_aa90c9e8b542d112",
+        "turn_id": "T053",
+        "question_id": "Q053",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_0e18a53e712777d02684",
+        "status": "covered",
+        "quote": "我觉得我们的关系可能不会像以前那样好了",
+        "source_span": {
+          "start": 0,
+          "end": 19,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "rejection_worry",
+            "value": "担心关系变差",
+            "quote": "我觉得我们的关系可能不会像以前那样好了"
+          }
+        ],
+        "reason": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C05"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_7a126d97f82e9de3f7b3"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S06",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_aa90c9e8b542d112",
+        "turn_id": "T053",
+        "question_id": "Q053",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+        "quote": "我觉得我们的关系可能不会像以前那样好了",
+        "rationale": "回答中明确表达了对自己和朋友之后关系的担忧，符合U_C05_REJECTION的criterion。",
+        "evidence_id": "DEV_7a126d97f82e9de3f7b3",
+        "observation_id": "OB_0e18a53e712777d02684",
+        "source_item_ids": [
+          "C05"
+        ],
+        "variable_id": "PV09",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 19,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 19,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

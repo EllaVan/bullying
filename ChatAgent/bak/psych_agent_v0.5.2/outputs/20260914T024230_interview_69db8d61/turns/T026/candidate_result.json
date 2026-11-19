@@ -1,0 +1,29 @@
+{
+  "turn_id": "T026",
+  "observations": [
+    {
+      "unit_id": "U_G03_GROUP",
+      "status": "covered",
+      "quote": "不太敢说，害怕自己也会被取笑",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "group_influence",
+          "value": "害怕自己也会被取笑",
+          "quote": "不太敢说，害怕自己也会被取笑"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G03_GROUP_PV07_HIGHER",
+          "quote": "不太敢说，害怕自己也会被取笑",
+          "rationale": "回答中明确表达了因为害怕被取笑而不敢说出自己的判断，符合群体站队对个人判断的影响的判断标准。"
+        }
+      ],
+      "reason": "回答中明确表达了因为害怕被取笑而不敢说出自己的判断，符合群体站队对个人判断的影响的判断标准。"
+    }
+  ],
+  "background": []
+}

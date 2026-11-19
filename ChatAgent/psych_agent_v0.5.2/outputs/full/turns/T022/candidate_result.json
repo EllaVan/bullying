@@ -1,0 +1,29 @@
+{
+  "turn_id": "T022",
+  "observations": [
+    {
+      "unit_id": "U_C05_CONFORMITY",
+      "status": "covered",
+      "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+          "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+          "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+          "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

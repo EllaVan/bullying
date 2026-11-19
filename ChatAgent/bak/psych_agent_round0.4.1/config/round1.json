@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_draft_not_validated",
+  "scenario_id": "S01",
+  "active_variable_ids": [
+    "PV01",
+    "PV02",
+    "PV03",
+    "PV10"
+  ],
+  "active_item_ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "E01",
+    "E04",
+    "G01"
+  ],
+  "optional_context_item_ids": [
+    "F01",
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "risk_output_enabled": false,
+  "scope_note": "F类仅保存自发出现的背景信息，本轮不增加F类提问，不进入核心变量汇总。"
+}

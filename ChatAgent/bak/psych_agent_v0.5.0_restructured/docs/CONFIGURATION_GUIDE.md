@@ -1,0 +1,2 @@
+# 配置文件说明
+config_manifest统一版本；measurement定义题目、测量单元、facet和经历；dialogue定义情景与跳题；evidence定义证据质量；risk定义权重阈值；report定义章节和解释规则。P0需心理专家审核facet映射、权重与阈值。

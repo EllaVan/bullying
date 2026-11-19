@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_S01_005",
+  "turn_id": "T005",
+  "question_id": "Q005",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_S01_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_2e97ce9e2d00ce73",
+  "entry_index": 0,
+  "question": "接下来你希望对方经历什么，或者有什么变化？",
+  "answer": "我不希望他也受到伤害，我不打算报复他。",
+  "target_unit_id": "U_A03_REVENGE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T005",
+    "observations": [
+      {
+        "unit_id": "U_A03_REVENGE",
+        "status": "covered",
+        "quote": "我不希望他也受到伤害，我不打算报复他。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "desired_outcome",
+            "value": "我不希望他也受到伤害，我不打算报复他。",
+            "quote": "我不希望他也受到伤害，我不打算报复他。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+            "quote": "我不希望他也受到伤害，我不打算报复他。",
+            "rationale": "合成开发示例：明确拒绝报复或不希望对方受到伤害。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T005",
+      "question_id": "Q005",
+      "unit_id": "U_A03_REVENGE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_86f7aff4243729e5b8ef",
+      "status": "covered",
+      "quote": "我不希望他也受到伤害，我不打算报复他。",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "desired_outcome",
+          "value": "我不希望他也受到伤害，我不打算报复他。",
+          "quote": "我不希望他也受到伤害，我不打算报复他。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "evidence_ids": [
+        "DEV_ccbd0f3b7a78b7ab8d53"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T005",
+      "question_id": "Q005",
+      "unit_id": "U_A03_REVENGE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+      "quote": "我不希望他也受到伤害，我不打算报复他。",
+      "rationale": "合成开发示例：明确拒绝报复或不希望对方受到伤害。",
+      "evidence_id": "DEV_ccbd0f3b7a78b7ab8d53",
+      "observation_id": "OB_86f7aff4243729e5b8ef",
+      "source_item_ids": [
+        "A03"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 19,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

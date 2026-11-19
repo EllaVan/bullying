@@ -1,0 +1,23 @@
+{
+  "turn_id": "T037",
+  "observations": [
+    {
+      "unit_id": "U_B01_EMOTION",
+      "status": "partial",
+      "quote": "我觉得那位同学有点惨，但是我也不敢说什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "emotion_clues",
+          "value": "注意到同学可能隐藏的不适",
+          "quote": "我觉得那位同学有点惨"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中提到注意到同学可能隐藏的不适，但未说明具体观察或确认感受的方法，部分覆盖U_B01_EMOTION单元的槽位要求。"
+    }
+  ],
+  "background": []
+}

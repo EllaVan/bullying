@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_S01_005",
+  "turn_id": "T005",
+  "question_id": "Q005",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_S01_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_2e97ce9e2d00ce73",
+  "entry_index": 0,
+  "question": "接下来你希望对方经历什么，或者有什么变化？",
+  "answer": "我不希望他也受到伤害，我不打算报复他。",
+  "target_unit_id": "U_A03_REVENGE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

@@ -1,0 +1,39 @@
+{
+  "turn_id": "T016",
+  "observations": [
+    {
+      "unit_id": "U_E05_PROTECTION",
+      "status": "covered",
+      "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "help_action",
+          "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+        },
+        {
+          "slot_id": "self_protection",
+          "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E05_PROTECTION_PV04_HIGHER",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "rationale": "合成开发示例：明确关注受影响同学并提出帮助意向。"
+        },
+        {
+          "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+          "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+          "rationale": "合成开发示例：明确说明帮助同学同时保护自己的办法。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

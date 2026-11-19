@@ -1,0 +1,20 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "mode": "engineering_coverage_quality",
+  "validation_status": "engineering_only",
+  "display_warning": "分数是未校准工程指数；confidence是信息覆盖、回答质量与冲突折减指标，不代表测量信度、抽取准确率或统计置信概率。低置信≠低风险；冲突须写明原因，且不降低风险分计分严格性。",
+  "note": "固定值不表示完全确定。冲突只降低置信轴并打标签；风险分对消解后的值保持满分权重计入。",
+  "low_information_penalty": 0.5,
+  "fallback_penalty": 0.5,
+  "conflict_penalty": 0.35,
+  "conflict_label_thresholds": {
+    "high": 0.75,
+    "medium": 0.5
+  },
+  "conflict_label_names": {
+    "high": "高",
+    "medium": "中",
+    "low": "低"
+  }
+}

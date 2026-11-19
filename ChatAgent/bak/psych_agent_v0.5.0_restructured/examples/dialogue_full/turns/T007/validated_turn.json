@@ -1,0 +1,130 @@
+{
+  "task_id": "TASK_DEMO_FULL_007",
+  "turn_id": "T007",
+  "question_id": "Q007",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+  "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+  "target_unit_id": "U_E03_BARRIER",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T007",
+    "observations": [
+      {
+        "unit_id": "U_E03_BARRIER",
+        "status": "covered",
+        "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "barrier",
+            "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_cf18cf6cb8acafcc",
+      "turn_id": "T007",
+      "question_id": "Q007",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_4f5435194dc261417ed8",
+      "status": "covered",
+      "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "source_span": {
+        "start": 0,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+          "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_fe5b40513d8d46ecf227"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_cf18cf6cb8acafcc",
+      "turn_id": "T007",
+      "question_id": "Q007",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+      "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。",
+      "evidence_id": "DEV_fe5b40513d8d46ecf227",
+      "observation_id": "OB_4f5435194dc261417ed8",
+      "source_item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 26,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": "0.4.1",
+  "config_set_id": "CFG_004",
+  "completed": [
+    "A1受控情境生成",
+    "A2多轮提问与缺失槽位追问",
+    "A3观察抽取与证据校验",
+    "A3不合规输出的一次可审计结构修复",
+    "开场回答禁止批量标记未提及单元为不适用",
+    "十变量测试值画像",
+    "十变量固定测试置信度1.0",
+    "A4等权三角色和三形式测试概率",
+    "A4外部风险模型接口",
+    "A5模板与LLM报告解释",
+    "配置集合编号和相对路径引用",
+    "暂停恢复、失败保存及单Agent命令",
+    "五套合成回放和完整示例"
+  ],
+  "pending": [
+    "人工校验变量聚合与置信度",
+    "训练和验证真实风险模型",
+    "概率校准和正式置信度方法",
+    "风险等级阈值依据",
+    "现实霸凌经历结构化分支",
+    "用户真实LLM服务联调"
+  ],
+  "test_only_fields": [
+    "variables[].value",
+    "variables[].confidence",
+    "roles[].probability",
+    "roles[].confidence",
+    "roles[].form_probabilities"
+  ],
+  "human_review_required": true
+}

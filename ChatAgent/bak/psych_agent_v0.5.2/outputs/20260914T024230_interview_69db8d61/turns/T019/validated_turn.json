@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_019",
+  "turn_id": "T019",
+  "question_id": "Q019",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "answer": "太过分的时候就应该停止",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T019",
+    "observations": [
+      {
+        "unit_id": "U_B03_JUSTIFICATION",
+        "status": "covered",
+        "quote": "太过分的时候就应该停止",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "太过分的时候",
+            "quote": "太过分的时候就应该停止"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+            "quote": "太过分的时候就应该停止",
+            "rationale": "回答明确提出了停止玩笑的界线，即‘太过分的时候’，符合U_B03_JUSTIFICATION的要求。"
+          }
+        ],
+        "reason": "回答中明确提出了停止玩笑的界线，符合U_B03_JUSTIFICATION的槽位要求。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T019",
+      "question_id": "Q019",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_88d03ff3dc7b6126d8d2",
+      "status": "covered",
+      "quote": "太过分的时候就应该停止",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "boundary",
+          "value": "太过分的时候",
+          "quote": "太过分的时候就应该停止"
+        }
+      ],
+      "reason": "回答中明确提出了停止玩笑的界线，符合U_B03_JUSTIFICATION的槽位要求。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_831e499c13b8155bd5c3"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T019",
+      "question_id": "Q019",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+      "quote": "太过分的时候就应该停止",
+      "rationale": "回答明确提出了停止玩笑的界线，即‘太过分的时候’，符合U_B03_JUSTIFICATION的要求。",
+      "evidence_id": "DEV_831e499c13b8155bd5c3",
+      "observation_id": "OB_88d03ff3dc7b6126d8d2",
+      "source_item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 11,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+  "model": "GLM-4-Flash-250414",
+  "api_key_env": "",
+  "timeout_seconds": 45,
+  "json_object_mode": true,
+  "note": "填写账号实际可用的model；api_key可填写本地密钥，也可设置api_key_env指定的环境变量。环境变量非空时优先。不把密钥当作api_key_env的值。",
+  "api_key": "sk-bc9c70729aa142ea8c92e3b29ac202ff.lFHb7qo4fcsp4ZHM"
+}

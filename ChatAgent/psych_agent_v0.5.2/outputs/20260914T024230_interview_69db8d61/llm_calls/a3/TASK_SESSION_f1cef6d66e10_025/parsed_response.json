@@ -1,0 +1,23 @@
+{
+  "turn_id": "T025",
+  "observations": [
+    {
+      "unit_id": "U_C05_CONFORMITY",
+      "status": "covered",
+      "quote": "那我可能不太敢说",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "排斥担忧如何影响是否跟随群体",
+          "quote": "那我可能不太敢说"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中明确表达了因为害怕说不同意见而不敢表达的情况，符合U_C05_CONFORMITY单元的槽位要求，且为hypothetical_intent参考框架下自我回答。"
+    }
+  ],
+  "background": []
+}

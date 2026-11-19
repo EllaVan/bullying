@@ -1,0 +1,29 @@
+{
+  "turn_id": "T022",
+  "observations": [
+    {
+      "unit_id": "U_C04_DISSENT",
+      "status": "partial",
+      "quote": "我可能不太敢说",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "dissent",
+          "value": "不太敢说",
+          "quote": "我可能不太敢说"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C04_DISSENT_PV07_HIGHER",
+          "quote": "我可能不太敢说",
+          "rationale": "回答表明学生在群体压力下表达不同意见存在困难，符合规则DR_C04_DISSENT_PV07_HIGHER的criterion。"
+        }
+      ],
+      "reason": "学生回答'我可能不太敢说'，表明在群体压力下表达不同意见存在困难。"
+    }
+  ],
+  "background": []
+}

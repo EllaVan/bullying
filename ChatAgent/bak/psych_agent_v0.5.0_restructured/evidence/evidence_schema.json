@@ -1,0 +1,28 @@
+{
+  "required": [
+    "evidence_id",
+    "quote",
+    "frame",
+    "facet",
+    "direction",
+    "quality",
+    "source"
+  ],
+  "frames": [
+    "hypothetical",
+    "current",
+    "experience",
+    "observer"
+  ],
+  "directions": [
+    "positive",
+    "negative",
+    "ambivalent",
+    "unknown"
+  ],
+  "quality": [
+    "high",
+    "medium",
+    "low"
+  ]
+}

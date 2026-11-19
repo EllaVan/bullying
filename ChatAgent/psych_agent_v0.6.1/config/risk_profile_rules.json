@@ -1,0 +1,13 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "mode": "source_association_with_test_scoring",
+  "role_variables": {
+    "bully": ["PV02", "PV03", "PV05", "PV06", "PV07", "PV01"],
+    "victim": ["PV09", "PV08", "PV10", "PV01", "PV04"],
+    "bully_victim": ["PV03", "PV02", "PV09", "PV05", "PV01", "PV10"],
+    "bystander": ["PV07", "PV05", "PV04", "PV10"]
+  },
+  "shared_variables": [],
+  "note": "依据变量原表组织角色相关线索；旁观侧重从众、道德脱离、共情与求助/干预。bully_victim 含 PV05（文献启发式）。具体权重见config/risk_scoring.json与docs/PSYCH_WEIGHT_THRESHOLDS.md。"
+}

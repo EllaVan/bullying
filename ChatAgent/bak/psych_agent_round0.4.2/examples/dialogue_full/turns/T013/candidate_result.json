@@ -1,0 +1,29 @@
+{
+  "turn_id": "T013",
+  "observations": [
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "covered",
+      "quote": "我可以找信任的老师商量。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "我可以找信任的老师商量。",
+          "quote": "我可以找信任的老师商量。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+          "quote": "我可以找信任的老师商量。",
+          "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

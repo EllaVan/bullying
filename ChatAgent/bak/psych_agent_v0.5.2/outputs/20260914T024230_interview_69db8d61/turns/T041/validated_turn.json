@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_041",
+  "turn_id": "T041",
+  "question_id": "Q041",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "answer": "带头的人有很大的责任",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T041",
+    "observations": [
+      {
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "status": "covered",
+        "quote": "带头的人有很大的责任",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "带头的人有很大的责任",
+            "quote": "带头的人有很大的责任"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+            "quote": "带头的人有很大的责任",
+            "rationale": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+          }
+        ],
+        "reason": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T041",
+      "question_id": "Q041",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_1c6e1018fa8e22e3cdda",
+      "status": "covered",
+      "quote": "带头的人有很大的责任",
+      "source_span": {
+        "start": 0,
+        "end": 10,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "带头的人有很大的责任",
+          "quote": "带头的人有很大的责任"
+        }
+      ],
+      "reason": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_638c28a5baa2d91cfdf9"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T041",
+      "question_id": "Q041",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+      "quote": "带头的人有很大的责任",
+      "rationale": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。",
+      "evidence_id": "DEV_638c28a5baa2d91cfdf9",
+      "observation_id": "OB_1c6e1018fa8e22e3cdda",
+      "source_item_ids": [
+        "B04"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 10,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 10,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

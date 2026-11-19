@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_018",
+  "turn_id": "T018",
+  "question_id": "Q018",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+  "answer": "我觉得不太舒服，但是我可能不敢说什么",
+  "target_unit_id": null,
+  "mode": "opening",
+  "question_reference_frame": "hypothetical_intent"
+}

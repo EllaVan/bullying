@@ -1,0 +1,147 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_048",
+    "turn_id": "T048",
+    "question_id": "Q048",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T048",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_049",
+    "turn_id": "T049",
+    "question_id": "Q049",
+    "scenario_id": "S06",
+    "scenario_instance_id": "DEMO_FULL_06_S06_base",
+    "condition_id": "base",
+    "event_id": "SCENE_b95c18222b31e28d",
+    "entry_index": 5,
+    "question": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+    "answer": "我会担心朋友因为这件事疏远我。",
+    "target_unit_id": "U_C05_REJECTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T049",
+      "observations": [
+        {
+          "unit_id": "U_C05_REJECTION",
+          "status": "covered",
+          "quote": "我会担心朋友因为这件事疏远我。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "rejection_worry",
+              "value": "我会担心朋友因为这件事疏远我。",
+              "quote": "我会担心朋友因为这件事疏远我。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+              "quote": "我会担心朋友因为这件事疏远我。",
+              "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T049",
+        "question_id": "Q049",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_9acd3b70601b2cf98c6c",
+        "status": "covered",
+        "quote": "我会担心朋友因为这件事疏远我。",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "rejection_worry",
+            "value": "我会担心朋友因为这件事疏远我。",
+            "quote": "我会担心朋友因为这件事疏远我。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C05"
+        ],
+        "target_variable_ids": [
+          "PV09"
+        ],
+        "evidence_ids": [
+          "DEV_d086beebc104df1eecd4"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S06",
+        "scenario_instance_id": "DEMO_FULL_06_S06_base",
+        "condition_id": "base",
+        "event_id": "SCENE_b95c18222b31e28d",
+        "turn_id": "T049",
+        "question_id": "Q049",
+        "unit_id": "U_C05_REJECTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+        "quote": "我会担心朋友因为这件事疏远我。",
+        "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。",
+        "evidence_id": "DEV_d086beebc104df1eecd4",
+        "observation_id": "OB_9acd3b70601b2cf98c6c",
+        "source_item_ids": [
+          "C05"
+        ],
+        "variable_id": "PV09",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  }
+]

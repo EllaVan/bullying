@@ -1,0 +1,29 @@
+{
+  "turn_id": "T008",
+  "observations": [
+    {
+      "unit_id": "U_G01_FORCE",
+      "status": "covered",
+      "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "action",
+          "value": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+          "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G01_FORCE_PV02_LOWER",
+          "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+          "rationale": "合成开发示例：明确拒绝用身体伤害解决冲突。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

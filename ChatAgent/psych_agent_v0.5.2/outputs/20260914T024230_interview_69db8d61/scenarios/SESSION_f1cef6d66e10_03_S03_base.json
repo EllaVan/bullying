@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_007",
+  "scenario_id": "S03",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "facts": {
+    "form": "verbal",
+    "perspective": "group",
+    "relationship": "friend",
+    "intent_clarity": "explicit",
+    "group_pressure": "present",
+    "conflict_stage": "stable",
+    "affinity": "not_close",
+    "joking": "present",
+    "no_response": "absent"
+  },
+  "text": "几位朋友在聊天时，反复用一个同学不喜欢的外号取笑他。那位同学已经说了不喜欢，但大家还在笑，也有人看着你，等你接话。整个过程没有身体接触。"
+}

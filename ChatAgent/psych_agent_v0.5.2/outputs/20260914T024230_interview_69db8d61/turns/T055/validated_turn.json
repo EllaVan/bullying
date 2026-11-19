@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_055",
+  "turn_id": "T055",
+  "question_id": "Q055",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+  "answer": "可能会和我的朋友说",
+  "target_unit_id": "U_D03_PEER_SUPPORT",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report",
+  "candidate_result": {
+    "turn_id": "T055",
+    "observations": [
+      {
+        "unit_id": "U_D03_PEER_SUPPORT",
+        "status": "covered",
+        "quote": "可能会和我的朋友说",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "peer_resource",
+            "value": "朋友",
+            "quote": "可能会和我的朋友说"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+            "quote": "可能会和我的朋友说",
+            "rationale": "回答中明确提到会和朋友说心事，表明有可以放心交流的同伴资源。"
+          }
+        ],
+        "reason": "回答中明确提到会和朋友说心事，表明有可以放心交流的同伴资源。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S06",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "condition_id": "base",
+      "event_id": "HABIT_7fc8894c54fa6beb",
+      "turn_id": "T055",
+      "question_id": "Q055",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_468ec25c2c10f5a23693",
+      "status": "covered",
+      "quote": "可能会和我的朋友说",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "peer_resource",
+          "value": "朋友",
+          "quote": "可能会和我的朋友说"
+        }
+      ],
+      "reason": "回答中明确提到会和朋友说心事，表明有可以放心交流的同伴资源。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "evidence_ids": [
+        "DEV_4ff4397ae9a3d4dc8082"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S06",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "condition_id": "base",
+      "event_id": "HABIT_7fc8894c54fa6beb",
+      "turn_id": "T055",
+      "question_id": "Q055",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+      "quote": "可能会和我的朋友说",
+      "rationale": "回答中明确提到会和朋友说心事，表明有可以放心交流的同伴资源。",
+      "evidence_id": "DEV_4ff4397ae9a3d4dc8082",
+      "observation_id": "OB_468ec25c2c10f5a23693",
+      "source_item_ids": [
+        "D03"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 9,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

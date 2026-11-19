@@ -1,0 +1,878 @@
+{
+  "version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "units": [
+    {
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "facet": "情绪恢复过程",
+      "reference_frame": "habitual_self_report",
+      "reference_period": "unspecified",
+      "question_template": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+      "required_slots": [
+        {
+          "slot_id": "recovery",
+          "description": "恢复过程或恢复困难；不能只记录是否生气"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_A01_RECOVERY_PV01_HIGHER",
+        "DR_A01_RECOVERY_PV01_LOWER"
+      ],
+      "interpretation_boundary": "只说生气或先忍住不足以判断恢复；不设置未经依据的分钟阈值。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "facet": "对他人意图的解释",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "你会怎样理解对方刚才的举动？",
+      "required_slots": [
+        {
+          "slot_id": "interpretation",
+          "description": "对他人意图的解释及是否保留其他可能"
+        }
+      ],
+      "applicability": {
+        "intent_clarity": [
+          "ambiguous"
+        ]
+      },
+      "rule_ids": [
+        "DR_A02_ATTRIBUTION_PV03_HIGHER",
+        "DR_A02_ATTRIBUTION_PV03_LOWER"
+      ],
+      "interpretation_boundary": "来源包含原设计 A03→PV03 的归因方面；报复本身不构成归因。明确恶意情境不测归因偏向。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "facet": "认为被针对后的反复思考",
+      "reference_frame": "habitual_self_report",
+      "reference_period": "unspecified",
+      "question_template": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+      "required_slots": [
+        {
+          "slot_id": "thinking",
+          "description": "认为被针对之后的思考持续情况"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_A02_RUMINATION_PV03_HIGHER",
+        "DR_A02_RUMINATION_PV03_LOWER"
+      ],
+      "interpretation_boundary": "记录条件下的反复思考；不据此断言对方真实恶意或新增一个心理变量。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_A03_REVENGE",
+      "source_item_ids": [
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "facet": "报复意向",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "接下来你希望对方经历什么，或者有什么变化？",
+      "required_slots": [
+        {
+          "slot_id": "desired_outcome",
+          "description": "希望对方受到的影响或明确不希望其受损"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_A03_REVENGE_PV02_HIGHER",
+        "DR_A03_REVENGE_PV02_LOWER"
+      ],
+      "interpretation_boundary": "表达不公平、生气不等于报复；本单元只选 PV02，PV03 由独立归因单元处理。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "facet": "暂停后再决策",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果这时你很生气，在决定下一步之前，你会怎么做？",
+      "required_slots": [
+        {
+          "slot_id": "pause",
+          "description": "是否暂停或延迟行动，以及与决策的关系"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_A04_PAUSE_PV01_HIGHER",
+        "DR_A04_PAUSE_PV01_LOWER",
+        "DR_A04_PAUSE_PV10_HIGHER",
+        "DR_A04_PAUSE_PV10_LOWER"
+      ],
+      "interpretation_boundary": "仅忍住不代表平静；意向不能标为实际能力。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "facet": "识别他人情绪",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "你会怎样了解那位同学此刻的感受？",
+      "required_slots": [
+        {
+          "slot_id": "emotion_clues",
+          "description": "注意到的情绪线索或确认感受的方法"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_B01_EMOTION_PV04_HIGHER",
+        "DR_B01_EMOTION_PV04_LOWER"
+      ],
+      "interpretation_boundary": "没有提及感受不等于缺乏共情；判断正确与否需任务依据。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B02_CONCERN",
+      "source_item_ids": [
+        "B02"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "facet": "对不亲近同学的痛苦关注",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+      "required_slots": [
+        {
+          "slot_id": "concern",
+          "description": "对他人受针对的感受"
+        }
+      ],
+      "applicability": {
+        "affinity": [
+          "not_close"
+        ]
+      },
+      "rule_ids": [
+        "DR_B02_CONCERN_PV04_HIGHER",
+        "DR_B02_CONCERN_PV04_LOWER"
+      ],
+      "interpretation_boundary": "必须有不亲近或不合得来这一前提；不能由沉默推断。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B03_HARM",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "facet": "玩笑中的感受与伤害",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+      "required_slots": [
+        {
+          "slot_id": "perspective",
+          "description": "如何考虑被开玩笑者的体验"
+        }
+      ],
+      "applicability": {
+        "joking": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_B03_HARM_PV04_HIGHER",
+        "DR_B03_HARM_PV04_LOWER"
+      ],
+      "interpretation_boundary": "本单元仅测 PV04；不能自动反向推算 PV05。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "玩笑是否可以继续的判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得大家在什么情况下应该停止这种玩笑？",
+      "required_slots": [
+        {
+          "slot_id": "boundary",
+          "description": "停止玩笑的界线及理由"
+        }
+      ],
+      "applicability": {
+        "joking": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_B03_JUSTIFICATION_PV05_HIGHER",
+        "DR_B03_JUSTIFICATION_PV05_LOWER"
+      ],
+      "interpretation_boundary": "需明确的合理化或反对理由；只识别伤害不自动产生道德脱离反分。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "群体责任判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "required_slots": [
+        {
+          "slot_id": "responsibility",
+          "description": "个人责任是否因参与者多而减少"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "DR_B04_RESPONSIBILITY_PV05_LOWER"
+      ],
+      "interpretation_boundary": "班级规范与个人的责任判断分开。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "无身体伤害时的后果判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+      "required_slots": [
+        {
+          "slot_id": "consequence",
+          "description": "对非身体后果的评价"
+        }
+      ],
+      "applicability": {
+        "joking": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_B05_CONSEQUENCES_PV05_HIGHER",
+        "DR_B05_CONSEQUENCES_PV05_LOWER"
+      ],
+      "interpretation_boundary": "描述结果与认可伤害分开；不能凭没提身体伤害推断。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C01_VOICE",
+      "source_item_ids": [
+        "C01"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "facet": "对意见分量的重视",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+      "required_slots": [
+        {
+          "slot_id": "voice",
+          "description": "对意见分量的期待"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C01_VOICE_PV06_HIGHER",
+        "DR_C01_VOICE_PV06_LOWER"
+      ],
+      "interpretation_boundary": "仅记录话语分量的关注，正常领导或被尊重的需要不等于强制控制。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C02_REFUSAL",
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "facet": "面对意见被拒绝",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+      "required_slots": [
+        {
+          "slot_id": "refusal",
+          "description": "对不被采纳的接受情况及反应"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C02_REFUSAL_PV06_HIGHER",
+        "DR_C02_REFUSAL_PV06_LOWER"
+      ],
+      "interpretation_boundary": "失望本身不等于控制行为。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C03_DETERRENCE",
+      "source_item_ids": [
+        "C03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "facet": "威慑认知",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+      "required_slots": [
+        {
+          "slot_id": "deterrence",
+          "description": "是否认可用威慑减少麻烦"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C03_DETERRENCE_PV06_HIGHER",
+        "DR_C03_DETERRENCE_PV06_LOWER"
+      ],
+      "interpretation_boundary": "自我保护与威慑控制分开；不得补出已实施威胁。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "群体中表达不同意见",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+      "required_slots": [
+        {
+          "slot_id": "dissent",
+          "description": "表达不同意见的方式或困难"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C04_DISSENT_PV07_HIGHER",
+        "DR_C04_DISSENT_PV07_LOWER"
+      ],
+      "interpretation_boundary": "一般合群不等于从众风险；保留行为内容。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "因关系压力而顺从",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+      "required_slots": [
+        {
+          "slot_id": "choice",
+          "description": "排斥担忧如何影响是否跟随群体"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C05_CONFORMITY_PV07_HIGHER",
+        "DR_C05_CONFORMITY_PV07_LOWER"
+      ],
+      "interpretation_boundary": "这是设定条件下的选择，不能据此宣称学生平时一直害怕被疏远。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "对关系疏远的担忧",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+      "required_slots": [
+        {
+          "slot_id": "rejection_worry",
+          "description": "是否存在被朋友疏远的担忧"
+        }
+      ],
+      "applicability": {
+        "relationship": [
+          "friend"
+        ]
+      },
+      "rule_ids": [
+        "DR_C05_REJECTION_PV09_HIGHER",
+        "DR_C05_REJECTION_PV09_LOWER"
+      ],
+      "interpretation_boundary": "记录情境担忧，不能直接推为稳定人格。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "被排除在活动外的担忧",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+      "required_slots": [
+        {
+          "slot_id": "exclusion",
+          "description": "是否担心被排除在活动之外"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_D01_EXCLUSION_PV09_HIGHER",
+        "DR_D01_EXCLUSION_PV09_LOWER"
+      ],
+      "interpretation_boundary": "对实际排斥的合理担忧不能直接推为过度敏感。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D02_NO_RESPONSE",
+      "source_item_ids": [
+        "D02"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "对未获回应的解释",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "朋友暂时没有回应时，你会怎样理解？",
+      "required_slots": [
+        {
+          "slot_id": "interpretation",
+          "description": "如何解释未获回应及其带来的担忧"
+        }
+      ],
+      "applicability": {
+        "no_response": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_D02_NO_RESPONSE_PV09_HIGHER",
+        "DR_D02_NO_RESPONSE_PV09_LOWER"
+      ],
+      "interpretation_boundary": "不推断他人实际态度；仅记录学生的解释。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "facet": "同伴交流资源",
+      "reference_frame": "habitual_self_report",
+      "reference_period": "unspecified",
+      "question_template": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+      "required_slots": [
+        {
+          "slot_id": "peer_resource",
+          "description": "可以放心交流的同伴或明确缺乏这种资源"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+        "DR_D03_PEER_SUPPORT_PV08_LOWER"
+      ],
+      "interpretation_boundary": "家长和教师不替代同伴资源；不要求说出真实姓名。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "facet": "朋友关系修复预期",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+      "required_slots": [
+        {
+          "slot_id": "repair_expectation",
+          "description": "对朋友关系能否修复的预期"
+        }
+      ],
+      "applicability": {
+        "relationship": [
+          "friend"
+        ]
+      },
+      "rule_ids": [
+        "DR_D04_REPAIR_PV08_HIGHER",
+        "DR_D04_REPAIR_PV08_LOWER",
+        "DR_D04_REPAIR_PV10_HIGHER",
+        "DR_D04_REPAIR_PV10_LOWER"
+      ],
+      "interpretation_boundary": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "求助渠道认知",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "required_slots": [
+        {
+          "slot_id": "channel",
+          "description": "具体求助对象、对象类别或明确没有渠道"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E01_CHANNEL_PV10_HIGHER",
+        "DR_E01_CHANNEL_PV10_LOWER"
+      ],
+      "interpretation_boundary": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向成年人说明情况",
+      "reference_frame": "task_performance",
+      "reference_period": "unspecified",
+      "question_template": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "required_slots": [
+        {
+          "slot_id": "explanation",
+          "description": "模拟说明人物、发生的事或希望获得的帮助"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E02_EXPRESSION_PV10_HIGHER",
+        "DR_E02_EXPRESSION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向老师家长求助的顾虑",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "required_slots": [
+        {
+          "slot_id": "barrier",
+          "description": "求助顾虑、阻碍，或明确没有这类顾虑"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E03_BARRIER_PV10_LOWER",
+        "DR_E03_BARRIER_PV10_HIGHER"
+      ],
+      "interpretation_boundary": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "facet": "避免争执升级",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "争执已经越来越激烈时，你接下来会怎么做？",
+      "required_slots": [
+        {
+          "slot_id": "deescalation",
+          "description": "离开或暂停的选择及其应对目的"
+        }
+      ],
+      "applicability": {
+        "conflict_stage": [
+          "escalating"
+        ]
+      },
+      "rule_ids": [
+        "DR_E04_DEESCALATION_PV01_HIGHER",
+        "DR_E04_DEESCALATION_PV01_LOWER",
+        "DR_E04_DEESCALATION_PV10_HIGHER",
+        "DR_E04_DEESCALATION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E05_PROTECTION",
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "facet": "帮助他人与自我保护",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+      "required_slots": [
+        {
+          "slot_id": "help_action",
+          "description": "帮助他人的行动或明确无法提供帮助"
+        },
+        {
+          "slot_id": "self_protection",
+          "description": "同时保护自己的办法或困难"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E05_PROTECTION_PV04_HIGHER",
+        "DR_E05_PROTECTION_PV10_HIGHER",
+        "DR_E05_PROTECTION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G01_FORCE",
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "facet": "强制或身体伤害的解决倾向",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+      "required_slots": [
+        {
+          "slot_id": "action",
+          "description": "具体行动及是否认可用它解决冲突"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G01_FORCE_PV02_HIGHER",
+        "DR_G01_FORCE_PV02_LOWER",
+        "DR_G01_FORCE_PV02_UNCLEAR"
+      ],
+      "interpretation_boundary": "强硬不自动等于伤害；对作用的描述不等于认可。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G02_VERBAL",
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "facet": "尖锐语言回击的效用判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+      "required_slots": [
+        {
+          "slot_id": "verbal_response",
+          "description": "是否认可尖锐回击更有效及其理由"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G02_VERBAL_PV02_HIGHER",
+        "DR_G02_VERBAL_PV02_LOWER"
+      ],
+      "interpretation_boundary": "坚定表达边界不等于语言攻击。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G03_ALLIANCE",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "facet": "朋友支持与关系控制",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "这时你希望朋友怎样支持你？如果朋友有不同看法，你会怎么办？",
+      "required_slots": [
+        {
+          "slot_id": "alliance",
+          "description": "期待的支持方式及是否强迫站队"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G03_ALLIANCE_PV06_HIGHER",
+        "DR_G03_ALLIANCE_PV06_LOWER",
+        "DR_G03_ALLIANCE_PV06_UNCLEAR"
+      ],
+      "interpretation_boundary": "正常寻求支持不等于关系攻击。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "朋友站队时的群体影响",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+      "required_slots": [
+        {
+          "slot_id": "group_influence",
+          "description": "群体站队对个人判断的影响"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G03_GROUP_PV07_HIGHER",
+        "DR_G03_GROUP_PV07_LOWER"
+      ],
+      "interpretation_boundary": "本单元选择原 G03 的 PV07 方面，不凭想要支持自动认定从众。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    }
+  ],
+  "background_item_ids": [
+    "F01",
+    "F02",
+    "F03",
+    "F04"
+  ],
+  "note": "26道核心题拆成具体内容；F类仅接收自发背景。多题来源表示同一具体内容的来源关联，不表示必须逐题提问。"
+}

@@ -1,0 +1,906 @@
+{
+  "version": "0.4.2",
+  "config_set_id": "CFG_005",
+  "rules": [
+    {
+      "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+      "unit_id": "U_A01_RECOVERY",
+      "item_ids": [
+        "A01"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确自述通常能逐渐恢复平静，并说明恢复过程。",
+      "do_not_infer_when": "只说生气或先忍住不足以判断恢复；不设置未经依据的分钟阈值。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A01_RECOVERY_PV01_LOWER",
+      "unit_id": "U_A01_RECOVERY",
+      "item_ids": [
+        "A01"
+      ],
+      "variable_id": "PV01",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确自述通常长时间难以平静或恢复困难。",
+      "do_not_infer_when": "只说生气或先忍住不足以判断恢复；不设置未经依据的分钟阈值。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A02_ATTRIBUTION_PV03_HIGHER",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "item_ids": [
+        "A02",
+        "A03"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "在意图未明确的情境中断定对方故意针对自己。",
+      "do_not_infer_when": "来源包含原设计 A03→PV03 的归因方面；报复本身不构成归因。明确恶意情境不测归因偏向。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "item_ids": [
+        "A02",
+        "A03"
+      ],
+      "variable_id": "PV03",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确保留非敌意的解释可能，不急于认定恶意。",
+      "do_not_infer_when": "来源包含原设计 A03→PV03 的归因方面；报复本身不构成归因。明确恶意情境不测归因偏向。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+      "unit_id": "U_A02_RUMINATION",
+      "item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确自述认为被针对后会持续、反复想着这件事。",
+      "do_not_infer_when": "记录条件下的反复思考；不据此断言对方真实恶意或新增一个心理变量。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A02_RUMINATION_PV03_LOWER",
+      "unit_id": "U_A02_RUMINATION",
+      "item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确自述在这种条件下通常不会持续反复想着。",
+      "do_not_infer_when": "记录条件下的反复思考；不据此断言对方真实恶意或新增一个心理变量。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A03_REVENGE_PV02_HIGHER",
+      "unit_id": "U_A03_REVENGE",
+      "item_ids": [
+        "A03"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确希望报复，使对方也受损或难受。",
+      "do_not_infer_when": "表达不公平、生气不等于报复；本单元只选 PV02，PV03 由独立归因单元处理。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+      "unit_id": "U_A03_REVENGE",
+      "item_ids": [
+        "A03"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确拒绝报复或不希望对方受到伤害。",
+      "do_not_infer_when": "表达不公平、生气不等于报复；本单元只选 PV02，PV03 由独立归因单元处理。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+      "unit_id": "U_A04_PAUSE",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确先暂停或平静，再决定行动。",
+      "do_not_infer_when": "仅忍住不代表平静；意向不能标为实际能力。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A04_PAUSE_PV01_LOWER",
+      "unit_id": "U_A04_PAUSE",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV01",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示生气时无法暂停便直接行动。",
+      "do_not_infer_when": "仅忍住不代表平静；意向不能标为实际能力。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+      "unit_id": "U_A04_PAUSE",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确把暂停再决定作为冲突应对方法。",
+      "do_not_infer_when": "仅忍住不代表平静；意向不能标为实际能力。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_A04_PAUSE_PV10_LOWER",
+      "unit_id": "U_A04_PAUSE",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示在冲突中难以采取暂停再决定的办法。",
+      "do_not_infer_when": "仅忍住不代表平静；意向不能标为实际能力。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+      "unit_id": "U_B01_EMOTION",
+      "item_ids": [
+        "B01"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。",
+      "do_not_infer_when": "没有提及感受不等于缺乏共情；判断正确与否需任务依据。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B01_EMOTION_PV04_LOWER",
+      "unit_id": "U_B01_EMOTION",
+      "item_ids": [
+        "B01"
+      ],
+      "variable_id": "PV04",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示即使注意到线索也不关注对方感受。",
+      "do_not_infer_when": "没有提及感受不等于缺乏共情；判断正确与否需任务依据。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+      "unit_id": "U_B02_CONCERN",
+      "item_ids": [
+        "B02"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。",
+      "do_not_infer_when": "必须有不亲近或不合得来这一前提；不能由沉默推断。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+      "unit_id": "U_B02_CONCERN",
+      "item_ids": [
+        "B02"
+      ],
+      "variable_id": "PV04",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确因不喜欢对方而对其痛苦漠不关心或感到愉快。",
+      "do_not_infer_when": "必须有不亲近或不合得来这一前提；不能由沉默推断。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B03_HARM_PV04_HIGHER",
+      "unit_id": "U_B03_HARM",
+      "item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。",
+      "do_not_infer_when": "本单元仅测 PV04；不能自动反向推算 PV05。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B03_HARM_PV04_LOWER",
+      "unit_id": "U_B03_HARM",
+      "item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV04",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确否认需要考虑被开玩笑者的感受。",
+      "do_not_infer_when": "本单元仅测 PV04；不能自动反向推算 PV05。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确以大家觉得好笑等理由合理化继续让对方难受。",
+      "do_not_infer_when": "需明确的合理化或反对理由；只识别伤害不自动产生道德脱离反分。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确认为对方不愿意或受到伤害就不能以玩笑为由继续。",
+      "do_not_infer_when": "需明确的合理化或反对理由；只识别伤害不自动产生道德脱离反分。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "item_ids": [
+        "B04"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确认为参与者多会减少个人应承担的责任。",
+      "do_not_infer_when": "班级规范与个人的责任判断分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "item_ids": [
+        "B04"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确认为大家一起参与也不减少个人责任。",
+      "do_not_infer_when": "班级规范与个人的责任判断分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B05_CONSEQUENCES_PV05_HIGHER",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "item_ids": [
+        "B05"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确因没有身体伤害而轻视过分玩笑的其他伤害。",
+      "do_not_infer_when": "描述结果与认可伤害分开；不能凭没提身体伤害推断。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "item_ids": [
+        "B05"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确认为没有身体受伤仍可能造成严重的其他伤害。",
+      "do_not_infer_when": "描述结果与认可伤害分开；不能凭没提身体伤害推断。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+      "unit_id": "U_C01_VOICE",
+      "item_ids": [
+        "C01"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确非常重视自己的意见是否在群体中有分量。",
+      "do_not_infer_when": "仅记录话语分量的关注，正常领导或被尊重的需要不等于强制控制。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C01_VOICE_PV06_LOWER",
+      "unit_id": "U_C01_VOICE",
+      "item_ids": [
+        "C01"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确较少在意自己意见是否有分量。",
+      "do_not_infer_when": "仅记录话语分量的关注，正常领导或被尊重的需要不等于强制控制。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C02_REFUSAL_PV06_HIGHER",
+      "unit_id": "U_C02_REFUSAL",
+      "item_ids": [
+        "C02"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确难以接受别人不听自己的意见，或要求别人服从。",
+      "do_not_infer_when": "失望本身不等于控制行为。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+      "unit_id": "U_C02_REFUSAL",
+      "item_ids": [
+        "C02"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确允许别人不采纳自己的意见。",
+      "do_not_infer_when": "失望本身不等于控制行为。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+      "unit_id": "U_C03_DETERRENCE",
+      "item_ids": [
+        "C03"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确认可通过让他人畏惧自己来减少麻烦或建立位置。",
+      "do_not_infer_when": "自我保护与威慑控制分开；不得补出已实施威胁。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+      "unit_id": "U_C03_DETERRENCE",
+      "item_ids": [
+        "C03"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确不认可用让他人畏惧的方式维持关系。",
+      "do_not_infer_when": "自我保护与威慑控制分开；不得补出已实施威胁。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C04_DISSENT_PV07_HIGHER",
+      "unit_id": "U_C04_DISSENT",
+      "item_ids": [
+        "C04"
+      ],
+      "variable_id": "PV07",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确因朋友意见一致而难以表达不同意见或跟随。",
+      "do_not_infer_when": "一般合群不等于从众风险；保留行为内容。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+      "unit_id": "U_C04_DISSENT",
+      "item_ids": [
+        "C04"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确能在群体意见一致时表达不同判断。",
+      "do_not_infer_when": "一般合群不等于从众风险；保留行为内容。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C05_CONFORMITY_PV07_HIGHER",
+      "unit_id": "U_C05_CONFORMITY",
+      "item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV07",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确因害怕被疏远而跟随群体行为。",
+      "do_not_infer_when": "这是设定条件下的选择，不能据此宣称学生平时一直害怕被疏远。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+      "unit_id": "U_C05_CONFORMITY",
+      "item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确即使担心被疏远仍不因此跟随不认可的行为。",
+      "do_not_infer_when": "这是设定条件下的选择，不能据此宣称学生平时一直害怕被疏远。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+      "unit_id": "U_C05_REJECTION",
+      "item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV09",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确表达担心自己因关系或意见变化被朋友疏远。",
+      "do_not_infer_when": "记录情境担忧，不能直接推为稳定人格。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_C05_REJECTION_PV09_LOWER",
+      "unit_id": "U_C05_REJECTION",
+      "item_ids": [
+        "C05"
+      ],
+      "variable_id": "PV09",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示在此情境中不担心因此被朋友疏远。",
+      "do_not_infer_when": "记录情境担忧，不能直接推为稳定人格。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+      "unit_id": "U_D01_EXCLUSION",
+      "item_ids": [
+        "D01"
+      ],
+      "variable_id": "PV09",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确担心自己被朋友排除在活动之外。",
+      "do_not_infer_when": "对实际排斥的合理担忧不能直接推为过度敏感。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D01_EXCLUSION_PV09_LOWER",
+      "unit_id": "U_D01_EXCLUSION",
+      "item_ids": [
+        "D01"
+      ],
+      "variable_id": "PV09",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示不担心被排除，并保留情境依据。",
+      "do_not_infer_when": "对实际排斥的合理担忧不能直接推为过度敏感。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D02_NO_RESPONSE_PV09_HIGHER",
+      "unit_id": "U_D02_NO_RESPONSE",
+      "item_ids": [
+        "D02"
+      ],
+      "variable_id": "PV09",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确因未获回应而担心对方对自己有意见。",
+      "do_not_infer_when": "不推断他人实际态度；仅记录学生的解释。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+      "unit_id": "U_D02_NO_RESPONSE",
+      "item_ids": [
+        "D02"
+      ],
+      "variable_id": "PV09",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确考虑忙碌等解释而不急于担心被针对。",
+      "do_not_infer_when": "不推断他人实际态度；仅记录学生的解释。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "item_ids": [
+        "D03"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确自述有可以放心交流的同伴。",
+      "do_not_infer_when": "家长和教师不替代同伴资源；不要求说出真实姓名。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D03_PEER_SUPPORT_PV08_LOWER",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "item_ids": [
+        "D03"
+      ],
+      "variable_id": "PV08",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确自述没有可以放心交流的同伴。",
+      "do_not_infer_when": "家长和教师不替代同伴资源；不要求说出真实姓名。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+      "unit_id": "U_D04_REPAIR",
+      "item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确相信与朋友发生矛盾后关系仍能修复。",
+      "do_not_infer_when": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D04_REPAIR_PV08_LOWER",
+      "unit_id": "U_D04_REPAIR",
+      "item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV08",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确认为此次朋友关系难以修复。",
+      "do_not_infer_when": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+      "unit_id": "U_D04_REPAIR",
+      "item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确表达朋友冲突后的关系修复预期。",
+      "do_not_infer_when": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_D04_REPAIR_PV10_LOWER",
+      "unit_id": "U_D04_REPAIR",
+      "item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表达在此朋友冲突中难以修复关系的预期。",
+      "do_not_infer_when": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+      "unit_id": "U_E01_CHANNEL",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确知道一个可商量的对象或渠道。",
+      "do_not_infer_when": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+      "unit_id": "U_E01_CHANNEL",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确不知道可以找谁，或明确没有可信渠道。",
+      "do_not_infer_when": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+      "unit_id": "U_E02_EXPRESSION",
+      "item_ids": [
+        "E02"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "在本次模拟表达中能够说明发生的事情或所需帮助。",
+      "do_not_infer_when": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E02_EXPRESSION_PV10_LOWER",
+      "unit_id": "U_E02_EXPRESSION",
+      "item_ids": [
+        "E02"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示本次无法向信任成年人说明情况。",
+      "do_not_infer_when": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+      "unit_id": "U_E03_BARRIER",
+      "item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确担心告诉老师或家长使事情更麻烦。",
+      "do_not_infer_when": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+      "unit_id": "U_E03_BARRIER",
+      "item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确表示没有担心告诉老师家长会使事情更麻烦这一顾虑。",
+      "do_not_infer_when": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+      "unit_id": "U_E04_DEESCALATION",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确通过离开或暂停让自己平静。",
+      "do_not_infer_when": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E04_DEESCALATION_PV01_LOWER",
+      "unit_id": "U_E04_DEESCALATION",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确描述在激烈争执中无法暂停情绪化反应。",
+      "do_not_infer_when": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+      "unit_id": "U_E04_DEESCALATION",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确通过离开或暂停避免争执升级。",
+      "do_not_infer_when": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E04_DEESCALATION_PV10_LOWER",
+      "unit_id": "U_E04_DEESCALATION",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示无法采取离开或暂停等避免升级的办法。",
+      "do_not_infer_when": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E05_PROTECTION_PV04_HIGHER",
+      "unit_id": "U_E05_PROTECTION",
+      "item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确关注受影响同学并提出帮助意向。",
+      "do_not_infer_when": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+      "unit_id": "U_E05_PROTECTION",
+      "item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确说明帮助同学同时保护自己的办法。",
+      "do_not_infer_when": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_E05_PROTECTION_PV10_LOWER",
+      "unit_id": "U_E05_PROTECTION",
+      "item_ids": [
+        "E05"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表示无法兼顾帮助与自我保护。",
+      "do_not_infer_when": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G01_FORCE_PV02_HIGHER",
+      "unit_id": "U_G01_FORCE",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确认可用推打等伤害性行动解决或报复。",
+      "do_not_infer_when": "强硬不自动等于伤害；对作用的描述不等于认可。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G01_FORCE_PV02_LOWER",
+      "unit_id": "U_G01_FORCE",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确拒绝用身体伤害解决冲突。",
+      "do_not_infer_when": "强硬不自动等于伤害；对作用的描述不等于认可。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G01_FORCE_PV02_UNCLEAR",
+      "unit_id": "U_G01_FORCE",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "unclear",
+      "context_only": false,
+      "criterion": "说到强硬却未说明具体行为，保留歧义。",
+      "do_not_infer_when": "强硬不自动等于伤害；对作用的描述不等于认可。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G02_VERBAL_PV02_HIGHER",
+      "unit_id": "U_G02_VERBAL",
+      "item_ids": [
+        "G02"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确认可用伤害性的尖锐语言回击更有效。",
+      "do_not_infer_when": "坚定表达边界不等于语言攻击。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G02_VERBAL_PV02_LOWER",
+      "unit_id": "U_G02_VERBAL",
+      "item_ids": [
+        "G02"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确不认可或拒绝以伤害性语言回击。",
+      "do_not_infer_when": "坚定表达边界不等于语言攻击。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G03_ALLIANCE_PV06_HIGHER",
+      "unit_id": "U_G03_ALLIANCE",
+      "item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确要求朋友必须站队，或以排斥等方式控制关系。",
+      "do_not_infer_when": "正常寻求支持不等于关系攻击。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G03_ALLIANCE_PV06_LOWER",
+      "unit_id": "U_G03_ALLIANCE",
+      "item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确允许朋友有不同意见，不强迫朋友站队。",
+      "do_not_infer_when": "正常寻求支持不等于关系攻击。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G03_ALLIANCE_PV06_UNCLEAR",
+      "unit_id": "U_G03_ALLIANCE",
+      "item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV06",
+      "direction": "unclear",
+      "context_only": false,
+      "criterion": "仅希望朋友支持自己，没有说明控制或强迫。",
+      "do_not_infer_when": "正常寻求支持不等于关系攻击。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G03_GROUP_PV07_HIGHER",
+      "unit_id": "U_G03_GROUP",
+      "item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV07",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确因群体站队而放弃自己的判断并跟随。",
+      "do_not_infer_when": "本单元选择原 G03 的 PV07 方面，不凭想要支持自动认定从众。",
+      "review_status": "engineering_draft_requires_review"
+    },
+    {
+      "rule_id": "DR_G03_GROUP_PV07_LOWER",
+      "unit_id": "U_G03_GROUP",
+      "item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确在朋友站队时仍保留自己的判断。",
+      "do_not_infer_when": "本单元选择原 G03 的 PV07 方面，不凭想要支持自动认定从众。",
+      "review_status": "engineering_draft_requires_review"
+    }
+  ],
+  "note": "多轮测量单元专用规则；保留旧 evidence_rubric.json 和旧 extract 行为。方向不是量表分数。"
+}

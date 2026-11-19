@@ -1,0 +1,50 @@
+
+PV01:
+  name: Emotion Regulation
+  description: 情绪调节能力
+  risk: conflict escalation
+
+PV02:
+  name: Aggression
+  description: 攻击倾向
+  risk: bully
+
+PV03:
+  name: Hostile Attribution
+  description: 敌意归因
+  risk: bully_victim
+
+PV04:
+  name: Empathy
+  description: 共情能力
+  protection: true
+
+PV05:
+  name: Moral Disengagement
+  description: 道德脱离
+  risk: bully
+
+PV06:
+  name: Dominance
+  description: 支配倾向
+  risk: relational_aggression
+
+PV07:
+  name: Conformity
+  description: 群体敏感
+  risk: bystander
+
+PV08:
+  name: Peer Support
+  description: 同伴支持
+  protection: true
+
+PV09:
+  name: Rejection Sensitivity
+  description: 排斥敏感
+  risk: victim
+
+PV10:
+  name: Help Seeking Coping
+  description: 求助与冲突解决
+  protection: true

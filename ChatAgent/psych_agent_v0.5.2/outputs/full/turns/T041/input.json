@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_041",
+  "turn_id": "T041",
+  "question_id": "Q041",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+  "answer": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+  "target_unit_id": "U_C01_VOICE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

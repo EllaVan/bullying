@@ -1,0 +1,93 @@
+{
+  "turn_id": "T001",
+  "observations": [
+    {
+      "unit_id": "U_A04_PAUSE",
+      "status": "covered",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "pause",
+          "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "rationale": "合成开发示例：明确先暂停或平静，再决定行动。"
+        },
+        {
+          "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    },
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "covered",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    },
+    {
+      "unit_id": "U_E04_DEESCALATION",
+      "status": "covered",
+      "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+        },
+        {
+          "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": [
+    {
+      "item_id": "F01",
+      "quote": "家里也有人愿意听我说学校的事。",
+      "description": "合成样例中的家庭倾听背景。",
+      "reference_frame": "habitual_self_report",
+      "subject": "self"
+    }
+  ]
+}

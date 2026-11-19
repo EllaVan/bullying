@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_S01_006",
+  "turn_id": "T006",
+  "question_id": "Q006",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_S01_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_2e97ce9e2d00ce73",
+  "entry_index": 0,
+  "question": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+  "answer": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+  "target_unit_id": "U_G01_FORCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T006",
+    "observations": [
+      {
+        "unit_id": "U_G01_FORCE",
+        "status": "covered",
+        "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "action",
+            "value": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+            "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G01_FORCE_PV02_LOWER",
+            "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+            "rationale": "合成开发示例：明确拒绝用身体伤害解决冲突。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_G01_FORCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_5d051bebd99c828c98ba",
+      "status": "covered",
+      "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+      "source_span": {
+        "start": 0,
+        "end": 22,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "action",
+          "value": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+          "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "evidence_ids": [
+        "DEV_91d43ee2afb7fc85dc49"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T006",
+      "question_id": "Q006",
+      "unit_id": "U_G01_FORCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G01_FORCE_PV02_LOWER",
+      "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+      "rationale": "合成开发示例：明确拒绝用身体伤害解决冲突。",
+      "evidence_id": "DEV_91d43ee2afb7fc85dc49",
+      "observation_id": "OB_5d051bebd99c828c98ba",
+      "source_item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 22,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

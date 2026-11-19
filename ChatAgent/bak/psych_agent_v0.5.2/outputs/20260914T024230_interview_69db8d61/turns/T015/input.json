@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_015",
+  "turn_id": "T015",
+  "question_id": "Q015",
+  "scenario_id": "S02",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_a4e881ebdb1f68da",
+  "entry_index": 1,
+  "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+  "answer": "今天有个我不太喜欢的同学和其他同学有矛盾了",
+  "target_unit_id": "U_E02_EXPRESSION",
+  "mode": "probe",
+  "question_reference_frame": "task_performance"
+}

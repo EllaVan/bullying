@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_025",
+  "turn_id": "T025",
+  "question_id": "Q025",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+  "answer": "那我可能不太敢说",
+  "target_unit_id": "U_G03_GROUP",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_041",
+  "turn_id": "T041",
+  "question_id": "Q041",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "answer": "带头的人有很大的责任",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

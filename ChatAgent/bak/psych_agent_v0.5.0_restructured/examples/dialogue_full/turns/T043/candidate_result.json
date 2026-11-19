@@ -1,0 +1,29 @@
+{
+  "turn_id": "T043",
+  "observations": [
+    {
+      "unit_id": "U_C03_DETERRENCE",
+      "status": "covered",
+      "quote": "我不认可通过让别人害怕我来维持关系。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "deterrence",
+          "value": "我不认可通过让别人害怕我来维持关系。",
+          "quote": "我不认可通过让别人害怕我来维持关系。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+          "quote": "我不认可通过让别人害怕我来维持关系。",
+          "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

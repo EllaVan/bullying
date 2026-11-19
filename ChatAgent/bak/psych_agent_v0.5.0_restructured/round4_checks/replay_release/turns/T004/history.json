@@ -1,0 +1,668 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_001",
+    "turn_id": "T001",
+    "question_id": "Q001",
+    "scenario_id": "S01",
+    "scenario_instance_id": "DEMO_FULL_01_S01_base",
+    "condition_id": "base",
+    "event_id": "SCENE_cf18cf6cb8acafcc",
+    "entry_index": 0,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。家里也有人愿意听我说学校的事。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T001",
+      "observations": [
+        {
+          "unit_id": "U_A04_PAUSE",
+          "status": "covered",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "pause",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "rationale": "合成开发示例：明确先暂停或平静，再决定行动。"
+            },
+            {
+              "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        },
+        {
+          "unit_id": "U_E01_CHANNEL",
+          "status": "covered",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "channel",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        },
+        {
+          "unit_id": "U_E04_DEESCALATION",
+          "status": "covered",
+          "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "deescalation",
+              "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+            },
+            {
+              "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+              "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+              "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": [
+        {
+          "item_id": "F01",
+          "quote": "家里也有人愿意听我说学校的事。",
+          "description": "合成样例中的家庭倾听背景。",
+          "reference_frame": "habitual_self_report",
+          "subject": "self"
+        }
+      ]
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_A04_PAUSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_63f8f39a068fb6e8479b",
+        "status": "covered",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "pause",
+            "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A04"
+        ],
+        "target_variable_ids": [
+          "PV01",
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_d36cc8354729803af52e",
+          "DEV_c7be1bbdb334ab11141b"
+        ]
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_51f50e5f643b3d69db99",
+        "status": "covered",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E01"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_db2cfa5752931c39633e"
+        ]
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_E04_DEESCALATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_41e30064d2abab26a724",
+        "status": "covered",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "deescalation",
+            "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E04"
+        ],
+        "target_variable_ids": [
+          "PV01",
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_121eaed348bc92ddab82",
+          "DEV_2e0523f9eb42c9f3ca15"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_A04_PAUSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "rationale": "合成开发示例：明确先暂停或平静，再决定行动。",
+        "evidence_id": "DEV_d36cc8354729803af52e",
+        "observation_id": "OB_63f8f39a068fb6e8479b",
+        "source_item_ids": [
+          "A04"
+        ],
+        "variable_id": "PV01",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_A04_PAUSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。",
+        "evidence_id": "DEV_c7be1bbdb334ab11141b",
+        "observation_id": "OB_63f8f39a068fb6e8479b",
+        "source_item_ids": [
+          "A04"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。",
+        "evidence_id": "DEV_db2cfa5752931c39633e",
+        "observation_id": "OB_51f50e5f643b3d69db99",
+        "source_item_ids": [
+          "E01"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_E04_DEESCALATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "rationale": "合成开发示例：明确通过离开或暂停让自己平静。",
+        "evidence_id": "DEV_121eaed348bc92ddab82",
+        "observation_id": "OB_41e30064d2abab26a724",
+        "source_item_ids": [
+          "E04"
+        ],
+        "variable_id": "PV01",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_E04_DEESCALATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+        "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+        "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。",
+        "evidence_id": "DEV_2e0523f9eb42c9f3ca15",
+        "observation_id": "OB_41e30064d2abab26a724",
+        "source_item_ids": [
+          "E04"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [
+      {
+        "item_id": "F01",
+        "quote": "家里也有人愿意听我说学校的事。",
+        "description": "合成样例中的家庭倾听背景。",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_id": "CTX_5f527cb7561aa0c67354",
+        "turn_id": "T001",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "source_span": {
+          "start": 29,
+          "end": 44,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": true,
+        "included_in_core_or_risk": false
+      }
+    ]
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_002",
+    "turn_id": "T002",
+    "question_id": "Q002",
+    "scenario_id": "S01",
+    "scenario_instance_id": "DEMO_FULL_01_S01_base",
+    "condition_id": "base",
+    "event_id": "SCENE_cf18cf6cb8acafcc",
+    "entry_index": 0,
+    "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+    "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+    "target_unit_id": "U_A01_RECOVERY",
+    "mode": "probe",
+    "question_reference_frame": "habitual_self_report",
+    "candidate_result": {
+      "turn_id": "T002",
+      "observations": [
+        {
+          "unit_id": "U_A01_RECOVERY",
+          "status": "covered",
+          "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "recovery",
+              "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+              "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+              "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+              "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "HABIT_520cd0a75c270962",
+        "turn_id": "T002",
+        "question_id": "Q002",
+        "unit_id": "U_A01_RECOVERY",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_9a238e8e8ffa7f1f0a8a",
+        "status": "covered",
+        "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "recovery",
+            "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A01"
+        ],
+        "target_variable_ids": [
+          "PV01"
+        ],
+        "evidence_ids": [
+          "DEV_a27cb5a820f9359f376e"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "HABIT_520cd0a75c270962",
+        "turn_id": "T002",
+        "question_id": "Q002",
+        "unit_id": "U_A01_RECOVERY",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+        "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+        "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。",
+        "evidence_id": "DEV_a27cb5a820f9359f376e",
+        "observation_id": "OB_9a238e8e8ffa7f1f0a8a",
+        "source_item_ids": [
+          "A01"
+        ],
+        "variable_id": "PV01",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_003",
+    "turn_id": "T003",
+    "question_id": "Q003",
+    "scenario_id": "S01",
+    "scenario_instance_id": "DEMO_FULL_01_S01_base",
+    "condition_id": "base",
+    "event_id": "SCENE_cf18cf6cb8acafcc",
+    "entry_index": 0,
+    "question": "你会怎样理解对方刚才的举动？",
+    "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+    "target_unit_id": "U_A02_ATTRIBUTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T003",
+      "observations": [
+        {
+          "unit_id": "U_A02_ATTRIBUTION",
+          "status": "covered",
+          "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "interpretation",
+              "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+              "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+              "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+              "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T003",
+        "question_id": "Q003",
+        "unit_id": "U_A02_ATTRIBUTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_c0b92b4b42393dc747e3",
+        "status": "covered",
+        "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A02",
+          "A03"
+        ],
+        "target_variable_ids": [
+          "PV03"
+        ],
+        "evidence_ids": [
+          "DEV_8c409906f78e17c330a7"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S01",
+        "scenario_instance_id": "DEMO_FULL_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_cf18cf6cb8acafcc",
+        "turn_id": "T003",
+        "question_id": "Q003",
+        "unit_id": "U_A02_ATTRIBUTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+        "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+        "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。",
+        "evidence_id": "DEV_8c409906f78e17c330a7",
+        "observation_id": "OB_c0b92b4b42393dc747e3",
+        "source_item_ids": [
+          "A02",
+          "A03"
+        ],
+        "variable_id": "PV03",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  }
+]

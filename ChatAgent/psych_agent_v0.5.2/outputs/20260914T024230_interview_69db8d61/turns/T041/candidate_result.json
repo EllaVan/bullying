@@ -1,0 +1,29 @@
+{
+  "turn_id": "T041",
+  "observations": [
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "status": "covered",
+      "quote": "带头的人有很大的责任",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "带头的人有很大的责任",
+          "quote": "带头的人有很大的责任"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+          "quote": "带头的人有很大的责任",
+          "rationale": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+        }
+      ],
+      "reason": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+    }
+  ],
+  "background": []
+}

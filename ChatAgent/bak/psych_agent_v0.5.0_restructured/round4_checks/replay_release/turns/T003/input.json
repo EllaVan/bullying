@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_003",
+  "turn_id": "T003",
+  "question_id": "Q003",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "你会怎样理解对方刚才的举动？",
+  "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+  "target_unit_id": "U_A02_ATTRIBUTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

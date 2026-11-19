@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_FULL_051",
+  "turn_id": "T051",
+  "question_id": "Q051",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "朋友暂时没有回应时，你会怎样理解？",
+  "answer": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+  "target_unit_id": "U_D02_NO_RESPONSE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T051",
+    "observations": [
+      {
+        "unit_id": "U_D02_NO_RESPONSE",
+        "status": "covered",
+        "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+            "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+            "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+            "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_b95c18222b31e28d",
+      "turn_id": "T051",
+      "question_id": "Q051",
+      "unit_id": "U_D02_NO_RESPONSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_0a92767ec8c7210af2b8",
+      "status": "covered",
+      "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+      "source_span": {
+        "start": 0,
+        "end": 24,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+          "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "D02"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "evidence_ids": [
+        "DEV_8ae768b188a7ac13219c"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S06",
+      "scenario_instance_id": "DEMO_FULL_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_b95c18222b31e28d",
+      "turn_id": "T051",
+      "question_id": "Q051",
+      "unit_id": "U_D02_NO_RESPONSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+      "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+      "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。",
+      "evidence_id": "DEV_8ae768b188a7ac13219c",
+      "observation_id": "OB_0a92767ec8c7210af2b8",
+      "source_item_ids": [
+        "D02"
+      ],
+      "variable_id": "PV09",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 24,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

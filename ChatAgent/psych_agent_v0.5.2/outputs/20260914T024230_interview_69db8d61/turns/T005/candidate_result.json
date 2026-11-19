@@ -1,0 +1,29 @@
+{
+  "turn_id": "T005",
+  "observations": [
+    {
+      "unit_id": "U_A03_REVENGE",
+      "status": "covered",
+      "quote": "我希望他也倒霉一次，但是没有也没什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "desired_outcome",
+          "value": "希望对方也倒霉",
+          "quote": "我希望他也倒霉一次"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A03_REVENGE_PV02_HIGHER",
+          "quote": "我希望他也倒霉一次，但是没有也没什么",
+          "rationale": "回答中明确表达了希望对方受损的报复意向，符合U_A03_REVENGE单元的规则DR_A03_REVENGE_PV02_HIGHER。"
+        }
+      ],
+      "reason": "回答中直接表达了希望对方也经历不幸的愿望，符合报复意向的定义。"
+    }
+  ],
+  "background": []
+}

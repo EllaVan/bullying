@@ -1,0 +1,1216 @@
+{
+  "schema_version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "session_id": "SESSION_1d88ff542291",
+  "plan_id": "full",
+  "status": "running",
+  "stop_reason": null,
+  "answered_turns": 0,
+  "planned_unit_instances": 55,
+  "counts": {
+    "not_asked": 54,
+    "partial": 0,
+    "covered": 0,
+    "ambiguous": 0,
+    "declined": 0,
+    "not_applicable": 1
+  },
+  "coverage_fraction": 0.0,
+  "forms": {
+    "physical": {
+      "visited": false,
+      "answered_turns": 0,
+      "covered_units": 0
+    },
+    "verbal": {
+      "visited": false,
+      "answered_turns": 0,
+      "covered_units": 0
+    },
+    "relational": {
+      "visited": false,
+      "answered_turns": 0,
+      "covered_units": 0
+    }
+  },
+  "response_quality": {
+    "eligible_response_turns": 0,
+    "explicit_skip_turns": 0,
+    "brief_response_turns": 0,
+    "brief_response_rate": null,
+    "brief_response_max_characters": 6,
+    "warning_threshold": 0.5,
+    "warning_triggered": false,
+    "low_information_turns": 0,
+    "alternate_probe_scheduled_turns": 0,
+    "a3_fallback_turns": 0,
+    "interpretation_boundary": "回答简略度只按去除空白后的字符数统计。超过阈值仅提示本次画像可能信息不足，不能据此判断拒绝、欺骗、不配合动机或任何心理特征。"
+  },
+  "units": [
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "recovery"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "interpretation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "thinking"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_A03_REVENGE",
+      "source_item_ids": [
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "desired_outcome"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "pause"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_applicable",
+      "attempts": 0,
+      "missing_slots": [
+        "repair_expectation"
+      ],
+      "completion_reason": "scenario_condition_not_met",
+      "unfinished_reason": "scenario_condition_not_met",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "channel"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "barrier"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "deescalation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_1d88ff542291_01_S01_base",
+      "unit_id": "U_G01_FORCE",
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "action"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "emotion_clues"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B02_CONCERN",
+      "source_item_ids": [
+        "B02"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "concern"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "responsibility"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "channel"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "barrier"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E05_PROTECTION",
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "help_action",
+        "self_protection"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "boundary"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "responsibility"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "consequence"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "dissent"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "choice"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_G02_VERBAL",
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "verbal_response"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "group_influence"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "recovery"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "interpretation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "thinking"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "pause"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "rejection_worry"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "exclusion"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "channel"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "barrier"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "deescalation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "emotion_clues"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B03_HARM",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "perspective"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "boundary"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "responsibility"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "consequence"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C01_VOICE",
+      "source_item_ids": [
+        "C01"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "voice"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C02_REFUSAL",
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "refusal"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C03_DETERRENCE",
+      "source_item_ids": [
+        "C03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "general_belief",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "deterrence"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "dissent"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "choice"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_G03_ALLIANCE",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "alliance"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "group_influence"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "rejection_worry"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "exclusion"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_D02_NO_RESPONSE",
+      "source_item_ids": [
+        "D02"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "interpretation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "peer_resource"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "repair_expectation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "channel"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": null,
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_asked",
+      "attempts": 0,
+      "missing_slots": [
+        "barrier"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "not_yet_obtained",
+      "observation_ids": []
+    }
+  ],
+  "note": "覆盖率仅表示本计划信息槽位完成情况，不是心理信度、风险概率或原量表完成率。"
+}

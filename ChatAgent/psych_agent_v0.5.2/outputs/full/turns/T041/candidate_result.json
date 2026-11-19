@@ -1,0 +1,29 @@
+{
+  "turn_id": "T041",
+  "observations": [
+    {
+      "unit_id": "U_C01_VOICE",
+      "status": "covered",
+      "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "voice",
+          "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+          "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+          "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+          "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

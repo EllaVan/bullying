@@ -1,0 +1,52 @@
+{
+  "turn_id": "T012",
+  "observations": [
+    {
+      "unit_id": "U_B01_EMOTION",
+      "status": "partial",
+      "quote": "我觉得他有点惨",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "emotion_clues",
+          "value": "观察到被推搡的同学可能感到不幸",
+          "quote": "我觉得他有点惨"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+          "quote": "我觉得他有点惨",
+          "rationale": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索"
+        }
+      ],
+      "reason": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索，但未明确说明如何确认感受或提供帮助"
+    },
+    {
+      "unit_id": "U_B02_CONCERN",
+      "status": "partial",
+      "quote": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "concern",
+          "value": "不喜欢对方，因此对其痛苦漠不关心",
+          "quote": "但是我不喜欢他，所以什么也不做"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+          "quote": "但是我不喜欢他，所以什么也不做",
+          "rationale": "学生明确表示由于不喜欢对方，对其痛苦漠不关心"
+        }
+      ],
+      "reason": "学生明确表示由于不喜欢对方，对其痛苦漠不关心，但未提供其他关于关注他人痛苦的信息"
+    }
+  ],
+  "background": []
+}

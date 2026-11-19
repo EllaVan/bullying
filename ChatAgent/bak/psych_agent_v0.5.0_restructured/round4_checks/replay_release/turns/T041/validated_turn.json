@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_FULL_041",
+  "turn_id": "T041",
+  "question_id": "Q041",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+  "answer": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+  "target_unit_id": "U_C01_VOICE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T041",
+    "observations": [
+      {
+        "unit_id": "U_C01_VOICE",
+        "status": "covered",
+        "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "voice",
+            "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+            "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+            "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+            "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T041",
+      "question_id": "Q041",
+      "unit_id": "U_C01_VOICE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_f06a46f6dc81c7f8f417",
+      "status": "covered",
+      "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "voice",
+          "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+          "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C01"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_397067c84b7f57b0db56"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T041",
+      "question_id": "Q041",
+      "unit_id": "U_C01_VOICE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+      "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+      "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。",
+      "evidence_id": "DEV_397067c84b7f57b0db56",
+      "observation_id": "OB_f06a46f6dc81c7f8f417",
+      "source_item_ids": [
+        "C01"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.5.0",
+  "config_set_id": "CFG_004",
+  "session_id": "DEMO_S01",
+  "plan_id": "s01",
+  "status": "completed",
+  "stop_reason": "plan_finished",
+  "answered_turns": 6,
+  "planned_unit_instances": 8,
+  "counts": {
+    "not_asked": 0,
+    "partial": 0,
+    "covered": 8,
+    "ambiguous": 0,
+    "declined": 0,
+    "not_applicable": 0
+  },
+  "coverage_fraction": 1.0,
+  "forms": {
+    "physical": {
+      "visited": true,
+      "answered_turns": 6,
+      "covered_units": 8
+    },
+    "verbal": {
+      "visited": false,
+      "answered_turns": 0,
+      "covered_units": 0
+    },
+    "relational": {
+      "visited": false,
+      "answered_turns": 0,
+      "covered_units": 0
+    }
+  },
+  "units": [
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_2e18199a75e9e3766bd4"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_30b4089fa2c62fd0b30b"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_400ce039313742014bbb"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_A03_REVENGE",
+      "source_item_ids": [
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_86f7aff4243729e5b8ef"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_cd9d8088d09fa408a82d"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_6df077da057c26dc4bd5"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_099ec899cc4ec43f7e4a"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "unit_id": "U_G01_FORCE",
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_5d051bebd99c828c98ba"
+      ]
+    }
+  ],
+  "note": "覆盖率仅表示本计划信息槽位完成情况，不是心理信度、风险概率或原量表完成率。"
+}

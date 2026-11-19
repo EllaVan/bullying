@@ -1,0 +1,150 @@
+{
+  "variable_notes": [
+    {
+      "variable_id": "PV01",
+      "text": "本次记录了暂停后再决策、情绪恢复过程、避免争执升级。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_192ee114b7db7917178c",
+        "DEV_2216594866f6826511af",
+        "DEV_7d25155e23ac31cc020e",
+        "DEV_7ed678cbcb2f97986090",
+        "DEV_fb8845e53c0268400c98"
+      ]
+    },
+    {
+      "variable_id": "PV02",
+      "text": "本次记录了报复意向、强制或身体伤害的解决倾向、尖锐语言回击的效用判断。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_397330b9bbae5914d9ad",
+        "DEV_6a51c8ae0103a09fb3de",
+        "DEV_8a7949b5fd7d2ce790db"
+      ]
+    },
+    {
+      "variable_id": "PV03",
+      "text": "本次记录了对他人意图的解释、认为被针对后的反复思考。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_49e0cb0d237443882fa1",
+        "DEV_a9fac628e65d53b39a02",
+        "DEV_ba8764f6b5ed75b23ae4",
+        "DEV_c69c95e7b6f314830d5c"
+      ]
+    },
+    {
+      "variable_id": "PV04",
+      "text": "本次记录了识别他人情绪、对不亲近同学的痛苦关注、帮助他人与自我保护、玩笑中的感受与伤害。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_37b93c5b5db868ef8baf",
+        "DEV_ea18b456b8991256562f",
+        "DEV_fb37f35325ce645e734e"
+      ]
+    },
+    {
+      "variable_id": "PV05",
+      "text": "本次记录了群体责任判断、玩笑是否可以继续的判断、无身体伤害时的后果判断。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_07d7e2a72406f26d02ea",
+        "DEV_638c28a5baa2d91cfdf9",
+        "DEV_7e5f8e93d8ca178365e6",
+        "DEV_831e499c13b8155bd5c3",
+        "DEV_b513c10bec36511cbd97",
+        "DEV_c62b3a704dc9c0b22fae",
+        "DEV_f52c647989e26c14f991",
+        "DEV_f7cb2050364e5ae21b7b"
+      ]
+    },
+    {
+      "variable_id": "PV06",
+      "text": "本次记录了面对意见被拒绝、威慑认知、对意见分量的重视。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_7312e25e5f0b8fa59f85",
+        "DEV_9653ec943d2fcaedc2fd",
+        "DEV_b818d04b98086cf2ddf9",
+        "DEV_fe9ccced12f7cf3cc022"
+      ]
+    },
+    {
+      "variable_id": "PV07",
+      "text": "本次记录了群体中表达不同意见、因关系压力而顺从、朋友站队时的群体影响。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_193705cd5644376b39de",
+        "DEV_39ce5ff0f8f2851377e8",
+        "DEV_8145ef3816905390f549",
+        "DEV_a4310dfe5f83580d529f",
+        "DEV_a446413e96439b2da1e7",
+        "DEV_fb48ad4ce917ffc1d707"
+      ]
+    },
+    {
+      "variable_id": "PV08",
+      "text": "本次记录了同伴交流资源、朋友关系修复预期。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_459eb5627984da8d9fd3",
+        "DEV_4ff4397ae9a3d4dc8082"
+      ]
+    },
+    {
+      "variable_id": "PV09",
+      "text": "本次记录了被排除在活动外的担忧、对关系疏远的担忧、对未获回应的解释。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_538b37b7a9098ed53c37",
+        "DEV_7a126d97f82e9de3f7b3",
+        "DEV_b6463bcb4eddc24724e8",
+        "DEV_f37d13294ee3dd0b038b"
+      ]
+    },
+    {
+      "variable_id": "PV10",
+      "text": "本次记录了暂停后再决策、求助渠道认知、向老师家长求助的顾虑、避免争执升级、向成年人说明情况、帮助他人与自我保护、朋友关系修复预期。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_0fe7210fae4053e397f1",
+        "DEV_35c754c6c9430a9f66f1",
+        "DEV_3f9585a58145c5c4fdd8",
+        "DEV_530f741e1b089ba20535",
+        "DEV_71c8658c0c936a3471ec",
+        "DEV_7760b7a2c408fb163783",
+        "DEV_8a66fc16127c14e1d22f",
+        "DEV_a58c1798065a4776f101",
+        "DEV_b44fb79817f80f9f0cc4",
+        "DEV_ba181816d1a7287049ca",
+        "DEV_efe8f936f41a7da0a9b0"
+      ]
+    }
+  ],
+  "role_notes": [
+    {
+      "role": "bully",
+      "text": "以下解释独立的工程风险分数及证据来源；低覆盖度不发布分数。",
+      "factor_ids": [
+        "RF_bully_PV02",
+        "RF_bully_PV03",
+        "RF_bully_PV05",
+        "RF_bully_PV06",
+        "RF_bully_PV07",
+        "RF_bully_PV01"
+      ]
+    },
+    {
+      "role": "victim",
+      "text": "以下解释独立的工程风险分数及证据来源；低覆盖度不发布分数。",
+      "factor_ids": [
+        "RF_victim_PV09",
+        "RF_victim_PV08",
+        "RF_victim_PV10",
+        "RF_victim_PV01",
+        "RF_victim_PV04"
+      ]
+    },
+    {
+      "role": "bully_victim",
+      "text": "以下解释独立的工程风险分数及证据来源；低覆盖度不发布分数。",
+      "factor_ids": [
+        "RF_bully_victim_PV03",
+        "RF_bully_victim_PV02",
+        "RF_bully_victim_PV09",
+        "RF_bully_victim_PV01",
+        "RF_bully_victim_PV10"
+      ]
+    }
+  ]
+}

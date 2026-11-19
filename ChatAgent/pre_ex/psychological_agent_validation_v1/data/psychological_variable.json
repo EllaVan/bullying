@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "description": "校园霸凌心理Agent心理变量定义库，用于Scenario Agent、Evidence Agent、Variable Agent和Risk Agent之间的数据协议",
+
+  "variables": {
+
+    "PV01": {
+      "name_cn": "情绪调节能力",
+      "name_en": "Emotion Regulation",
+      "type": "protective_risk_dual",
+      "definition": "个体在面对冲突、羞辱、压力或负面情绪时，识别、控制和恢复情绪状态的能力。",
+      "risk_direction": {
+        "low": {
+          "meaning": "情绪恢复困难，自我控制不足",
+          "possible_risk": ["冲突升级","冲动反应","报复行为"]
+        },"high": {
+          "meaning": "能够暂停和调整情绪",
+          "possible_protection": ["减少攻击行为","提高冲突解决能力"]
+        }
+      },
+      "observable_dimensions": ["愤怒持续时间","受到刺激后的反应速度","是否能够暂停后行动","是否能够调节负面情绪"],
+      "evidence_categories": ["情绪失控","冲突调节","自我控制","压力应对"],
+      "related_risks": ["bully_risk","bully_victim_risk"],
+      "risk_relation":{
+        "low": ["bully_risk","bully_victim_risk"],"high": ["bystander_risk"]
+      }
+    },
+
+
+    "PV02": {
+      "name_cn": "攻击倾向",
+      "name_en": "Aggression",
+      "type": "risk_factor",
+      "definition": "个体在冲突或受挫情境中表现出的攻击性想法、行为倾向或报复倾向。",
+      "risk_direction": {
+        "high": {
+          "meaning": "更容易采用攻击方式解决冲突",
+          "possible_risk": ["行为攻击","语言攻击","报复行为"]
+        }
+      },
+      "observable_dimensions": ["攻击想法","报复意愿","强硬解决冲突倾向","语言攻击倾向"],
+      "evidence_categories": ["攻击行为","报复","冲突升级"],
+      "related_risks": ["bully_risk","bully_victim_risk"],
+      "risk_relation":{
+        "high": ["bully_risk","bully_victim_risk"]
+      }
+    },
+
+
+    "PV03": {
+      "name_cn": "敌意归因",
+      "name_en": "Hostile Attribution",
+      "type": "risk_factor",
+      "definition": "个体倾向于将他人的模糊或负面行为解释为故意伤害、针对或挑衅。",
+      "risk_direction": {
+        "high": {
+          "meaning": "容易产生敌意解释",
+          "possible_risk": ["误解他人意图","冲突增加","攻击循环"]
+        }
+      },
+      "observable_dimensions": ["认为别人故意针对自己","持续反刍负面事件","对他人行为负面解释"],
+      "evidence_categories": ["敌意解释","受害感知","负面归因"],
+      "related_risks": ["bully_risk","victim_risk","bully_victim_risk"],
+      "risk_relation":{
+        "high": ["bully_risk","victim_risk","bully_victim_risk"]
+      }
+    },
+
+
+    "PV04": {
+      "name_cn": "共情能力",
+      "name_en": "Empathy",
+      "type": "protective_factor",
+      "definition": "个体理解、感受和关注他人情绪状态以及伤害影响的能力。",
+      "risk_direction": {
+        "low": {
+          "meaning": "较难识别他人痛苦或伤害影响",
+          "possible_risk": ["降低伤害判断能力","增加攻击行为接受度"]
+        },
+        "high": {
+          "meaning": "能够关注他人体验",
+          "possible_protection": ["减少施暴风险","增加保护行为"]
+        }
+      },
+      "observable_dimensions": ["识别他人情绪","理解伤害后果","保护他人的意愿"],
+      "evidence_categories": ["共情","伤害判断","保护行为"],
+      "related_risks": ["bully_risk","bystander_risk"],
+      "risk_relation":{
+        "low": ["bully_risk","bystander_risk"],"high": ["bystander_risk"]
+      }
+    },
+
+
+    "PV05": {
+      "name_cn": "道德脱离",
+      "name_en": "Moral Disengagement",
+      "type": "risk_factor",
+      "definition": "个体通过合理化、责任转移或弱化伤害后果降低自身道德约束的心理过程。",
+      "risk_direction": {
+        "high": {
+          "meaning": "更容易认为伤害行为合理",
+          "possible_risk": ["参与攻击","支持群体霸凌","降低责任感"]
+        }
+      },
+      "observable_dimensions": ["认为玩笑没有伤害","认为大家都做所以没责任","弱化行为后果"],
+      "evidence_categories": ["责任转移","伤害合理化","后果最小化"],
+      "related_risks": ["bully_risk","bystander_risk"],
+      "risk_relation":{
+        "high": ["bully_risk","bystander_risk"]
+      }
+    },
+
+
+    "PV06": {
+      "name_cn": "支配倾向",
+      "name_en": "Dominance",
+      "type": "risk_factor",
+      "definition": "个体通过控制、影响或提高自身地位来维持社会关系优势的倾向。",
+      "risk_direction": {
+        "high": {
+          "meaning": "更重视控制和地位",
+          "possible_risk": ["关系攻击","权力控制","威慑行为"]
+        }
+      },
+      "observable_dimensions": ["权力需求","控制他人的愿望","重视群体地位"],
+      "evidence_categories": ["权力","控制","关系操纵"],
+      "related_risks": ["bully_risk"],
+      "risk_relation":{"high": ["bully_risk"]}
+    },
+
+    "PV07": {
+      "name_cn": "群体敏感",
+      "name_en": "Conformity",
+      "type": "risk_factor",
+      "definition": "个体受到同伴意见、群体规范和社会压力影响的程度。",
+      "risk_direction": {
+        "high": {
+          "meaning": "行为选择容易受到群体影响",
+          "possible_risk": ["参与群体攻击","旁观不制止"]
+        }
+      },
+      "observable_dimensions": ["从众倾向","害怕与群体不同","群体压力敏感"],
+      "evidence_categories": ["从众","群体压力","责任分散"],
+      "related_risks": ["bystander_risk","bully_risk"],
+      "risk_relation":{"high": ["bystander_risk","bully_risk"]}
+    },
+
+
+    "PV08": {
+      "name_cn": "关系支持",
+      "name_en": "Peer Support",
+      "type": "protective_factor",
+      "definition": "个体获得来自同伴、家庭或教师的情感支持和关系资源程度。",
+      "risk_direction": {
+        "low": {
+          "meaning": "社会支持不足",
+          "possible_risk": ["增加受害持续风险","降低求助可能"]
+        }
+      },
+      "observable_dimensions": ["是否有可信任朋友","是否获得成人支持","关系稳定程度"],
+      "evidence_categories": ["社会支持","关系资源","安全感"],
+      "related_risks": ["victim_risk"],
+      "risk_relation":{"low": ["victim_risk"]}
+    },
+
+
+    "PV09": {
+      "name_cn": "排斥敏感",
+      "name_en": "Rejection Sensitivity",
+      "type": "risk_factor",
+      "definition": "个体对于被拒绝、忽视或社会评价变化的敏感程度。",
+      "risk_direction": {
+        "high": {
+          "meaning": "容易感知关系威胁",
+          "possible_risk": ["社交压力","冲突误解","受害体验增强"]
+        }
+      },
+      "observable_dimensions": ["担心被排除","担心他人负面评价","对关系变化敏感"],
+      "evidence_categories": ["关系压力","社会评价","排斥体验"],
+      "related_risks": ["victim_risk","bully_victim_risk"],
+      "risk_relation":{"high": ["victim_risk","bully_victim_risk"]}
+    },
+
+
+    "PV10": {
+      "name_cn": "求助与冲突解决",
+      "name_en": "Help Seeking & Coping",
+      "type": "protective_factor",
+      "definition": "个体面对校园关系问题时寻求支持、避免升级和解决冲突的能力。",
+      "risk_direction": {
+        "low": {
+          "meaning": "缺少有效解决方式",
+          "possible_risk": ["问题持续","冲突升级"]
+        },
+        "high": {
+          "meaning": "具有积极应对策略",
+          "possible_protection": ["降低持续风险","提高保护能力"]
+        }
+      },
+      "observable_dimensions": ["求助渠道","冲突暂停能力","问题解决策略"],
+      "evidence_categories": ["求助","冲突处理","保护行为"],
+      "related_risks": ["victim_risk","bully_victim_risk","bystander_risk"],
+      "risk_relation":{"low": ["victim_risk","bully_victim_risk"],"high": ["bystander_risk"]}
+    }
+
+  }
+}

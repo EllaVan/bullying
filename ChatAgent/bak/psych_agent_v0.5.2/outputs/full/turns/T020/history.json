@@ -1,0 +1,296 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_017",
+    "turn_id": "T017",
+    "question_id": "Q017",
+    "scenario_id": "S03",
+    "scenario_instance_id": "DEMO_FULL_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_ea4fdc50ab610889",
+    "entry_index": 2,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T017",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_018",
+    "turn_id": "T018",
+    "question_id": "Q018",
+    "scenario_id": "S03",
+    "scenario_instance_id": "DEMO_FULL_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_ea4fdc50ab610889",
+    "entry_index": 2,
+    "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+    "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+    "target_unit_id": "U_B03_JUSTIFICATION",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T018",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "covered",
+          "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+              "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+              "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+              "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S03",
+        "scenario_instance_id": "DEMO_FULL_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_ea4fdc50ab610889",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_59982f8327e09354acaf",
+        "status": "covered",
+        "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_b96b6905620db16cc511"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S03",
+        "scenario_instance_id": "DEMO_FULL_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_ea4fdc50ab610889",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+        "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+        "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。",
+        "evidence_id": "DEV_b96b6905620db16cc511",
+        "observation_id": "OB_59982f8327e09354acaf",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 34,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_019",
+    "turn_id": "T019",
+    "question_id": "Q019",
+    "scenario_id": "S03",
+    "scenario_instance_id": "DEMO_FULL_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_ea4fdc50ab610889",
+    "entry_index": 2,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T019",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S03",
+        "scenario_instance_id": "DEMO_FULL_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_ea4fdc50ab610889",
+        "turn_id": "T019",
+        "question_id": "Q019",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_2f46bf42a79fffdc85c4",
+        "status": "covered",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_87c7b429d006d95e2af5"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S03",
+        "scenario_instance_id": "DEMO_FULL_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_ea4fdc50ab610889",
+        "turn_id": "T019",
+        "question_id": "Q019",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。",
+        "evidence_id": "DEV_87c7b429d006d95e2af5",
+        "observation_id": "OB_2f46bf42a79fffdc85c4",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 29,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

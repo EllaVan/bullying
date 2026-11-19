@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.4.0"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "config_set_id": {
+      "type": "string"
+    },
+    "config_manifest_path": {
+      "type": "string"
+    },
+    "source_state_file": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "plan_id": {
+      "type": "string"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "session_status": {
+      "type": "string"
+    },
+    "stop_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "variable_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "confidence_mode": {
+            "type": "string"
+          },
+          "feature_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scoring_status": {
+            "type": "string"
+          },
+          "human_review_required": {
+            "const": true
+          },
+          "source_risk_role": {
+            "type": "string"
+          },
+          "interpretation_boundary": {
+            "type": "string"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "coverage_units": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "variable_id",
+          "name",
+          "status",
+          "value",
+          "confidence",
+          "confidence_mode",
+          "feature_weight",
+          "scoring_status",
+          "human_review_required",
+          "source_risk_role",
+          "interpretation_boundary",
+          "groups",
+          "coverage_units"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "evidence_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "excluded_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "context": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "scenario_instances": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "test_scoring_notice": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "profile_id",
+    "purpose",
+    "config_set_id",
+    "config_manifest_path",
+    "source_state_file",
+    "session_id",
+    "plan_id",
+    "synthetic",
+    "session_status",
+    "stop_reason",
+    "coverage",
+    "variables",
+    "evidence_ledger",
+    "excluded_evidence",
+    "context",
+    "scenario_instances",
+    "test_scoring_notice",
+    "note"
+  ],
+  "additionalProperties": false
+}

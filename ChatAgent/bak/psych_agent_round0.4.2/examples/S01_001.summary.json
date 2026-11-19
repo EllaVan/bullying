@@ -1,0 +1,182 @@
+{
+  "case_id": "S01_001",
+  "scenario_id": "S01",
+  "purpose": "engineering_evidence_summary",
+  "semantic_review_status": "not_reviewed",
+  "variables": [
+    {
+      "variable_id": "PV01",
+      "name": "情绪调节能力 Emotion Regulation",
+      "status": "directional_evidence_observed",
+      "value": null,
+      "confidence": null,
+      "observation_group_count": 1,
+      "source_kinds": [
+        "hypothetical_intent"
+      ],
+      "observations": [
+        {
+          "event_id": "S01_001_event",
+          "source_kind": "hypothetical_intent",
+          "directions": [
+            "higher"
+          ],
+          "evidence_ids": [
+            "EV_491d5f0587c2377f"
+          ]
+        }
+      ],
+      "note": "方向描述仅针对本次表达；不能视为稳定特质、已验证能力或风险程度。"
+    },
+    {
+      "variable_id": "PV02",
+      "name": "攻击倾向 Aggression",
+      "status": "insufficient_evidence",
+      "value": null,
+      "confidence": null,
+      "observation_group_count": 0,
+      "source_kinds": [],
+      "observations": [],
+      "note": "方向描述仅针对本次表达；不能视为稳定特质、已验证能力或风险程度。"
+    },
+    {
+      "variable_id": "PV03",
+      "name": "敌意归因 Hostile Attribution",
+      "status": "insufficient_evidence",
+      "value": null,
+      "confidence": null,
+      "observation_group_count": 0,
+      "source_kinds": [],
+      "observations": [],
+      "note": "方向描述仅针对本次表达；不能视为稳定特质、已验证能力或风险程度。"
+    },
+    {
+      "variable_id": "PV10",
+      "name": "求助与冲突解决 Help Seeking & Coping",
+      "status": "directional_evidence_observed",
+      "value": null,
+      "confidence": null,
+      "observation_group_count": 1,
+      "source_kinds": [
+        "hypothetical_intent"
+      ],
+      "observations": [
+        {
+          "event_id": "S01_001_event",
+          "source_kind": "hypothetical_intent",
+          "directions": [
+            "higher"
+          ],
+          "evidence_ids": [
+            "EV_4fcdae2d2c403b47",
+            "EV_6394441d60926ac9"
+          ]
+        }
+      ],
+      "note": "方向描述仅针对本次表达；不能视为稳定特质、已验证能力或风险程度。"
+    }
+  ],
+  "context_evidence": [],
+  "excluded_subject_or_source_evidence": [],
+  "evidence_ledger": [
+    {
+      "rule_id": "R_E04_REGULATE",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_491d5f0587c2377f",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    },
+    {
+      "rule_id": "R_E04_COPING",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_6394441d60926ac9",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    },
+    {
+      "rule_id": "R_E01_HELP",
+      "turn_id": "T1",
+      "quote": "找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_4fcdae2d2c403b47",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 12,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    }
+  ],
+  "extractor_gap_notes": [
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ],
+  "duplicate_candidates_removed": 0,
+  "risk_result": null,
+  "limitations": [
+    "所有变量数值与置信度保持null。",
+    "观察组数量不是信度或独立测量次数。",
+    "代码只验证可检查的格式和来源；语义判定规则及抽取结果仍需独立人工评阅。",
+    "来自不同条件的不同方向不自动视为矛盾，更不判断撒谎。"
+  ]
+}

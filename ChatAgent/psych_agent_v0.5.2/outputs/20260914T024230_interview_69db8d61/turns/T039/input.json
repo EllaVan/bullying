@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_039",
+  "turn_id": "T039",
+  "question_id": "Q039",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+  "answer": "我觉得这件事情不好笑",
+  "target_unit_id": "U_B03_HARM",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent"
+}

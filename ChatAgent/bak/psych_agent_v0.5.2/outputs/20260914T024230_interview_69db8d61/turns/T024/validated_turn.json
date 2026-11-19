@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_024",
+  "turn_id": "T024",
+  "question_id": "Q024",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+  "answer": "矛盾可能会更大",
+  "target_unit_id": "U_G02_VERBAL",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T024",
+    "observations": [
+      {
+        "unit_id": "U_G02_VERBAL",
+        "status": "covered",
+        "quote": "矛盾可能会更大",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "verbal_response",
+            "value": "矛盾可能会更大",
+            "quote": "矛盾可能会更大"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G02_VERBAL_PV02_HIGHER",
+            "quote": "矛盾可能会更大",
+            "rationale": "学生回答中明确表达尖锐语言回击可能导致矛盾加剧，符合U_G02_VERBAL单元的判断要求。"
+          }
+        ],
+        "reason": "学生回答直接涉及尖锐语言回击的效用判断，明确表达了其认为会导致矛盾加剧的观点，因此状态为covered。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T024",
+      "question_id": "Q024",
+      "unit_id": "U_G02_VERBAL",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_0afc14fc499f8e7d209f",
+      "status": "covered",
+      "quote": "矛盾可能会更大",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "verbal_response",
+          "value": "矛盾可能会更大",
+          "quote": "矛盾可能会更大"
+        }
+      ],
+      "reason": "学生回答直接涉及尖锐语言回击的效用判断，明确表达了其认为会导致矛盾加剧的观点，因此状态为covered。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "evidence_ids": [
+        "DEV_397330b9bbae5914d9ad"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T024",
+      "question_id": "Q024",
+      "unit_id": "U_G02_VERBAL",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G02_VERBAL_PV02_HIGHER",
+      "quote": "矛盾可能会更大",
+      "rationale": "学生回答中明确表达尖锐语言回击可能导致矛盾加剧，符合U_G02_VERBAL单元的判断要求。",
+      "evidence_id": "DEV_397330b9bbae5914d9ad",
+      "observation_id": "OB_0afc14fc499f8e7d209f",
+      "source_item_ids": [
+        "G02"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 7,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

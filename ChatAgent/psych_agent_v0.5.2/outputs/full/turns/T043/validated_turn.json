@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_043",
+  "turn_id": "T043",
+  "question_id": "Q043",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+  "answer": "我不认可通过让别人害怕我来维持关系。",
+  "target_unit_id": "U_C03_DETERRENCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T043",
+    "observations": [
+      {
+        "unit_id": "U_C03_DETERRENCE",
+        "status": "covered",
+        "quote": "我不认可通过让别人害怕我来维持关系。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "deterrence",
+            "value": "我不认可通过让别人害怕我来维持关系。",
+            "quote": "我不认可通过让别人害怕我来维持关系。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+            "quote": "我不认可通过让别人害怕我来维持关系。",
+            "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T043",
+      "question_id": "Q043",
+      "unit_id": "U_C03_DETERRENCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_fd194570c6b218a22d29",
+      "status": "covered",
+      "quote": "我不认可通过让别人害怕我来维持关系。",
+      "source_span": {
+        "start": 0,
+        "end": 18,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "deterrence",
+          "value": "我不认可通过让别人害怕我来维持关系。",
+          "quote": "我不认可通过让别人害怕我来维持关系。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_88c529e92205ba2ba390"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T043",
+      "question_id": "Q043",
+      "unit_id": "U_C03_DETERRENCE",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+      "quote": "我不认可通过让别人害怕我来维持关系。",
+      "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。",
+      "evidence_id": "DEV_88c529e92205ba2ba390",
+      "observation_id": "OB_fd194570c6b218a22d29",
+      "source_item_ids": [
+        "C03"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 18,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 18,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_058",
+  "turn_id": "T058",
+  "question_id": "Q058",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "可能不会和谁说",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T058",
+    "observations": [
+      {
+        "unit_id": "U_E01_CHANNEL",
+        "status": "covered",
+        "quote": "可能不会和谁说",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "明确表示不会找任何人商量",
+            "quote": "可能不会和谁说"
+          }
+        ],
+        "evidence": [],
+        "reason": "回答中明确提到不会找任何人商量，符合U_E01_CHANNEL的槽位要求，状态为covered。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S06",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "condition_id": "base",
+      "event_id": "SCENE_aa90c9e8b542d112",
+      "turn_id": "T058",
+      "question_id": "Q058",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_339b536f79293706a5c1",
+      "status": "covered",
+      "quote": "可能不会和谁说",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确表示不会找任何人商量",
+          "quote": "可能不会和谁说"
+        }
+      ],
+      "reason": "回答中明确提到不会找任何人商量，符合U_E01_CHANNEL的槽位要求，状态为covered。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "validated_evidence": [],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 7,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

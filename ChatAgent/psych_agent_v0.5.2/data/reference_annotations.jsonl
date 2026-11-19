@@ -1,0 +1,16 @@
+{"case_id": "S01_001", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_E04_REGULATE", "R_E04_COPING", "R_E01_HELP"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_002", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_A02_HOSTILE"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_003", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_A02_ALTERNATIVE"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_004", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_A03_REVENGE"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_005", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_G01_UNCLEAR"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_006", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_G01_FORCE"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_007", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_G01_REJECT"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_008", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_A01_RECOVERY"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_009", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_E01_NO_CHANNEL"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_010", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_A04_PAUSE", "R_A04_COPING"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_011", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_G01_FORCE"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_012", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": [], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_013", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_F02_SUPPORT"], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_014", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": [], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_015", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": [], "reviewed_by": null, "review_notes": null}
+{"case_id": "S01_016", "annotation_status": "assistant_authored_draft_requires_human_review", "expected_rule_ids": ["R_G01_REJECT", "R_G01_FORCE"], "reviewed_by": null, "review_notes": null}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_054",
+  "turn_id": "T054",
+  "question_id": "Q054",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "我可以找信任的老师商量。",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK_DEMO_FULL_012",
+  "turn_id": "T012",
+  "question_id": "Q012",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T012",
+    "observations": [
+      {
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "status": "covered",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T012",
+      "question_id": "Q012",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_d5ae501d6b4edb98f142",
+      "status": "covered",
+      "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_f6220fb4566dc245f913"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T012",
+      "question_id": "Q012",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+      "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。",
+      "evidence_id": "DEV_f6220fb4566dc245f913",
+      "observation_id": "OB_d5ae501d6b4edb98f142",
+      "source_item_ids": [
+        "B04"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

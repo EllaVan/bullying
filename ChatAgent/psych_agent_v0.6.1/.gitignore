@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local secrets / machine-specific LLM configs (keep *.example.json)
+config/llm.local.json
+config/agents.json
+*.pem
+.env
+.env.*
+
+# Runtime outputs (保留最终对照样例：含锚定包+冲突置信+冲突证据)
+outputs/*
+!outputs/recompute_69db8d61/
+!outputs/recompute_69db8d61/**
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

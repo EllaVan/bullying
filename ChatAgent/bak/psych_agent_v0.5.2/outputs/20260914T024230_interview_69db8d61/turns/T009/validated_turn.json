@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_009",
+  "turn_id": "T009",
+  "question_id": "Q009",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+  "answer": "我觉得自己有没有受到伤害",
+  "target_unit_id": "U_E03_BARRIER",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T009",
+    "observations": [
+      {
+        "unit_id": "U_E03_BARRIER",
+        "status": "covered",
+        "quote": "我觉得自己有没有受到伤害",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "barrier",
+            "value": "对受到伤害的顾虑",
+            "quote": "我觉得自己有没有受到伤害"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+            "quote": "我觉得自己有没有受到伤害",
+            "rationale": "回答中明确表达了对自己是否受到伤害的顾虑，符合U_E03_BARRIER的barrier槽位描述，且为covered状态。"
+          }
+        ],
+        "reason": "回答中明确表达了对自己是否受到伤害的顾虑，符合U_E03_BARRIER的barrier槽位描述，且为covered状态。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T009",
+      "question_id": "Q009",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_a4854b3da1bcb205e9ca",
+      "status": "covered",
+      "quote": "我觉得自己有没有受到伤害",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "对受到伤害的顾虑",
+          "quote": "我觉得自己有没有受到伤害"
+        }
+      ],
+      "reason": "回答中明确表达了对自己是否受到伤害的顾虑，符合U_E03_BARRIER的barrier槽位描述，且为covered状态。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_7760b7a2c408fb163783"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T009",
+      "question_id": "Q009",
+      "unit_id": "U_E03_BARRIER",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+      "quote": "我觉得自己有没有受到伤害",
+      "rationale": "回答中明确表达了对自己是否受到伤害的顾虑，符合U_E03_BARRIER的barrier槽位描述，且为covered状态。",
+      "evidence_id": "DEV_7760b7a2c408fb163783",
+      "observation_id": "OB_a4854b3da1bcb205e9ca",
+      "source_item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 12,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 12,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

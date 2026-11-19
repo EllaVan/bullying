@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_034",
+  "turn_id": "T034",
+  "question_id": "Q034",
+  "scenario_id": "S04",
+  "scenario_instance_id": "DEMO_FULL_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_d594a2cc5edb0713",
+  "entry_index": 3,
+  "question": "争执已经越来越激烈时，你接下来会怎么做？",
+  "answer": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+  "target_unit_id": "U_E04_DEESCALATION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

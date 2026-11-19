@@ -1,0 +1,133 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_018",
+    "turn_id": "T018",
+    "question_id": "Q018",
+    "scenario_id": "S03",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+    "condition_id": "base",
+    "event_id": "SCENE_722aa97f731a94da",
+    "entry_index": 2,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得不太舒服，但是我可能不敢说什么",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T018",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "partial",
+          "quote": "我觉得不太舒服，但是我可能不敢说什么",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "不确定是否可以停止玩笑",
+              "quote": "我觉得不太舒服，但是我可能不敢说什么"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+              "quote": "我觉得不太舒服，但是我可能不敢说什么",
+              "rationale": "回答中表达了不适感，但暗示了因害怕而不敢表达反对意见，部分符合规则DR_B03_JUSTIFICATION_PV05_LOWER的要求。"
+            }
+          ],
+          "reason": "回答中部分表达了不适感，但未明确给出停止玩笑的界线及理由，因此状态为partial。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_cf514360c291da5bdbe7",
+        "status": "partial",
+        "quote": "我觉得不太舒服，但是我可能不敢说什么",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "不确定是否可以停止玩笑",
+            "quote": "我觉得不太舒服，但是我可能不敢说什么"
+          }
+        ],
+        "reason": "回答中部分表达了不适感，但未明确给出停止玩笑的界线及理由，因此状态为partial。",
+        "coverage_eligible": false,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_f52c647989e26c14f991"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S03",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+        "condition_id": "base",
+        "event_id": "SCENE_722aa97f731a94da",
+        "turn_id": "T018",
+        "question_id": "Q018",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+        "quote": "我觉得不太舒服，但是我可能不敢说什么",
+        "rationale": "回答中表达了不适感，但暗示了因害怕而不敢表达反对意见，部分符合规则DR_B03_JUSTIFICATION_PV05_LOWER的要求。",
+        "evidence_id": "DEV_f52c647989e26c14f991",
+        "observation_id": "OB_cf514360c291da5bdbe7",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 18,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 18,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

@@ -1,0 +1,256 @@
+{
+  "version": "0.6.1",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_draft_not_validated",
+  "rules": [
+    {
+      "rule_id": "R_A01_RECOVERY",
+      "item_ids": [
+        "A01"
+      ],
+      "variable_id": "PV01",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确描述受到刺激后长时间难以平静。",
+      "do_not_infer_when": "只说生气；未说明恢复困难。",
+      "illustrative_quote": "过了很久我还是平静不下来",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_A02_HOSTILE",
+      "item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "在意图不明确时，明确把对方解释为故意针对自己。",
+      "do_not_infer_when": "情境已经明确恶意；仅说如果他是故意的。",
+      "illustrative_quote": "虽然不知道原因，但我认定他就是故意针对我",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_A02_ALTERNATIVE",
+      "item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确保留非敌意解释，不急于认定对方故意。",
+      "do_not_infer_when": "只有不知道三个字且没有归因信息。",
+      "illustrative_quote": "也可能他没注意，我不会马上认定他是故意的",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_A03_REVENGE",
+      "item_ids": [
+        "A03"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确希望通过报复使对方受损或难受；意向和行为需分开。",
+      "do_not_infer_when": "单纯感到不公、生气；没有报复意向。",
+      "illustrative_quote": "我想找机会让他也难受一次",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_A04_PAUSE",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确先暂停或冷静，再决定行动。",
+      "do_not_infer_when": "只是忍着，未显示降温或延迟行动。",
+      "illustrative_quote": "我会先停一下，等自己冷静再决定怎么做",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_A04_COPING",
+      "item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确把暂停再作决定作为冲突应对办法。",
+      "do_not_infer_when": "没有行动策略；只描述感受。",
+      "illustrative_quote": "我会先停一下，等自己冷静再决定怎么做",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_E01_HELP",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确知道可向谁商量或表达具体求助意向。",
+      "do_not_infer_when": "不能仅凭愿意求助推定已经成功获得帮助。",
+      "illustrative_quote": "我会去找信任的老师商量",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_E01_NO_CHANNEL",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确不知道可向谁商量或没有可信求助渠道。",
+      "do_not_infer_when": "暂时不想告诉某一人，不等于不存在其他渠道。",
+      "illustrative_quote": "我不知道能找谁商量",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_E04_REGULATE",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确通过离开或暂停避免情绪升级。",
+      "do_not_infer_when": "因害怕而离开但未表达调节目的时，不能补出此目的。",
+      "illustrative_quote": "我会先离开，等自己冷静下来",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_E04_COPING",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确通过离开或暂停避免争执升级。",
+      "do_not_infer_when": "没有说明冲突应对目的。",
+      "illustrative_quote": "我会先离开，等自己冷静下来",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_G01_FORCE",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "明确提出推、打等伤害性身体行动作为解决或报复办法。",
+      "do_not_infer_when": "只是更强硬、让他明白，没有具体伤害行为。",
+      "illustrative_quote": "我会推他一把，让他知道不能这样",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_G01_REJECT",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确反对或拒绝通过身体伤害解决此情境。",
+      "do_not_infer_when": "没说要动手不等于明确拒绝；不能据此推定总体低风险。",
+      "illustrative_quote": "我不会动手伤害他",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_G01_UNCLEAR",
+      "item_ids": [
+        "G01"
+      ],
+      "variable_id": "PV02",
+      "direction": "unclear",
+      "context_only": false,
+      "criterion": "提到强硬但没有说明具体行为，保留歧义。",
+      "do_not_infer_when": "已经明确具体的身体伤害行为。",
+      "illustrative_quote": "我会用更强硬的办法",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_F01_SUPPORT",
+      "item_ids": [
+        "F01"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "context_only": true,
+      "criterion": "自述家庭有人愿意倾听学校事情，仅保存家庭背景。",
+      "do_not_infer_when": "求助意向不等于家庭支持已经存在。",
+      "illustrative_quote": "家里有人愿意听我说学校的事情",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_F02_SUPPORT",
+      "item_ids": [
+        "F02"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "context_only": true,
+      "criterion": "自述有老师愿意认真听情况，仅保存教师背景。",
+      "do_not_infer_when": "不知道老师会不会管不等于教师支持缺乏。",
+      "illustrative_quote": "有一位老师愿意认真听我说",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_F03_NORM",
+      "item_ids": [
+        "F03"
+      ],
+      "variable_id": "PV05",
+      "direction": "unclear",
+      "context_only": true,
+      "criterion": "描述班级对于伤害界线的规范，仅保存群体背景。",
+      "do_not_infer_when": "不能据此推定学生个人的道德脱离程度。",
+      "illustrative_quote": "班里都知道不能越过伤害别人的界线",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_F04_BELONGING",
+      "item_ids": [
+        "F04"
+      ],
+      "variable_id": "PV08",
+      "direction": "higher",
+      "context_only": true,
+      "criterion": "描述在学校被接纳或安全的感受，仅保存环境背景。",
+      "do_not_infer_when": "不能直接当作稳定同伴关系资源。",
+      "illustrative_quote": "我在学校觉得安全，也觉得被接纳",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_E03_HELP_BARRIER",
+      "item_ids": [
+        "E03"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "context_only": false,
+      "criterion": "明确表达担心告诉老师或家长使事情更麻烦，作为感知的求助阻碍。",
+      "do_not_infer_when": "仅不确定对方是否有空；未提及求助顾虑。不能把合理的安全顾虑解释为学生缺陷。",
+      "illustrative_quote": "我担心告诉老师或家长以后，事情反而更麻烦",
+      "review_status": "draft_requires_human_review"
+    },
+    {
+      "rule_id": "R_D04_REPAIR_EXPECTATION",
+      "item_ids": [
+        "D04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "criterion": "在与朋友冲突的语境中，明确相信关系可以修复；记录修复预期，不宣称实际修复能力已证实。",
+      "do_not_infer_when": "只想让朋友站在自己一边；只说有朋友；没有涉及冲突后关系修复。",
+      "illustrative_quote": "我觉得我们可以把误会说清楚，关系还是能修复的",
+      "review_status": "draft_requires_human_review"
+    }
+  ],
+  "note": "示例和判定条件由本轮工程设计补充，未经心理测量专家审定。rule_id由LLM选择，变量/方向/题目映射由代码查表。；0.6.1保留旧R_*规则供round1/aggregate兼容；对话测量仍以dialogue_rubric的DR_*为准。",
+  "config_set_id": "CFG_008"
+}

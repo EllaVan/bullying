@@ -1,0 +1,132 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_040",
+  "turn_id": "T040",
+  "question_id": "Q040",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "answer": "当时就应该停止",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T040",
+    "observations": [
+      {
+        "unit_id": "U_B03_JUSTIFICATION",
+        "status": "covered",
+        "quote": "当时就应该停止",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "当时就应该停止",
+            "quote": "当时就应该停止"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+            "quote": "当时就应该停止",
+            "rationale": "明确以大家觉得好笑等理由合理化继续让对方难受"
+          }
+        ],
+        "reason": "回答中明确提出了停止玩笑的时机，符合U_B03_JUSTIFICATION单元的要求，且覆盖了required_slots。"
+      }
+    ],
+    "background": [],
+    "experiences": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T040",
+      "question_id": "Q040",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_b42fe60fc583a5e78bd6",
+      "status": "covered",
+      "quote": "当时就应该停止",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "boundary",
+          "value": "当时就应该停止",
+          "quote": "当时就应该停止"
+        }
+      ],
+      "reason": "回答中明确提出了停止玩笑的时机，符合U_B03_JUSTIFICATION单元的要求，且覆盖了required_slots。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_b513c10bec36511cbd97"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T040",
+      "question_id": "Q040",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+      "quote": "当时就应该停止",
+      "rationale": "明确以大家觉得好笑等理由合理化继续让对方难受",
+      "evidence_id": "DEV_b513c10bec36511cbd97",
+      "observation_id": "OB_b42fe60fc583a5e78bd6",
+      "source_item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 7,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 7,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

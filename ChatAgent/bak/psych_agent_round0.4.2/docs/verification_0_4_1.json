@@ -1,0 +1,16 @@
+{
+  "version": "0.4.1",
+  "config_set_id": "CFG_004",
+  "date": "2026-09-12",
+  "test_command": "python -m unittest discover -s tests",
+  "tests_run": 115,
+  "tests_passed": 115,
+  "result": "OK",
+  "new_regression_tests": [
+    "开场回答不能把未提及单元标为not_applicable",
+    "复现上传运行包中缺少evidence和reason的响应并成功修复一次",
+    "第二次仍不合规时停止而非无限重试"
+  ],
+  "external_provider_called": false,
+  "validation_scope": "A3联机协议、审计目录、结构与来源边界；不代表真实模型语义准确率"
+}

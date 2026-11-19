@@ -1,0 +1,27 @@
+{
+  "case_id": "S01_002",
+  "evidence": [
+    {
+      "rule_id": "R_A02_HOSTILE",
+      "turn_id": "T1",
+      "quote": "虽然不知道原因，但我认定他就是故意针对我",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV10",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "turn_id": "T058",
+  "observations": [
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "covered",
+      "quote": "可能不会和谁说",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确表示不会找任何人商量",
+          "quote": "可能不会和谁说"
+        }
+      ],
+      "evidence": [],
+      "reason": "回答中明确提到不会找任何人商量，符合U_E01_CHANNEL的槽位要求，状态为covered。"
+    }
+  ],
+  "background": []
+}

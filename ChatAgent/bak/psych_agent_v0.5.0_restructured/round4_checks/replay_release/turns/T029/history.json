@@ -1,0 +1,393 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_025",
+    "turn_id": "T025",
+    "question_id": "Q025",
+    "scenario_id": "S04",
+    "scenario_instance_id": "DEMO_FULL_04_S04_base",
+    "condition_id": "base",
+    "event_id": "SCENE_d594a2cc5edb0713",
+    "entry_index": 3,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T025",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_026",
+    "turn_id": "T026",
+    "question_id": "Q026",
+    "scenario_id": "S04",
+    "scenario_instance_id": "DEMO_FULL_04_S04_base",
+    "condition_id": "base",
+    "event_id": "SCENE_d594a2cc5edb0713",
+    "entry_index": 3,
+    "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+    "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+    "target_unit_id": "U_A01_RECOVERY",
+    "mode": "probe",
+    "question_reference_frame": "habitual_self_report",
+    "candidate_result": {
+      "turn_id": "T026",
+      "observations": [
+        {
+          "unit_id": "U_A01_RECOVERY",
+          "status": "covered",
+          "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "recovery",
+              "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+              "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+              "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+              "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "HABIT_a3d6f43a98fc1b3b",
+        "turn_id": "T026",
+        "question_id": "Q026",
+        "unit_id": "U_A01_RECOVERY",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_9268aeebc666bf67bccc",
+        "status": "covered",
+        "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "recovery",
+            "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A01"
+        ],
+        "target_variable_ids": [
+          "PV01"
+        ],
+        "evidence_ids": [
+          "DEV_484ac357373bb5953833"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "HABIT_a3d6f43a98fc1b3b",
+        "turn_id": "T026",
+        "question_id": "Q026",
+        "unit_id": "U_A01_RECOVERY",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+        "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+        "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。",
+        "evidence_id": "DEV_484ac357373bb5953833",
+        "observation_id": "OB_9268aeebc666bf67bccc",
+        "source_item_ids": [
+          "A01"
+        ],
+        "variable_id": "PV01",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_027",
+    "turn_id": "T027",
+    "question_id": "Q027",
+    "scenario_id": "S04",
+    "scenario_instance_id": "DEMO_FULL_04_S04_base",
+    "condition_id": "base",
+    "event_id": "SCENE_d594a2cc5edb0713",
+    "entry_index": 3,
+    "question": "你会怎样理解对方刚才的举动？",
+    "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+    "target_unit_id": "U_A02_ATTRIBUTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T027",
+      "observations": [
+        {
+          "unit_id": "U_A02_ATTRIBUTION",
+          "status": "covered",
+          "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "interpretation",
+              "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+              "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+              "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+              "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "SCENE_d594a2cc5edb0713",
+        "turn_id": "T027",
+        "question_id": "Q027",
+        "unit_id": "U_A02_ATTRIBUTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_cbc98902c6f9db39ab25",
+        "status": "covered",
+        "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A02",
+          "A03"
+        ],
+        "target_variable_ids": [
+          "PV03"
+        ],
+        "evidence_ids": [
+          "DEV_007cfec6068583e922f4"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "SCENE_d594a2cc5edb0713",
+        "turn_id": "T027",
+        "question_id": "Q027",
+        "unit_id": "U_A02_ATTRIBUTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+        "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+        "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。",
+        "evidence_id": "DEV_007cfec6068583e922f4",
+        "observation_id": "OB_cbc98902c6f9db39ab25",
+        "source_item_ids": [
+          "A02",
+          "A03"
+        ],
+        "variable_id": "PV03",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 28,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_028",
+    "turn_id": "T028",
+    "question_id": "Q028",
+    "scenario_id": "S04",
+    "scenario_instance_id": "DEMO_FULL_04_S04_base",
+    "condition_id": "base",
+    "event_id": "SCENE_d594a2cc5edb0713",
+    "entry_index": 3,
+    "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+    "answer": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+    "target_unit_id": "U_A02_RUMINATION",
+    "mode": "probe",
+    "question_reference_frame": "habitual_self_report",
+    "candidate_result": {
+      "turn_id": "T028",
+      "observations": [
+        {
+          "unit_id": "U_A02_RUMINATION",
+          "status": "covered",
+          "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+          "reference_frame": "habitual_self_report",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "thinking",
+              "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+              "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+              "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+              "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "HABIT_a3d6f43a98fc1b3b",
+        "turn_id": "T028",
+        "question_id": "Q028",
+        "unit_id": "U_A02_RUMINATION",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_88b862ecf324ea48ee55",
+        "status": "covered",
+        "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+        "source_span": {
+          "start": 0,
+          "end": 32,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "thinking",
+            "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+            "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A02"
+        ],
+        "target_variable_ids": [
+          "PV03"
+        ],
+        "evidence_ids": [
+          "DEV_c8feca2ec194fad959d7"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S04",
+        "scenario_instance_id": "DEMO_FULL_04_S04_base",
+        "condition_id": "base",
+        "event_id": "HABIT_a3d6f43a98fc1b3b",
+        "turn_id": "T028",
+        "question_id": "Q028",
+        "unit_id": "U_A02_RUMINATION",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+        "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+        "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。",
+        "evidence_id": "DEV_c8feca2ec194fad959d7",
+        "observation_id": "OB_88b862ecf324ea48ee55",
+        "source_item_ids": [
+          "A02"
+        ],
+        "variable_id": "PV03",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 32,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_018",
+  "turn_id": "T018",
+  "question_id": "Q018",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

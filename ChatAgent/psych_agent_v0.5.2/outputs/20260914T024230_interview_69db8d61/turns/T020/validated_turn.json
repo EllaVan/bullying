@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_020",
+  "turn_id": "T020",
+  "question_id": "Q020",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+  "answer": "最开始反复说的那个人肯定是有责任的",
+  "target_unit_id": "U_B04_RESPONSIBILITY",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T020",
+    "observations": [
+      {
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "status": "covered",
+        "quote": "最开始反复说的那个人肯定是有责任的",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "最开始反复说的那个人肯定是有责任的",
+            "quote": "最开始反复说的那个人肯定是有责任的"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+            "quote": "最开始反复说的那个人肯定是有责任的",
+            "rationale": "回答明确指出最开始的人有责任，表明对群体责任判断的明确认知"
+          }
+        ],
+        "reason": "回答直接针对问题中提到的群体责任判断，明确指出了最先开始的人的责任，符合covered状态的要求。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T020",
+      "question_id": "Q020",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_b0b022c539357ae49c6b",
+      "status": "covered",
+      "quote": "最开始反复说的那个人肯定是有责任的",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "最开始反复说的那个人肯定是有责任的",
+          "quote": "最开始反复说的那个人肯定是有责任的"
+        }
+      ],
+      "reason": "回答直接针对问题中提到的群体责任判断，明确指出了最先开始的人的责任，符合covered状态的要求。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_c62b3a704dc9c0b22fae"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T020",
+      "question_id": "Q020",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+      "quote": "最开始反复说的那个人肯定是有责任的",
+      "rationale": "回答明确指出最开始的人有责任，表明对群体责任判断的明确认知",
+      "evidence_id": "DEV_c62b3a704dc9c0b22fae",
+      "observation_id": "OB_b0b022c539357ae49c6b",
+      "source_item_ids": [
+        "B04"
+      ],
+      "variable_id": "PV05",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 17,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

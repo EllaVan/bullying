@@ -1,0 +1,29 @@
+{
+  "turn_id": "T004",
+  "observations": [
+    {
+      "unit_id": "U_A02_RUMINATION",
+      "status": "covered",
+      "quote": "总会回想起来这件事",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "thinking",
+          "value": "总会回想起来这件事",
+          "quote": "总会回想起来这件事"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+          "quote": "总会回想起来这件事",
+          "rationale": "回答明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。"
+        }
+      ],
+      "reason": "回答中明确表达了在觉得被针对后，会持续回想这件事，符合RUMINATION单元的THINKING槽位要求。"
+    }
+  ],
+  "background": []
+}

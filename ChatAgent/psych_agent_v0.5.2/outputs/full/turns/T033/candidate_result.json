@@ -1,0 +1,29 @@
+{
+  "turn_id": "T033",
+  "observations": [
+    {
+      "unit_id": "U_E03_BARRIER",
+      "status": "covered",
+      "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+          "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+          "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+          "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

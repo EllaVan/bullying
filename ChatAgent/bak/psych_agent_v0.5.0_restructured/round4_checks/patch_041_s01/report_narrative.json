@@ -1,0 +1,101 @@
+{
+  "variable_notes": [
+    {
+      "variable_id": "PV01",
+      "text": "本次记录了暂停后再决策、避免争执升级、情绪恢复过程。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_91e22210e226dd5f9fff",
+        "DEV_dac35ee35acc70247d68",
+        "DEV_efa05509e3c580e8d089"
+      ]
+    },
+    {
+      "variable_id": "PV02",
+      "text": "本次记录了报复意向、强制或身体伤害的解决倾向。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_91d43ee2afb7fc85dc49",
+        "DEV_ccbd0f3b7a78b7ab8d53"
+      ]
+    },
+    {
+      "variable_id": "PV03",
+      "text": "本次记录了对他人意图的解释、认为被针对后的反复思考。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_6ce82124e703f54466bf",
+        "DEV_d49521a05d6fe93ba3ac"
+      ]
+    },
+    {
+      "variable_id": "PV04",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV05",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV06",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV07",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV08",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV09",
+      "text": "本次尚无这一变量的可汇总观察。",
+      "evidence_ids": []
+    },
+    {
+      "variable_id": "PV10",
+      "text": "本次记录了暂停后再决策、求助渠道认知、避免争执升级。各项来源和条件分别保留。",
+      "evidence_ids": [
+        "DEV_54ca30ee5aaa5cf62598",
+        "DEV_880e180124b78ef48850",
+        "DEV_ef788bbb92824444b1f4"
+      ]
+    }
+  ],
+  "role_notes": [
+    {
+      "role": "bully",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_bully_PV02",
+        "RF_bully_PV04",
+        "RF_bully_PV05",
+        "RF_bully_PV06",
+        "RF_bully_PV07",
+        "RF_bully_PV10"
+      ]
+    },
+    {
+      "role": "victim",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_victim_PV08",
+        "RF_victim_PV09",
+        "RF_victim_PV10"
+      ]
+    },
+    {
+      "role": "bully_victim",
+      "text": "以下解释A4等权流程测试结果及其证据来源；数值仍需人工复核。",
+      "factor_ids": [
+        "RF_bully_victim_PV01",
+        "RF_bully_victim_PV03",
+        "RF_bully_victim_PV09",
+        "RF_bully_victim_PV10"
+      ]
+    }
+  ]
+}

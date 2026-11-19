@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_002",
+  "turn_id": "T002",
+  "question_id": "Q002",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+  "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+  "target_unit_id": "U_A01_RECOVERY",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report"
+}

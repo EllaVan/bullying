@@ -1,0 +1,1218 @@
+{
+  "schema_version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "session_id": "SESSION_f1cef6d66e10",
+  "plan_id": "full",
+  "status": "completed",
+  "stop_reason": "plan_finished",
+  "answered_turns": 61,
+  "planned_unit_instances": 55,
+  "counts": {
+    "not_asked": 0,
+    "partial": 0,
+    "covered": 50,
+    "ambiguous": 3,
+    "declined": 0,
+    "not_applicable": 2
+  },
+  "coverage_fraction": 0.9433962264150944,
+  "forms": {
+    "physical": {
+      "visited": true,
+      "answered_turns": 17,
+      "covered_units": 16
+    },
+    "verbal": {
+      "visited": true,
+      "answered_turns": 19,
+      "covered_units": 16
+    },
+    "relational": {
+      "visited": true,
+      "answered_turns": 25,
+      "covered_units": 18
+    }
+  },
+  "response_quality": {
+    "eligible_response_turns": 61,
+    "explicit_skip_turns": 0,
+    "brief_response_turns": 4,
+    "brief_response_rate": 0.06557377049180328,
+    "brief_response_max_characters": 6,
+    "warning_threshold": 0.5,
+    "warning_triggered": false,
+    "low_information_turns": 5,
+    "alternate_probe_scheduled_turns": 1,
+    "a3_fallback_turns": 6,
+    "interpretation_boundary": "回答简略度只按去除空白后的字符数统计。超过阈值仅提示本次画像可能信息不足，不能据此判断拒绝、欺骗、不配合动机或任何心理特征。"
+  },
+  "units": [
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_bfcd47a9103bb038d768"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_bde88241f8077daf43e0"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_aabe0eb3d0681c309dbf"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_A03_REVENGE",
+      "source_item_ids": [
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_179728bb9ecade8107f8"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_93fea115530802ecde96"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_applicable",
+      "attempts": 0,
+      "missing_slots": [
+        "repair_expectation"
+      ],
+      "completion_reason": "scenario_condition_not_met",
+      "unfinished_reason": "scenario_condition_not_met",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_04301c5a9ba1f3a56acc"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "ambiguous",
+      "attempts": 2,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "unit_attempts_exhausted",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_a4854b3da1bcb205e9ca"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_a0d656d9c7bbeffd84ea"
+      ]
+    },
+    {
+      "scenario_id": "S01",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "unit_id": "U_G01_FORCE",
+      "source_item_ids": [
+        "G01"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_96d653c8d400b8b94786"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_410c760c989fa533952a"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_B02_CONCERN",
+      "source_item_ids": [
+        "B02"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_36af5bfdc4d3f8e84c26"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_4096688f442f590240c8"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_3a48f15ee3099583c301"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_a63825ab795382c7940b"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_b90cad588c33441e6494"
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "unit_id": "U_E05_PROTECTION",
+      "source_item_ids": [
+        "E05"
+      ],
+      "target_variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_21b6fcca585b1d68bb59"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_cf514360c291da5bdbe7",
+        "OB_88d03ff3dc7b6126d8d2"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_b0b022c539357ae49c6b"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_7fac9b65abf9516d5ee5"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_08302ffdc4ef0c29adc0"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_82cf7c5dc1ce30a56ab2",
+        "OB_badfab0627004e0315d1"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_G02_VERBAL",
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_0afc14fc499f8e7d209f"
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 2,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_1414269894ae3180f6b8"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_A01_RECOVERY",
+      "source_item_ids": [
+        "A01"
+      ],
+      "target_variable_ids": [
+        "PV01"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_4748000ec4b7cd4ff70d"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_6a505946133c7dbe1849"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_A02_RUMINATION",
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_366f6144e55484c7ae3b"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_A04_PAUSE",
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 2,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_47b261491fc901d1c246"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "not_applicable",
+      "attempts": 0,
+      "missing_slots": [
+        "rejection_worry"
+      ],
+      "completion_reason": "scenario_condition_not_met",
+      "unfinished_reason": "scenario_condition_not_met",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_746e73faf9aa5290cab4"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_81f30e56853da72f667f"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_fbf0a36881b70d19d42a"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_f01813f3e82351f8115f"
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "unit_id": "U_E04_DEESCALATION",
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_acb78690cc9e7f4b369b"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_B01_EMOTION",
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_37a60261547671b38f9f"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_B03_HARM",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 2,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_e0aae2a0370e4ada470a"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_b42fe60fc583a5e78bd6"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_1c6e1018fa8e22e3cdda"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_a8ce0af9a9f6d691703f"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_C01_VOICE",
+      "source_item_ids": [
+        "C01"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 2,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_bc4723e19b9484e34883"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_C02_REFUSAL",
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_0658163a7332065e8a4b",
+        "OB_0d055281fc62d1ce95cc"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_C03_DETERRENCE",
+      "source_item_ids": [
+        "C03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "general_belief",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_feb5c58445508fbf2b9f"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_91a01d3cda35658897e1"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_1effda8f49d06e790d17"
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_G03_ALLIANCE",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "ambiguous",
+      "attempts": 2,
+      "missing_slots": [
+        "alliance"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "unit_attempts_exhausted",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_740ad7accc32a274e999"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_0e18a53e712777d02684"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 0,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_ea5b469aefb2116a3a86"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_D02_NO_RESPONSE",
+      "source_item_ids": [
+        "D02"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_e499ac1094c2e1ab4f5e"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "reference_frame": "habitual_self_report",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_468ec25c2c10f5a23693"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_fe95c38344384c84b3bf"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 2,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_339b536f79293706a5c1"
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "task_performance",
+      "status": "ambiguous",
+      "attempts": 2,
+      "missing_slots": [
+        "explanation"
+      ],
+      "completion_reason": null,
+      "unfinished_reason": "unit_attempts_exhausted",
+      "observation_ids": []
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "reference_frame": "hypothetical_intent",
+      "status": "covered",
+      "attempts": 1,
+      "missing_slots": [],
+      "completion_reason": "required_information_obtained",
+      "unfinished_reason": null,
+      "observation_ids": [
+        "OB_2a01a3f4ade5f89bd3b6"
+      ]
+    }
+  ],
+  "note": "覆盖率仅表示本计划信息槽位完成情况，不是心理信度、风险概率或原量表完成率。"
+}

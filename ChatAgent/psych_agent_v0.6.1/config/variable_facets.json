@@ -1,0 +1,333 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "variables": {
+    "PV01": [
+      {
+        "facet_id": "PV01_U_A01_RECOVERY",
+        "name": "情绪恢复过程",
+        "unit_ids": [
+          "U_A01_RECOVERY"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "只说生气或先忍住不足以判断恢复；不设置未经依据的分钟阈值。"
+      },
+      {
+        "facet_id": "PV01_U_A04_PAUSE",
+        "name": "暂停后再决策",
+        "unit_ids": [
+          "U_A04_PAUSE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "仅忍住不代表平静；意向不能标为实际能力。"
+      },
+      {
+        "facet_id": "PV01_U_E04_DEESCALATION",
+        "name": "避免争执升级",
+        "unit_ids": [
+          "U_E04_DEESCALATION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。"
+      }
+    ],
+    "PV02": [
+      {
+        "facet_id": "PV02_U_A03_REVENGE",
+        "name": "报复意向",
+        "unit_ids": [
+          "U_A03_REVENGE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "表达不公平、生气不等于报复；本单元只选 PV02，PV03 由独立归因单元处理。"
+      },
+      {
+        "facet_id": "PV02_U_G01_FORCE",
+        "name": "强制或身体伤害的解决倾向",
+        "unit_ids": [
+          "U_G01_FORCE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "强硬不自动等于伤害；对作用的描述不等于认可。"
+      },
+      {
+        "facet_id": "PV02_U_G02_VERBAL",
+        "name": "尖锐语言回击的效用判断",
+        "unit_ids": [
+          "U_G02_VERBAL"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "坚定表达边界不等于语言攻击。"
+      }
+    ],
+    "PV03": [
+      {
+        "facet_id": "PV03_U_A02_ATTRIBUTION",
+        "name": "对他人意图的解释",
+        "unit_ids": [
+          "U_A02_ATTRIBUTION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "来源包含原设计 A03→PV03 的归因方面；报复本身不构成归因。明确恶意情境不测归因偏向。"
+      },
+      {
+        "facet_id": "PV03_U_A02_RUMINATION",
+        "name": "认为被针对后的反复思考",
+        "unit_ids": [
+          "U_A02_RUMINATION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "记录条件下的反复思考；不据此断言对方真实恶意或新增一个心理变量。"
+      }
+    ],
+    "PV04": [
+      {
+        "facet_id": "PV04_U_B01_EMOTION",
+        "name": "识别他人情绪",
+        "unit_ids": [
+          "U_B01_EMOTION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "没有提及感受不等于缺乏共情；判断正确与否需任务依据。"
+      },
+      {
+        "facet_id": "PV04_U_B02_CONCERN",
+        "name": "对不亲近同学的痛苦关注",
+        "unit_ids": [
+          "U_B02_CONCERN"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "必须有不亲近或不合得来这一前提；不能由沉默推断。"
+      },
+      {
+        "facet_id": "PV04_U_B03_HARM",
+        "name": "玩笑中的感受与伤害",
+        "unit_ids": [
+          "U_B03_HARM"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "本单元仅测 PV04；不能自动反向推算 PV05。"
+      },
+      {
+        "facet_id": "PV04_U_E05_PROTECTION",
+        "name": "帮助他人与自我保护",
+        "unit_ids": [
+          "U_E05_PROTECTION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。"
+      }
+    ],
+    "PV05": [
+      {
+        "facet_id": "PV05_U_B03_JUSTIFICATION",
+        "name": "玩笑是否可以继续的判断",
+        "unit_ids": [
+          "U_B03_JUSTIFICATION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "需明确的合理化或反对理由；只识别伤害不自动产生道德脱离反分。"
+      },
+      {
+        "facet_id": "PV05_U_B04_RESPONSIBILITY",
+        "name": "群体责任判断",
+        "unit_ids": [
+          "U_B04_RESPONSIBILITY"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "班级规范与个人的责任判断分开。"
+      },
+      {
+        "facet_id": "PV05_U_B05_CONSEQUENCES",
+        "name": "无身体伤害时的后果判断",
+        "unit_ids": [
+          "U_B05_CONSEQUENCES"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "描述结果与认可伤害分开；不能凭没提身体伤害推断。"
+      }
+    ],
+    "PV06": [
+      {
+        "facet_id": "PV06_U_C01_VOICE",
+        "name": "对意见分量的重视",
+        "unit_ids": [
+          "U_C01_VOICE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "仅记录话语分量的关注，正常领导或被尊重的需要不等于强制控制。"
+      },
+      {
+        "facet_id": "PV06_U_C02_REFUSAL",
+        "name": "面对意见被拒绝",
+        "unit_ids": [
+          "U_C02_REFUSAL"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "失望本身不等于控制行为。"
+      },
+      {
+        "facet_id": "PV06_U_C03_DETERRENCE",
+        "name": "威慑认知",
+        "unit_ids": [
+          "U_C03_DETERRENCE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "自我保护与威慑控制分开；不得补出已实施威胁。"
+      },
+      {
+        "facet_id": "PV06_U_G03_ALLIANCE",
+        "name": "朋友支持与关系控制",
+        "unit_ids": [
+          "U_G03_ALLIANCE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "正常寻求支持不等于关系攻击。"
+      }
+    ],
+    "PV07": [
+      {
+        "facet_id": "PV07_U_C04_DISSENT",
+        "name": "群体中表达不同意见",
+        "unit_ids": [
+          "U_C04_DISSENT"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "一般合群不等于从众风险；保留行为内容。"
+      },
+      {
+        "facet_id": "PV07_U_C05_CONFORMITY",
+        "name": "因关系压力而顺从",
+        "unit_ids": [
+          "U_C05_CONFORMITY"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "这是设定条件下的选择，不能据此宣称学生平时一直害怕被疏远。"
+      },
+      {
+        "facet_id": "PV07_U_G03_GROUP",
+        "name": "朋友站队时的群体影响",
+        "unit_ids": [
+          "U_G03_GROUP"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "本单元选择原 G03 的 PV07 方面，不凭想要支持自动认定从众。"
+      }
+    ],
+    "PV08": [
+      {
+        "facet_id": "PV08_U_D03_PEER_SUPPORT",
+        "name": "同伴交流资源",
+        "unit_ids": [
+          "U_D03_PEER_SUPPORT"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "家长和教师不替代同伴资源；不要求说出真实姓名。"
+      },
+      {
+        "facet_id": "PV08_U_D04_REPAIR",
+        "name": "朋友关系修复预期",
+        "unit_ids": [
+          "U_D04_REPAIR"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "预期不等于实际修复能力；一般同学冲突不自动适用。"
+      }
+    ],
+    "PV09": [
+      {
+        "facet_id": "PV09_U_C05_REJECTION",
+        "name": "对关系疏远的担忧",
+        "unit_ids": [
+          "U_C05_REJECTION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "记录情境担忧，不能直接推为稳定人格。"
+      },
+      {
+        "facet_id": "PV09_U_D01_EXCLUSION",
+        "name": "被排除在活动外的担忧",
+        "unit_ids": [
+          "U_D01_EXCLUSION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "对实际排斥的合理担忧不能直接推为过度敏感。"
+      },
+      {
+        "facet_id": "PV09_U_D02_NO_RESPONSE",
+        "name": "对未获回应的解释",
+        "unit_ids": [
+          "U_D02_NO_RESPONSE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "不推断他人实际态度；仅记录学生的解释。"
+      }
+    ],
+    "PV10": [
+      {
+        "facet_id": "PV10_U_A04_PAUSE",
+        "name": "暂停后再决策",
+        "unit_ids": [
+          "U_A04_PAUSE"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "仅忍住不代表平静；意向不能标为实际能力。"
+      },
+      {
+        "facet_id": "PV10_U_D04_REPAIR",
+        "name": "朋友关系修复预期",
+        "unit_ids": [
+          "U_D04_REPAIR"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "预期不等于实际修复能力；一般同学冲突不自动适用。"
+      },
+      {
+        "facet_id": "PV10_U_E01_CHANNEL",
+        "name": "求助渠道认知",
+        "unit_ids": [
+          "U_E01_CHANNEL"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。"
+      },
+      {
+        "facet_id": "PV10_U_E02_EXPRESSION",
+        "name": "向成年人说明情况",
+        "unit_ids": [
+          "U_E02_EXPRESSION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。"
+      },
+      {
+        "facet_id": "PV10_U_E03_BARRIER",
+        "name": "向老师家长求助的顾虑",
+        "unit_ids": [
+          "U_E03_BARRIER"
+        ],
+        "weight": 0.0,
+        "interpretation_boundary": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。 该方面只作支持障碍描述，不降低求助渠道或个人能力总分。"
+      },
+      {
+        "facet_id": "PV10_U_E04_DEESCALATION",
+        "name": "避免争执升级",
+        "unit_ids": [
+          "U_E04_DEESCALATION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "仅说离开不能自动补出调节目的；假设中的策略与执行能力分开。"
+      },
+      {
+        "facet_id": "PV10_U_E05_PROTECTION",
+        "name": "帮助他人与自我保护",
+        "unit_ids": [
+          "U_E05_PROTECTION"
+        ],
+        "weight": 1.0,
+        "interpretation_boundary": "未采取行动不直接证明没有共情；不把危险介入当成更高分的保护行为。"
+      }
+    ]
+  },
+  "note": "每一facet明确来源单元；同方面冲突值为null。"
+}

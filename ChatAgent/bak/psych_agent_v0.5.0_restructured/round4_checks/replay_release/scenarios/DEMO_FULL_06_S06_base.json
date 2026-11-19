@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_004",
+  "scenario_id": "S06",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "facts": {
+    "form": "relational",
+    "perspective": "target",
+    "relationship": "friend",
+    "intent_clarity": "ambiguous",
+    "group_pressure": "present",
+    "conflict_stage": "stable",
+    "affinity": "close",
+    "joking": "absent",
+    "no_response": "present"
+  },
+  "text": "你和几位朋友最近在一次活动安排上有过分歧。后来他们又在商量活动，你暂时没收到邀请。你发消息询问，一时还没有人回复，你还不清楚原因。"
+}

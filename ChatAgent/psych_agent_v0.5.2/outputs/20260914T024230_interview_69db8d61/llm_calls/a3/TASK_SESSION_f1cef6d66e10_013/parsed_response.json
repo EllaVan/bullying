@@ -1,0 +1,29 @@
+{
+  "turn_id": "T013",
+  "observations": [
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "status": "covered",
+      "quote": "带头的人有责任吧",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "认为带头的人有责任",
+          "quote": "带头的人有责任吧"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+          "quote": "带头的人有责任吧",
+          "rationale": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。"
+        }
+      ],
+      "reason": "回答中明确指出了对带头人的责任认定，符合责任外推的判断依据。"
+    }
+  ],
+  "background": []
+}

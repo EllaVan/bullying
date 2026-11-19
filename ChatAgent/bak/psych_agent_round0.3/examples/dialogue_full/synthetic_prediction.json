@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.3.0",
+  "session_id": "DEMO_FULL",
+  "input_hash": "1ea7a5463652a829b76834f6ab8a431b36ab85c770987d4c1459f21583396452",
+  "synthetic": true,
+  "model_id": "synthetic_contract_example_not_a_trained_model",
+  "assessment_target": {
+    "kind": "future_involvement",
+    "time_window": "模拟未来一个月；仅接口测试"
+  },
+  "role_semantics": "marginal_with_joint",
+  "probabilities": {
+    "bully": 0.3,
+    "victim": 0.4,
+    "bully_victim": 0.2
+  },
+  "confidence": {
+    "bully": null,
+    "victim": null,
+    "bully_victim": null
+  },
+  "validation_status": "synthetic_only_not_validated_for_prediction"
+}

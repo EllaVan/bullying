@@ -1,0 +1,29 @@
+{
+  "turn_id": "T020",
+  "observations": [
+    {
+      "unit_id": "U_B05_CONSEQUENCES",
+      "status": "covered",
+      "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "consequence",
+          "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+          "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+          "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+          "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,133 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_003",
+  "turn_id": "T003",
+  "question_id": "Q003",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "你会怎样理解对方刚才的举动？",
+  "answer": "他可能是不小心的，但是我仍然很生气",
+  "target_unit_id": "U_A02_ATTRIBUTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T003",
+    "observations": [
+      {
+        "unit_id": "U_A02_ATTRIBUTION",
+        "status": "covered",
+        "quote": "他可能是不小心的，但是我仍然很生气",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "可能是不小心的，但仍生气",
+            "quote": "他可能是不小心的，但是我仍然很生气"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A02_ATTRIBUTION_PV03_HIGHER",
+            "quote": "他可能是不小心的，但是我仍然很生气",
+            "rationale": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。"
+          }
+        ],
+        "reason": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_bde88241f8077daf43e0",
+      "status": "covered",
+      "quote": "他可能是不小心的，但是我仍然很生气",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "可能是不小心的，但仍生气",
+          "quote": "他可能是不小心的，但是我仍然很生气"
+        }
+      ],
+      "reason": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "evidence_ids": [
+        "DEV_ba8764f6b5ed75b23ae4"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_ATTRIBUTION_PV03_HIGHER",
+      "quote": "他可能是不小心的，但是我仍然很生气",
+      "rationale": "回答中明确表达了非敌意的解释可能，并保留了生气的情绪状态，符合归因单元的covered状态要求。",
+      "evidence_id": "DEV_ba8764f6b5ed75b23ae4",
+      "observation_id": "OB_bde88241f8077daf43e0",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 17,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 17,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

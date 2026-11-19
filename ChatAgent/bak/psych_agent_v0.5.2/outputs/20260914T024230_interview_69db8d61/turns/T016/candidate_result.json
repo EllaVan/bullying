@@ -1,0 +1,29 @@
+{
+  "turn_id": "T016",
+  "observations": [
+    {
+      "unit_id": "U_E03_BARRIER",
+      "status": "covered",
+      "quote": "有没有更大的矛盾",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "barrier",
+          "value": "担心告诉老师家长使事情更麻烦",
+          "quote": "有没有更大的矛盾"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E03_BARRIER_PV10_HIGHER",
+          "quote": "有没有更大的矛盾",
+          "rationale": "学生直接提到担心告诉老师或家长会使事情更麻烦，表明存在求助顾虑。"
+        }
+      ],
+      "reason": "学生回答中明确提到担心告诉老师或家长会使事情更麻烦，符合U_E03_BARRIER的barrier槽位要求，状态为covered。"
+    }
+  ],
+  "background": []
+}

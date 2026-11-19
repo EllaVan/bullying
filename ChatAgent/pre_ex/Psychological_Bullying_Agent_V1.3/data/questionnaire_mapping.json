@@ -1,0 +1,11 @@
+
+[
+{"id":"A01","text":"当别人当众让我难堪时，我通常需要一段时间才能平静下来","variables":["PV01"],"evidence":"情绪恢复困难"},
+{"id":"A02","text":"如果我觉得别人是故意针对我，我会反复想着这件事","variables":["PV03"],"evidence":"敌意归因"},
+{"id":"A03","text":"受到不公平对待后，我有时会想让对方也感受一下同样的滋味","variables":["PV02","PV03"],"evidence":"报复倾向"},
+{"id":"B01","text":"我通常能注意到同学什么时候表面没事，其实心里很难受","variables":["PV04"],"evidence":"共情"},
+{"id":"B04","text":"如果很多人都在做同一件事，个人承担责任会少一些","variables":["PV05"],"evidence":"责任外推"},
+{"id":"C05","text":"担心被朋友疏远，可能跟着大家做相同事情","variables":["PV07","PV09"],"evidence":"群体压力"},
+{"id":"D03","text":"有一两个可以放心交流的人","variables":["PV08"],"evidence":"社会支持"},
+{"id":"E01","text":"遇到同伴矛盾知道找谁商量","variables":["PV10"],"evidence":"求助能力"}
+]

@@ -1,0 +1,977 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_037",
+    "turn_id": "T037",
+    "question_id": "Q037",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得那位同学有点惨，但是我也不敢说什么",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T037",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "partial",
+          "quote": "我觉得那位同学有点惨，但是我也不敢说什么",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "注意到同学可能隐藏的不适",
+              "quote": "我觉得那位同学有点惨"
+            }
+          ],
+          "evidence": [],
+          "reason": "回答中提到注意到同学可能隐藏的不适，但未说明具体观察或确认感受的方法，部分覆盖U_B01_EMOTION单元的槽位要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_37a60261547671b38f9f",
+        "status": "partial",
+        "quote": "我觉得那位同学有点惨，但是我也不敢说什么",
+        "source_span": {
+          "start": 0,
+          "end": 20,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "注意到同学可能隐藏的不适",
+            "quote": "我觉得那位同学有点惨"
+          }
+        ],
+        "reason": "回答中提到注意到同学可能隐藏的不适，但未说明具体观察或确认感受的方法，部分覆盖U_B01_EMOTION单元的槽位要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_038",
+    "turn_id": "T038",
+    "question_id": "Q038",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我觉得这件事情不好笑，可能会告诉他",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T038",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 17,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": true
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_039",
+    "turn_id": "T039",
+    "question_id": "Q039",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我觉得这件事情不好笑",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "clarify",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T039",
+      "observations": [
+        {
+          "unit_id": "U_B03_HARM",
+          "status": "covered",
+          "quote": "我觉得这件事情不好笑",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "perspective",
+              "value": "考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+              "quote": "我觉得这件事情不好笑"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_HARM_PV04_HIGHER",
+              "quote": "我觉得这件事情不好笑",
+              "rationale": "明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认"
+            }
+          ],
+          "reason": "回答直接表达了对于玩笑是否好笑的判断，符合U_B03_HARM单元的要求，且quote直接来自学生回答。"
+        }
+      ],
+      "background": [],
+      "experiences": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_e0aae2a0370e4ada470a",
+        "status": "covered",
+        "quote": "我觉得这件事情不好笑",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "perspective",
+            "value": "考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+            "quote": "我觉得这件事情不好笑"
+          }
+        ],
+        "reason": "回答直接表达了对于玩笑是否好笑的判断，符合U_B03_HARM单元的要求，且quote直接来自学生回答。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_ea18b456b8991256562f"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T039",
+        "question_id": "Q039",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_HARM_PV04_HIGHER",
+        "quote": "我觉得这件事情不好笑",
+        "rationale": "明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认",
+        "evidence_id": "DEV_ea18b456b8991256562f",
+        "observation_id": "OB_e0aae2a0370e4ada470a",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 10,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_040",
+    "turn_id": "T040",
+    "question_id": "Q040",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+    "answer": "当时就应该停止",
+    "target_unit_id": "U_B03_JUSTIFICATION",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T040",
+      "observations": [
+        {
+          "unit_id": "U_B03_JUSTIFICATION",
+          "status": "covered",
+          "quote": "当时就应该停止",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "boundary",
+              "value": "当时就应该停止",
+              "quote": "当时就应该停止"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+              "quote": "当时就应该停止",
+              "rationale": "明确以大家觉得好笑等理由合理化继续让对方难受"
+            }
+          ],
+          "reason": "回答中明确提出了停止玩笑的时机，符合U_B03_JUSTIFICATION单元的要求，且覆盖了required_slots。"
+        }
+      ],
+      "background": [],
+      "experiences": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T040",
+        "question_id": "Q040",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_b42fe60fc583a5e78bd6",
+        "status": "covered",
+        "quote": "当时就应该停止",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "当时就应该停止",
+            "quote": "当时就应该停止"
+          }
+        ],
+        "reason": "回答中明确提出了停止玩笑的时机，符合U_B03_JUSTIFICATION单元的要求，且覆盖了required_slots。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_b513c10bec36511cbd97"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T040",
+        "question_id": "Q040",
+        "unit_id": "U_B03_JUSTIFICATION",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_JUSTIFICATION_PV05_HIGHER",
+        "quote": "当时就应该停止",
+        "rationale": "明确以大家觉得好笑等理由合理化继续让对方难受",
+        "evidence_id": "DEV_b513c10bec36511cbd97",
+        "observation_id": "OB_b42fe60fc583a5e78bd6",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 7,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_041",
+    "turn_id": "T041",
+    "question_id": "Q041",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "带头的人有很大的责任",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T041",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "带头的人有很大的责任",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "带头的人有很大的责任",
+              "quote": "带头的人有很大的责任"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+              "quote": "带头的人有很大的责任",
+              "rationale": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+            }
+          ],
+          "reason": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T041",
+        "question_id": "Q041",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_1c6e1018fa8e22e3cdda",
+        "status": "covered",
+        "quote": "带头的人有很大的责任",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "带头的人有很大的责任",
+            "quote": "带头的人有很大的责任"
+          }
+        ],
+        "reason": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_638c28a5baa2d91cfdf9"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T041",
+        "question_id": "Q041",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "quote": "带头的人有很大的责任",
+        "rationale": "回答明确指出了群体中责任分配的看法，认为领导者责任重大，符合U_B04RESPONSIBILITY的判定标准。",
+        "evidence_id": "DEV_638c28a5baa2d91cfdf9",
+        "observation_id": "OB_1c6e1018fa8e22e3cdda",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 10,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 10,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_042",
+    "turn_id": "T042",
+    "question_id": "Q042",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+    "answer": "但是让人不舒服了，还是不太好",
+    "target_unit_id": "U_B05_CONSEQUENCES",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T042",
+      "observations": [
+        {
+          "unit_id": "U_B05_CONSEQUENCES",
+          "status": "covered",
+          "quote": "但是让人不舒服了，还是不太好",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "consequence",
+              "value": "让人不舒服",
+              "quote": "但是让人不舒服了，还是不太好"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B05_CONSEQUENCES_PV05_HIGHER",
+              "quote": "但是让人不舒服了，还是不太好",
+              "rationale": "回答明确表示玩笑造成的不适感，符合对非身体后果的评价要求。"
+            }
+          ],
+          "reason": "回答中明确表达了对玩笑造成的不适感，符合U_B05_CONSEQUENCES单元的评价后果要求。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T042",
+        "question_id": "Q042",
+        "unit_id": "U_B05_CONSEQUENCES",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_a8ce0af9a9f6d691703f",
+        "status": "covered",
+        "quote": "但是让人不舒服了，还是不太好",
+        "source_span": {
+          "start": 0,
+          "end": 14,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "consequence",
+            "value": "让人不舒服",
+            "quote": "但是让人不舒服了，还是不太好"
+          }
+        ],
+        "reason": "回答中明确表达了对玩笑造成的不适感，符合U_B05_CONSEQUENCES单元的评价后果要求。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B05"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_f7cb2050364e5ae21b7b"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T042",
+        "question_id": "Q042",
+        "unit_id": "U_B05_CONSEQUENCES",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B05_CONSEQUENCES_PV05_HIGHER",
+        "quote": "但是让人不舒服了，还是不太好",
+        "rationale": "回答明确表示玩笑造成的不适感，符合对非身体后果的评价要求。",
+        "evidence_id": "DEV_f7cb2050364e5ae21b7b",
+        "observation_id": "OB_a8ce0af9a9f6d691703f",
+        "source_item_ids": [
+          "B05"
+        ],
+        "variable_id": "PV05",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 14,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 14,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_043",
+    "turn_id": "T043",
+    "question_id": "Q043",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+    "answer": "我希望大家能听取我的意见，不能的话也没什么",
+    "target_unit_id": "U_C01_VOICE",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T043",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 21,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": true
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_044",
+    "turn_id": "T044",
+    "question_id": "Q044",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+    "answer": "希望大家能听取我的意见，不能的话也没什么",
+    "target_unit_id": "U_C01_VOICE",
+    "mode": "clarify",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T044",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": true
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_045",
+    "turn_id": "T045",
+    "question_id": "Q045",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+    "answer": "可能也没有什么可能有更好的安排",
+    "target_unit_id": "U_C02_REFUSAL",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T045",
+      "observations": [
+        {
+          "unit_id": "U_C02_REFUSAL",
+          "status": "covered",
+          "quote": "可能也没有什么可能有更好的安排",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "refusal",
+              "value": "接受不被采纳的意见",
+              "quote": "可能也没有什么可能有更好的安排"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C02_REFUSAL_PV06_HIGHER",
+              "quote": "可能也没有什么可能有更好的安排",
+              "rationale": "回答表明学生能够接受不被采纳的意见，符合U_C02_REFUSAL单元的covered状态要求"
+            }
+          ],
+          "reason": "回答明确表达了即使意见未被采纳也能接受的情况，符合U_C02_REFUSAL单元的判断标准"
+        }
+      ],
+      "background": [],
+      "experiences": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T045",
+        "question_id": "Q045",
+        "unit_id": "U_C02_REFUSAL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_0658163a7332065e8a4b",
+        "status": "covered",
+        "quote": "可能也没有什么可能有更好的安排",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "refusal",
+            "value": "接受不被采纳的意见",
+            "quote": "可能也没有什么可能有更好的安排"
+          }
+        ],
+        "reason": "回答明确表达了即使意见未被采纳也能接受的情况，符合U_C02_REFUSAL单元的判断标准",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C02"
+        ],
+        "target_variable_ids": [
+          "PV06"
+        ],
+        "evidence_ids": [
+          "DEV_9653ec943d2fcaedc2fd"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T045",
+        "question_id": "Q045",
+        "unit_id": "U_C02_REFUSAL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C02_REFUSAL_PV06_HIGHER",
+        "quote": "可能也没有什么可能有更好的安排",
+        "rationale": "回答表明学生能够接受不被采纳的意见，符合U_C02_REFUSAL单元的covered状态要求",
+        "evidence_id": "DEV_9653ec943d2fcaedc2fd",
+        "observation_id": "OB_0658163a7332065e8a4b",
+        "source_item_ids": [
+          "C02"
+        ],
+        "variable_id": "PV06",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 15,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 15,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_046",
+    "turn_id": "T046",
+    "question_id": "Q046",
+    "scenario_id": "S05",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_09bb5a07d59b0a63",
+    "entry_index": 4,
+    "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+    "answer": "可能不会有人来找我的麻烦",
+    "target_unit_id": "U_C03_DETERRENCE",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T046",
+      "observations": [
+        {
+          "unit_id": "U_C03_DETERRENCE",
+          "status": "covered",
+          "quote": "可能不会有人来找我的麻烦",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "deterrence",
+              "value": "认可用威慑减少麻烦",
+              "quote": "可能不会有人来找我的麻烦"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+              "quote": "可能不会有人来找我的麻烦",
+              "rationale": "回答明确表示通过让他人畏惧自己来减少麻烦"
+            }
+          ],
+          "reason": "回答直接涉及威慑认知，明确表示认可通过让他人畏惧自己来减少麻烦"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T046",
+        "question_id": "Q046",
+        "unit_id": "U_C03_DETERRENCE",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_feb5c58445508fbf2b9f",
+        "status": "covered",
+        "quote": "可能不会有人来找我的麻烦",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "deterrence",
+            "value": "认可用威慑减少麻烦",
+            "quote": "可能不会有人来找我的麻烦"
+          }
+        ],
+        "reason": "回答直接涉及威慑认知，明确表示认可通过让他人畏惧自己来减少麻烦",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "C03"
+        ],
+        "target_variable_ids": [
+          "PV06"
+        ],
+        "evidence_ids": [
+          "DEV_b818d04b98086cf2ddf9"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S05",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_09bb5a07d59b0a63",
+        "turn_id": "T046",
+        "question_id": "Q046",
+        "unit_id": "U_C03_DETERRENCE",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+        "quote": "可能不会有人来找我的麻烦",
+        "rationale": "回答明确表示通过让他人畏惧自己来减少麻烦",
+        "evidence_id": "DEV_b818d04b98086cf2ddf9",
+        "observation_id": "OB_feb5c58445508fbf2b9f",
+        "source_item_ids": [
+          "C03"
+        ],
+        "variable_id": "PV06",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 12,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

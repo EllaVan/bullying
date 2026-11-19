@@ -1,0 +1,29 @@
+{
+  "turn_id": "T037",
+  "observations": [
+    {
+      "unit_id": "U_B03_HARM",
+      "status": "covered",
+      "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "perspective",
+          "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+          "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B03_HARM_PV04_HIGHER",
+          "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+          "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

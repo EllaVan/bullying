@@ -1,0 +1,29 @@
+{
+  "turn_id": "T031",
+  "observations": [
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "status": "covered",
+      "quote": "我担心有严重的后果",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "担心有严重的后果",
+          "quote": "我担心有严重的后果"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+          "quote": "我担心有严重的后果",
+          "rationale": "回答中表达了担心后果，符合求助渠道认知的规则DR_E01_CHANNEL_PV10_HIGHER。"
+        }
+      ],
+      "reason": "回答中直接表达了担心后果，符合求助渠道认知的规则。"
+    }
+  ],
+  "background": []
+}

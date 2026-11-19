@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_006",
+  "turn_id": "T006",
+  "question_id": "Q006",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+  "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+  "target_unit_id": "U_E02_EXPRESSION",
+  "mode": "probe",
+  "question_reference_frame": "task_performance"
+}

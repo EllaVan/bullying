@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_045",
+  "turn_id": "T045",
+  "question_id": "Q045",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+  "answer": "可能也没有什么可能有更好的安排",
+  "target_unit_id": "U_C02_REFUSAL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

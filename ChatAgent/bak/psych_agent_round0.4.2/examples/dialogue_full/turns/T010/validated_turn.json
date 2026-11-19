@@ -1,0 +1,130 @@
+{
+  "task_id": "TASK_DEMO_FULL_010",
+  "turn_id": "T010",
+  "question_id": "Q010",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "你会怎样了解那位同学此刻的感受？",
+  "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+  "target_unit_id": "U_B01_EMOTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T010",
+    "observations": [
+      {
+        "unit_id": "U_B01_EMOTION",
+        "status": "covered",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T010",
+      "question_id": "Q010",
+      "unit_id": "U_B01_EMOTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_682ca3d1286d797aa8f7",
+      "status": "covered",
+      "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+      "source_span": {
+        "start": 0,
+        "end": 34,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "emotion_clues",
+          "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B01"
+      ],
+      "target_variable_ids": [
+        "PV04"
+      ],
+      "evidence_ids": [
+        "DEV_ee7d21a90ab1d819a243"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S02",
+      "scenario_instance_id": "DEMO_FULL_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_7d8723a24d77ac0a",
+      "turn_id": "T010",
+      "question_id": "Q010",
+      "unit_id": "U_B01_EMOTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+      "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+      "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。",
+      "evidence_id": "DEV_ee7d21a90ab1d819a243",
+      "observation_id": "OB_682ca3d1286d797aa8f7",
+      "source_item_ids": [
+        "B01"
+      ],
+      "variable_id": "PV04",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 34,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 34,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

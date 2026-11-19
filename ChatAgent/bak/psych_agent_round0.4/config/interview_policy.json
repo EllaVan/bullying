@@ -1,0 +1,407 @@
+{
+  "version": "0.4.0",
+  "config_set_id": "CFG_004",
+  "default_plan_id": "balanced",
+  "max_attempts_per_unit": 2,
+  "plans": [
+    {
+      "plan_id": "s01",
+      "description": "原S01七题的多轮验证，保持原变量范围。",
+      "entries": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "E01",
+            "E04",
+            "G01"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A03_REVENGE",
+            "U_A04_PAUSE",
+            "U_E01_CHANNEL",
+            "U_E04_DEESCALATION",
+            "U_G01_FORCE"
+          ],
+          "max_turns": 12
+        }
+      ],
+      "max_total_turns": 12
+    },
+    {
+      "plan_id": "s01_extended",
+      "description": "S01扩展E02/E03/D04；普通同学条件下D04自动不适用。",
+      "entries": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "D04",
+            "G01"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A03_REVENGE",
+            "U_A04_PAUSE",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E04_DEESCALATION",
+            "U_G01_FORCE"
+          ],
+          "max_turns": 15
+        }
+      ],
+      "max_total_turns": 15
+    },
+    {
+      "plan_id": "s01_friend",
+      "description": "显式朋友条件，验证D04仅启用PV10。",
+      "entries": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "friend_conflict",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "D04",
+            "G01"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A03_REVENGE",
+            "U_A04_PAUSE",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E04_DEESCALATION",
+            "U_G01_FORCE"
+          ],
+          "max_turns": 15
+        }
+      ],
+      "max_total_turns": 15
+    },
+    {
+      "plan_id": "balanced",
+      "description": "身体、言语、关系四情境，覆盖十变量；预算结束保留测量缺口。",
+      "entries": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "D04",
+            "G01"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A03_REVENGE",
+            "U_A04_PAUSE",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E04_DEESCALATION",
+            "U_G01_FORCE"
+          ],
+          "max_turns": 7
+        },
+        {
+          "scenario_id": "S03",
+          "condition_id": "base",
+          "active_item_ids": [
+            "B03",
+            "B04",
+            "B05",
+            "C04",
+            "C05",
+            "G02",
+            "G03"
+          ],
+          "unit_ids": [
+            "U_B03_JUSTIFICATION",
+            "U_B04_RESPONSIBILITY",
+            "U_B05_CONSEQUENCES",
+            "U_C04_DISSENT",
+            "U_C05_CONFORMITY",
+            "U_G02_VERBAL",
+            "U_G03_GROUP"
+          ],
+          "max_turns": 7
+        },
+        {
+          "scenario_id": "S05",
+          "condition_id": "base",
+          "active_item_ids": [
+            "B01",
+            "B03",
+            "B04",
+            "B05",
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "G03"
+          ],
+          "unit_ids": [
+            "U_B01_EMOTION",
+            "U_B03_HARM",
+            "U_B03_JUSTIFICATION",
+            "U_B04_RESPONSIBILITY",
+            "U_B05_CONSEQUENCES",
+            "U_C01_VOICE",
+            "U_C02_REFUSAL",
+            "U_C03_DETERRENCE",
+            "U_C04_DISSENT",
+            "U_C05_CONFORMITY",
+            "U_G03_ALLIANCE",
+            "U_G03_GROUP"
+          ],
+          "max_turns": 7
+        },
+        {
+          "scenario_id": "S06",
+          "condition_id": "base",
+          "active_item_ids": [
+            "C05",
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "unit_ids": [
+            "U_C05_REJECTION",
+            "U_D01_EXCLUSION",
+            "U_D02_NO_RESPONSE",
+            "U_D03_PEER_SUPPORT",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER"
+          ],
+          "max_turns": 7
+        }
+      ],
+      "max_total_turns": 28
+    },
+    {
+      "plan_id": "full",
+      "description": "六情境完整功能实验，可能较长；不作为推荐施测时长。",
+      "entries": [
+        {
+          "scenario_id": "S01",
+          "condition_id": "base",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "E01",
+            "E02",
+            "E03",
+            "E04",
+            "D04",
+            "G01"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A03_REVENGE",
+            "U_A04_PAUSE",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E04_DEESCALATION",
+            "U_G01_FORCE"
+          ],
+          "max_turns": 18
+        },
+        {
+          "scenario_id": "S02",
+          "condition_id": "base",
+          "active_item_ids": [
+            "B01",
+            "B02",
+            "B04",
+            "E01",
+            "E02",
+            "E03",
+            "E05"
+          ],
+          "unit_ids": [
+            "U_B01_EMOTION",
+            "U_B02_CONCERN",
+            "U_B04_RESPONSIBILITY",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E05_PROTECTION"
+          ],
+          "max_turns": 18
+        },
+        {
+          "scenario_id": "S03",
+          "condition_id": "base",
+          "active_item_ids": [
+            "B03",
+            "B04",
+            "B05",
+            "C04",
+            "C05",
+            "G02",
+            "G03"
+          ],
+          "unit_ids": [
+            "U_B03_JUSTIFICATION",
+            "U_B04_RESPONSIBILITY",
+            "U_B05_CONSEQUENCES",
+            "U_C04_DISSENT",
+            "U_C05_CONFORMITY",
+            "U_G02_VERBAL",
+            "U_G03_GROUP"
+          ],
+          "max_turns": 18
+        },
+        {
+          "scenario_id": "S04",
+          "condition_id": "base",
+          "active_item_ids": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "C05",
+            "D01",
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "unit_ids": [
+            "U_A01_RECOVERY",
+            "U_A02_ATTRIBUTION",
+            "U_A02_RUMINATION",
+            "U_A04_PAUSE",
+            "U_C05_REJECTION",
+            "U_D01_EXCLUSION",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER",
+            "U_E04_DEESCALATION"
+          ],
+          "max_turns": 18
+        },
+        {
+          "scenario_id": "S05",
+          "condition_id": "base",
+          "active_item_ids": [
+            "B01",
+            "B03",
+            "B04",
+            "B05",
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "G03"
+          ],
+          "unit_ids": [
+            "U_B01_EMOTION",
+            "U_B03_HARM",
+            "U_B03_JUSTIFICATION",
+            "U_B04_RESPONSIBILITY",
+            "U_B05_CONSEQUENCES",
+            "U_C01_VOICE",
+            "U_C02_REFUSAL",
+            "U_C03_DETERRENCE",
+            "U_C04_DISSENT",
+            "U_C05_CONFORMITY",
+            "U_G03_ALLIANCE",
+            "U_G03_GROUP"
+          ],
+          "max_turns": 18
+        },
+        {
+          "scenario_id": "S06",
+          "condition_id": "base",
+          "active_item_ids": [
+            "C05",
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "unit_ids": [
+            "U_C05_REJECTION",
+            "U_D01_EXCLUSION",
+            "U_D02_NO_RESPONSE",
+            "U_D03_PEER_SUPPORT",
+            "U_D04_REPAIR",
+            "U_E01_CHANNEL",
+            "U_E02_EXPRESSION",
+            "U_E03_BARRIER"
+          ],
+          "max_turns": 18
+        }
+      ],
+      "max_total_turns": 108
+    }
+  ],
+  "stop_commands": [
+    "/stop",
+    "结束访谈"
+  ],
+  "skip_commands": [
+    "/skip",
+    "跳过此题"
+  ],
+  "background_policy": "spontaneous_only_excluded_from_core_and_risk",
+  "note": "预算为工程参数，覆盖率不是心理信度；拒答不强制补问，不使用风险结果决定下一问。"
+}

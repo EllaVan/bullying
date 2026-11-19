@@ -1,0 +1,15 @@
+{
+  "case_id": "S01_001",
+  "scenario_id": "S01",
+  "scenario_text": "课间，一名同学从旁边走过时碰了你一下。你还不清楚发生了什么。下面只谈假设情况下的想法和做法。",
+  "turns": [
+    {
+      "turn_id": "T1",
+      "question_id": "Q_S01_01",
+      "event_id": "S01_001_event",
+      "question": "遇到这种情况，你会怎么想、怎么做？",
+      "answer": "我会先离开，等自己冷静后找老师，但我不确定老师会不会管。",
+      "response_context": "hypothetical"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "task_id": "TASK_DEMO_S01_003",
+  "turn_id": "T003",
+  "question_id": "Q003",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_S01_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_2e97ce9e2d00ce73",
+  "entry_index": 0,
+  "question": "你会怎样理解对方刚才的举动？",
+  "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+  "target_unit_id": "U_A02_ATTRIBUTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T003",
+    "observations": [
+      {
+        "unit_id": "U_A02_ATTRIBUTION",
+        "status": "covered",
+        "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "interpretation",
+            "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_30b4089fa2c62fd0b30b",
+      "status": "covered",
+      "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+          "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "evidence_ids": [
+        "DEV_6ce82124e703f54466bf"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_S01",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_S01_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_2e97ce9e2d00ce73",
+      "turn_id": "T003",
+      "question_id": "Q003",
+      "unit_id": "U_A02_ATTRIBUTION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+      "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。",
+      "evidence_id": "DEV_6ce82124e703f54466bf",
+      "observation_id": "OB_30b4089fa2c62fd0b30b",
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ],
+      "variable_id": "PV03",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_008",
+  "turn_id": "T008",
+  "question_id": "Q008",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+  "answer": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+  "target_unit_id": "U_G01_FORCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

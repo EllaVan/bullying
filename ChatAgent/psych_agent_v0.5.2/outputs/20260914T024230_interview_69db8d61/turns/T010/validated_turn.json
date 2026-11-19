@@ -1,0 +1,170 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_010",
+  "turn_id": "T010",
+  "question_id": "Q010",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "争执已经越来越激烈时，你接下来会怎么做？",
+  "answer": "我担心有更大的矛盾，会先走开",
+  "target_unit_id": "U_E04_DEESCALATION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T010",
+    "observations": [
+      {
+        "unit_id": "U_E04_DEESCALATION",
+        "status": "covered",
+        "quote": "我担心有更大的矛盾，会先走开",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "deescalation",
+            "value": "离开",
+            "quote": "我担心有更大的矛盾，会先走开"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+            "quote": "我担心有更大的矛盾，会先走开",
+            "rationale": "回答中明确表达了通过离开来避免争执升级的意图。"
+          },
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+            "quote": "我担心有更大的矛盾，会先走开",
+            "rationale": "回答中明确表达了通过离开来避免争执升级的意图。"
+          }
+        ],
+        "reason": "回答中明确表达了通过离开来避免争执升级的意图。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T010",
+      "question_id": "Q010",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_a0d656d9c7bbeffd84ea",
+      "status": "covered",
+      "quote": "我担心有更大的矛盾，会先走开",
+      "source_span": {
+        "start": 0,
+        "end": 14,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "离开",
+          "quote": "我担心有更大的矛盾，会先走开"
+        }
+      ],
+      "reason": "回答中明确表达了通过离开来避免争执升级的意图。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_fb8845e53c0268400c98",
+        "DEV_efe8f936f41a7da0a9b0"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T010",
+      "question_id": "Q010",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+      "quote": "我担心有更大的矛盾，会先走开",
+      "rationale": "回答中明确表达了通过离开来避免争执升级的意图。",
+      "evidence_id": "DEV_fb8845e53c0268400c98",
+      "observation_id": "OB_a0d656d9c7bbeffd84ea",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 14,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S01",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+      "condition_id": "base",
+      "event_id": "SCENE_acc2acf81f4d925c",
+      "turn_id": "T010",
+      "question_id": "Q010",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+      "quote": "我担心有更大的矛盾，会先走开",
+      "rationale": "回答中明确表达了通过离开来避免争执升级的意图。",
+      "evidence_id": "DEV_efe8f936f41a7da0a9b0",
+      "observation_id": "OB_a0d656d9c7bbeffd84ea",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 14,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 14,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

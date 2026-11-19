@@ -1,0 +1,17 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "eligible_subjects": ["self"],
+  "eligible_reference_frames": [
+    "hypothetical_intent",
+    "habitual_self_report",
+    "real_event_self_report",
+    "general_belief",
+    "task_performance"
+  ],
+  "excluded_reference_frames": ["unclear"],
+  "background_policy": "separate_only_excluded_from_core_and_risk",
+  "duplicate_policy": "same_group_retains_sources_without_extra_weight",
+  "contradiction_policy": "retain_both_resolve_with_frame_weighted_soft_score",
+  "note": "与variable_scoring.conflict_policy一致：冲突保留两侧证据并软消解，不再把冲突facet直接剔除出分母。"
+}

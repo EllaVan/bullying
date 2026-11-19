@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.4.0"
+    },
+    "model_input_id": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "source_profile_file": {
+      "type": "string"
+    },
+    "config_set_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "variable_id": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "confidence_mode": {
+            "type": "string"
+          },
+          "feature_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "scoring_status": {
+            "type": "string"
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "variable_id",
+          "value",
+          "confidence",
+          "confidence_mode",
+          "feature_weight",
+          "scoring_status",
+          "groups"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "scenario_conditions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "human_review_required": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "model_input_id",
+    "profile_id",
+    "source_profile_file",
+    "config_set_id",
+    "session_id",
+    "synthetic",
+    "features",
+    "evidence",
+    "coverage",
+    "scenario_conditions",
+    "human_review_required"
+  ],
+  "additionalProperties": false
+}

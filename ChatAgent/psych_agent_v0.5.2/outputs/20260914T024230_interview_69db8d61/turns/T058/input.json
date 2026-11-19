@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_058",
+  "turn_id": "T058",
+  "question_id": "Q058",
+  "scenario_id": "S06",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_aa90c9e8b542d112",
+  "entry_index": 5,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "可能不会和谁说",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent"
+}

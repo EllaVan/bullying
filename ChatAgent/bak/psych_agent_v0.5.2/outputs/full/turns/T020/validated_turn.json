@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_020",
+  "turn_id": "T020",
+  "question_id": "Q020",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+  "answer": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+  "target_unit_id": "U_B05_CONSEQUENCES",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T020",
+    "observations": [
+      {
+        "unit_id": "U_B05_CONSEQUENCES",
+        "status": "covered",
+        "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "consequence",
+            "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+            "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+            "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+            "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T020",
+      "question_id": "Q020",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_b55c081962a366dc3166",
+      "status": "covered",
+      "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "consequence",
+          "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+          "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_f59b7f32c8fc87c367d0"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T020",
+      "question_id": "Q020",
+      "unit_id": "U_B05_CONSEQUENCES",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+      "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+      "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。",
+      "evidence_id": "DEV_f59b7f32c8fc87c367d0",
+      "observation_id": "OB_b55c081962a366dc3166",
+      "source_item_ids": [
+        "B05"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 31,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 31,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

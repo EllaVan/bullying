@@ -1,0 +1,34 @@
+{
+  "turn_id": "T053",
+  "observations": [
+    {
+      "unit_id": "U_D04_REPAIR",
+      "status": "covered",
+      "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "repair_expectation",
+          "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+          "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+          "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+          "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。"
+        },
+        {
+          "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+          "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+          "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

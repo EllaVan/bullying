@@ -1,0 +1,40 @@
+{
+  "version": "0.4.2",
+  "config_set_id": "CFG_005",
+  "agent_id": "A4",
+  "mode": "heuristic_equal_weight_test_only",
+  "model_id": "RISK_TEST_EQUAL_WEIGHT_001",
+  "assessment_target": {
+    "kind": "scenario_response_risk_profile",
+    "time_window": "本次情景访谈",
+    "calibration_status": "not_calibrated"
+  },
+  "role_semantics": "marginal_with_joint",
+  "minimum_observed_features": 1,
+  "roles": {
+    "bully": [
+      {"variable_id": "PV02", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV04", "effect": "protective", "weight": 1.0},
+      {"variable_id": "PV05", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV06", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV07", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV10", "effect": "protective", "weight": 1.0}
+    ],
+    "victim": [
+      {"variable_id": "PV08", "effect": "protective", "weight": 1.0},
+      {"variable_id": "PV09", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV10", "effect": "protective", "weight": 1.0}
+    ],
+    "bully_victim": [
+      {"variable_id": "PV01", "effect": "protective", "weight": 1.0},
+      {"variable_id": "PV03", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV09", "effect": "risk_increasing", "weight": 1.0},
+      {"variable_id": "PV10", "effect": "protective", "weight": 1.0}
+    ]
+  },
+  "forms": ["physical", "verbal", "relational"],
+  "joint_probability_policy": "clamp_direct_score_to_frechet_bounds",
+  "probability_round_digits": 4,
+  "human_review_required": true,
+  "note": "A4输出的probability是未校准的流程测试值，不可作为正式校园霸凌概率或自动决策依据。"
+}

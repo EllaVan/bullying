@@ -1,0 +1,18 @@
+{
+  "version": "0.5.0",
+  "config_set_id": "CFG_006",
+  "eligible_subjects": ["self"],
+  "eligible_reference_frames": [
+    "hypothetical_intent",
+    "habitual_self_report",
+    "real_event_self_report",
+    "general_belief",
+    "task_performance"
+  ],
+  "excluded_reference_frames": ["unclear"],
+  "background_policy": "separate_only_excluded_from_core_and_risk",
+  "duplicate_policy": "same_group_retains_sources_without_extra_weight",
+  "contradiction_policy": "retain_both_and_use_midpoint_for_test_score",
+  "semantic_validation_status": "human_review_required",
+  "note": "本文件只定义进入测试计分的数据边界，不证明A3语义判断正确。"
+}

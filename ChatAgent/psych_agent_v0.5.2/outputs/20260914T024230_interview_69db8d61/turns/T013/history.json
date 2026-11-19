@@ -1,0 +1,229 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_012",
+    "turn_id": "T012",
+    "question_id": "Q012",
+    "scenario_id": "S02",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_a4e881ebdb1f68da",
+    "entry_index": 1,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T012",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "partial",
+          "quote": "我觉得他有点惨",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "观察到被推搡的同学可能感到不幸",
+              "quote": "我觉得他有点惨"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+              "quote": "我觉得他有点惨",
+              "rationale": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索"
+            }
+          ],
+          "reason": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索，但未明确说明如何确认感受或提供帮助"
+        },
+        {
+          "unit_id": "U_B02_CONCERN",
+          "status": "partial",
+          "quote": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "concern",
+              "value": "不喜欢对方，因此对其痛苦漠不关心",
+              "quote": "但是我不喜欢他，所以什么也不做"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+              "quote": "但是我不喜欢他，所以什么也不做",
+              "rationale": "学生明确表示由于不喜欢对方，对其痛苦漠不关心"
+            }
+          ],
+          "reason": "学生明确表示由于不喜欢对方，对其痛苦漠不关心，但未提供其他关于关注他人痛苦的信息"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_410c760c989fa533952a",
+        "status": "partial",
+        "quote": "我觉得他有点惨",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "观察到被推搡的同学可能感到不幸",
+            "quote": "我觉得他有点惨"
+          }
+        ],
+        "reason": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索，但未明确说明如何确认感受或提供帮助",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_fb37f35325ce645e734e"
+        ]
+      },
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_36af5bfdc4d3f8e84c26",
+        "status": "partial",
+        "quote": "我觉得他有点惨，但是我不喜欢他，所以什么也不做",
+        "source_span": {
+          "start": 0,
+          "end": 23,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "concern",
+            "value": "不喜欢对方，因此对其痛苦漠不关心",
+            "quote": "但是我不喜欢他，所以什么也不做"
+          }
+        ],
+        "reason": "学生明确表示由于不喜欢对方，对其痛苦漠不关心，但未提供其他关于关注他人痛苦的信息",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B02"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_37b93c5b5db868ef8baf"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+        "quote": "我觉得他有点惨",
+        "rationale": "学生提到了观察到的情况，表明可能关注到了对方的情绪线索",
+        "evidence_id": "DEV_fb37f35325ce645e734e",
+        "observation_id": "OB_410c760c989fa533952a",
+        "source_item_ids": [
+          "B01"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 7,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      },
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S02",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_a4e881ebdb1f68da",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B02_CONCERN_PV04_LOWER",
+        "quote": "但是我不喜欢他，所以什么也不做",
+        "rationale": "学生明确表示由于不喜欢对方，对其痛苦漠不关心",
+        "evidence_id": "DEV_37b93c5b5db868ef8baf",
+        "observation_id": "OB_36af5bfdc4d3f8e84c26",
+        "source_item_ids": [
+          "B02"
+        ],
+        "variable_id": "PV04",
+        "direction": "lower",
+        "source_span": {
+          "start": 8,
+          "end": 23,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 23,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

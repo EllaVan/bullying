@@ -1,0 +1,12 @@
+"extra-chat-providers.models": [
+    {
+        "id": "glm-4.7-flash",
+        "name": "GLM‑4.7‑Flash",
+        "apiBase": "https://open.bigmodel.cn/api/paas/v4/",
+        "apiKey": "${env:ZHIPU_API_KEY}",
+        "model": "glm-4.7-flash",
+        "contextWindow": 20000,
+        "maxOutputTokens": 200000,
+        "type": "openai"
+    }
+]

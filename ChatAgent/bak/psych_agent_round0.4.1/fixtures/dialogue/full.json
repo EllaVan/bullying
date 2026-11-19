@@ -1,0 +1,2188 @@
+{
+  "schema_version": "0.4.0",
+  "config_set_id": "CFG_004",
+  "synthetic": true,
+  "plan_id": "full",
+  "not_evaluation_gold": true,
+  "scenario_references": [
+    {
+      "scenario_id": "S01",
+      "condition_id": "base"
+    },
+    {
+      "scenario_id": "S02",
+      "condition_id": "base"
+    },
+    {
+      "scenario_id": "S03",
+      "condition_id": "base"
+    },
+    {
+      "scenario_id": "S04",
+      "condition_id": "base"
+    },
+    {
+      "scenario_id": "S05",
+      "condition_id": "base"
+    },
+    {
+      "scenario_id": "S06",
+      "condition_id": "base"
+    }
+  ],
+  "turns": [
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。家里也有人愿意听我说学校的事。",
+      "result": {
+        "turn_id": "T001",
+        "observations": [
+          {
+            "unit_id": "U_A04_PAUSE",
+            "status": "covered",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "pause",
+                "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "rationale": "合成开发示例：明确先暂停或平静，再决定行动。"
+              },
+              {
+                "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          },
+          {
+            "unit_id": "U_E01_CHANNEL",
+            "status": "covered",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "channel",
+                "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          },
+          {
+            "unit_id": "U_E04_DEESCALATION",
+            "status": "covered",
+            "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "deescalation",
+                "value": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+              },
+              {
+                "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+                "quote": "我会先离开，让争执暂停，等自己冷静再决定，然后找老师商量。",
+                "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": [
+          {
+            "item_id": "F01",
+            "quote": "家里也有人愿意听我说学校的事。",
+            "description": "合成样例中的家庭倾听背景。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self"
+          }
+        ]
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_A01_RECOVERY",
+        "mode": "probe"
+      },
+      "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+      "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "result": {
+        "turn_id": "T002",
+        "observations": [
+          {
+            "unit_id": "U_A01_RECOVERY",
+            "status": "covered",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "recovery",
+                "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+                "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+                "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+                "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_A02_ATTRIBUTION",
+        "mode": "probe"
+      },
+      "question": "你会怎样理解对方刚才的举动？",
+      "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "result": {
+        "turn_id": "T003",
+        "observations": [
+          {
+            "unit_id": "U_A02_ATTRIBUTION",
+            "status": "covered",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "interpretation",
+                "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+                "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+                "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+                "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_A02_RUMINATION",
+        "mode": "probe"
+      },
+      "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+      "answer": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "result": {
+        "turn_id": "T004",
+        "observations": [
+          {
+            "unit_id": "U_A02_RUMINATION",
+            "status": "covered",
+            "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "thinking",
+                "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+                "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+                "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+                "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_A03_REVENGE",
+        "mode": "probe"
+      },
+      "question": "接下来你希望对方经历什么，或者有什么变化？",
+      "answer": "我不希望他也受到伤害，我不打算报复他。",
+      "result": {
+        "turn_id": "T005",
+        "observations": [
+          {
+            "unit_id": "U_A03_REVENGE",
+            "status": "covered",
+            "quote": "我不希望他也受到伤害，我不打算报复他。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "desired_outcome",
+                "value": "我不希望他也受到伤害，我不打算报复他。",
+                "quote": "我不希望他也受到伤害，我不打算报复他。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+                "quote": "我不希望他也受到伤害，我不打算报复他。",
+                "rationale": "合成开发示例：明确拒绝报复或不希望对方受到伤害。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_E02_EXPRESSION",
+        "mode": "probe"
+      },
+      "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "result": {
+        "turn_id": "T006",
+        "observations": [
+          {
+            "unit_id": "U_E02_EXPRESSION",
+            "status": "covered",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "reference_frame": "task_performance",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "explanation",
+                "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_E03_BARRIER",
+        "mode": "probe"
+      },
+      "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "result": {
+        "turn_id": "T007",
+        "observations": [
+          {
+            "unit_id": "U_E03_BARRIER",
+            "status": "covered",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "barrier",
+                "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S01",
+        "condition_id": "base",
+        "target_unit_id": "U_G01_FORCE",
+        "mode": "probe"
+      },
+      "question": "你觉得用更强硬的行动处理这种冲突会有什么作用？你说的行动具体是什么？",
+      "answer": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+      "result": {
+        "turn_id": "T008",
+        "observations": [
+          {
+            "unit_id": "U_G01_FORCE",
+            "status": "covered",
+            "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "action",
+                "value": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+                "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_G01_FORCE_PV02_LOWER",
+                "quote": "我不赞成用推打来解决冲突，这可能使事情更糟。",
+                "rationale": "合成开发示例：明确拒绝用身体伤害解决冲突。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我想先看看发生了什么，再想接下来怎么做。",
+      "result": {
+        "turn_id": "T009",
+        "observations": [],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_B01_EMOTION",
+        "mode": "probe"
+      },
+      "question": "你会怎样了解那位同学此刻的感受？",
+      "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+      "result": {
+        "turn_id": "T010",
+        "observations": [
+          {
+            "unit_id": "U_B01_EMOTION",
+            "status": "covered",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "emotion_clues",
+                "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+                "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+                "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+                "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_B02_CONCERN",
+        "mode": "probe"
+      },
+      "question": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+      "answer": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+      "result": {
+        "turn_id": "T011",
+        "observations": [
+          {
+            "unit_id": "U_B02_CONCERN",
+            "status": "covered",
+            "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "concern",
+                "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+                "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+                "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+                "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_B04_RESPONSIBILITY",
+        "mode": "probe"
+      },
+      "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "result": {
+        "turn_id": "T012",
+        "observations": [
+          {
+            "unit_id": "U_B04_RESPONSIBILITY",
+            "status": "covered",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "responsibility",
+                "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_E01_CHANNEL",
+        "mode": "probe"
+      },
+      "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "answer": "我可以找信任的老师商量。",
+      "result": {
+        "turn_id": "T013",
+        "observations": [
+          {
+            "unit_id": "U_E01_CHANNEL",
+            "status": "covered",
+            "quote": "我可以找信任的老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "channel",
+                "value": "我可以找信任的老师商量。",
+                "quote": "我可以找信任的老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+                "quote": "我可以找信任的老师商量。",
+                "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_E02_EXPRESSION",
+        "mode": "probe"
+      },
+      "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "result": {
+        "turn_id": "T014",
+        "observations": [
+          {
+            "unit_id": "U_E02_EXPRESSION",
+            "status": "covered",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "reference_frame": "task_performance",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "explanation",
+                "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_E03_BARRIER",
+        "mode": "probe"
+      },
+      "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "result": {
+        "turn_id": "T015",
+        "observations": [
+          {
+            "unit_id": "U_E03_BARRIER",
+            "status": "covered",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "barrier",
+                "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S02",
+        "condition_id": "base",
+        "target_unit_id": "U_E05_PROTECTION",
+        "mode": "probe"
+      },
+      "question": "如果你想帮助那位同学，你会怎样做，同时照顾好自己的安全？",
+      "answer": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+      "result": {
+        "turn_id": "T016",
+        "observations": [
+          {
+            "unit_id": "U_E05_PROTECTION",
+            "status": "covered",
+            "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "help_action",
+                "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+                "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+              },
+              {
+                "slot_id": "self_protection",
+                "value": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+                "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E05_PROTECTION_PV04_HIGHER",
+                "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+                "rationale": "合成开发示例：明确关注受影响同学并提出帮助意向。"
+              },
+              {
+                "rule_id": "DR_E05_PROTECTION_PV10_HIGHER",
+                "quote": "我会找老师来帮助那位同学，自己保持距离，不直接冲进推搡的人群。",
+                "rationale": "合成开发示例：明确说明帮助同学同时保护自己的办法。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我想先看看发生了什么，再想接下来怎么做。",
+      "result": {
+        "turn_id": "T017",
+        "observations": [],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_B03_JUSTIFICATION",
+        "mode": "probe"
+      },
+      "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+      "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+      "result": {
+        "turn_id": "T018",
+        "observations": [
+          {
+            "unit_id": "U_B03_JUSTIFICATION",
+            "status": "covered",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "boundary",
+                "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+                "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+                "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+                "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_B04_RESPONSIBILITY",
+        "mode": "probe"
+      },
+      "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "result": {
+        "turn_id": "T019",
+        "observations": [
+          {
+            "unit_id": "U_B04_RESPONSIBILITY",
+            "status": "covered",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "responsibility",
+                "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_B05_CONSEQUENCES",
+        "mode": "probe"
+      },
+      "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+      "answer": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+      "result": {
+        "turn_id": "T020",
+        "observations": [
+          {
+            "unit_id": "U_B05_CONSEQUENCES",
+            "status": "covered",
+            "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "consequence",
+                "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+                "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+                "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+                "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_C04_DISSENT",
+        "mode": "probe"
+      },
+      "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+      "answer": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+      "result": {
+        "turn_id": "T021",
+        "observations": [
+          {
+            "unit_id": "U_C04_DISSENT",
+            "status": "covered",
+            "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "dissent",
+                "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+                "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+                "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+                "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_C05_CONFORMITY",
+        "mode": "probe"
+      },
+      "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+      "answer": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+      "result": {
+        "turn_id": "T022",
+        "observations": [
+          {
+            "unit_id": "U_C05_CONFORMITY",
+            "status": "covered",
+            "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "choice",
+                "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+                "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+                "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+                "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_G02_VERBAL",
+        "mode": "probe"
+      },
+      "question": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+      "answer": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+      "result": {
+        "turn_id": "T023",
+        "observations": [
+          {
+            "unit_id": "U_G02_VERBAL",
+            "status": "covered",
+            "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "verbal_response",
+                "value": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+                "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_G02_VERBAL_PV02_LOWER",
+                "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+                "rationale": "合成开发示例：明确不认可或拒绝以伤害性语言回击。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S03",
+        "condition_id": "base",
+        "target_unit_id": "U_G03_GROUP",
+        "mode": "probe"
+      },
+      "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+      "answer": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+      "result": {
+        "turn_id": "T024",
+        "observations": [
+          {
+            "unit_id": "U_G03_GROUP",
+            "status": "covered",
+            "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "group_influence",
+                "value": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+                "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_G03_GROUP_PV07_LOWER",
+                "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+                "rationale": "合成开发示例：明确在朋友站队时仍保留自己的判断。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我想先看看发生了什么，再想接下来怎么做。",
+      "result": {
+        "turn_id": "T025",
+        "observations": [],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_A01_RECOVERY",
+        "mode": "probe"
+      },
+      "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+      "answer": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+      "result": {
+        "turn_id": "T026",
+        "observations": [
+          {
+            "unit_id": "U_A01_RECOVERY",
+            "status": "covered",
+            "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "recovery",
+                "value": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+                "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A01_RECOVERY_PV01_HIGHER",
+                "quote": "平时我先走开缓一会儿，心情会慢慢平静，之后就能做别的事情。",
+                "rationale": "合成开发示例：明确自述通常能逐渐恢复平静，并说明恢复过程。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_A02_ATTRIBUTION",
+        "mode": "probe"
+      },
+      "question": "你会怎样理解对方刚才的举动？",
+      "answer": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "result": {
+        "turn_id": "T027",
+        "observations": [
+          {
+            "unit_id": "U_A02_ATTRIBUTION",
+            "status": "covered",
+            "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "interpretation",
+                "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+                "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+                "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+                "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_A02_RUMINATION",
+        "mode": "probe"
+      },
+      "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+      "answer": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "result": {
+        "turn_id": "T028",
+        "observations": [
+          {
+            "unit_id": "U_A02_RUMINATION",
+            "status": "covered",
+            "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "thinking",
+                "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+                "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+                "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+                "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_A04_PAUSE",
+        "mode": "probe"
+      },
+      "question": "如果这时你很生气，在决定下一步之前，你会怎么做？",
+      "answer": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+      "result": {
+        "turn_id": "T029",
+        "observations": [
+          {
+            "unit_id": "U_A04_PAUSE",
+            "status": "covered",
+            "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "pause",
+                "value": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+                "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+                "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+                "rationale": "合成开发示例：明确先暂停或平静，再决定行动。"
+              },
+              {
+                "rule_id": "DR_A04_PAUSE_PV10_HIGHER",
+                "quote": "我会先暂停，等自己平静一些再决定接下来怎么做。",
+                "rationale": "合成开发示例：明确把暂停再决定作为冲突应对方法。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_D01_EXCLUSION",
+        "mode": "probe"
+      },
+      "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+      "answer": "我会担心下一次活动不再邀请我。",
+      "result": {
+        "turn_id": "T030",
+        "observations": [
+          {
+            "unit_id": "U_D01_EXCLUSION",
+            "status": "covered",
+            "quote": "我会担心下一次活动不再邀请我。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "exclusion",
+                "value": "我会担心下一次活动不再邀请我。",
+                "quote": "我会担心下一次活动不再邀请我。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+                "quote": "我会担心下一次活动不再邀请我。",
+                "rationale": "合成开发示例：明确担心自己被朋友排除在活动之外。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_E01_CHANNEL",
+        "mode": "probe"
+      },
+      "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "answer": "我可以找信任的老师商量。",
+      "result": {
+        "turn_id": "T031",
+        "observations": [
+          {
+            "unit_id": "U_E01_CHANNEL",
+            "status": "covered",
+            "quote": "我可以找信任的老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "channel",
+                "value": "我可以找信任的老师商量。",
+                "quote": "我可以找信任的老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+                "quote": "我可以找信任的老师商量。",
+                "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_E02_EXPRESSION",
+        "mode": "probe"
+      },
+      "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "result": {
+        "turn_id": "T032",
+        "observations": [
+          {
+            "unit_id": "U_E02_EXPRESSION",
+            "status": "covered",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "reference_frame": "task_performance",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "explanation",
+                "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_E03_BARRIER",
+        "mode": "probe"
+      },
+      "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "result": {
+        "turn_id": "T033",
+        "observations": [
+          {
+            "unit_id": "U_E03_BARRIER",
+            "status": "covered",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "barrier",
+                "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S04",
+        "condition_id": "base",
+        "target_unit_id": "U_E04_DEESCALATION",
+        "mode": "probe"
+      },
+      "question": "争执已经越来越激烈时，你接下来会怎么做？",
+      "answer": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+      "result": {
+        "turn_id": "T034",
+        "observations": [
+          {
+            "unit_id": "U_E04_DEESCALATION",
+            "status": "covered",
+            "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "deescalation",
+                "value": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+                "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+                "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+                "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+              },
+              {
+                "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+                "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+                "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我想先看看发生了什么，再想接下来怎么做。",
+      "result": {
+        "turn_id": "T035",
+        "observations": [],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_B01_EMOTION",
+        "mode": "probe"
+      },
+      "question": "你会怎样了解那位同学此刻的感受？",
+      "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+      "result": {
+        "turn_id": "T036",
+        "observations": [
+          {
+            "unit_id": "U_B01_EMOTION",
+            "status": "covered",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "emotion_clues",
+                "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+                "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+                "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+                "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_B03_HARM",
+        "mode": "probe"
+      },
+      "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+      "answer": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+      "result": {
+        "turn_id": "T037",
+        "observations": [
+          {
+            "unit_id": "U_B03_HARM",
+            "status": "covered",
+            "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "perspective",
+                "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+                "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B03_HARM_PV04_HIGHER",
+                "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+                "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_B03_JUSTIFICATION",
+        "mode": "probe"
+      },
+      "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+      "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+      "result": {
+        "turn_id": "T038",
+        "observations": [
+          {
+            "unit_id": "U_B03_JUSTIFICATION",
+            "status": "covered",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "boundary",
+                "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+                "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+                "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+                "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_B04_RESPONSIBILITY",
+        "mode": "probe"
+      },
+      "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "result": {
+        "turn_id": "T039",
+        "observations": [
+          {
+            "unit_id": "U_B04_RESPONSIBILITY",
+            "status": "covered",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "responsibility",
+                "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+                "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+                "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_B05_CONSEQUENCES",
+        "mode": "probe"
+      },
+      "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+      "answer": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+      "result": {
+        "turn_id": "T040",
+        "observations": [
+          {
+            "unit_id": "U_B05_CONSEQUENCES",
+            "status": "covered",
+            "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "consequence",
+                "value": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+                "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+                "quote": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+                "rationale": "合成开发示例：明确认为没有身体受伤仍可能造成严重的其他伤害。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_C01_VOICE",
+        "mode": "probe"
+      },
+      "question": "在大家讨论怎么安排时，你希望自己的意见起到怎样的作用？",
+      "answer": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+      "result": {
+        "turn_id": "T041",
+        "observations": [
+          {
+            "unit_id": "U_C01_VOICE",
+            "status": "covered",
+            "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "voice",
+                "value": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+                "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+                "quote": "我非常在意自己的意见在朋友中有没有分量，希望大家认真考虑。",
+                "rationale": "合成开发示例：明确非常重视自己的意见是否在群体中有分量。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_C02_REFUSAL",
+        "mode": "probe"
+      },
+      "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+      "answer": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+      "result": {
+        "turn_id": "T042",
+        "observations": [
+          {
+            "unit_id": "U_C02_REFUSAL",
+            "status": "covered",
+            "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "refusal",
+                "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+                "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+                "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+                "rationale": "合成开发示例：明确允许别人不采纳自己的意见。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_C03_DETERRENCE",
+        "mode": "probe"
+      },
+      "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+      "answer": "我不认可通过让别人害怕我来维持关系。",
+      "result": {
+        "turn_id": "T043",
+        "observations": [
+          {
+            "unit_id": "U_C03_DETERRENCE",
+            "status": "covered",
+            "quote": "我不认可通过让别人害怕我来维持关系。",
+            "reference_frame": "general_belief",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "deterrence",
+                "value": "我不认可通过让别人害怕我来维持关系。",
+                "quote": "我不认可通过让别人害怕我来维持关系。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C03_DETERRENCE_PV06_LOWER",
+                "quote": "我不认可通过让别人害怕我来维持关系。",
+                "rationale": "合成开发示例：明确不认可用让他人畏惧的方式维持关系。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_C04_DISSENT",
+        "mode": "probe"
+      },
+      "question": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+      "answer": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+      "result": {
+        "turn_id": "T044",
+        "observations": [
+          {
+            "unit_id": "U_C04_DISSENT",
+            "status": "covered",
+            "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "dissent",
+                "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+                "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+                "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+                "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_C05_CONFORMITY",
+        "mode": "probe"
+      },
+      "question": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+      "answer": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+      "result": {
+        "turn_id": "T045",
+        "observations": [
+          {
+            "unit_id": "U_C05_CONFORMITY",
+            "status": "covered",
+            "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "choice",
+                "value": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+                "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C05_CONFORMITY_PV07_LOWER",
+                "quote": "即使担心被疏远，我也不会因为这个就跟着做自己不认可的事情。",
+                "rationale": "合成开发示例：明确即使担心被疏远仍不因此跟随不认可的行为。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_G03_ALLIANCE",
+        "mode": "probe"
+      },
+      "question": "这时你希望朋友怎样支持你？如果朋友有不同看法，你会怎么办？",
+      "answer": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+      "result": {
+        "turn_id": "T046",
+        "observations": [
+          {
+            "unit_id": "U_G03_ALLIANCE",
+            "status": "covered",
+            "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "alliance",
+                "value": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+                "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_G03_ALLIANCE_PV06_LOWER",
+                "quote": "我希望朋友听我说说，但他们可以有不同意见，我不会强迫他们站队。",
+                "rationale": "合成开发示例：明确允许朋友有不同意见，不强迫朋友站队。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S05",
+        "condition_id": "base",
+        "target_unit_id": "U_G03_GROUP",
+        "mode": "probe"
+      },
+      "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+      "answer": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+      "result": {
+        "turn_id": "T047",
+        "observations": [
+          {
+            "unit_id": "U_G03_GROUP",
+            "status": "covered",
+            "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "group_influence",
+                "value": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+                "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_G03_GROUP_PV07_LOWER",
+                "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+                "rationale": "合成开发示例：明确在朋友站队时仍保留自己的判断。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": null,
+        "mode": "opening"
+      },
+      "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+      "answer": "我想先看看发生了什么，再想接下来怎么做。",
+      "result": {
+        "turn_id": "T048",
+        "observations": [],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_C05_REJECTION",
+        "mode": "probe"
+      },
+      "question": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+      "answer": "我会担心朋友因为这件事疏远我。",
+      "result": {
+        "turn_id": "T049",
+        "observations": [
+          {
+            "unit_id": "U_C05_REJECTION",
+            "status": "covered",
+            "quote": "我会担心朋友因为这件事疏远我。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "rejection_worry",
+                "value": "我会担心朋友因为这件事疏远我。",
+                "quote": "我会担心朋友因为这件事疏远我。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_C05_REJECTION_PV09_HIGHER",
+                "quote": "我会担心朋友因为这件事疏远我。",
+                "rationale": "合成开发示例：明确表达担心自己因关系或意见变化被朋友疏远。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_D01_EXCLUSION",
+        "mode": "probe"
+      },
+      "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+      "answer": "我会担心下一次活动不再邀请我。",
+      "result": {
+        "turn_id": "T050",
+        "observations": [
+          {
+            "unit_id": "U_D01_EXCLUSION",
+            "status": "covered",
+            "quote": "我会担心下一次活动不再邀请我。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "exclusion",
+                "value": "我会担心下一次活动不再邀请我。",
+                "quote": "我会担心下一次活动不再邀请我。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_D01_EXCLUSION_PV09_HIGHER",
+                "quote": "我会担心下一次活动不再邀请我。",
+                "rationale": "合成开发示例：明确担心自己被朋友排除在活动之外。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_D02_NO_RESPONSE",
+        "mode": "probe"
+      },
+      "question": "朋友暂时没有回应时，你会怎样理解？",
+      "answer": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+      "result": {
+        "turn_id": "T051",
+        "observations": [
+          {
+            "unit_id": "U_D02_NO_RESPONSE",
+            "status": "covered",
+            "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "interpretation",
+                "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+                "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+                "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+                "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_D03_PEER_SUPPORT",
+        "mode": "probe"
+      },
+      "question": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+      "answer": "平时我有一位可以放心说心事的同学。",
+      "result": {
+        "turn_id": "T052",
+        "observations": [
+          {
+            "unit_id": "U_D03_PEER_SUPPORT",
+            "status": "covered",
+            "quote": "平时我有一位可以放心说心事的同学。",
+            "reference_frame": "habitual_self_report",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "peer_resource",
+                "value": "平时我有一位可以放心说心事的同学。",
+                "quote": "平时我有一位可以放心说心事的同学。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+                "quote": "平时我有一位可以放心说心事的同学。",
+                "rationale": "合成开发示例：明确自述有可以放心交流的同伴。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_D04_REPAIR",
+        "mode": "probe"
+      },
+      "question": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+      "answer": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+      "result": {
+        "turn_id": "T053",
+        "observations": [
+          {
+            "unit_id": "U_D04_REPAIR",
+            "status": "covered",
+            "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "repair_expectation",
+                "value": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+                "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_D04_REPAIR_PV08_HIGHER",
+                "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+                "rationale": "合成开发示例：明确相信与朋友发生矛盾后关系仍能修复。"
+              },
+              {
+                "rule_id": "DR_D04_REPAIR_PV10_HIGHER",
+                "quote": "我觉得这次虽然有矛盾，我们之后还是能说开，关系可以修复。",
+                "rationale": "合成开发示例：明确表达朋友冲突后的关系修复预期。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_E01_CHANNEL",
+        "mode": "probe"
+      },
+      "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "answer": "我可以找信任的老师商量。",
+      "result": {
+        "turn_id": "T054",
+        "observations": [
+          {
+            "unit_id": "U_E01_CHANNEL",
+            "status": "covered",
+            "quote": "我可以找信任的老师商量。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "channel",
+                "value": "我可以找信任的老师商量。",
+                "quote": "我可以找信任的老师商量。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+                "quote": "我可以找信任的老师商量。",
+                "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_E02_EXPRESSION",
+        "mode": "probe"
+      },
+      "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "result": {
+        "turn_id": "T055",
+        "observations": [
+          {
+            "unit_id": "U_E02_EXPRESSION",
+            "status": "covered",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "reference_frame": "task_performance",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "explanation",
+                "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+                "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+                "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    },
+    {
+      "expected_task": {
+        "scenario_id": "S06",
+        "condition_id": "base",
+        "target_unit_id": "U_E03_BARRIER",
+        "mode": "probe"
+      },
+      "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+      "result": {
+        "turn_id": "T056",
+        "observations": [
+          {
+            "unit_id": "U_E03_BARRIER",
+            "status": "covered",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "reference_frame": "hypothetical_intent",
+            "subject": "self",
+            "context_turn_ids": [],
+            "slots": [
+              {
+                "slot_id": "barrier",
+                "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+              }
+            ],
+            "evidence": [
+              {
+                "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+                "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+                "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+              }
+            ],
+            "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+          }
+        ],
+        "background": []
+      }
+    }
+  ]
+}

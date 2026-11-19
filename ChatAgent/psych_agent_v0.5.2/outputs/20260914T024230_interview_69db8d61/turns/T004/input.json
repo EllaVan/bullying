@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_004",
+  "turn_id": "T004",
+  "question_id": "Q004",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+  "answer": "总会回想起来这件事",
+  "target_unit_id": "U_A02_RUMINATION",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report"
+}

@@ -1,0 +1,275 @@
+{
+  "task_id": "TASK_DEMO_FULL_053",
+  "plan_id": "full",
+  "config_set_id": "CFG_004",
+  "config_manifest_path": "config/config_manifest.json",
+  "session_id": "DEMO_FULL",
+  "entry_index": 5,
+  "turn_id": "T053",
+  "question_id": "Q053",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "scenario_text": "你和几位朋友最近在一次活动安排上有过分歧。后来他们又在商量活动，你暂时没收到邀请。你发消息询问，一时还没有人回复，你还不清楚原因。",
+  "facts": {
+    "form": "relational",
+    "perspective": "target",
+    "relationship": "friend",
+    "intent_clarity": "ambiguous",
+    "group_pressure": "present",
+    "conflict_stage": "stable",
+    "affinity": "close",
+    "joking": "absent",
+    "no_response": "present"
+  },
+  "mode": "probe",
+  "target_unit_id": "U_D04_REPAIR",
+  "reference_frame": "hypothetical_intent",
+  "question_template": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+  "missing_slots": [
+    {
+      "slot_id": "repair_expectation",
+      "description": "对朋友关系能否修复的预期"
+    }
+  ],
+  "allowed_units": [
+    {
+      "unit_id": "U_C05_REJECTION",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "对关系疏远的担忧",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "在这种相处中，你对自己和朋友之后的关系有什么担心吗？",
+      "required_slots": [
+        {
+          "slot_id": "rejection_worry",
+          "description": "是否存在被朋友疏远的担忧"
+        }
+      ],
+      "applicability": {
+        "relationship": [
+          "friend"
+        ]
+      },
+      "rule_ids": [
+        "DR_C05_REJECTION_PV09_HIGHER",
+        "DR_C05_REJECTION_PV09_LOWER"
+      ],
+      "interpretation_boundary": "记录情境担忧，不能直接推为稳定人格。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D01_EXCLUSION",
+      "source_item_ids": [
+        "D01"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "被排除在活动外的担忧",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+      "required_slots": [
+        {
+          "slot_id": "exclusion",
+          "description": "是否担心被排除在活动之外"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_D01_EXCLUSION_PV09_HIGHER",
+        "DR_D01_EXCLUSION_PV09_LOWER"
+      ],
+      "interpretation_boundary": "对实际排斥的合理担忧不能直接推为过度敏感。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D02_NO_RESPONSE",
+      "source_item_ids": [
+        "D02"
+      ],
+      "target_variable_ids": [
+        "PV09"
+      ],
+      "facet": "对未获回应的解释",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "朋友暂时没有回应时，你会怎样理解？",
+      "required_slots": [
+        {
+          "slot_id": "interpretation",
+          "description": "如何解释未获回应及其带来的担忧"
+        }
+      ],
+      "applicability": {
+        "no_response": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_D02_NO_RESPONSE_PV09_HIGHER",
+        "DR_D02_NO_RESPONSE_PV09_LOWER"
+      ],
+      "interpretation_boundary": "不推断他人实际态度；仅记录学生的解释。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D03_PEER_SUPPORT",
+      "source_item_ids": [
+        "D03"
+      ],
+      "target_variable_ids": [
+        "PV08"
+      ],
+      "facet": "同伴交流资源",
+      "reference_frame": "habitual_self_report",
+      "reference_period": "unspecified",
+      "question_template": "平时有心事时，你和哪些同龄人说起来比较放心？没有这样的人也可以直接说。",
+      "required_slots": [
+        {
+          "slot_id": "peer_resource",
+          "description": "可以放心交流的同伴或明确缺乏这种资源"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_D03_PEER_SUPPORT_PV08_HIGHER",
+        "DR_D03_PEER_SUPPORT_PV08_LOWER"
+      ],
+      "interpretation_boundary": "家长和教师不替代同伴资源；不要求说出真实姓名。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_D04_REPAIR",
+      "source_item_ids": [
+        "D04"
+      ],
+      "target_variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "facet": "朋友关系修复预期",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "这次和朋友有了矛盾之后，你觉得你们的关系接下来会怎样？",
+      "required_slots": [
+        {
+          "slot_id": "repair_expectation",
+          "description": "对朋友关系能否修复的预期"
+        }
+      ],
+      "applicability": {
+        "relationship": [
+          "friend"
+        ]
+      },
+      "rule_ids": [
+        "DR_D04_REPAIR_PV08_HIGHER",
+        "DR_D04_REPAIR_PV08_LOWER",
+        "DR_D04_REPAIR_PV10_HIGHER",
+        "DR_D04_REPAIR_PV10_LOWER"
+      ],
+      "interpretation_boundary": "预期不等于实际修复能力；一般同学冲突不自动适用。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E01_CHANNEL",
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "求助渠道认知",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+      "required_slots": [
+        {
+          "slot_id": "channel",
+          "description": "具体求助对象、对象类别或明确没有渠道"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E01_CHANNEL_PV10_HIGHER",
+        "DR_E01_CHANNEL_PV10_LOWER"
+      ],
+      "interpretation_boundary": "只是不想找某个人不等于没有其他渠道；渠道不等于帮助已经成功。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E02_EXPRESSION",
+      "source_item_ids": [
+        "E02"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向成年人说明情况",
+      "reference_frame": "task_performance",
+      "reference_period": "unspecified",
+      "question_template": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+      "required_slots": [
+        {
+          "slot_id": "explanation",
+          "description": "模拟说明人物、发生的事或希望获得的帮助"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E02_EXPRESSION_PV10_HIGHER",
+        "DR_E02_EXPRESSION_PV10_LOWER"
+      ],
+      "interpretation_boundary": "这是表达模拟，不等于已经实际求助或在真实情况下必然做到。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_E03_BARRIER",
+      "source_item_ids": [
+        "E03"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "facet": "向老师家长求助的顾虑",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "哪些因素会影响你是否把这件事告诉老师或家长？",
+      "required_slots": [
+        {
+          "slot_id": "barrier",
+          "description": "求助顾虑、阻碍，或明确没有这类顾虑"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_E03_BARRIER_PV10_LOWER",
+        "DR_E03_BARRIER_PV10_HIGHER"
+      ],
+      "interpretation_boundary": "没有顾虑只描述这个方面，不能证明整体求助能力；合理安全顾虑不归责学生。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    }
+  ],
+  "already_covered": [
+    "U_C05_REJECTION",
+    "U_D01_EXCLUSION",
+    "U_D02_NO_RESPONSE",
+    "U_D03_PEER_SUPPORT"
+  ]
+}

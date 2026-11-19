@@ -1,0 +1,22 @@
+{
+  "case_id": "S01_015",
+  "evidence": [],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV10",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

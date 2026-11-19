@@ -1,0 +1,29 @@
+{
+  "turn_id": "T023",
+  "observations": [
+    {
+      "unit_id": "U_G02_VERBAL",
+      "status": "covered",
+      "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "verbal_response",
+          "value": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+          "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_G02_VERBAL_PV02_LOWER",
+          "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+          "rationale": "合成开发示例：明确不认可或拒绝以伤害性语言回击。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

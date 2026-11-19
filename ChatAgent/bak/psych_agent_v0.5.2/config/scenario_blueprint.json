@@ -1,0 +1,526 @@
+{
+  "version": "0.5.2",
+  "config_set_id": "CFG_007",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_draft_not_validated",
+  "scenarios": [
+    {
+      "scenario_id": "S01",
+      "title": "身体冲突卷入视角",
+      "source_evidence": "愤怒、敌意解释、报复、自控、求助",
+      "variable_ids": [
+        "PV01",
+        "PV02",
+        "PV03",
+        "PV10"
+      ],
+      "item_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "D04",
+        "G01"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "A01",
+          "target_variable_ids": [
+            "PV01"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "A02",
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "A03",
+          "target_variable_ids": [
+            "PV02",
+            "PV03"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "A04",
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "E01",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "E02",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E03",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "回答涉及向老师或家长求助的顾虑或阻碍。"
+        },
+        {
+          "item_id": "E04",
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        },
+        {
+          "item_id": "D04",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "回答涉及与朋友冲突后的关系修复；一般身体冲突不自动启用该语义。"
+        },
+        {
+          "item_id": "G01",
+          "target_variable_ids": [
+            "PV02"
+          ],
+          "use_condition": "回答中存在该题所需的情绪、归因或冲突应对信息；逐条匹配证据规则。"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S02",
+      "title": "身体冲突旁观视角",
+      "source_evidence": "共情、伤害判断、责任承担、保护意愿",
+      "variable_ids": [
+        "PV04",
+        "PV05",
+        "PV10"
+      ],
+      "item_ids": [
+        "B01",
+        "B02",
+        "B04",
+        "E01",
+        "E02",
+        "E03",
+        "E05"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "B01",
+          "target_variable_ids": [
+            "PV04"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B02",
+          "target_variable_ids": [
+            "PV04"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B04",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E01",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E02",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E03",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E05",
+          "target_variable_ids": [
+            "PV04",
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S03",
+      "title": "言语攻击群体视角",
+      "source_evidence": "语言攻击接受度、从众、道德合理化",
+      "variable_ids": [
+        "PV02",
+        "PV05",
+        "PV07"
+      ],
+      "item_ids": [
+        "B03",
+        "B04",
+        "B05",
+        "C04",
+        "C05",
+        "G02",
+        "G03"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "B03",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B04",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B05",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C04",
+          "target_variable_ids": [
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C05",
+          "target_variable_ids": [
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "G02",
+          "target_variable_ids": [
+            "PV02"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "G03",
+          "target_variable_ids": [
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S04",
+      "title": "言语受害视角",
+      "source_evidence": "羞辱敏感、报复、自我保护、求助",
+      "variable_ids": [
+        "PV01",
+        "PV03",
+        "PV09",
+        "PV10"
+      ],
+      "item_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "C05",
+        "D01",
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "A01",
+          "target_variable_ids": [
+            "PV01"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "A02",
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "A03",
+          "target_variable_ids": [
+            "PV03"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "A04",
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C05",
+          "target_variable_ids": [
+            "PV09"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "D01",
+          "target_variable_ids": [
+            "PV09"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E01",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E02",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E03",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E04",
+          "target_variable_ids": [
+            "PV01",
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S05",
+      "title": "关系排斥群体视角",
+      "source_evidence": "支配、从众、排斥判断、共情",
+      "variable_ids": [
+        "PV04",
+        "PV05",
+        "PV06",
+        "PV07"
+      ],
+      "item_ids": [
+        "B01",
+        "B03",
+        "B04",
+        "B05",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "G03"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "B01",
+          "target_variable_ids": [
+            "PV04"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B03",
+          "target_variable_ids": [
+            "PV04",
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B04",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "B05",
+          "target_variable_ids": [
+            "PV05"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C01",
+          "target_variable_ids": [
+            "PV06"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C02",
+          "target_variable_ids": [
+            "PV06"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C03",
+          "target_variable_ids": [
+            "PV06"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C04",
+          "target_variable_ids": [
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "C05",
+          "target_variable_ids": [
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "G03",
+          "target_variable_ids": [
+            "PV06",
+            "PV07"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S06",
+      "title": "关系受害视角",
+      "source_evidence": "排斥解释、社交压力、求助、关系修复",
+      "variable_ids": [
+        "PV08",
+        "PV09",
+        "PV10"
+      ],
+      "item_ids": [
+        "C05",
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "item_mapping_status": "engineering_draft",
+      "item_bindings": [
+        {
+          "item_id": "C05",
+          "target_variable_ids": [
+            "PV09"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "D01",
+          "target_variable_ids": [
+            "PV09"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "D02",
+          "target_variable_ids": [
+            "PV09"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "D03",
+          "target_variable_ids": [
+            "PV08"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "D04",
+          "target_variable_ids": [
+            "PV08",
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E01",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E02",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        },
+        {
+          "item_id": "E03",
+          "target_variable_ids": [
+            "PV10"
+          ],
+          "use_condition": "由measurement_units的适用条件和当前访谈计划共同约束；仅启用所选变量方面。"
+        }
+      ]
+    }
+  ]
+}

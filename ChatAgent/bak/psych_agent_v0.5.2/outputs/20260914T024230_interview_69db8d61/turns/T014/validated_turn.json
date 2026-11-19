@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_014",
+  "turn_id": "T014",
+  "question_id": "Q014",
+  "scenario_id": "S02",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_a4e881ebdb1f68da",
+  "entry_index": 1,
+  "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+  "answer": "没有伤害我，不和人商量",
+  "target_unit_id": "U_E01_CHANNEL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T014",
+    "observations": [
+      {
+        "unit_id": "U_E01_CHANNEL",
+        "status": "covered",
+        "quote": "没有伤害我，不和人商量",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "明确没有渠道",
+            "quote": "没有伤害我，不和人商量"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+            "quote": "没有伤害我，不和人商量",
+            "rationale": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+          }
+        ],
+        "reason": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S02",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_a4e881ebdb1f68da",
+      "turn_id": "T014",
+      "question_id": "Q014",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_3a48f15ee3099583c301",
+      "status": "covered",
+      "quote": "没有伤害我，不和人商量",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "channel",
+          "value": "明确没有渠道",
+          "quote": "没有伤害我，不和人商量"
+        }
+      ],
+      "reason": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E01"
+      ],
+      "target_variable_ids": [
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_8a66fc16127c14e1d22f"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S02",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_02_S02_base",
+      "condition_id": "base",
+      "event_id": "SCENE_a4e881ebdb1f68da",
+      "turn_id": "T014",
+      "question_id": "Q014",
+      "unit_id": "U_E01_CHANNEL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E01_CHANNEL_PV10_LOWER",
+      "quote": "没有伤害我，不和人商量",
+      "rationale": "学生明确表示不找任何人商量，符合规则DR_E01_CHANNEL_PV10_LOWER",
+      "evidence_id": "DEV_8a66fc16127c14e1d22f",
+      "observation_id": "OB_3a48f15ee3099583c301",
+      "source_item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 11,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 11,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "task_id": "TASK_DEMO_FULL_034",
+  "turn_id": "T034",
+  "question_id": "Q034",
+  "scenario_id": "S04",
+  "scenario_instance_id": "DEMO_FULL_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_d594a2cc5edb0713",
+  "entry_index": 3,
+  "question": "争执已经越来越激烈时，你接下来会怎么做？",
+  "answer": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+  "target_unit_id": "U_E04_DEESCALATION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T034",
+    "observations": [
+      {
+        "unit_id": "U_E04_DEESCALATION",
+        "status": "covered",
+        "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "deescalation",
+            "value": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+            "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+            "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+            "rationale": "合成开发示例：明确通过离开或暂停让自己平静。"
+          },
+          {
+            "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+            "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+            "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S04",
+      "scenario_instance_id": "DEMO_FULL_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_d594a2cc5edb0713",
+      "turn_id": "T034",
+      "question_id": "Q034",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_5138dcfd1d845437aa06",
+      "status": "covered",
+      "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "deescalation",
+          "value": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+          "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "E04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_0e761c24cb8b1f5e048e",
+        "DEV_b246f1d1eefbc9c6ddf1"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S04",
+      "scenario_instance_id": "DEMO_FULL_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_d594a2cc5edb0713",
+      "turn_id": "T034",
+      "question_id": "Q034",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV01_HIGHER",
+      "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+      "rationale": "合成开发示例：明确通过离开或暂停让自己平静。",
+      "evidence_id": "DEV_0e761c24cb8b1f5e048e",
+      "observation_id": "OB_5138dcfd1d845437aa06",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S04",
+      "scenario_instance_id": "DEMO_FULL_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_d594a2cc5edb0713",
+      "turn_id": "T034",
+      "question_id": "Q034",
+      "unit_id": "U_E04_DEESCALATION",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_E04_DEESCALATION_PV10_HIGHER",
+      "quote": "我会先离开，让争执暂停，也让自己冷静下来，避免越来越激烈。",
+      "rationale": "合成开发示例：明确通过离开或暂停避免争执升级。",
+      "evidence_id": "DEV_b246f1d1eefbc9c6ddf1",
+      "observation_id": "OB_5138dcfd1d845437aa06",
+      "source_item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 29,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 29,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

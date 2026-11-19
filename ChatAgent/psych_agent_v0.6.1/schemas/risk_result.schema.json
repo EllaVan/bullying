@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.6.1"
+    },
+    "risk_result_id": {
+      "type": "string"
+    },
+    "profile_id": {
+      "type": "string"
+    },
+    "model_input_id": {
+      "type": "string"
+    },
+    "source_profile_file": {
+      "type": "string"
+    },
+    "source_model_input_file": {
+      "type": "string"
+    },
+    "config_set_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "agent_id": {
+      "const": "A4"
+    },
+    "status": {
+      "type": "string"
+    },
+    "assessment_target": {
+      "type": "object"
+    },
+    "role_semantics": {
+      "const": "independent_risk_scores_0_100"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "enum": [
+              "bully",
+              "victim",
+              "bully_victim",
+              "bystander"
+            ]
+          },
+          "status": {
+            "type": "string"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence_mode": {
+            "type": "string"
+          },
+          "observed_feature_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "configured_feature_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "factor_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "form_scores": {
+            "type": "object",
+            "properties": {
+              "physical": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verbal": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "relational": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "physical",
+              "verbal",
+              "relational"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "role",
+          "status",
+          "score",
+          "confidence",
+          "confidence_mode",
+          "observed_feature_count",
+          "configured_feature_count",
+          "factor_ids",
+          "form_scores"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "validation_status": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "risk_result_id",
+    "profile_id",
+    "model_input_id",
+    "source_profile_file",
+    "source_model_input_file",
+    "config_set_id",
+    "session_id",
+    "synthetic",
+    "agent_id",
+    "status",
+    "assessment_target",
+    "role_semantics",
+    "model_id",
+    "roles",
+    "factors",
+    "validation_status",
+    "note"
+  ],
+  "additionalProperties": false
+}

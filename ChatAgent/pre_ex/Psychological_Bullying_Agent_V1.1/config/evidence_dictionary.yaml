@@ -1,0 +1,50 @@
+
+E001:
+ evidence: 被刺激后持续愤怒
+ variable: PV01
+ category: emotion_loss
+
+E002:
+ evidence: 希望让对方也受到伤害
+ variable: PV02
+ category: retaliation
+
+E003:
+ evidence: 认为别人故意针对自己
+ variable: PV03
+ category: hostile_attribution
+
+E004:
+ evidence: 能意识到别人受到伤害
+ variable: PV04
+ category: empathy
+
+E005:
+ evidence: 认为大家一起做责任会减少
+ variable: PV05
+ category: moral_disengagement
+
+E006:
+ evidence: 希望控制同伴决定
+ variable: PV06
+ category: dominance
+
+E007:
+ evidence: 因群体压力改变行为
+ variable: PV07
+ category: conformity
+
+E008:
+ evidence: 有稳定支持关系
+ variable: PV08
+ category: peer_support
+
+E009:
+ evidence: 害怕被排斥
+ variable: PV09
+ category: rejection
+
+E010:
+ evidence: 主动寻求帮助
+ variable: PV10
+ category: coping

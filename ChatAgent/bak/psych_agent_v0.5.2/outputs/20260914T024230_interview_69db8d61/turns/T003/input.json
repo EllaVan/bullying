@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_003",
+  "turn_id": "T003",
+  "question_id": "Q003",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "你会怎样理解对方刚才的举动？",
+  "answer": "他可能是不小心的，但是我仍然很生气",
+  "target_unit_id": "U_A02_ATTRIBUTION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

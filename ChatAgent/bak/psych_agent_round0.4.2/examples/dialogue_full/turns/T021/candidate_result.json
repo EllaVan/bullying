@@ -1,0 +1,29 @@
+{
+  "turn_id": "T021",
+  "observations": [
+    {
+      "unit_id": "U_C04_DISSENT",
+      "status": "covered",
+      "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "dissent",
+          "value": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+          "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C04_DISSENT_PV07_LOWER",
+          "quote": "就算几个朋友意见一样，我也会平静说出自己不同的想法。",
+          "rationale": "合成开发示例：明确能在群体意见一致时表达不同判断。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

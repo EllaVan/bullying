@@ -1,0 +1,13 @@
+
+[
+{"type":"emotion_loss","variable":"PV01","description":"受到刺激后难以恢复平静"},
+{"type":"retaliation","variable":"PV02","description":"希望让对方受到伤害"},
+{"type":"hostile_interpretation","variable":"PV03","description":"认为他人行为具有针对性"},
+{"type":"empathy","variable":"PV04","description":"关注他人情绪和伤害"},
+{"type":"moral_disengagement","variable":"PV05","description":"弱化行为伤害或责任"},
+{"type":"dominance","variable":"PV06","description":"希望控制关系或地位"},
+{"type":"conformity","variable":"PV07","description":"受群体压力影响"},
+{"type":"support","variable":"PV08","description":"存在稳定支持关系"},
+{"type":"rejection","variable":"PV09","description":"担忧被排斥"},
+{"type":"coping","variable":"PV10","description":"主动求助或调节冲突"}
+]

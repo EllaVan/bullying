@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_021",
+  "turn_id": "T021",
+  "question_id": "Q021",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+  "answer": "但是那位同学已经不舒服了，所以还是不太好",
+  "target_unit_id": "U_B05_CONSEQUENCES",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_047",
+  "turn_id": "T047",
+  "question_id": "Q047",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+  "answer": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+  "target_unit_id": "U_G03_GROUP",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T047",
+    "observations": [
+      {
+        "unit_id": "U_G03_GROUP",
+        "status": "covered",
+        "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "group_influence",
+            "value": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+            "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G03_GROUP_PV07_LOWER",
+            "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+            "rationale": "合成开发示例：明确在朋友站队时仍保留自己的判断。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T047",
+      "question_id": "Q047",
+      "unit_id": "U_G03_GROUP",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_2dbb2fc1a79c4943d34b",
+      "status": "covered",
+      "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "group_influence",
+          "value": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+          "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": [
+        "DEV_aa83eca8c8b0d77e042b"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T047",
+      "question_id": "Q047",
+      "unit_id": "U_G03_GROUP",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G03_GROUP_PV07_LOWER",
+      "quote": "即使朋友们站在同一边，我也会先弄清事情，保留自己的判断。",
+      "rationale": "合成开发示例：明确在朋友站队时仍保留自己的判断。",
+      "evidence_id": "DEV_aa83eca8c8b0d77e042b",
+      "observation_id": "OB_2dbb2fc1a79c4943d34b",
+      "source_item_ids": [
+        "G03"
+      ],
+      "variable_id": "PV07",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 28,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 28,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

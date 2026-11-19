@@ -1,0 +1,35 @@
+{
+  "case_id": "S01_partial",
+  "evidence": [
+    {
+      "rule_id": "R_E03_HELP_BARRIER",
+      "turn_id": "T1",
+      "quote": "我担心告诉老师或家长以后，事情反而更麻烦。",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "明确表达感知的求助阻碍，不归责学生。"
+    },
+    {
+      "rule_id": "R_D04_REPAIR_EXPECTATION",
+      "turn_id": "T2",
+      "quote": "我觉得我们可以把误会说清楚，关系还是能修复的。",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "表达朋友关系可修复的预期，不证明实际技能或资源。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "此回答未涉及该变量。"
+    },
+    {
+      "variable_id": "PV02",
+      "reason": "此回答未涉及该变量。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "此回答未涉及该变量。"
+    }
+  ]
+}

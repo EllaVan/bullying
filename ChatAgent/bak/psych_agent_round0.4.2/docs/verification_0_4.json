@@ -1,0 +1,31 @@
+{
+  "version": "0.4.0",
+  "config_set_id": "CFG_004",
+  "date": "2026-09-09",
+  "test_command": "python -m unittest discover -s tests",
+  "tests_run": 112,
+  "tests_passed": 112,
+  "result": "OK",
+  "test_environment": "Linux / Python 3.12",
+  "configuration_validation": "passed",
+  "synthetic_replays": {
+    "s01": 6,
+    "s01_extended": 8,
+    "s01_friend": 9,
+    "balanced": 28,
+    "full": 56
+  },
+  "full_example": {
+    "status": "completed",
+    "answered_turns": 56,
+    "all_ten_variables_present": true,
+    "all_variable_confidence_values_are_1": true,
+    "three_roles_present": true,
+    "three_bullying_forms_present": true,
+    "independent_recompute_identical": true,
+    "business_hash_fields_absent": true
+  },
+  "external_prediction_contract": "passed",
+  "external_provider_called": false,
+  "validation_scope": "工程流程、接口、配置引用、数值边界和来源边界；不等于LLM语义准确率、心理测量信效度或风险模型有效性"
+}

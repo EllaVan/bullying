@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK_DEMO_FULL_009",
+  "turn_id": "T009",
+  "question_id": "Q009",
+  "scenario_id": "S02",
+  "scenario_instance_id": "DEMO_FULL_02_S02_base",
+  "condition_id": "base",
+  "event_id": "SCENE_7d8723a24d77ac0a",
+  "entry_index": 1,
+  "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+  "answer": "我想先看看发生了什么，再想接下来怎么做。",
+  "target_unit_id": null,
+  "mode": "opening",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T009",
+    "observations": [],
+    "background": []
+  },
+  "validated_observations": [],
+  "validated_evidence": [],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 20,
+    "brief_response": false,
+    "low_information": true,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

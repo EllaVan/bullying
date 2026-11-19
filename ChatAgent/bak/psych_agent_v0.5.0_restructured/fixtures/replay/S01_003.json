@@ -1,0 +1,27 @@
+{
+  "case_id": "S01_003",
+  "evidence": [
+    {
+      "rule_id": "R_A02_ALTERNATIVE",
+      "turn_id": "T1",
+      "quote": "也可能他没注意，我不会马上认定他是故意的",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV01",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV10",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

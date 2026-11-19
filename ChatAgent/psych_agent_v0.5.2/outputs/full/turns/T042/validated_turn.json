@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_042",
+  "turn_id": "T042",
+  "question_id": "Q042",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "如果大家没有采纳你的意见，你会怎样面对这件事？",
+  "answer": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+  "target_unit_id": "U_C02_REFUSAL",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T042",
+    "observations": [
+      {
+        "unit_id": "U_C02_REFUSAL",
+        "status": "covered",
+        "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "refusal",
+            "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+            "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+            "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+            "rationale": "合成开发示例：明确允许别人不采纳自己的意见。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T042",
+      "question_id": "Q042",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_cacdfaf1bff62b8fd3ba",
+      "status": "covered",
+      "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+      "source_span": {
+        "start": 0,
+        "end": 27,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "refusal",
+          "value": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+          "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_22d2ca0b01caa79adb0e"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T042",
+      "question_id": "Q042",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+      "quote": "我可以接受朋友不采纳我的意见，他们也可以有自己的选择。",
+      "rationale": "合成开发示例：明确允许别人不采纳自己的意见。",
+      "evidence_id": "DEV_22d2ca0b01caa79adb0e",
+      "observation_id": "OB_cacdfaf1bff62b8fd3ba",
+      "source_item_ids": [
+        "C02"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 27,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 27,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

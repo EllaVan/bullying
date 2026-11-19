@@ -1,0 +1,29 @@
+{
+  "turn_id": "T051",
+  "observations": [
+    {
+      "unit_id": "U_D02_NO_RESPONSE",
+      "status": "covered",
+      "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+          "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_D02_NO_RESPONSE_PV09_LOWER",
+          "quote": "可能他们暂时在忙，我不会马上觉得他们对我有意见。",
+          "rationale": "合成开发示例：明确考虑忙碌等解释而不急于担心被针对。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

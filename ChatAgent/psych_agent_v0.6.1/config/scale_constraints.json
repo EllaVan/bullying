@@ -1,0 +1,61 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "config_id": "CFG_SCALE_CONSTRAINTS",
+  "enabled": true,
+  "anchor_package": "olweus_dbvs_bpbq_v1",
+  "source_doc": "docs/SCALE_RULES_SOURCE.md",
+  "note": "锚定包 olweus_dbvs_bpbq_v1：Olweus 卷入切点 + DBVS 形式维 + BPBQ 旁观构念。不推翻情境问答；非临床常模。",
+  "hypothesis_discount": {
+    "enabled": true,
+    "rule_id": "OLV-2",
+    "min_hypo_fraction": 0.7,
+    "score_cap_by_role": {
+      "bully": 54.99,
+      "victim": 54.99,
+      "bully_victim": 59.99,
+      "bystander": 54.99
+    }
+  },
+  "bullying_construct_gates": {
+    "bully": {
+      "high_requires_real_or_habit": true,
+      "rule_ids": ["OLV-1"],
+      "cap_without_real_or_habit": 69.99
+    },
+    "victim": {
+      "high_requires_real_or_habit": true,
+      "high_requires_victim_experience": false,
+      "rule_ids": ["OLV-1"],
+      "cap_without_real_or_habit": 69.99,
+      "cap_without_victim_experience": 69.99
+    },
+    "bully_victim": {
+      "high_requires_real_or_habit": true,
+      "high_requires_victim_experience": true,
+      "high_requires_dual_involvement": true,
+      "rule_ids": ["OLV-1", "OLV-3"],
+      "cap_without_real_or_habit": 74.99,
+      "cap_without_victim_experience": 59.99,
+      "cap_without_dual_involvement": 59.99
+    },
+    "bystander": {
+      "high_requires_real_or_habit": true,
+      "rule_ids": ["BPB-3", "OLV-1"],
+      "cap_without_real_or_habit": 69.99
+    }
+  },
+  "form_policy": {
+    "rule_ids": ["DBV-1", "DBV-2", "DBV-3"],
+    "aligns_with": "DBVS physical/verbal/relational (no cyber subscale)",
+    "explain_insufficient": true,
+    "report_note": "形式分仅基于该形式情境下的可计分变量，覆盖不足为未估计（DBVS 分维思想）。"
+  },
+  "item_scoring_norms": {
+    "note": "原题A01–G03按Likert强度思想与evidence.intensity对齐；保护题在A4以protective反转。细则见variable_scoring与dialogue_rubric。",
+    "likert_min": 1,
+    "likert_max": 5,
+    "aligns_with": "config/variable_scoring.json#intensity_scale",
+    "rule_ids": ["INT-1", "INT-2"]
+  }
+}

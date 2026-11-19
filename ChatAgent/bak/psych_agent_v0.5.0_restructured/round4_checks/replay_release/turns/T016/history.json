@@ -1,0 +1,757 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_009",
+    "turn_id": "T009",
+    "question_id": "Q009",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T009",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_010",
+    "turn_id": "T010",
+    "question_id": "Q010",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "你会怎样了解那位同学此刻的感受？",
+    "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+    "target_unit_id": "U_B01_EMOTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T010",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "covered",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T010",
+        "question_id": "Q010",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_682ca3d1286d797aa8f7",
+        "status": "covered",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_ee7d21a90ab1d819a243"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T010",
+        "question_id": "Q010",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。",
+        "evidence_id": "DEV_ee7d21a90ab1d819a243",
+        "observation_id": "OB_682ca3d1286d797aa8f7",
+        "source_item_ids": [
+          "B01"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_011",
+    "turn_id": "T011",
+    "question_id": "Q011",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "看到大家这样对待那位你平时不太合得来的同学，你会有什么感受？",
+    "answer": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+    "target_unit_id": "U_B02_CONCERN",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T011",
+      "observations": [
+        {
+          "unit_id": "U_B02_CONCERN",
+          "status": "covered",
+          "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "concern",
+              "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+              "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+              "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+              "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T011",
+        "question_id": "Q011",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_2e1e44f18c525670844b",
+        "status": "covered",
+        "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+        "source_span": {
+          "start": 0,
+          "end": 30,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "concern",
+            "value": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+            "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B02"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_0f644610350a12db9bef"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T011",
+        "question_id": "Q011",
+        "unit_id": "U_B02_CONCERN",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B02_CONCERN_PV04_HIGHER",
+        "quote": "虽然我平时不太喜欢他，但看到他被围着针对，我还是会觉得难受。",
+        "rationale": "合成开发示例：明确即使不喜欢对方仍关心其痛苦或对其被针对感到不舒服。",
+        "evidence_id": "DEV_0f644610350a12db9bef",
+        "observation_id": "OB_2e1e44f18c525670844b",
+        "source_item_ids": [
+          "B02"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 30,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_012",
+    "turn_id": "T012",
+    "question_id": "Q012",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+    "answer": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+    "target_unit_id": "U_B04_RESPONSIBILITY",
+    "mode": "probe",
+    "question_reference_frame": "general_belief",
+    "candidate_result": {
+      "turn_id": "T012",
+      "observations": [
+        {
+          "unit_id": "U_B04_RESPONSIBILITY",
+          "status": "covered",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "reference_frame": "general_belief",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "responsibility",
+              "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+              "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+              "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_d5ae501d6b4edb98f142",
+        "status": "covered",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "responsibility",
+            "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+            "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B04"
+        ],
+        "target_variable_ids": [
+          "PV05"
+        ],
+        "evidence_ids": [
+          "DEV_f6220fb4566dc245f913"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T012",
+        "question_id": "Q012",
+        "unit_id": "U_B04_RESPONSIBILITY",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+        "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+        "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。",
+        "evidence_id": "DEV_f6220fb4566dc245f913",
+        "observation_id": "OB_d5ae501d6b4edb98f142",
+        "source_item_ids": [
+          "B04"
+        ],
+        "variable_id": "PV05",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 29,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_013",
+    "turn_id": "T013",
+    "question_id": "Q013",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "遇到这种情况，你会找谁商量？如果暂时想不到，也可以直接说。",
+    "answer": "我可以找信任的老师商量。",
+    "target_unit_id": "U_E01_CHANNEL",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T013",
+      "observations": [
+        {
+          "unit_id": "U_E01_CHANNEL",
+          "status": "covered",
+          "quote": "我可以找信任的老师商量。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "channel",
+              "value": "我可以找信任的老师商量。",
+              "quote": "我可以找信任的老师商量。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+              "quote": "我可以找信任的老师商量。",
+              "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T013",
+        "question_id": "Q013",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_1488cb190a81707be825",
+        "status": "covered",
+        "quote": "我可以找信任的老师商量。",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "channel",
+            "value": "我可以找信任的老师商量。",
+            "quote": "我可以找信任的老师商量。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E01"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_c784a1169d914f9fc88d"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T013",
+        "question_id": "Q013",
+        "unit_id": "U_E01_CHANNEL",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E01_CHANNEL_PV10_HIGHER",
+        "quote": "我可以找信任的老师商量。",
+        "rationale": "合成开发示例：明确知道一个可商量的对象或渠道。",
+        "evidence_id": "DEV_c784a1169d914f9fc88d",
+        "observation_id": "OB_1488cb190a81707be825",
+        "source_item_ids": [
+          "E01"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 12,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_014",
+    "turn_id": "T014",
+    "question_id": "Q014",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "假设你准备向一位信任的成年人说明这件事，你会怎样开口？可以试着说一小段。",
+    "answer": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+    "target_unit_id": "U_E02_EXPRESSION",
+    "mode": "probe",
+    "question_reference_frame": "task_performance",
+    "candidate_result": {
+      "turn_id": "T014",
+      "observations": [
+        {
+          "unit_id": "U_E02_EXPRESSION",
+          "status": "covered",
+          "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+          "reference_frame": "task_performance",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "explanation",
+              "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+              "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+              "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+              "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T014",
+        "question_id": "Q014",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_bb9694320738a367f8d6",
+        "status": "covered",
+        "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+        "source_span": {
+          "start": 0,
+          "end": 37,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "explanation",
+            "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+            "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E02"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_67572479b87a96eafa86"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T014",
+        "question_id": "Q014",
+        "unit_id": "U_E02_EXPRESSION",
+        "reference_frame": "task_performance",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+        "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+        "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。",
+        "evidence_id": "DEV_67572479b87a96eafa86",
+        "observation_id": "OB_bb9694320738a367f8d6",
+        "source_item_ids": [
+          "E02"
+        ],
+        "variable_id": "PV10",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 37,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_015",
+    "turn_id": "T015",
+    "question_id": "Q015",
+    "scenario_id": "S02",
+    "scenario_instance_id": "DEMO_FULL_02_S02_base",
+    "condition_id": "base",
+    "event_id": "SCENE_7d8723a24d77ac0a",
+    "entry_index": 1,
+    "question": "哪些因素会影响你是否把这件事告诉老师或家长？",
+    "answer": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+    "target_unit_id": "U_E03_BARRIER",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T015",
+      "observations": [
+        {
+          "unit_id": "U_E03_BARRIER",
+          "status": "covered",
+          "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "barrier",
+              "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+              "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+              "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+              "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T015",
+        "question_id": "Q015",
+        "unit_id": "U_E03_BARRIER",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_58d1399d554e8e68f93f",
+        "status": "covered",
+        "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+        "source_span": {
+          "start": 0,
+          "end": 26,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "barrier",
+            "value": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+            "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "E03"
+        ],
+        "target_variable_ids": [
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_25f5dcc868b6b4b3c873"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S02",
+        "scenario_instance_id": "DEMO_FULL_02_S02_base",
+        "condition_id": "base",
+        "event_id": "SCENE_7d8723a24d77ac0a",
+        "turn_id": "T015",
+        "question_id": "Q015",
+        "unit_id": "U_E03_BARRIER",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_E03_BARRIER_PV10_LOWER",
+        "quote": "我担心告诉老师或家长以后，对方知道了会让事情更麻烦。",
+        "rationale": "合成开发示例：明确担心告诉老师或家长使事情更麻烦。",
+        "evidence_id": "DEV_25f5dcc868b6b4b3c873",
+        "observation_id": "OB_58d1399d554e8e68f93f",
+        "source_item_ids": [
+          "E03"
+        ],
+        "variable_id": "PV10",
+        "direction": "lower",
+        "source_span": {
+          "start": 0,
+          "end": 26,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": []
+  }
+]

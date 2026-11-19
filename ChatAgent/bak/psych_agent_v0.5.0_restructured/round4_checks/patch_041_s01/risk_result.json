@@ -1,0 +1,288 @@
+{
+  "schema_version": "0.5.0",
+  "risk_result_id": "RISK_DEMO_S01",
+  "profile_id": "PROFILE_DEMO_S01",
+  "model_input_id": "MODEL_INPUT_DEMO_S01",
+  "source_profile_file": "profile.json",
+  "source_model_input_file": "risk_model_input.json",
+  "config_set_id": "CFG_004",
+  "session_id": "DEMO_S01",
+  "synthetic": true,
+  "agent_id": "A4",
+  "status": "test_probability_only",
+  "assessment_target": {
+    "kind": "scenario_response_risk_profile",
+    "time_window": "本次情景访谈",
+    "calibration_status": "not_calibrated"
+  },
+  "role_semantics": "marginal_with_joint",
+  "model_id": "RISK_TEST_EQUAL_WEIGHT_001",
+  "roles": [
+    {
+      "role": "bully",
+      "status": "test_probability_human_review_required",
+      "probability": 0.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 2,
+      "configured_feature_count": 6,
+      "factor_ids": [
+        "RF_bully_PV02",
+        "RF_bully_PV04",
+        "RF_bully_PV05",
+        "RF_bully_PV06",
+        "RF_bully_PV07",
+        "RF_bully_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.0,
+        "verbal": null,
+        "relational": null
+      }
+    },
+    {
+      "role": "victim",
+      "status": "test_probability_human_review_required",
+      "probability": 0.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 1,
+      "configured_feature_count": 3,
+      "factor_ids": [
+        "RF_victim_PV08",
+        "RF_victim_PV09",
+        "RF_victim_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.0,
+        "verbal": null,
+        "relational": null
+      }
+    },
+    {
+      "role": "bully_victim",
+      "status": "test_probability_human_review_required",
+      "probability": 0.0,
+      "confidence": 1.0,
+      "confidence_mode": "fixed_test_value",
+      "observed_feature_count": 3,
+      "configured_feature_count": 4,
+      "factor_ids": [
+        "RF_bully_victim_PV01",
+        "RF_bully_victim_PV03",
+        "RF_bully_victim_PV09",
+        "RF_bully_victim_PV10"
+      ],
+      "form_probabilities": {
+        "physical": 0.0,
+        "verbal": null,
+        "relational": null
+      }
+    }
+  ],
+  "factors": [
+    {
+      "factor_id": "RF_bully_PV02",
+      "role": "bully",
+      "variable_id": "PV02",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_91d43ee2afb7fc85dc49",
+        "DEV_ccbd0f3b7a78b7ab8d53"
+      ],
+      "source_item_ids": [
+        "A03",
+        "G01"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_PV04",
+      "role": "bully",
+      "variable_id": "PV04",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_bully_PV05",
+      "role": "bully",
+      "variable_id": "PV05",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_bully_PV06",
+      "role": "bully",
+      "variable_id": "PV06",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_bully_PV07",
+      "role": "bully",
+      "variable_id": "PV07",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_bully_PV10",
+      "role": "bully",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_54ca30ee5aaa5cf62598",
+        "DEV_880e180124b78ef48850",
+        "DEV_ef788bbb92824444b1f4"
+      ],
+      "source_item_ids": [
+        "A04",
+        "E01",
+        "E04"
+      ]
+    },
+    {
+      "factor_id": "RF_victim_PV08",
+      "role": "victim",
+      "variable_id": "PV08",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_victim_PV09",
+      "role": "victim",
+      "variable_id": "PV09",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_victim_PV10",
+      "role": "victim",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_54ca30ee5aaa5cf62598",
+        "DEV_880e180124b78ef48850",
+        "DEV_ef788bbb92824444b1f4"
+      ],
+      "source_item_ids": [
+        "A04",
+        "E01",
+        "E04"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV01",
+      "role": "bully_victim",
+      "variable_id": "PV01",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_91e22210e226dd5f9fff",
+        "DEV_dac35ee35acc70247d68",
+        "DEV_efa05509e3c580e8d089"
+      ],
+      "source_item_ids": [
+        "A01",
+        "A04",
+        "E04"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV03",
+      "role": "bully_victim",
+      "variable_id": "PV03",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": 0.5,
+      "risk_support": 0.5,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_6ce82124e703f54466bf",
+        "DEV_d49521a05d6fe93ba3ac"
+      ],
+      "source_item_ids": [
+        "A02",
+        "A03"
+      ]
+    },
+    {
+      "factor_id": "RF_bully_victim_PV09",
+      "role": "bully_victim",
+      "variable_id": "PV09",
+      "effect": "risk_increasing",
+      "weight": 1.0,
+      "variable_value": null,
+      "risk_support": null,
+      "confidence": 1.0,
+      "evidence_ids": [],
+      "source_item_ids": []
+    },
+    {
+      "factor_id": "RF_bully_victim_PV10",
+      "role": "bully_victim",
+      "variable_id": "PV10",
+      "effect": "protective",
+      "weight": 1.0,
+      "variable_value": 1.0,
+      "risk_support": 0.0,
+      "confidence": 1.0,
+      "evidence_ids": [
+        "DEV_54ca30ee5aaa5cf62598",
+        "DEV_880e180124b78ef48850",
+        "DEV_ef788bbb92824444b1f4"
+      ],
+      "source_item_ids": [
+        "A04",
+        "E01",
+        "E04"
+      ]
+    }
+  ],
+  "human_review_required": true,
+  "validation_status": "uncalibrated_flow_test",
+  "note": "A4输出的probability是未校准的流程测试值，不可作为正式校园霸凌概率或自动决策依据。 当前变量与角色置信度固定为1.0，仅用于验证完整流程，尚未经人工及心理测量校验。"
+}

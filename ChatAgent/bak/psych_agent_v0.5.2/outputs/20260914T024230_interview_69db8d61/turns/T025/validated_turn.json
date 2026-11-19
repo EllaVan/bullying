@@ -1,0 +1,90 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_025",
+  "turn_id": "T025",
+  "question_id": "Q025",
+  "scenario_id": "S03",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_722aa97f731a94da",
+  "entry_index": 2,
+  "question": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+  "answer": "那我可能不太敢说",
+  "target_unit_id": "U_G03_GROUP",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T025",
+    "observations": [
+      {
+        "unit_id": "U_C05_CONFORMITY",
+        "status": "covered",
+        "quote": "那我可能不太敢说",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "choice",
+            "value": "排斥担忧如何影响是否跟随群体",
+            "quote": "那我可能不太敢说"
+          }
+        ],
+        "evidence": [],
+        "reason": "回答中明确表达了因为害怕说不同意见而不敢表达的情况，符合U_C05_CONFORMITY单元的槽位要求，且为hypothetical_intent参考框架下自我回答。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S03",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_722aa97f731a94da",
+      "turn_id": "T025",
+      "question_id": "Q025",
+      "unit_id": "U_C05_CONFORMITY",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_badfab0627004e0315d1",
+      "status": "covered",
+      "quote": "那我可能不太敢说",
+      "source_span": {
+        "start": 0,
+        "end": 8,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "choice",
+          "value": "排斥担忧如何影响是否跟随群体",
+          "quote": "那我可能不太敢说"
+        }
+      ],
+      "reason": "回答中明确表达了因为害怕说不同意见而不敢表达的情况，符合U_C05_CONFORMITY单元的槽位要求，且为hypothetical_intent参考框架下自我回答。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "validated_evidence": [],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 8,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

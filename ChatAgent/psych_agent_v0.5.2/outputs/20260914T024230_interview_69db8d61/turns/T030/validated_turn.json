@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_030",
+  "turn_id": "T030",
+  "question_id": "Q030",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+  "answer": "我总会回想起来，但是也做不了什么",
+  "target_unit_id": "U_A02_RUMINATION",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report",
+  "candidate_result": {
+    "turn_id": "T030",
+    "observations": [
+      {
+        "unit_id": "U_A02_RUMINATION",
+        "status": "covered",
+        "quote": "我总会回想起来，但是也做不了什么",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "thinking",
+            "value": "持续、反复思考",
+            "quote": "我总会回想起来，但是也做不了什么"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+            "quote": "我总会回想起来，但是也做不了什么",
+            "rationale": "明确自述认为被针对后会持续、反复想着这件事"
+          }
+        ],
+        "reason": "回答中明确提到了持续反复思考的情况，符合U_A02_RUMINATION的槽位要求"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "HABIT_a2f6aac6f6d62382",
+      "turn_id": "T030",
+      "question_id": "Q030",
+      "unit_id": "U_A02_RUMINATION",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_366f6144e55484c7ae3b",
+      "status": "covered",
+      "quote": "我总会回想起来，但是也做不了什么",
+      "source_span": {
+        "start": 0,
+        "end": 16,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "thinking",
+          "value": "持续、反复思考",
+          "quote": "我总会回想起来，但是也做不了什么"
+        }
+      ],
+      "reason": "回答中明确提到了持续反复思考的情况，符合U_A02_RUMINATION的槽位要求",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "evidence_ids": [
+        "DEV_c69c95e7b6f314830d5c"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "HABIT_a2f6aac6f6d62382",
+      "turn_id": "T030",
+      "question_id": "Q030",
+      "unit_id": "U_A02_RUMINATION",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+      "quote": "我总会回想起来，但是也做不了什么",
+      "rationale": "明确自述认为被针对后会持续、反复想着这件事",
+      "evidence_id": "DEV_c69c95e7b6f314830d5c",
+      "observation_id": "OB_366f6144e55484c7ae3b",
+      "source_item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 16,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 16,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

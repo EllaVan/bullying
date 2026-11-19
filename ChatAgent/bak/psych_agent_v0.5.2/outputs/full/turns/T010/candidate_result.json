@@ -1,0 +1,29 @@
+{
+  "turn_id": "T010",
+  "observations": [
+    {
+      "unit_id": "U_B01_EMOTION",
+      "status": "covered",
+      "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "emotion_clues",
+          "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

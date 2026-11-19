@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.5.2",
+  "saved_at_utc": "2026-09-14T02:42:06.180021+00:00",
+  "session_id": "SESSION_1d88ff542291",
+  "plan_id": "full",
+  "synthetic": false,
+  "status": "running",
+  "stop_reason": null,
+  "config_set_id": "CFG_007",
+  "config_manifest_path": "config/config_manifest.json",
+  "note": "本地功能实验记录；未将API密钥写入输出。"
+}

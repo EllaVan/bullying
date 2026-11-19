@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_006",
+  "scenario_id": "S04",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "DEMO_FULL_04_S04_base",
+  "event_id": "SCENE_d594a2cc5edb0713",
+  "facts": {
+    "form": "verbal",
+    "perspective": "target",
+    "relationship": "classmate",
+    "intent_clarity": "ambiguous",
+    "group_pressure": "present",
+    "conflict_stage": "escalating",
+    "affinity": "close",
+    "joking": "absent",
+    "no_response": "absent"
+  },
+  "text": "你在班里发言后，有几位同学模仿你刚才说话的声音。你还不清楚他们是随口模仿还是有意让你难堪。你请他们停下来，双方说话声越来越大。"
+}

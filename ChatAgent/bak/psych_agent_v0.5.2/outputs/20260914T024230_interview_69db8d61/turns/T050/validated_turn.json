@@ -1,0 +1,227 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_050",
+  "turn_id": "T050",
+  "question_id": "Q050",
+  "scenario_id": "S05",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_09bb5a07d59b0a63",
+  "entry_index": 4,
+  "question": "这时你希望朋友怎样支持你？如果朋友有不同看法，你会怎么办？",
+  "answer": "希望朋友能够赞同我，但是如果他有不同看法可能也没什么",
+  "target_unit_id": "U_G03_ALLIANCE",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T050",
+    "observations": [
+      {
+        "unit_id": "U_C01_VOICE",
+        "status": "covered",
+        "quote": "希望朋友能够赞同我",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "voice",
+            "value": "希望自己的意见被赞同",
+            "quote": "希望朋友能够赞同我"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+            "quote": "希望朋友能够赞同我",
+            "rationale": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。"
+          }
+        ],
+        "reason": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。"
+      },
+      {
+        "unit_id": "U_C02_REFUSAL",
+        "status": "covered",
+        "quote": "但是如果他有不同看法可能也没什么",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "refusal",
+            "value": "对意见不被采纳的态度较为宽容",
+            "quote": "但是如果他有不同看法可能也没什么"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+            "quote": "但是如果他有不同看法可能也没什么",
+            "rationale": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。"
+          }
+        ],
+        "reason": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T050",
+      "question_id": "Q050",
+      "unit_id": "U_C01_VOICE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_bc4723e19b9484e34883",
+      "status": "covered",
+      "quote": "希望朋友能够赞同我",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "voice",
+          "value": "希望自己的意见被赞同",
+          "quote": "希望朋友能够赞同我"
+        }
+      ],
+      "reason": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C01"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_7312e25e5f0b8fa59f85"
+      ]
+    },
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T050",
+      "question_id": "Q050",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_0d055281fc62d1ce95cc",
+      "status": "covered",
+      "quote": "但是如果他有不同看法可能也没什么",
+      "source_span": {
+        "start": 10,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "refusal",
+          "value": "对意见不被采纳的态度较为宽容",
+          "quote": "但是如果他有不同看法可能也没什么"
+        }
+      ],
+      "reason": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "C02"
+      ],
+      "target_variable_ids": [
+        "PV06"
+      ],
+      "evidence_ids": [
+        "DEV_fe9ccced12f7cf3cc022"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T050",
+      "question_id": "Q050",
+      "unit_id": "U_C01_VOICE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C01_VOICE_PV06_HIGHER",
+      "quote": "希望朋友能够赞同我",
+      "rationale": "学生表达了对意见被群体认可的期望，符合PV06较高方向的判断标准。",
+      "evidence_id": "DEV_7312e25e5f0b8fa59f85",
+      "observation_id": "OB_bc4723e19b9484e34883",
+      "source_item_ids": [
+        "C01"
+      ],
+      "variable_id": "PV06",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 9,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    },
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S05",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_09bb5a07d59b0a63",
+      "turn_id": "T050",
+      "question_id": "Q050",
+      "unit_id": "U_C02_REFUSAL",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_C02_REFUSAL_PV06_LOWER",
+      "quote": "但是如果他有不同看法可能也没什么",
+      "rationale": "学生对意见不被采纳表现出接受态度，符合PV06较低方向的判断标准。",
+      "evidence_id": "DEV_fe9ccced12f7cf3cc022",
+      "observation_id": "OB_0d055281fc62d1ce95cc",
+      "source_item_ids": [
+        "C02"
+      ],
+      "variable_id": "PV06",
+      "direction": "lower",
+      "source_span": {
+        "start": 10,
+        "end": 26,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 26,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

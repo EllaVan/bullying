@@ -1,0 +1,130 @@
+{
+  "task_id": "TASK_DEMO_FULL_038",
+  "turn_id": "T038",
+  "question_id": "Q038",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "answer": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T038",
+    "observations": [
+      {
+        "unit_id": "U_B03_JUSTIFICATION",
+        "status": "covered",
+        "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "boundary",
+            "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+            "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+            "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T038",
+      "question_id": "Q038",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_7e7d12c2f97b48704b9f",
+      "status": "covered",
+      "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+      "source_span": {
+        "start": 0,
+        "end": 34,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "boundary",
+          "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+          "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "evidence_ids": [
+        "DEV_6e9dd5cde6fa3004016e"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S05",
+      "scenario_instance_id": "DEMO_FULL_05_S05_base",
+      "condition_id": "base",
+      "event_id": "SCENE_39a03f37562e4b3c",
+      "turn_id": "T038",
+      "question_id": "Q038",
+      "unit_id": "U_B03_JUSTIFICATION",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+      "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+      "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。",
+      "evidence_id": "DEV_6e9dd5cde6fa3004016e",
+      "observation_id": "OB_7e7d12c2f97b48704b9f",
+      "source_item_ids": [
+        "B03"
+      ],
+      "variable_id": "PV05",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 34,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 34,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

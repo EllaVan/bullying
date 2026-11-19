@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_043",
+  "turn_id": "T043",
+  "question_id": "Q043",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "你觉得让别人知道自己不好惹，会怎样影响以后和同学的相处？",
+  "answer": "我不认可通过让别人害怕我来维持关系。",
+  "target_unit_id": "U_C03_DETERRENCE",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

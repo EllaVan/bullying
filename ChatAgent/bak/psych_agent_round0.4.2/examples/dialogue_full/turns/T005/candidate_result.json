@@ -1,0 +1,29 @@
+{
+  "turn_id": "T005",
+  "observations": [
+    {
+      "unit_id": "U_A03_REVENGE",
+      "status": "covered",
+      "quote": "我不希望他也受到伤害，我不打算报复他。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "desired_outcome",
+          "value": "我不希望他也受到伤害，我不打算报复他。",
+          "quote": "我不希望他也受到伤害，我不打算报复他。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A03_REVENGE_PV02_LOWER",
+          "quote": "我不希望他也受到伤害，我不打算报复他。",
+          "rationale": "合成开发示例：明确拒绝报复或不希望对方受到伤害。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

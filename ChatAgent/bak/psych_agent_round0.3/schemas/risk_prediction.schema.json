@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.3.0"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "input_hash": {
+      "type": "string"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "assessment_target": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "current_involvement",
+            "future_involvement"
+          ]
+        },
+        "time_window": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "time_window"
+      ],
+      "additionalProperties": false
+    },
+    "role_semantics": {
+      "const": "marginal_with_joint"
+    },
+    "probabilities": {
+      "type": "object",
+      "properties": {
+        "bully": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "victim": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "bully_victim": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "bully",
+        "victim",
+        "bully_victim"
+      ],
+      "additionalProperties": false
+    },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "bully": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "victim": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bully_victim": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "bully",
+        "victim",
+        "bully_victim"
+      ],
+      "additionalProperties": false
+    },
+    "validation_status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "session_id",
+    "input_hash",
+    "synthetic",
+    "model_id",
+    "assessment_target",
+    "role_semantics",
+    "probabilities",
+    "confidence",
+    "validation_status"
+  ],
+  "additionalProperties": false
+}

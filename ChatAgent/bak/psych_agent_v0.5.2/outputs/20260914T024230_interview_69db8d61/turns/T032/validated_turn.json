@@ -1,0 +1,132 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_032",
+  "turn_id": "T032",
+  "question_id": "Q032",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "如果这时你很生气，在决定下一步之前，你会怎么做？",
+  "answer": "我会仔细考虑后果",
+  "target_unit_id": "U_A04_PAUSE",
+  "mode": "clarify",
+  "question_reference_frame": "hypothetical_intent",
+  "candidate_result": {
+    "turn_id": "T032",
+    "observations": [
+      {
+        "unit_id": "U_A04_PAUSE",
+        "status": "covered",
+        "quote": "我会仔细考虑后果",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "pause",
+            "value": "会仔细考虑后果",
+            "quote": "我会仔细考虑后果"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+            "quote": "我会仔细考虑后果",
+            "rationale": "回答中明确提到会先考虑后果再行动，符合暂停后再决策的规则。"
+          }
+        ],
+        "reason": "回答中明确提到会先考虑后果再行动，符合暂停后再决策的规则。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T032",
+      "question_id": "Q032",
+      "unit_id": "U_A04_PAUSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_47b261491fc901d1c246",
+      "status": "covered",
+      "quote": "我会仔细考虑后果",
+      "source_span": {
+        "start": 0,
+        "end": 8,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "pause",
+          "value": "会仔细考虑后果",
+          "quote": "我会仔细考虑后果"
+        }
+      ],
+      "reason": "回答中明确提到会先考虑后果再行动，符合暂停后再决策的规则。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A04"
+      ],
+      "target_variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "evidence_ids": [
+        "DEV_2216594866f6826511af"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "SESSION_f1cef6d66e10",
+      "scenario_id": "S04",
+      "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ebeb34b99d7f03a4",
+      "turn_id": "T032",
+      "question_id": "Q032",
+      "unit_id": "U_A04_PAUSE",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+      "quote": "我会仔细考虑后果",
+      "rationale": "回答中明确提到会先考虑后果再行动，符合暂停后再决策的规则。",
+      "evidence_id": "DEV_2216594866f6826511af",
+      "observation_id": "OB_47b261491fc901d1c246",
+      "source_item_ids": [
+        "A04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 8,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 8,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

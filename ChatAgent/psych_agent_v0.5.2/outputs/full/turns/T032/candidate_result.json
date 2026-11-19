@@ -1,0 +1,29 @@
+{
+  "turn_id": "T032",
+  "observations": [
+    {
+      "unit_id": "U_E02_EXPRESSION",
+      "status": "covered",
+      "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+      "reference_frame": "task_performance",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "explanation",
+          "value": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+          "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_E02_EXPRESSION_PV10_HIGHER",
+          "quote": "老师，我想说明刚才同学之间发生的事情，请您听听大家的说法，帮忙一起理清楚。",
+          "rationale": "合成开发示例：在本次模拟表达中能够说明发生的事情或所需帮助。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

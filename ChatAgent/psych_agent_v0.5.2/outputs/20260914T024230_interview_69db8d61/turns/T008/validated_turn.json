@@ -1,0 +1,32 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_008",
+  "turn_id": "T008",
+  "question_id": "Q008",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "本轮问题",
+  "answer": "无",
+  "target_unit_id": "U_E02_EXPRESSION",
+  "mode": "clarify",
+  "question_reference_frame": "task_performance",
+  "candidate_result": {
+    "turn_id": "T008",
+    "observations": [],
+    "background": []
+  },
+  "validated_observations": [],
+  "validated_evidence": [],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 1,
+    "brief_response": true,
+    "low_information": true,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

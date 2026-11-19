@@ -1,0 +1,130 @@
+{
+  "task_id": "TASK_DEMO_FULL_023",
+  "turn_id": "T023",
+  "question_id": "Q023",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+  "answer": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+  "target_unit_id": "U_G02_VERBAL",
+  "mode": "probe",
+  "question_reference_frame": "general_belief",
+  "candidate_result": {
+    "turn_id": "T023",
+    "observations": [
+      {
+        "unit_id": "U_G02_VERBAL",
+        "status": "covered",
+        "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+        "reference_frame": "general_belief",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "verbal_response",
+            "value": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+            "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_G02_VERBAL_PV02_LOWER",
+            "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+            "rationale": "合成开发示例：明确不认可或拒绝以伤害性语言回击。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T023",
+      "question_id": "Q023",
+      "unit_id": "U_G02_VERBAL",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_8a03df7210c404503ca9",
+      "status": "covered",
+      "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+      "source_span": {
+        "start": 0,
+        "end": 23,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "verbal_response",
+          "value": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+          "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "evidence_ids": [
+        "DEV_9a067600ad508951aee9"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S03",
+      "scenario_instance_id": "DEMO_FULL_03_S03_base",
+      "condition_id": "base",
+      "event_id": "SCENE_ea4fdc50ab610889",
+      "turn_id": "T023",
+      "question_id": "Q023",
+      "unit_id": "U_G02_VERBAL",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_G02_VERBAL_PV02_LOWER",
+      "quote": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+      "rationale": "合成开发示例：明确不认可或拒绝以伤害性语言回击。",
+      "evidence_id": "DEV_9a067600ad508951aee9",
+      "observation_id": "OB_8a03df7210c404503ca9",
+      "source_item_ids": [
+        "G02"
+      ],
+      "variable_id": "PV02",
+      "direction": "lower",
+      "source_span": {
+        "start": 0,
+        "end": 23,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 23,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_050",
+  "turn_id": "T050",
+  "question_id": "Q050",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+  "answer": "我会担心下一次活动不再邀请我。",
+  "target_unit_id": "U_D01_EXCLUSION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

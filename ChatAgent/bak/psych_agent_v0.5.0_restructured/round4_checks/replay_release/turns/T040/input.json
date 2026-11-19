@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_040",
+  "turn_id": "T040",
+  "question_id": "Q040",
+  "scenario_id": "S05",
+  "scenario_instance_id": "DEMO_FULL_05_S05_base",
+  "condition_id": "base",
+  "event_id": "SCENE_39a03f37562e4b3c",
+  "entry_index": 4,
+  "question": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+  "answer": "没有身体受伤也可能心里很难受，这样的影响不能因为没动手就忽略。",
+  "target_unit_id": "U_B05_CONSEQUENCES",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

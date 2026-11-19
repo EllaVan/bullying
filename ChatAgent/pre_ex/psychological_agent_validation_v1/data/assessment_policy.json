@@ -1,0 +1,24 @@
+{
+  "assessment_types": {
+    "initial_screening": {
+      "priority_variables": [
+        "PV01",
+        "PV02",
+        "PV04",
+        "PV05",
+        "PV07",
+        "PV08",
+        "PV09",
+        "PV10"
+      ]
+    },
+    "risk_followup": {
+      "priority_variables": [
+        "PV02",
+        "PV03",
+        "PV05",
+        "PV06"
+      ]
+    }
+  }
+}

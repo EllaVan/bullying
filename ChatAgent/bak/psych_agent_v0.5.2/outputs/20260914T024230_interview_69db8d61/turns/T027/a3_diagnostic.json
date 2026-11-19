@@ -1,0 +1,6 @@
+{
+  "status": "llm_repair_succeeded",
+  "first_validation_error": "declined/not_applicable只能用于本轮直接追问的目标单元；开场或顺带未提及的单元必须省略",
+  "removed_context_references": [],
+  "fallback_used": false
+}

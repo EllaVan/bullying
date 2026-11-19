@@ -1,0 +1,236 @@
+{
+  "task_id": "TASK_DEMO_FULL_018",
+  "plan_id": "full",
+  "config_set_id": "CFG_005",
+  "config_manifest_path": "config/config_manifest.json",
+  "session_id": "DEMO_FULL",
+  "entry_index": 2,
+  "turn_id": "T018",
+  "question_id": "Q018",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "scenario_text": "几位朋友在聊天时，反复用一个同学不喜欢的外号取笑他。那位同学已经说了不喜欢，但大家还在笑，也有人看着你，等你接话。整个过程没有身体接触。",
+  "facts": {
+    "form": "verbal",
+    "perspective": "group",
+    "relationship": "friend",
+    "intent_clarity": "explicit",
+    "group_pressure": "present",
+    "conflict_stage": "stable",
+    "affinity": "not_close",
+    "joking": "present",
+    "no_response": "absent"
+  },
+  "mode": "probe",
+  "target_unit_id": "U_B03_JUSTIFICATION",
+  "reference_frame": "general_belief",
+  "question_template": "你觉得大家在什么情况下应该停止这种玩笑？",
+  "missing_slots": [
+    {
+      "slot_id": "boundary",
+      "description": "停止玩笑的界线及理由"
+    }
+  ],
+  "allowed_units": [
+    {
+      "unit_id": "U_B03_JUSTIFICATION",
+      "source_item_ids": [
+        "B03"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "玩笑是否可以继续的判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得大家在什么情况下应该停止这种玩笑？",
+      "required_slots": [
+        {
+          "slot_id": "boundary",
+          "description": "停止玩笑的界线及理由"
+        }
+      ],
+      "applicability": {
+        "joking": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_B03_JUSTIFICATION_PV05_HIGHER",
+        "DR_B03_JUSTIFICATION_PV05_LOWER"
+      ],
+      "interpretation_boundary": "需明确的合理化或反对理由；只识别伤害不自动产生道德脱离反分。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "source_item_ids": [
+        "B04"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "群体责任判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "好几个人一起参与这件事时，你觉得每个人应当怎样承担责任？",
+      "required_slots": [
+        {
+          "slot_id": "responsibility",
+          "description": "个人责任是否因参与者多而减少"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_B04_RESPONSIBILITY_PV05_HIGHER",
+        "DR_B04_RESPONSIBILITY_PV05_LOWER"
+      ],
+      "interpretation_boundary": "班级规范与个人的责任判断分开。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_B05_CONSEQUENCES",
+      "source_item_ids": [
+        "B05"
+      ],
+      "target_variable_ids": [
+        "PV05"
+      ],
+      "facet": "无身体伤害时的后果判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "如果这样的玩笑没有让身体受伤，你会怎样看待它造成的影响？",
+      "required_slots": [
+        {
+          "slot_id": "consequence",
+          "description": "对非身体后果的评价"
+        }
+      ],
+      "applicability": {
+        "joking": [
+          "present"
+        ]
+      },
+      "rule_ids": [
+        "DR_B05_CONSEQUENCES_PV05_HIGHER",
+        "DR_B05_CONSEQUENCES_PV05_LOWER"
+      ],
+      "interpretation_boundary": "描述结果与认可伤害分开；不能凭没提身体伤害推断。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C04_DISSENT",
+      "source_item_ids": [
+        "C04"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "群体中表达不同意见",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你的想法和几个朋友都不一样，你会怎样表达？",
+      "required_slots": [
+        {
+          "slot_id": "dissent",
+          "description": "表达不同意见的方式或困难"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C04_DISSENT_PV07_HIGHER",
+        "DR_C04_DISSENT_PV07_LOWER"
+      ],
+      "interpretation_boundary": "一般合群不等于从众风险；保留行为内容。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_C05_CONFORMITY",
+      "source_item_ids": [
+        "C05"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "因关系压力而顺从",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果你担心提出不同意见会让朋友疏远你，这会怎样影响你的选择？",
+      "required_slots": [
+        {
+          "slot_id": "choice",
+          "description": "排斥担忧如何影响是否跟随群体"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_C05_CONFORMITY_PV07_HIGHER",
+        "DR_C05_CONFORMITY_PV07_LOWER"
+      ],
+      "interpretation_boundary": "这是设定条件下的选择，不能据此宣称学生平时一直害怕被疏远。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G02_VERBAL",
+      "source_item_ids": [
+        "G02"
+      ],
+      "target_variable_ids": [
+        "PV02"
+      ],
+      "facet": "尖锐语言回击的效用判断",
+      "reference_frame": "general_belief",
+      "reference_period": "unspecified",
+      "question_template": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+      "required_slots": [
+        {
+          "slot_id": "verbal_response",
+          "description": "是否认可尖锐回击更有效及其理由"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G02_VERBAL_PV02_HIGHER",
+        "DR_G02_VERBAL_PV02_LOWER"
+      ],
+      "interpretation_boundary": "坚定表达边界不等于语言攻击。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    },
+    {
+      "unit_id": "U_G03_GROUP",
+      "source_item_ids": [
+        "G03"
+      ],
+      "target_variable_ids": [
+        "PV07"
+      ],
+      "facet": "朋友站队时的群体影响",
+      "reference_frame": "hypothetical_intent",
+      "reference_period": "unspecified",
+      "question_template": "如果朋友们决定站在同一边，这会怎样影响你自己的判断？",
+      "required_slots": [
+        {
+          "slot_id": "group_influence",
+          "description": "群体站队对个人判断的影响"
+        }
+      ],
+      "applicability": {},
+      "rule_ids": [
+        "DR_G03_GROUP_PV07_HIGHER",
+        "DR_G03_GROUP_PV07_LOWER"
+      ],
+      "interpretation_boundary": "本单元选择原 G03 的 PV07 方面，不凭想要支持自动认定从众。",
+      "completion_rule": "同一参照方式下，自我回答明确提供全部槽位；明确不存在或否认也可填槽。未提及不等于否认。",
+      "validation_status": "engineering_draft_not_psychometrically_validated"
+    }
+  ],
+  "already_covered": []
+}

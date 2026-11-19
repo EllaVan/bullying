@@ -1,0 +1,52 @@
+{
+  "version": "0.6.1",
+  "config_set_id": "CFG_008",
+  "mode": "intensity_frame_weighted_with_conflict_resolution",
+  "direction_values": {
+    "higher": 1.0,
+    "lower": 0.0,
+    "mixed": 0.5,
+    "unclear": null
+  },
+  "intensity_scale": {
+    "min": 1,
+    "max": 5,
+    "default_when_missing": 3,
+    "note": "类似量表1–5点；A3可在evidence.intensity给出。缺省时按参照框架默认强度（INT-1：真实5、习惯4、任务3、信念2、假设1）。"
+  },
+  "frame_default_intensity": {
+    "real_event_self_report": 5,
+    "habitual_self_report": 4,
+    "task_performance": 3,
+    "general_belief": 2,
+    "hypothetical_intent": 1,
+    "unclear": 1
+  },
+  "conflict_policy": {
+    "resolution": "frame_weighted_soft_mean",
+    "prefer_higher_frame": true,
+    "conflict_weight_factor": 1.0,
+    "same_group_bidirectional_weight_factor": 1.0,
+    "retain_all_evidence": true,
+    "score_axis_note": "冲突不降低计分权重（严格计入消解后的值）；不确定性只反映在工程置信标签。",
+    "note": "冲突不删除facet；消解后的值以满分权重计入风险分。原因写入 conflict_audit.cause。全部证据保留。"
+  },
+  "group_aggregation": "mean_of_distinct_groups",
+  "duplicate_evidence_weight": 0.0,
+  "missing_value": null,
+  "variable_weights": {
+    "PV01": 1.0,
+    "PV02": 1.0,
+    "PV03": 1.0,
+    "PV04": 1.0,
+    "PV05": 1.0,
+    "PV06": 1.0,
+    "PV07": 1.0,
+    "PV08": 1.0,
+    "PV09": 1.0,
+    "PV10": 1.0
+  },
+  "value_round_digits": 4,
+  "scoring_status": "uncalibrated_flow_test",
+  "note": "value由方向×强度×框架权重得到0–1；冲突消解后满分权重计入风险分，原因与证据写入 conflict_audit；不确定性进工程置信标签。锚定包见 docs/SCALE_RULES_SOURCE.md。"
+}

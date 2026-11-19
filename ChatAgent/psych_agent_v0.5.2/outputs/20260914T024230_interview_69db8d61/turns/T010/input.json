@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_010",
+  "turn_id": "T010",
+  "question_id": "Q010",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "争执已经越来越激烈时，你接下来会怎么做？",
+  "answer": "我担心有更大的矛盾，会先走开",
+  "target_unit_id": "U_E04_DEESCALATION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

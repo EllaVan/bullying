@@ -1,0 +1,29 @@
+{
+  "turn_id": "T046",
+  "observations": [
+    {
+      "unit_id": "U_C03_DETERRENCE",
+      "status": "covered",
+      "quote": "可能不会有人来找我的麻烦",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "deterrence",
+          "value": "认可用威慑减少麻烦",
+          "quote": "可能不会有人来找我的麻烦"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C03_DETERRENCE_PV06_HIGHER",
+          "quote": "可能不会有人来找我的麻烦",
+          "rationale": "回答明确表示通过让他人畏惧自己来减少麻烦"
+        }
+      ],
+      "reason": "回答直接涉及威慑认知，明确表示认可通过让他人畏惧自己来减少麻烦"
+    }
+  ],
+  "background": []
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_002",
+  "turn_id": "T002",
+  "question_id": "Q002",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "像这种让你不舒服的事情，平时你的心情通常会怎样慢慢平静下来？",
+  "answer": "就自己慢慢平静下来了",
+  "target_unit_id": "U_A01_RECOVERY",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report"
+}

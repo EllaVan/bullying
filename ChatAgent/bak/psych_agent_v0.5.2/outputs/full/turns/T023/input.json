@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_023",
+  "turn_id": "T023",
+  "question_id": "Q023",
+  "scenario_id": "S03",
+  "scenario_instance_id": "DEMO_FULL_03_S03_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ea4fdc50ab610889",
+  "entry_index": 2,
+  "question": "你觉得用尖锐的话回击对方，会怎样影响接下来的事情？",
+  "answer": "我不认可用伤人的尖锐话回击，这样不见得更有效。",
+  "target_unit_id": "U_G02_VERBAL",
+  "mode": "probe",
+  "question_reference_frame": "general_belief"
+}

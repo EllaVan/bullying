@@ -1,0 +1,23 @@
+{
+  "case_id": "S01_partial",
+  "scenario_id": "S01",
+  "scenario_text": "课间，你与一位朋友发生身体碰撞并起了争执。下面谈假设情况下的求助顾虑和关系修复预期。",
+  "turns": [
+    {
+      "turn_id": "T1",
+      "question_id": "Q_HELP_BARRIER",
+      "event_id": "E_friend_conflict",
+      "question": "如果考虑向老师或家长说明，你会顾虑什么？",
+      "answer": "我担心告诉老师或家长以后，事情反而更麻烦。",
+      "response_context": "hypothetical"
+    },
+    {
+      "turn_id": "T2",
+      "question_id": "Q_REPAIR",
+      "event_id": "E_friend_conflict",
+      "question": "你觉得这次争执后，你和这位朋友的关系会怎样？",
+      "answer": "我觉得我们可以把误会说清楚，关系还是能修复的。",
+      "response_context": "hypothetical"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+[
+  {
+    "task_id": "TASK_DEMO_FULL_035",
+    "turn_id": "T035",
+    "question_id": "Q035",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我想先看看发生了什么，再想接下来怎么做。",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T035",
+      "observations": [],
+      "background": []
+    },
+    "validated_observations": [],
+    "validated_evidence": [],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 20,
+      "brief_response": false,
+      "low_information": true,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_036",
+    "turn_id": "T036",
+    "question_id": "Q036",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你会怎样了解那位同学此刻的感受？",
+    "answer": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+    "target_unit_id": "U_B01_EMOTION",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T036",
+      "observations": [
+        {
+          "unit_id": "U_B01_EMOTION",
+          "status": "covered",
+          "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "emotion_clues",
+              "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+              "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+              "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T036",
+        "question_id": "Q036",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_92c294f484ebb4639e7d",
+        "status": "covered",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "emotion_clues",
+            "value": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+            "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B01"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_0f3c80f1a2615716ce0a"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T036",
+        "question_id": "Q036",
+        "unit_id": "U_B01_EMOTION",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B01_EMOTION_PV04_HIGHER",
+        "quote": "我会看看他的表情，再问问他是不是觉得不舒服，表面笑着也可能心里难受。",
+        "rationale": "合成开发示例：明确关注他人可能隐藏的不适，并说明观察或确认感受的方法。",
+        "evidence_id": "DEV_0f3c80f1a2615716ce0a",
+        "observation_id": "OB_92c294f484ebb4639e7d",
+        "source_item_ids": [
+          "B01"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 34,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 34,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  },
+  {
+    "task_id": "TASK_DEMO_FULL_037",
+    "turn_id": "T037",
+    "question_id": "Q037",
+    "scenario_id": "S05",
+    "scenario_instance_id": "DEMO_FULL_05_S05_base",
+    "condition_id": "base",
+    "event_id": "SCENE_39a03f37562e4b3c",
+    "entry_index": 4,
+    "question": "你会怎样判断那位同学是不是也觉得这件事好笑？",
+    "answer": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+    "target_unit_id": "U_B03_HARM",
+    "mode": "probe",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T037",
+      "observations": [
+        {
+          "unit_id": "U_B03_HARM",
+          "status": "covered",
+          "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "perspective",
+              "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+              "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_B03_HARM_PV04_HIGHER",
+              "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+              "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。"
+            }
+          ],
+          "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+        }
+      ],
+      "background": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_a99682fb8508ab90c1b5",
+        "status": "covered",
+        "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "perspective",
+            "value": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+            "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "B03"
+        ],
+        "target_variable_ids": [
+          "PV04"
+        ],
+        "evidence_ids": [
+          "DEV_db95265223fa140add4b"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "DEMO_FULL",
+        "scenario_id": "S05",
+        "scenario_instance_id": "DEMO_FULL_05_S05_base",
+        "condition_id": "base",
+        "event_id": "SCENE_39a03f37562e4b3c",
+        "turn_id": "T037",
+        "question_id": "Q037",
+        "unit_id": "U_B03_HARM",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_B03_HARM_PV04_HIGHER",
+        "quote": "我会注意他是不是勉强笑，也会问他是否愿意继续这种玩笑。",
+        "rationale": "合成开发示例：明确考虑被开玩笑者是否真的觉得好笑、可能受伤或需要确认。",
+        "evidence_id": "DEV_db95265223fa140add4b",
+        "observation_id": "OB_a99682fb8508ab90c1b5",
+        "source_item_ids": [
+          "B03"
+        ],
+        "variable_id": "PV04",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 27,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 27,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

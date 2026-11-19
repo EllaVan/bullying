@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.5.0",
+  "saved_at_utc": "2026-09-12T08:57:49.767385+00:00",
+  "session_id": "DEMO_FULL",
+  "plan_id": "full",
+  "synthetic": true,
+  "status": "completed",
+  "stop_reason": "plan_finished",
+  "config_set_id": "CFG_006",
+  "config_manifest_path": "config/config_manifest.json",
+  "note": "本地功能实验记录；未将API密钥写入输出。"
+}

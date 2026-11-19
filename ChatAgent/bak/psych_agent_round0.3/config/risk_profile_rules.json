@@ -1,0 +1,26 @@
+{
+  "version": "0.3.0",
+  "mode": "source_association_only",
+  "role_variables": {
+    "bully": [
+      "PV02",
+      "PV04",
+      "PV05",
+      "PV06",
+      "PV07"
+    ],
+    "victim": [
+      "PV08",
+      "PV09"
+    ],
+    "bully_victim": [
+      "PV01",
+      "PV03",
+      "PV09"
+    ]
+  },
+  "shared_variables": [
+    "PV10"
+  ],
+  "note": "依据变量原表主要风险作用组织相关线索；不是分类权重、概率或经标定的风险等级。F类不参与。"
+}

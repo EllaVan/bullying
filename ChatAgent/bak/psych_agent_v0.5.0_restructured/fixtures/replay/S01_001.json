@@ -1,0 +1,39 @@
+{
+  "case_id": "S01_001",
+  "evidence": [
+    {
+      "rule_id": "R_E04_REGULATE",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    },
+    {
+      "rule_id": "R_E04_COPING",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    },
+    {
+      "rule_id": "R_E01_HELP",
+      "turn_id": "T1",
+      "quote": "找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "version": "0.1.0",
+  "source_file": "source/心理Agent+量表与心理变量.md",
+  "validation_status": "engineering_draft_not_validated",
+  "items": [
+    {
+      "item_id": "A01",
+      "section": "A",
+      "text": "当别人当众让我难堪时，我通常需要一段时间才能平静下来",
+      "source_evidence": "受到刺激后的愤怒持续时间；情绪恢复困难",
+      "source_evidence_category": "情绪失控",
+      "variable_ids": [
+        "PV01"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "A02",
+      "section": "A",
+      "text": "如果我觉得别人是故意针对我，我会反复想着这件事",
+      "source_evidence": "认为他人故意伤害；持续反刍",
+      "source_evidence_category": "敌意解释",
+      "variable_ids": [
+        "PV03"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "A03",
+      "section": "A",
+      "text": "受到不公平对待后，我有时会想让对方也感受一下同样的滋味",
+      "source_evidence": "报复想法；希望对方受损",
+      "source_evidence_category": "攻击报复",
+      "variable_ids": [
+        "PV02",
+        "PV03"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "A04",
+      "section": "A",
+      "text": "即使很生气，我通常也能先停一下，再决定怎么做",
+      "source_evidence": "暂停能力；自我控制",
+      "source_evidence_category": "冲突调节",
+      "variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "B01",
+      "section": "B",
+      "text": "我通常能注意到同学什么时候表面没事，其实心里很难受",
+      "source_evidence": "识别他人情绪状态",
+      "source_evidence_category": "共情",
+      "variable_ids": [
+        "PV04"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "B02",
+      "section": "B",
+      "text": "即使不喜欢某个同学，看到很多人针对他仍觉得不舒服",
+      "source_evidence": "关注他人痛苦；反对伤害",
+      "source_evidence_category": "共情保护",
+      "variable_ids": [
+        "PV04"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "B03",
+      "section": "B",
+      "text": "大家一起拿一个同学开玩笑时，我会想他是否真的觉得好笑",
+      "source_evidence": "判断玩笑伤害性",
+      "source_evidence_category": "伤害判断",
+      "variable_ids": [
+        "PV04",
+        "PV05"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "B04",
+      "section": "B",
+      "text": "如果很多人都在做同一件事，个人承担责任会少一些",
+      "source_evidence": "责任外推；群体免责",
+      "source_evidence_category": "道德脱离",
+      "variable_ids": [
+        "PV05"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "B05",
+      "section": "B",
+      "text": "如果没有造成身体伤害，一些过分玩笑没有那么严重",
+      "source_evidence": "弱化伤害后果",
+      "source_evidence_category": "道德脱离",
+      "variable_ids": [
+        "PV05"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "C01",
+      "section": "C",
+      "text": "在同伴中，我比较在意自己的意见有没有分量",
+      "source_evidence": "重视群体地位",
+      "source_evidence_category": "权力需求",
+      "variable_ids": [
+        "PV06"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "C02",
+      "section": "C",
+      "text": "当别人明显不听我的意见时，我会觉得难接受",
+      "source_evidence": "控制需求；无法接受拒绝",
+      "source_evidence_category": "控制行为",
+      "variable_ids": [
+        "PV06"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "C03",
+      "section": "C",
+      "text": "让别人知道“不要轻易惹我”可以减少麻烦",
+      "source_evidence": "威慑认知；通过强势建立位置",
+      "source_evidence_category": "支配认知",
+      "variable_ids": [
+        "PV06"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "C04",
+      "section": "C",
+      "text": "几个朋友意见一样时，我很难提出不同意见",
+      "source_evidence": "群体压力；意见跟随",
+      "source_evidence_category": "从众",
+      "variable_ids": [
+        "PV07"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "C05",
+      "section": "C",
+      "text": "担心被朋友疏远，可能跟着大家做相同事情",
+      "source_evidence": "害怕群体排斥；顺从行为",
+      "source_evidence_category": "群体压力",
+      "variable_ids": [
+        "PV07",
+        "PV09"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "D01",
+      "section": "D",
+      "text": "担心自己被朋友排除活动之外",
+      "source_evidence": "被排斥担忧",
+      "source_evidence_category": "关系压力",
+      "variable_ids": [
+        "PV09"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "D02",
+      "section": "D",
+      "text": "同学没有回应时担心他们对自己有意见",
+      "source_evidence": "负面社会解释",
+      "source_evidence_category": "社会评价敏感",
+      "variable_ids": [
+        "PV09"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "D03",
+      "section": "D",
+      "text": "有一两个可以放心交流的人",
+      "source_evidence": "稳定支持关系",
+      "source_evidence_category": "社会支持",
+      "variable_ids": [
+        "PV08"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "D04",
+      "section": "D",
+      "text": "与朋友发生矛盾仍相信关系可修复",
+      "source_evidence": "关系恢复能力",
+      "source_evidence_category": "关系修复",
+      "variable_ids": [
+        "PV08",
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "E01",
+      "section": "E",
+      "text": "遇到同伴矛盾知道找谁商量",
+      "source_evidence": "求助渠道认知",
+      "source_evidence_category": "求助",
+      "variable_ids": [
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "E02",
+      "section": "E",
+      "text": "能向信任成年人说明情况",
+      "source_evidence": "主动求助能力",
+      "source_evidence_category": "求助",
+      "variable_ids": [
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "E03",
+      "section": "E",
+      "text": "担心告诉老师家长让事情更麻烦",
+      "source_evidence": "求助阻碍",
+      "source_evidence_category": "求助阻碍",
+      "variable_ids": [
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "E04",
+      "section": "E",
+      "text": "激烈争执时能离开或暂停",
+      "source_evidence": "避免升级能力",
+      "source_evidence_category": "冲突调节",
+      "variable_ids": [
+        "PV01",
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "E05",
+      "section": "E",
+      "text": "帮助同学同时保护自己",
+      "source_evidence": "保护能力",
+      "source_evidence_category": "保护行为",
+      "variable_ids": [
+        "PV04",
+        "PV10"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "F01",
+      "section": "F",
+      "text": "家庭有人愿意听学校事情",
+      "source_evidence": "家庭支持",
+      "source_evidence_category": "支持环境",
+      "variable_ids": [
+        "PV08"
+      ],
+      "context_only": true,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "F02",
+      "section": "F",
+      "text": "有老师愿意认真听情况",
+      "source_evidence": "教师支持",
+      "source_evidence_category": "支持环境",
+      "variable_ids": [
+        "PV08"
+      ],
+      "context_only": true,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "F03",
+      "section": "F",
+      "text": "班级知道不能越过伤害界线",
+      "source_evidence": "群体规范",
+      "source_evidence_category": "学校环境",
+      "variable_ids": [
+        "PV05"
+      ],
+      "context_only": true,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "F04",
+      "section": "F",
+      "text": "学校相处感觉安全被接纳",
+      "source_evidence": "学校归属感",
+      "source_evidence_category": "安全感",
+      "variable_ids": [
+        "PV08"
+      ],
+      "context_only": true,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "G01",
+      "section": "G",
+      "text": "冲突需要更强硬行动解决",
+      "source_evidence": "升级倾向；强制解决",
+      "source_evidence_category": "攻击行为",
+      "variable_ids": [
+        "PV02"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "G02",
+      "section": "G",
+      "text": "用尖锐的话回击更有效",
+      "source_evidence": "语言攻击倾向",
+      "source_evidence_category": "攻击行为",
+      "variable_ids": [
+        "PV02"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    },
+    {
+      "item_id": "G03",
+      "section": "G",
+      "text": "希望朋友站自己一边",
+      "source_evidence": "关系联盟动员",
+      "source_evidence_category": "关系控制",
+      "variable_ids": [
+        "PV06",
+        "PV07"
+      ],
+      "context_only": false,
+      "operational_mapping_status": "needs_review",
+      "response_options": null,
+      "score_rule": null
+    }
+  ]
+}

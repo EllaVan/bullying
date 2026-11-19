@@ -1,0 +1,29 @@
+{
+  "turn_id": "T027",
+  "observations": [
+    {
+      "unit_id": "U_A02_ATTRIBUTION",
+      "status": "covered",
+      "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "interpretation",
+          "value": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+          "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_A02_ATTRIBUTION_PV03_LOWER",
+          "quote": "我还不能确定，也可能他没注意，我不会马上认定他是故意的。",
+          "rationale": "合成开发示例：明确保留非敌意的解释可能，不急于认定恶意。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

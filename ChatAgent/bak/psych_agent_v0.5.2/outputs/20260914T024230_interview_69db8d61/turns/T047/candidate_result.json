@@ -1,0 +1,29 @@
+{
+  "turn_id": "T047",
+  "observations": [
+    {
+      "unit_id": "U_C04_DISSENT",
+      "status": "covered",
+      "quote": "我会先提出来，但是不采纳也没什么",
+      "reference_frame": "hypothetical_intent",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "dissent",
+          "value": "先提出来，但是不采纳也没什么",
+          "quote": "我会先提出来，但是不采纳也没什么"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_C04_DISSENT_PV07_HIGHER",
+          "quote": "我会先提出来，但是不采纳也没什么",
+          "rationale": "回答中明确表达了表达不同意见的行为和态度，符合U_C04_DISSENT的dissent槽位要求，且为covered状态。"
+        }
+      ],
+      "reason": "回答中明确表达了表达不同意见的行为和态度，符合U_C04_DISSENT的dissent槽位要求，且为covered状态。"
+    }
+  ],
+  "background": []
+}

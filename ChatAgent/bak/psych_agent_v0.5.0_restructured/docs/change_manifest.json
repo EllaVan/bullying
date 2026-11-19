@@ -1,0 +1,19 @@
+{
+  "version": "0.5.0",
+  "baseline": "0.3.0",
+  "config_set_id": "CFG_004",
+  "date": "2026-09-09",
+  "modified_areas": [
+    {"id": "CONFIG", "paths": ["config/config_manifest.json", "config/evidence_quality.json", "config/variable_scoring.json", "config/confidence_policy.json", "config/risk_scoring.json", "config/report_policy.json"]},
+    {"id": "PROFILE", "paths": ["psych_agent/profile.py"]},
+    {"id": "A4", "paths": ["psych_agent/risk_engine.py", "config/risk_scoring.json"]},
+    {"id": "A5", "paths": ["psych_agent/risk_reporter.py", "prompts/report_agent.md"]},
+    {"id": "REFERENCES", "paths": ["psych_agent/measurement_controller.py", "psych_agent/scenario_agent.py", "psych_agent/dialogue_runner.py", "schemas/"]},
+    {"id": "CLI", "paths": ["psych_agent/dialogue_cli.py", "psych_agent/cli.py", "config/agents.example.json"]},
+    {"id": "TESTS", "paths": ["tests/test_dialogue.py", "tests/test_dialogue_cli.py", "fixtures/dialogue/", "examples/dialogue_full/"]},
+    {"id": "DOCS", "paths": ["README.md", "docs/multiturn_usage.md", "docs/agent_interfaces.md", "docs/round_0_4_report.md"]}
+  ],
+  "removed_business_fields": ["config_hashes", "measurement_config_hash", "profile_hash", "input_hash", "instance_hash", "scenario_fingerprints"],
+  "replacement_references": ["config_set_id", "config_manifest_path", "profile_id", "model_input_id", "scenario_instance_id", "session_id", "relative_file_path"],
+  "note": "本清单使用文件路径和编号，不保存文件哈希。"
+}

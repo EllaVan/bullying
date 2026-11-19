@@ -1,0 +1,30 @@
+{
+  "version": "0.5.0",
+  "config_set_id": "CFG_006",
+  "mode": "direction_group_mean_test_only",
+  "direction_values": {
+    "higher": 1.0,
+    "lower": 0.0,
+    "mixed": 0.5,
+    "unclear": null
+  },
+  "group_aggregation": "mean_of_distinct_groups",
+  "duplicate_evidence_weight": 0.0,
+  "missing_value": null,
+  "variable_weights": {
+    "PV01": 1.0,
+    "PV02": 1.0,
+    "PV03": 1.0,
+    "PV04": 1.0,
+    "PV05": 1.0,
+    "PV06": 1.0,
+    "PV07": 1.0,
+    "PV08": 1.0,
+    "PV09": 1.0,
+    "PV10": 1.0
+  },
+  "value_round_digits": 4,
+  "scoring_status": "uncalibrated_flow_test",
+  "human_review_required": true,
+  "note": "value仅把已校验方向映射为0—1测试指标。缺失保持null；重复证据不增加权重。"
+}

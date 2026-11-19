@@ -1,0 +1,135 @@
+[
+  {
+    "task_id": "TASK_SESSION_f1cef6d66e10_001",
+    "turn_id": "T001",
+    "question_id": "Q001",
+    "scenario_id": "S01",
+    "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+    "condition_id": "base",
+    "event_id": "SCENE_acc2acf81f4d925c",
+    "entry_index": 0,
+    "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+    "answer": "我有点生气，但是可能会先走开",
+    "target_unit_id": null,
+    "mode": "opening",
+    "question_reference_frame": "hypothetical_intent",
+    "candidate_result": {
+      "turn_id": "T001",
+      "observations": [
+        {
+          "unit_id": "U_A04_PAUSE",
+          "status": "covered",
+          "quote": "我有点生气，但是可能会先走开",
+          "reference_frame": "hypothetical_intent",
+          "subject": "self",
+          "context_turn_ids": [],
+          "slots": [
+            {
+              "slot_id": "pause",
+              "value": "可能会先走开",
+              "quote": "我有点生气，但是可能会先走开"
+            }
+          ],
+          "evidence": [
+            {
+              "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+              "quote": "我有点生气，但是可能会先走开",
+              "rationale": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+            }
+          ],
+          "reason": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义"
+        }
+      ],
+      "background": [],
+      "experiences": []
+    },
+    "validated_observations": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S01",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_acc2acf81f4d925c",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_A04_PAUSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "observation_id": "OB_93fea115530802ecde96",
+        "status": "covered",
+        "quote": "我有点生气，但是可能会先走开",
+        "source_span": {
+          "start": 0,
+          "end": 14,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "slots": [
+          {
+            "slot_id": "pause",
+            "value": "可能会先走开",
+            "quote": "我有点生气，但是可能会先走开"
+          }
+        ],
+        "reason": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义",
+        "coverage_eligible": true,
+        "source_item_ids": [
+          "A04"
+        ],
+        "target_variable_ids": [
+          "PV01",
+          "PV10"
+        ],
+        "evidence_ids": [
+          "DEV_7ed678cbcb2f97986090"
+        ]
+      }
+    ],
+    "validated_evidence": [
+      {
+        "session_id": "SESSION_f1cef6d66e10",
+        "scenario_id": "S01",
+        "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+        "condition_id": "base",
+        "event_id": "SCENE_acc2acf81f4d925c",
+        "turn_id": "T001",
+        "question_id": "Q001",
+        "unit_id": "U_A04_PAUSE",
+        "reference_frame": "hypothetical_intent",
+        "subject": "self",
+        "reference_period": "unspecified",
+        "context_turn_ids": [],
+        "rule_id": "DR_A04_PAUSE_PV01_HIGHER",
+        "quote": "我有点生气，但是可能会先走开",
+        "rationale": "回答中明确提到生气时可能会先走开，符合暂停再决策的定义",
+        "evidence_id": "DEV_7ed678cbcb2f97986090",
+        "observation_id": "OB_93fea115530802ecde96",
+        "source_item_ids": [
+          "A04"
+        ],
+        "variable_id": "PV01",
+        "direction": "higher",
+        "source_span": {
+          "start": 0,
+          "end": 14,
+          "unit": "unicode_codepoint",
+          "end_exclusive": true
+        },
+        "context_only": false,
+        "validation_level": "structure_source_scope_only"
+      }
+    ],
+    "background": [],
+    "validated_experiences": [],
+    "response_quality": {
+      "response_eligible": true,
+      "answer_characters": 14,
+      "brief_response": false,
+      "low_information": false,
+      "alternate_probe_scheduled": false,
+      "a3_fallback_used": false
+    }
+  }
+]

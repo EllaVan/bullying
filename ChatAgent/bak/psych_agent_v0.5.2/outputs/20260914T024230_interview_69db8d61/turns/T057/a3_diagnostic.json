@@ -1,0 +1,7 @@
+{
+  "status": "safe_empty_fallback",
+  "first_validation_error": "拒答/不适用不能同时生成槽位值或方向证据",
+  "repair_validation_error": "拒答/不适用不能同时生成槽位值或方向证据",
+  "removed_context_references": [],
+  "fallback_used": true
+}

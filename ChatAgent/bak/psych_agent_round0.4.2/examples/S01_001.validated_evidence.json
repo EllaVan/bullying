@@ -1,0 +1,98 @@
+{
+  "case_id": "S01_001",
+  "scenario_id": "S01",
+  "evidence": [
+    {
+      "rule_id": "R_E04_REGULATE",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_491d5f0587c2377f",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV01",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    },
+    {
+      "rule_id": "R_E04_COPING",
+      "turn_id": "T1",
+      "quote": "我会先离开，等自己冷静后找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_6394441d60926ac9",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E04"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 0,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    },
+    {
+      "rule_id": "R_E01_HELP",
+      "turn_id": "T1",
+      "quote": "找老师",
+      "source_kind": "hypothetical_intent",
+      "subject": "self",
+      "rationale": "按对应草案规则保留此处明确表达；不扩展为稳定特质。",
+      "evidence_id": "EV_4fcdae2d2c403b47",
+      "case_id": "S01_001",
+      "scenario_id": "S01",
+      "event_id": "S01_001_event",
+      "question_id": "Q_S01_01",
+      "item_ids": [
+        "E01"
+      ],
+      "variable_id": "PV10",
+      "direction": "higher",
+      "context_only": false,
+      "source_span": {
+        "start": 12,
+        "end": 15,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "validation_level": "structure_quote_and_mapping_only",
+      "semantic_review_status": "not_reviewed"
+    }
+  ],
+  "gaps": [
+    {
+      "variable_id": "PV02",
+      "reason": "当前回答没有足够的对应信息。"
+    },
+    {
+      "variable_id": "PV03",
+      "reason": "当前回答没有足够的对应信息。"
+    }
+  ],
+  "duplicate_candidates_removed": 0
+}

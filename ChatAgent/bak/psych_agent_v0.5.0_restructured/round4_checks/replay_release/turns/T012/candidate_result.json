@@ -1,0 +1,29 @@
+{
+  "turn_id": "T012",
+  "observations": [
+    {
+      "unit_id": "U_B04_RESPONSIBILITY",
+      "status": "covered",
+      "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "responsibility",
+          "value": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B04_RESPONSIBILITY_PV05_LOWER",
+          "quote": "每个人都应该对自己做的部分负责，人多也不会让个人责任变少。",
+          "rationale": "合成开发示例：明确认为大家一起参与也不减少个人责任。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

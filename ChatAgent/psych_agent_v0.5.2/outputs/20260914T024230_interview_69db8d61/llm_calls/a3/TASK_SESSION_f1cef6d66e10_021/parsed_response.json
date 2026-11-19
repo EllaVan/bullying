@@ -1,0 +1,29 @@
+{
+  "turn_id": "T021",
+  "observations": [
+    {
+      "unit_id": "U_B05_CONSEQUENCES",
+      "status": "covered",
+      "quote": "但是那位同学已经不舒服了，所以还是不太好",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "consequence",
+          "value": "那位同学已经不舒服了，所以还是不太好",
+          "quote": "但是那位同学已经不舒服了，所以还是不太好"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B05_CONSEQUENCES_PV05_LOWER",
+          "quote": "但是那位同学已经不舒服了，所以还是不太好",
+          "rationale": "回答明确指出了没有身体伤害的情况下，玩笑仍然可能造成心理上的不适，符合对非身体后果的评价要求。"
+        }
+      ],
+      "reason": "回答明确表达了对玩笑造成心理影响的负面评价，符合U_B05_CONSEQUENCES单元的要求。"
+    }
+  ],
+  "background": []
+}

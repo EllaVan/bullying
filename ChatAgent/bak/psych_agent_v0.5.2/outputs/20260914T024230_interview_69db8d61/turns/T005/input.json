@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_005",
+  "turn_id": "T005",
+  "question_id": "Q005",
+  "scenario_id": "S01",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "entry_index": 0,
+  "question": "接下来你希望对方经历什么，或者有什么变化？",
+  "answer": "我希望他也倒霉一次，但是没有也没什么",
+  "target_unit_id": "U_A03_REVENGE",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}

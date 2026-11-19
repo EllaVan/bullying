@@ -1,0 +1,131 @@
+{
+  "task_id": "TASK_DEMO_FULL_004",
+  "turn_id": "T004",
+  "question_id": "Q004",
+  "scenario_id": "S01",
+  "scenario_instance_id": "DEMO_FULL_01_S01_base",
+  "condition_id": "base",
+  "event_id": "SCENE_cf18cf6cb8acafcc",
+  "entry_index": 0,
+  "question": "平时当你觉得有人在针对你时，之后这件事通常会怎样留在你的脑海里？",
+  "answer": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+  "target_unit_id": "U_A02_RUMINATION",
+  "mode": "probe",
+  "question_reference_frame": "habitual_self_report",
+  "candidate_result": {
+    "turn_id": "T004",
+    "observations": [
+      {
+        "unit_id": "U_A02_RUMINATION",
+        "status": "covered",
+        "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+        "reference_frame": "habitual_self_report",
+        "subject": "self",
+        "context_turn_ids": [],
+        "slots": [
+          {
+            "slot_id": "thinking",
+            "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+            "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+          }
+        ],
+        "evidence": [
+          {
+            "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+            "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+            "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。"
+          }
+        ],
+        "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+      }
+    ],
+    "background": []
+  },
+  "validated_observations": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_520cd0a75c270962",
+      "turn_id": "T004",
+      "question_id": "Q004",
+      "unit_id": "U_A02_RUMINATION",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "observation_id": "OB_fe9d98818e6c52a330c1",
+      "status": "covered",
+      "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "source_span": {
+        "start": 0,
+        "end": 32,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "slots": [
+        {
+          "slot_id": "thinking",
+          "value": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+          "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。",
+      "coverage_eligible": true,
+      "source_item_ids": [
+        "A02"
+      ],
+      "target_variable_ids": [
+        "PV03"
+      ],
+      "evidence_ids": [
+        "DEV_078b91dd80c3ad82f784"
+      ]
+    }
+  ],
+  "validated_evidence": [
+    {
+      "session_id": "DEMO_FULL",
+      "scenario_id": "S01",
+      "scenario_instance_id": "DEMO_FULL_01_S01_base",
+      "condition_id": "base",
+      "event_id": "HABIT_520cd0a75c270962",
+      "turn_id": "T004",
+      "question_id": "Q004",
+      "unit_id": "U_A02_RUMINATION",
+      "reference_frame": "habitual_self_report",
+      "subject": "self",
+      "reference_period": "unspecified",
+      "context_turn_ids": [],
+      "rule_id": "DR_A02_RUMINATION_PV03_HIGHER",
+      "quote": "平时如果我认定有人针对我，后来会反复想着那件事，过了很久还在想。",
+      "rationale": "合成开发示例：明确自述认为被针对后会持续、反复想着这件事。",
+      "evidence_id": "DEV_078b91dd80c3ad82f784",
+      "observation_id": "OB_fe9d98818e6c52a330c1",
+      "source_item_ids": [
+        "A02"
+      ],
+      "variable_id": "PV03",
+      "direction": "higher",
+      "source_span": {
+        "start": 0,
+        "end": 32,
+        "unit": "unicode_codepoint",
+        "end_exclusive": true
+      },
+      "context_only": false,
+      "validation_level": "structure_source_scope_only"
+    }
+  ],
+  "background": [],
+  "validated_experiences": [],
+  "response_quality": {
+    "response_eligible": true,
+    "answer_characters": 32,
+    "brief_response": false,
+    "low_information": false,
+    "alternate_probe_scheduled": false,
+    "a3_fallback_used": false
+  }
+}

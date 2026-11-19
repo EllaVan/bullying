@@ -1,0 +1,20 @@
+{
+  "config_set_id": "CFG_007",
+  "scenario_id": "S01",
+  "condition_id": "base",
+  "parent_condition_id": null,
+  "scenario_instance_id": "SESSION_f1cef6d66e10_01_S01_base",
+  "event_id": "SCENE_acc2acf81f4d925c",
+  "facts": {
+    "form": "physical",
+    "perspective": "involved",
+    "relationship": "classmate",
+    "intent_clarity": "ambiguous",
+    "group_pressure": "absent",
+    "conflict_stage": "escalating",
+    "affinity": "close",
+    "joking": "absent",
+    "no_response": "absent"
+  },
+  "text": "课间走廊里，一位同学从你身边经过时碰到了你，你手里的本子掉在地上。你还不知道对方是不是故意的。你请对方注意，两个人说话的声音越来越大，旁边有同学在看。"
+}

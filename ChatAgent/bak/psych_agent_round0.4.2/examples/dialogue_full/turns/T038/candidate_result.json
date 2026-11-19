@@ -1,0 +1,29 @@
+{
+  "turn_id": "T038",
+  "observations": [
+    {
+      "unit_id": "U_B03_JUSTIFICATION",
+      "status": "covered",
+      "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+      "reference_frame": "general_belief",
+      "subject": "self",
+      "context_turn_ids": [],
+      "slots": [
+        {
+          "slot_id": "boundary",
+          "value": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+          "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。"
+        }
+      ],
+      "evidence": [
+        {
+          "rule_id": "DR_B03_JUSTIFICATION_PV05_LOWER",
+          "quote": "只要对方不愿意或者已经难受，就应该停下来，不能用大家觉得好笑当理由。",
+          "rationale": "合成开发示例：明确认为对方不愿意或受到伤害就不能以玩笑为由继续。"
+        }
+      ],
+      "reason": "预先编写的开发输入，明确提供了此单元要求的信息。"
+    }
+  ],
+  "background": []
+}

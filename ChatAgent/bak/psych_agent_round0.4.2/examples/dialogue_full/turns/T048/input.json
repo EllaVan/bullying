@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_DEMO_FULL_048",
+  "turn_id": "T048",
+  "question_id": "Q048",
+  "scenario_id": "S06",
+  "scenario_instance_id": "DEMO_FULL_06_S06_base",
+  "condition_id": "base",
+  "event_id": "SCENE_b95c18222b31e28d",
+  "entry_index": 5,
+  "question": "遇到这种情况，你会有什么想法，接下来会怎么做？",
+  "answer": "我想先看看发生了什么，再想接下来怎么做。",
+  "target_unit_id": null,
+  "mode": "opening",
+  "question_reference_frame": "hypothetical_intent"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK_SESSION_f1cef6d66e10_033",
+  "turn_id": "T033",
+  "question_id": "Q033",
+  "scenario_id": "S04",
+  "scenario_instance_id": "SESSION_f1cef6d66e10_04_S04_base",
+  "condition_id": "base",
+  "event_id": "SCENE_ebeb34b99d7f03a4",
+  "entry_index": 3,
+  "question": "这件事之后，你对自己能否参加同学们的活动会有什么想法？",
+  "answer": "我可能就不会参加了",
+  "target_unit_id": "U_D01_EXCLUSION",
+  "mode": "probe",
+  "question_reference_frame": "hypothetical_intent"
+}
